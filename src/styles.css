@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'ChakraPetch';
+    src: url('./assets/fonts/Chakra_Petch/ChakraPetch-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chakramedium';
+    src: url('./assets/fonts/Chakra_Petch/ChakraPetch-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'chakraregular';
+    src: url('./assets/fonts/Chakra_Petch/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chakrabold';
+    src: url('./assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'arimabold';
+    src: url('./assets/fonts/Arima/Arima-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'arimasemibold';
+    src: url('./assets/fonts/Arima/Arima-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'arimamedium';
+    src: url('./assets/fonts/Arima/Arima-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@import "tailwindcss";

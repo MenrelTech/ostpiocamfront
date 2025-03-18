@@ -1,0 +1,52 @@
+<div class="flex w-full justify-center content-evenly">
+    <div class="h-[682px] w-[800px] grid grid-cols-1 gap-0 justify-items-center content-evenly">
+        <div class="flex w-full justify-center my-[10px] content-evenly">
+            <p class="text-center text-[24px] font-bold w-full">{{numero_question()}} sur {{bareme()}}</p>
+        </div>
+        <!--<c-progress [value]="25" color="info">25</c-progress>-->
+        <div class="h-[15px] w-[700px] rounded-[15px] bg-white">
+            <progress max="100" value="25" class="h-[15px] w-[700px] rounded-[15px] bg-neutral-300">25%</progress>
+        </div>
+        <div class="h-[134px] w-[800px] flex ">
+            <div class="h-[134px] w-[134px] px-[10px] flex bg-neutral-900 font-bold text-white content-center justify-center text-center"><p class="content-center font-bold text-[15px]">Question :</p></div>
+            <div class="h-[134px] content-center bg-gray-300 justify-center">
+                <p class=" text-[14px] px-[20px] text-justify ">Lorem ipsum dolor sit amet consectetur. Neque montes enim et lacus. Ultrices magna euismod est lobortis tempus. Id arcu porttitor volutpat lectus viverra elit quisque. </p>
+            </div>
+        </div>
+        <div class="h-[302px] w-[800px] justify-center content-center">
+            <form method="POST" action="/" class="h-[302px] w-[800px] justify-center content-center">
+                <div class="mb-[25px]">
+                    <fieldset class="grid grid-cols-1 gap-2 justify-items-center">
+                        <div class="flex justify-left items-center content-center">
+                            <label class="text-[24px] font-bold" for="a">A</label>
+                            <input class="h-[20px] w-[20px] mx-[20px]" type="radio" id="a" name="qcm" value="a" />
+                            <label class="text-[24px] font-bold" for="a"></label>
+                            <div class="flex justify-left items-center h-[40px] w-[470px] px-[15px] border-[2px] border-black-800 rounded-[10px]">Huey</div>
+                        </div>
+                        <div class="flex justify-left items-center content-center">
+                            <label class="text-[24px] font-bold" for="b">B</label>
+                            <input class="h-[20px] w-[20px] mx-[20px]" type="radio" id="b" name="qcm" value="b" />
+                            <div class="flex justify-left items-center h-[40px] w-[470px] px-[15px] border-[2px] border-black-800 rounded-[10px]">Dewey</div>
+                        </div>
+                        <div class="flex justify-left items-center content-center">
+                            <label class="text-[24px] font-bold" for="c">C</label>
+                            <input class="h-[20px] w-[20px] mx-[20px]" type="radio" id="c" name="qcm" value="c"  />
+                            <div class="flex justify-left items-center h-[40px] w-[470px] px-[15px] border-[2px] border-black-800 rounded-[10px]">Louie</div>
+                        </div>
+                        <div class="flex justify-left items-center content-center">
+                            <label class="text-[24px] font-bold" for="d">D</label>
+                            <input class="h-[20px] w-[20px] mx-[20px]" type="radio" id="d" name="qcm" value="d"  />
+                            <div class="flex justify-left items-center h-[40px] w-[470px] px-[15px] border-[2px] border-black-800 rounded-[10px]">Huey</div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="w-full flex px-[20px] mt-[20px]">
+                    <button class="h-[48px] mr-auto border-[1px] text-black bg-white w-[137px] rounded-[5px]" >&#10094; Precedent</button>
+                    <button class="h-[48px] ml-auto border-[1px] text-white bg-green-500 w-[137px] rounded-[5px]" >Suivant &#10095;</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+

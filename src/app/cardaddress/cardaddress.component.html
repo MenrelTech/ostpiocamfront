@@ -1,0 +1,17 @@
+<div class="flex items-center justify-center content-center rounded-[15px] w-[475px] h-[175px]" [style]="bg_color" >
+    <div class="rounded-[15px] w-[150px] h-[150px]">
+        <img class="rounded-[15px] w-[150px] h-[150px]" src={{image()}} alt={{alt_message()}}  />
+    </div>
+    <div class="px-[10px] h-[155px] w-[275px]">
+        <p class="text-[18px] "><b>{{name()}}</b></p>
+        <p class="flex w-full  mt-[10px]  text-[12px] h-[20px] content-center items-center">
+            <img class="h-[20px] w-[20px]" src={{icone1()}} alt="localisation" /> {{localisation()}}
+        </p>
+        <p class="flex w-full  mt-[10px] text-[14px] h-[20px] content-center items-center">
+            <img class="h-[20px] w-[20px]" src={{icone2()}} alt="localisation" />Debut: <b>{{date_debut()}}</b> 
+        </p>
+        <p class="text-[14px] mb-[15px] h-[20px]">Fin: <b>{{date_fin()}}</b></p>
+        
+    </div>
+</div>
+

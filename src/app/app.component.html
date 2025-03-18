@@ -1,0 +1,114 @@
+
+
+
+
+
+<main class="main">
+  <nav>
+    <div class="h-[60px] w-full flex content-center items-center fixed z-20 bg-white px-[30px] px-[10px] shadow-xl
+    ">
+      <div class="mr-[60px]">
+        <a class="items-center flex" href="#">
+          <img class="h-[40px] w-[40px] mr-[20px]" src="./images/logo.png" alt="logo ostpiocam"/>
+          <p class="font-bold text-[20px]">
+            Oeuvre de St Padré<br/> Pio au Cameroun
+          </p>
+        </a>
+      </div>
+      <div class="items-center mr-[60px]">
+        <div class="h-[60px] items-center content-center">
+          <div class="h-[40px] pr-[10px] flex outline-offset-2 outline-sky-500 focus:outline-2 rounded-full items-center rounded-full border-[2px] border-gray-400">
+            <input class="h-[40px] focus:outline-0 px-[20px] border-x-0 border-t-0 rounded-l-lg " type="text" placeholder="Rechercher">
+            <img class="rounded-full h-[30px] w-[30px]" src="./images/search.png" alt="recherche" />
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="flex h-[60px] w-[50%] justify-end items-center">
+        <div class="w-[70%]">
+          <div class="w-full">
+            <ol class="flex justify-around items-center content-center w-full">
+              <li class="text-gray-500 hover:text-blue-800 "><a href="#">Accueil</a></li>
+              <li class="text-gray-500 hover:text-blue-800 "><a href="#">Champs d'apostolat</a></li>
+              <li class="text-gray-500 hover:text-blue-800 "><a href="#">Actualités</a></li>
+              <li class="text-gray-500 hover:text-blue-800 "><a href="#">Contact</a></li>
+            </ol>
+          </div>
+        </div>
+        <div class="h-[60px] items-center content-center mx-[30px] justify-items-end">
+          <div class="w-[45] h-[45] items-center rounded-full border-[1px] border-gray-400">
+            <a href="#">
+              <img class="rounded-full" src="./images/User.jpg" width="26" height="26" alt="profile"/>
+            </a>
+          </div>
+        </div>
+        <div class="justify-items-end items-center relative">
+          <div><a href="#"><h1 class="w-[30px] h-[30px] text-center bg-neutral-300">FR</h1></a></div>
+          <div><a href="#"><h1 class="w-[30px] h-[30px] text-center text-neutral-300 text-white bg-blue-800">EN</h1></a></div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <router-outlet />
+  <footer>
+    <div class="w-full h-[300px] bg-blue-900 flex justify-around content-center items-center text-white">
+      <div class="h-[170px] w-[294px] mx-[30px]">
+        <div class="h-[100px] w-[294px] flex mb-[25px]">
+          <div class="h-[100px] w-[100px] mr-[20px]">
+            <img class="h-[100px] w-[100px]" src="./images/logo2.jpg" alt="logo ostpiocam"/>
+          </div>
+          <div class="h-[100px] w-[144px] content-center">
+            <p class="font-arimabold text-lg">Oeuvre de St Padré Pio au Cameroun</p>
+          </div>
+        </div>
+        <div class=" h-[45px] w-[294px]">
+          <address><b>Telephone:</b> +237 6 55 55 55 55</address>
+          <address><b>email:</b> contactostpiocam.com</address>
+        </div>
+      </div>
+      <div class="h-[170px] mx-[30px] content-center">
+        <b class="mb-[4px]">Liens utiles</b>
+        <ol class="ml-[2px]">
+          <li><a href="#">&#10095; Accueil</a></li>
+          <li><a href="#">&#10095; Actualités</a></li>
+          <li><a href="#">&#10095; Nous contacter</a></li>
+          <li><a href="#">&#10095; Faire un don</a></li>
+        </ol>
+      </div>
+      <div class="h-[170px] mx-[30px] content-center">
+        <b class="mb-[4px]">Champs d'apostolat</b>
+        <ol class="ml-[2px]">
+          <li><a routerLink="/spiritualite" routerLinkActive="active" ariaCurrentWhenActive="page">&#10095; Spiritualite</a></li>
+          <li><a routerLink="/sante" routerLinkActive="active" ariaCurrentWhenActive="page">&#10095; Sante</a></li>
+          <li><a routerLink="/environnement" routerLinkActive="active" ariaCurrentWhenActive="page">&#10095; environnement</a></li>
+          <li><a href="#">&#10095; communication</a></li>
+        </ol>
+      </div>
+      <div class="h-[170px] mx-[30px] content-center">
+        <div><b class="mb-[9px]">Souscrire à nos newsletters</b></div>
+        <div class="mb-[9px]">Vous serez notifié régulierement sur l'actualité de<br> l'Oeuvre de St Padré Pio au Cameroun</div>
+        <div class="flex">
+          <input class="h-[40px] w-[250px] border-[1px] border-white px-[8px] rounded-[5px] mr-[4px]" id="email" type="email" placeholder="Votre email" />
+          <button class="h-[40px] border-[1px] border-white w-[92px] rounded-[5px]" (click)="subscribe($event)">Souscrire</button>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-[100px] bg-green-100 flex content-center items-center justify-center">
+      <div class="w-[25%]"><b>© Copyright OSTPIOCAM. Tous droits réservés</b><br>Réalisé par MENREL</div>
+      <div class="w-[65%] flex justify-end">
+        <img class="w-[36px] h-[36px]" src="./images/youtube.jpg" alt="youtube"/>
+        <img class="w-[36px] h-[36px]" src="./images/facebook.jpg" alt="facebook"/>
+        <img class="w-[36px] h-[36px]" src="./images/whatsapp.jpg" alt="whatsapp"/>
+        <img class="w-[36px] h-[36px]" src="./images/instagram.jpg" alt="instagram"/>
+        <img class="w-[36px] h-[36px]" src="./images/x.jpg" alt="x"/>
+        <img class="w-[36px] h-[36px]" src="./images/tiktok.jpg" alt="tiktok"/>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+
+

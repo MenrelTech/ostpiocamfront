@@ -1,0 +1,333 @@
+<div class="w-full relative mb-[60px]">
+    <div class="relative top-[60px] w-full">
+        <div class="flex w-full">
+            <div class=" relative w-[25%] h-[45px] hover:bg-yellow-300 justify-center items-center flex border-b-[5px] border-yellow-400" (mouseenter)="revealmenu()" (mouseleave)="hidemenu()" >
+                <a class="relative" routerLink="/spiritualite" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    Spiritualite
+                </a>
+                <div class="absolute  w-full top-[45px] bg-yellow-100 justify-center items-center" [class.invisible]="hidden">
+                  <a class="h-[45px] w-full" href="#">
+                    <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
+                      <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
+                    </div>
+                  </a>
+                  <a class="h-[45px] w-full" routerLink="/spiritualite/activite" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
+                      <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
+                    </div>
+                  </a>
+                  <a class="h-[45px] w-full" href="#">
+                    <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
+                      <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
+                    </div>
+                  </a>
+                  <a class="h-[45px] w-full" href="#">
+                    <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
+                      <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class=" relative w-[25%] h-[45px] hover:bg-red-300 justify-center items-center flex border-b-[5px] border-red-400" (mouseenter)="revealmenu2()" (mouseleave)="hidemenu2()" >
+              <a class="relative" routerLink="/sante" routerLinkActive="active" ariaCurrentWhenActive="page">
+                  Sante
+              </a>
+              <div class="absolute  w-full top-[45px] bg-red-100 justify-center items-center" [class.invisible]="hidden2">
+                <a class="h-[45px] w-full" href="#">
+                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
+                  </div>
+                </a>
+                <a class="h-[45px] w-full" href="#">
+                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
+                  </div>
+                </a>
+                <a class="h-[45px] w-full" href="#">
+                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
+                  </div>
+                </a>
+                <a class="h-[45px] w-full" href="#">
+                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class=" relative w-[25%] h-[45px] hover:bg-blue-300 justify-center items-center flex border-b-[5px] border-blue-400" (mouseenter)="revealmenu3()" (mouseleave)="hidemenu3()" >
+              <a class="relative" routerLink="/communication" routerLinkActive="active" ariaCurrentWhenActive="page">
+                  communication
+              </a>
+              <div class="absolute  w-full top-[45px] bg-blue-100 justify-center items-center" [class.invisible]="hidden3">
+                <a class="h-[45px] w-full" href="#">
+                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
+                  </div>
+                </a>
+                <a class="h-[45px] w-full" href="#">
+                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
+                  </div>
+                </a>
+                <a class="h-[45px] w-full" href="#">
+                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
+                  </div>
+                </a>
+                <a class="h-[45px] w-full" href="#">
+                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class=" relative w-[25%] h-[45px] hover:bg-green-300 justify-center items-center flex border-b-[5px] border-green-400" (mouseenter)="revealmenu4()" (mouseleave)="hidemenu4()" >
+              <a class="relative" routerLink="/environnement" routerLinkActive="active" ariaCurrentWhenActive="page">
+                  Environnement
+              </a>
+              <div class="absolute  w-full top-[45px] bg-green-100 justify-center items-center" [class.invisible]="hidden4">
+                <a class="h-[45px] w-full" href="#">
+                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
+                  </div>
+                </a>
+                <a class="h-[45px] w-full" href="#">
+                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
+                  </div>
+                </a>
+                <a class="h-[45px] w-full" href="#">
+                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
+                  </div>
+                </a>
+                <a class="h-[45px] w-full" href="#">
+                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
+                    <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="w-full h-[50px] bg-yellow-50 content-center">
+            <p class="ml-[70px]">
+                Accueil > Champs d'apostolat > Spiritualité > A propos de nous  
+            </p>
+        </div>
+        <div class="w-full h-[392px] content-evenly ">
+            <div class="mb-[40px]">
+              <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+                Devise
+              </h2>
+              <div class="flex justify-center items-center w-full h-[5px]">
+                <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+                <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+                <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+              </div>
+            </div>
+            <div class="flex justify-center h-[202px] content-evenly">
+                <img class="h-[202px] mr-[20px]" src="./images/Logo_Confrerie_des_Disciples_de_Saint_Padre_Pio_Origin_01.png" alt="Logo ostpiocam spiritualite"/>
+                <p class="text-center w-[600px]">
+                    <b>Paix - Travail - Patrie</b><br/>
+                    Lorem ipsum dolor sit amet consectetur. Neque montes enim et lacus. Ultrices magna euismod est lobortis tempus.
+                    Id arcu porttitor volutpat lectus viverra elit quisque. In egestas ut pellentesque mattis sollicitudin feugiat adipiscing
+                    venenatis egestas. Sed dignissim ac nulla dignissim vestibulum. Ut non id et pellentesque quam nibh nec natoque.
+                    Lobortis vestibulum viverra et sed turpis varius id phasellus vitae. Est gravida nulla id fringilla. Ac curabitur in congue
+                    neque at amet risus nulla. Ac nulla vestibulum laoreet sed. Et enim tortor.
+                </p>
+            </div>
+        </div>
+        <div class="w-full h-[358px] bg-yellow-50 content-evenly">
+            <div class="mb-[40px]">
+              <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+                Historicité
+              </h2>
+              <div class="flex justify-center items-center w-full h-[5px]">
+                <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+                <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+                <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <p class="text-center w-[80%]">Lorem ipsum dolor sit amet consectetur. Neque montes enim et lacus. Ultrices magna euismod est 
+                lobortis tempus. Id arcu porttitor volutpat lectus viverra elit quisque. In egestas ut pellentesque mattis sollicitudin feugiat 
+                adipiscing venenatis egestas. Sed dignissim ac nulla dignissim vestibulum. Ut non id et pellentesque quam nibh nec natoque. 
+                Lobortis vestibulum viverra et sed turpis varius id phasellus vitae. Est gravida nulla id fringilla. Ac curabitur in congue 
+                neque at amet risus nulla. Ac nulla vestibulum laoreet sed. Et enim tortor. Lorem ipsum dolor sit amet consectetur. Neque montes 
+                enim et lacus. Ultrices magna euismod est lobortis tempus. Id arcu porttitor volutpat lectus viverra elit quisque. In egestas ut 
+                pellentesque mattis sollicitudin feugiat adipiscing venenatis egestas. Sed dignissim ac nulla dignissim vestibulum. Ut non id et 
+                pellentesque quam nibh nec natoque. Lobortis vestibulum viverra et sed turpis varius id phasellus vitae. Est gravida nulla id 
+                fringilla. Ac curabitur in congue neque at amet risus nulla. Ac nulla vestibulum laoreet sed. Et enim tortor.
+              </p>
+            </div>
+        </div>
+        <div class="w-full h-[779px] content-evenly items-center">
+          <div class="mb-[40px]">
+            <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+              Missions
+            </h2>
+            <div class="flex justify-center items-center w-full h-[5px]">
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+              <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+            </div>
+          </div>
+          <p class="text-center w-full mb-[40px]">
+              La confrerie des disciples de Saint Padre Pio de Pietrelcina <b>( CODISAPIO )</b> a pour missions de :
+          </p>
+          <div class="grid grid-cols-3 gap-4 content-center justify-items-center items-center">
+            <app-numberedcardtext [numero] ="1" [couleur_n]="'#faf089'" [couleur_bgn]="'#744210'" [couleur_bg]="'#FCE589'" />
+            <app-numberedcardtext [numero] ="2" [couleur_n]="'#faf089'" [couleur_bgn]="'#744210'" [couleur_bg]="'#FCE589'" />
+            <app-numberedcardtext [numero] ="3" [couleur_n]="'#faf089'" [couleur_bgn]="'#744210'" [couleur_bg]="'#FCE589'" />
+            <app-numberedcardtext [numero] ="4" [couleur_n]="'#faf089'" [couleur_bgn]="'#744210'" [couleur_bg]="'#FCE589'" />
+            <app-numberedcardtext [numero] ="5" [couleur_n]="'#faf089'" [couleur_bgn]="'#744210'" [couleur_bg]="'#FCE589'" />
+            <app-numberedcardtext [numero] ="6" [couleur_n]="'#faf089'" [couleur_bgn]="'#744210'" [couleur_bg]="'#FCE589'" />
+          </div>
+          
+        </div>
+        <div class="w-full h-[509px] bg-yellow-50 content-evenly items-center">
+          <div class="mb-[40px]">
+            <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+              Objectifs
+            </h2>
+            <div class="flex justify-center items-center w-full h-[5px]">
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+              <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+            </div>
+          </div>
+          <p class="text-center w-full mb-[40px]">
+              La confrerie des disciples de Saint Padre Pio de Pietrelcina <b>( CODISAPIO )</b> a pour objectifs:
+          </p>
+          <div class="grid grid-cols-3 gap-4 content-center justify-items-center items-center">
+            <app-numberedcardtext [numero] ="1" [couleur_n]="'#faf089'" [couleur_bgn]="'#744210'" [couleur_bg]="'#FCE589'" />
+            <app-numberedcardtext [numero] ="2" [couleur_n]="'#faf089'" [couleur_bgn]="'#744210'" [couleur_bg]="'#FCE589'" />
+            <app-numberedcardtext [numero] ="3" [couleur_n]="'#faf089'" [couleur_bgn]="'#744210'" [couleur_bg]="'#FCE589'" />
+          </div>
+          
+        </div>
+        <div class="w-full h-[1040px] justify-center content-evenly items-center grid justify-items-center">
+          <div class="mb-[40px]">
+            <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+              Organigramme
+            </h2>
+            <div class="flex justify-center items-center w-full h-[5px]">
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+              <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center w-full">
+            <app-imgcardtext [image]="'./images/Fondateur1.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+          </div>
+          <div class="w-[95%] h-[2px] bg-yellow-900"></div>
+          <div class="flex justify-center items-center w-full">
+            <app-imgcardtext [image]="'./images/Fondateur1.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur1.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur1.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+          </div>
+          <div class="w-[95%] h-[2px] bg-yellow-900"></div>
+          <div class="flex justify-center items-center w-full">
+            <app-imgcardtext [image]="'./images/Fondateur1.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur1.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur1.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur1.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur1.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+          </div>
+        </div>
+        <div class="w-full h-[509px] bg-yellow-50 content-evenly items-center grid justify-items-center">
+          <div class="mb-[40px]">
+            <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+              Membres du bureau elargi
+            </h2>
+            <div class="flex justify-center items-center w-full h-[5px]">
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+              <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center w-full">
+            <app-imgcardtext [image]="'./images/Fondateur2.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur2.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur2.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur2.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur2.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+            <app-imgcardtext [image]="'./images/Fondateur2.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
+          </div>
+          
+        </div>
+        <div class="w-full h-[358px] content-evenly">
+          <div class="mb-[40px]">
+            <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+              Nos perspectives
+            </h2>
+            <div class="flex justify-center items-center w-full h-[5px]">
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+              <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-center w-[80%]">Lorem ipsum dolor sit amet consectetur. Neque montes enim et lacus. Ultrices magna euismod est 
+              lobortis tempus. Id arcu porttitor volutpat lectus viverra elit quisque. In egestas ut pellentesque mattis sollicitudin feugiat 
+              adipiscing venenatis egestas. Sed dignissim ac nulla dignissim vestibulum. Ut non id et pellentesque quam nibh nec natoque. 
+              Lobortis vestibulum viverra et sed turpis varius id phasellus vitae. Est gravida nulla id fringilla. Ac curabitur in congue 
+              neque at amet risus nulla. Ac nulla vestibulum laoreet sed. Et enim tortor. Lorem ipsum dolor sit amet consectetur. Neque montes 
+              enim et lacus. Ultrices magna euismod est lobortis tempus. Id arcu porttitor volutpat lectus viverra elit quisque. In egestas ut 
+              pellentesque mattis sollicitudin feugiat adipiscing venenatis egestas. Sed dignissim ac nulla dignissim vestibulum. Ut non id et 
+              pellentesque quam nibh nec natoque. Lobortis vestibulum viverra et sed turpis varius id phasellus vitae. Est gravida nulla id 
+              fringilla. Ac curabitur in congue neque at amet risus nulla. Ac nulla vestibulum laoreet sed. Et enim tortor.
+            </p>
+          </div>
+        </div>
+        <div class="w-full h-[450px] bg-yellow-50 content-evenly">
+          <div class="mb-[40px]">
+            <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+              Les diocèses
+            </h2>
+            <div class="flex justify-center items-center w-full h-[5px]">
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+              <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <app-card [image]="'./images/diocese.jpg'" [icone]="'./images/icone_localisation.jpg'" [alt_message]="'diocese'" [couleur]="'#C48C00'" [name]="'Diocese de Maroua-Mokolo'" [lieu]="'Founangue'" [ville]="'Maroua , Extreme-Nord'" />
+            <app-card [image]="'./images/diocese.jpg'" [icone]="'./images/icone_localisation.jpg'" [alt_message]="'diocese'" [couleur]="'#C48C00'" [name]="'Diocese de Maroua-Mokolo'" [lieu]="'Founangue'" [ville]="'Maroua , Extreme-Nord'" />
+            <app-card [image]="'./images/diocese.jpg'" [icone]="'./images/icone_localisation.jpg'" [alt_message]="'diocese'" [couleur]="'#C48C00'" [name]="'Diocese de Maroua-Mokolo'" [lieu]="'Founangue'" [ville]="'Maroua , Extreme-Nord'" />
+            <app-card [image]="'./images/diocese.jpg'" [icone]="'./images/icone_localisation.jpg'" [alt_message]="'diocese'" [couleur]="'#C48C00'" [name]="'Diocese de Maroua-Mokolo'" [lieu]="'Founangue'" [ville]="'Maroua , Extreme-Nord'" />
+            <app-card [image]="'./images/diocese.jpg'" [icone]="'./images/icone_localisation.jpg'" [alt_message]="'diocese'" [couleur]="'#C48C00'" [name]="'Diocese de Maroua-Mokolo'" [lieu]="'Founangue'" [ville]="'Maroua , Extreme-Nord'" />
+
+          </div>
+        </div>
+        <div class="w-full h-[358px] content-evenly">
+          <div class="mb-[40px]">
+            <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+              Realisations & Resultats
+            </h2>
+            <div class="flex justify-center items-center w-full h-[5px]">
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+              <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+              <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-center w-[80%]">Lorem ipsum dolor sit amet consectetur. Neque montes enim et lacus. Ultrices magna euismod est 
+              lobortis tempus. Id arcu porttitor volutpat lectus viverra elit quisque. In egestas ut pellentesque mattis sollicitudin feugiat 
+              adipiscing venenatis egestas. Sed dignissim ac nulla dignissim vestibulum. Ut non id et pellentesque quam nibh nec natoque. 
+              Lobortis vestibulum viverra et sed turpis varius id phasellus vitae. Est gravida nulla id fringilla. Ac curabitur in congue 
+              neque at amet risus nulla. Ac nulla vestibulum laoreet sed. Et enim tortor. Lorem ipsum dolor sit amet consectetur. Neque montes 
+              enim et lacus. Ultrices magna euismod est lobortis tempus. Id arcu porttitor volutpat lectus viverra elit quisque. In egestas ut 
+              pellentesque mattis sollicitudin feugiat adipiscing venenatis egestas. Sed dignissim ac nulla dignissim vestibulum. Ut non id et 
+              pellentesque quam nibh nec natoque. Lobortis vestibulum viverra et sed turpis varius id phasellus vitae. Est gravida nulla id 
+              fringilla. Ac curabitur in congue neque at amet risus nulla. Ac nulla vestibulum laoreet sed. Et enim tortor.
+            </p>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+
+

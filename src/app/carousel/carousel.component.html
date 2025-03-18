@@ -1,0 +1,22 @@
+<!-- <div class="carousel-container mb-[60px]" (mouseenter)="stopAutoplay()" (mouseleave)="startAutoplay()" > -->
+<div class="carousel-container mb-[60px]" >
+    <!-- Images -->
+    <div class="carousel-slide relative">
+      <img [src]="images[currentIndex]" class="carousel-image" alt="Slide image"/>
+      <p class="z-10 absolute left-20 bottom-30 text-[30px] font-bold text-[20px] text-white">
+        Une vision humanitaire du <br>Cameroun et du monde.
+      </p>
+    </div>
+  
+    <!-- Flèches de navigation -->
+    <button class="prev" (click)="prevSlide()">&#10094;</button>
+    <button class="next" (click)="nextSlide()">&#10095;</button>
+  
+    <!-- Indicateurs -->
+    <div class="indicators">
+        @for(img of images; track img; let i = $index){
+            <span [class.active]="i === currentIndex" (click)="goToSlide(i)"></span>
+        }
+    </div>
+</div>
+  
