@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 @font-face {
     font-family: 'ChakraPetch';
     src: url('./assets/fonts/Chakra_Petch/ChakraPetch-SemiBold.ttf') format('truetype');
@@ -24,6 +25,7 @@
     src: url('./assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: chakrabold;
 }
 @font-face {
     font-family: 'arimabold';
@@ -42,5 +44,14 @@
     src: url('./assets/fonts/Arima/Arima-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+@theme{
+    --arimabold: 'arimabold','serif';
+    --chakrasemibold: "ChakraPetch", "sans-serif";
+    --chakrabold: "chakrabold", "sans-serif";
+    --chakramedium: "chakramedium", "sans-serif";
+    --chakraregular: "chakraregular", "sans-serif";
+    --arimamedium: 'arimamedium', 'serif';
+    --arimasemibold: "arimasemibold", "serif";
 }
 @import "tailwindcss";
