@@ -4,7 +4,7 @@
       <app-carousel [images]="['images/slide1.jpg', 'images/slide2.jpg', 'images/slide3.jpg']"></app-carousel>
     </div>
     <div class="mt-[60px]">
-      <div class="w-full h-[286px] content-evenly">
+      <div class="w-full md:h-[286px] pt-5 md:pt-0 pb-5 md:pb-0 content-evenly">
         <div class="mb-[40px]">
           <h2 class="text-center font-bold text-2xl text-blue-700 mb-[20px]">
             Présentation
@@ -24,7 +24,7 @@
           </p>
         </div>
       </div>
-      <div class="w-full h-[358px] bg-blue-50 content-evenly">
+      <div class="w-full md:h-[358px] pt-5 md:pt-0 pb-5 md:pb-0 bg-blue-50 content-evenly">
         <div class="mb-[40px]">
           <h2 class="text-center font-bold text-2xl text-blue-700 mb-[20px]">
             Prolégomènes
@@ -48,7 +48,7 @@
           </p>
         </div>
       </div>
-      <div class="w-full h-[460px] content-evenly">
+      <div class="w-full md:h-[460px] pt-5 md:pt-0 pb-5 md:pb-0 content-evenly">
         <div class="mb-[40px]">
           <h2 class="text-center font-bold text-2xl text-blue-700 mb-[20px]">
             Fondateurs & Responsables
@@ -59,14 +59,14 @@
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
           </div>
         </div>
-        <div class="flex justify-center">
+        <div class="md:flex justify-center">
           <app-cardtext [image]="'images/Fondateur1.png'" [alt_message] = "'Fondateur1'" [name]="'Albert CAMUS'" [role]="'Fondateur'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>
           <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur2'" [name]="'Frank ONANA'" [role]="'Coordonateur general'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>
         </div>
       </div>
-      <div class="w-full h-[595px] bg-blue-50 content-evenly">
+      <div class="w-full md:h-[595px] pt-5 md:pt-0 pb-5 md:pb-0 bg-blue-50 content-evenly">
         <div class="mb-[40px]">
-          <h2 class="text-center font-bold text-2xl text-blue-700 mb-[20px]">
+          <h2 id="champsapostolat" class="text-center font-bold text-2xl text-blue-700 mb-[20px]">
             Champs d'apostolat
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
@@ -75,14 +75,14 @@
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
           </div>
         </div>
-        <div class="flex justify-center items-center w-full">
+        <div class="md:flex justify-center items-center w-full">
           <a routerLink="/spiritualite" routerLinkActive="active" ariaCurrentWhenActive="page" >
             <app-cardimage [image]="'images/spiritualite.jpg'" [alt_message]="'spiritualite'" [couleur]="'yellow'" [title]="'Spiritualite'"></app-cardimage>
           </a>
           <a routerLink="/sante" routerLinkActive="active" ariaCurrentWhenActive="page" >
             <app-cardimage [image]="'images/sante.jpg'" [alt_message]="'sante'" [couleur]="'red'" [title]="'sante'"></app-cardimage>
           </a>
-          <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" >
+          <a routerLink="/communication" routerLinkActive="active" ariaCurrentWhenActive="page" >
             <app-cardimage [image]="'images/communication.jpg'" [alt_message]="'communication'" [couleur]="'blue'" [title]="'communication'"></app-cardimage>
           </a>
           <a routerLink="/environnement" routerLinkActive="active" ariaCurrentWhenActive="page" >
@@ -90,9 +90,9 @@
           </a>
         </div>
       </div>
-      <div class="w-full h-[460px] content-evenly">
+      <div class="w-full md:h-[460px] pt-5 md:pt-0 pb-5 md:pb-0 content-evenly">
         <div class="mb-[40px]">
-          <h2 class="text-center font-bold text-2xl text-blue-700 mb-[20px]">
+          <h2 id="actualites" class="text-center font-bold text-2xl text-blue-700 mb-[20px]">
             Actualités globales
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
@@ -101,14 +101,14 @@
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
           </div>
         </div>
-        <div class="flex justify-center items-center w-full">
+        <div class="md:flex justify-center items-center w-full">
           <app-verticalcardtext [image]="'images/actu1.jpg'" [alt_message]="'actu_spiritualite'" [date_publication]="'Publie le 11/02/2025 a 13h02'" [description]="'Celebration de la fete de la jeunesse dans la Mifi en priere.'" [name]="'Spiritualite'"></app-verticalcardtext>
           <app-verticalcardtext [image]="'images/actu2.jpg'" [alt_message]="'actu_Sante'" [date_publication]="'Publie le 12/01/2025 a 13h02'" [description]="'Nouvelle campagne de don de sang dans le departement de la Sanaga-Maritime'" [name]="'Sante'"></app-verticalcardtext>
           <app-verticalcardtext [image]="'images/actu3.jpg'" [alt_message]="'actu_environnement'" [date_publication]="'Publie le 06/02/2025 a 14h02'" [description]="'Programme de nettoyage de la ville de Kaele par les jeunes de la communaute'" [name]="'environnement'"></app-verticalcardtext>
           <app-verticalcardtext [image]="'images/actu4.jpg'" [alt_message]="'actu_communication'" [date_publication]="'Publie le 01/02/2025 a 09h02'" [description]="'Compte rendu de la conference de presse du coordonnateur a Rome'" [name]="'communication'"></app-verticalcardtext>
         </div>
       </div>
-      <div class="w-full h-[358px] bg-blue-50 content-evenly">
+      <div class="w-full md:h-[358px] pt-5 md:pt-0 pb-5 md:pb-0 bg-blue-50 content-evenly">
         <div class="mb-[40px]">
           <h2 class="text-center font-bold text-2xl text-blue-700 mb-[20px]">
             Nos perspectives
@@ -132,7 +132,7 @@
           </p>
         </div>
       </div>
-      <div class="w-full h-[300px] content-evenly">
+      <div class="w-full md:h-[300px] pt-5 md:pt-0 pb-5 md:pb-0 content-evenly">
         <div class="mb-[40px]">
           <h2 class="text-center font-bold text-2xl text-blue-700 mb-[20px]">
             Nos partenaires
@@ -143,12 +143,12 @@
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
           </div>
         </div>
-        <div class="flex justify-center items-center w-full">
-          <img class="w-[175px] h-[100px] mx-[30px]" src="./images/partner1.jpg" alt="bgfi"/>
-          <img class="w-[175px] h-[100px] mx-[30px]" src="./images/partner2.jpg" alt="crtv"/>
-          <img class="w-[175px] h-[100px] mx-[30px]" src="./images/partner3.jpg" alt="huawei"/>
-          <img class="w-[175px] h-[100px] mx-[30px]" src="./images/partner4.jpg" alt="sabc"/>
-          <img class="w-[175px] h-[100px] mx-[30px]" src="./images/partner5.jpg" alt="cisco"/>
+        <div class="md:flex justify-center items-center w-full pb-5 md:pb-0">
+          <img class="w-[175px] h-[100px] mx-auto md:mx-[30px]" src="./images/partner1.jpg" alt="bgfi"/>
+          <img class="w-[175px] h-[100px] mx-auto md:mx-[30px]" src="./images/partner2.jpg" alt="crtv"/>
+          <img class="w-[175px] h-[100px] mx-auto md:mx-[30px]" src="./images/partner3.jpg" alt="huawei"/>
+          <img class="w-[175px] h-[100px] mx-auto md:mx-[30px]" src="./images/partner4.jpg" alt="sabc"/>
+          <img class="w-[175px] h-[100px] mx-auto md:mx-[30px]" src="./images/partner5.jpg" alt="cisco"/>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@
           </p>
         </a>
       </div>
-      <div class="items-center mr-[60px]">
+      <div class="hidden md:block items-center mr-[60px]">
         <div class="h-[60px] items-center content-center">
           <div class="h-[40px] pr-[10px] flex outline-offset-2 outline-sky-500 focus:outline-2 rounded-full items-center rounded-full border-[2px] border-gray-400">
             <input class="h-[40px] focus:outline-0 px-[20px] border-x-0 border-t-0 rounded-l-lg " type="text" placeholder="Rechercher">
@@ -25,14 +25,14 @@
       </div>
       
 
-      <div class="flex h-[60px] w-[50%] justify-end items-center">
+      <div class=" hidden md:flex h-[60px] w-[50%] justify-end items-center">
         <div class="w-[70%]">
           <div class="w-full">
             <ol class="flex justify-around items-center content-center w-full">
-              <li class="text-gray-500 hover:text-blue-800 "><a href="#">Accueil</a></li>
-              <li class="text-gray-500 hover:text-blue-800 "><a href="#">Champs d'apostolat</a></li>
-              <li class="text-gray-500 hover:text-blue-800 "><a href="#">Actualités</a></li>
-              <li class="text-gray-500 hover:text-blue-800 "><a href="#">Contact</a></li>
+              <li class="text-gray-500 hover:text-blue-800 active "><a href="#">Accueil</a></li>
+              <li class="text-gray-500 hover:text-blue-800 "><a href="#champsapostolat">Champs d'apostolat</a></li>
+              <li class="text-gray-500 hover:text-blue-800 "><a href="#actualites">Actualités</a></li>
+              <li class="text-gray-500 hover:text-blue-800 "><a href="#contact">Contact</a></li>
             </ol>
           </div>
         </div>
@@ -49,11 +49,48 @@
         </div>
       </div>
 
+      <!-- Bouton burger pour les petits écrans -->
+      <div class="md:hidden relative ml-auto">
+        <button id="burger-button" class="text-gray-500 hover:text-blue-800 focus:outline-none" (click)="revealmenu()" (mouseleave)="hidemenu()">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <!-- Menu mobile -->
+        <div id="mobile-menu" [class.hidden]="hidden" class="absolute w-[250px] z-20 md:hidden top-[50px] right-[-30px] bg-white shadow-lg z-10">
+          <div class="px-4 py-2">
+            <div class="flex items-center mb-4 w-full">
+              <div class="h-[40px] pr-[10px] flex outline-offset-2 outline-sky-500 focus:outline-2 rounded-full items-center rounded-full border-[2px] border-gray-400">
+                <input class="h-[40px] w-[180px] focus:outline-0 px-[20px] border-x-0 border-t-0 rounded-l-lg " type="text" placeholder="Rechercher">
+                <img class="rounded-full h-[30px] w-[30px]" src="./images/search.png" alt="recherche" />
+              </div>
+            </div>
+            <ol class="space-y-4">
+              <li class="text-gray-500 hover:text-blue-800 active"><a class="block py-2" href="#">Accueil</a></li>
+              <li class="text-gray-500 hover:text-blue-800"><a class="block py-2" href="#champsapostolat">Champs d'apostolat</a></li>
+              <li class="text-gray-500 hover:text-blue-800"><a class="block py-2" href="#actualites">Actualités</a></li>
+              <li class="text-gray-500 hover:text-blue-800"><a class="block py-2" href="#contact">Contact</a></li>
+            </ol>
+            <div class="flex items-center justify-between mt-4">
+              <div class="h-[45px] w-[45px] items-center rounded-full border-[1px] border-gray-400 flex justify-center">
+                <a href="#">
+                  <img class="rounded-full" src="./images/User.jpg" width="26" height="26" alt="profile"/>
+                </a>
+              </div>
+              <div class="flex space-x-2">
+                <div><a href="#"><h1 class="w-[30px] h-[30px] text-center bg-neutral-300">FR</h1></a></div>
+                <div><a href="#"><h1 class="w-[30px] h-[30px] text-center text-neutral-300 text-white bg-blue-800">EN</h1></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </nav>
   <router-outlet />
   <footer>
-    <div class="w-full h-[300px] bg-blue-900 flex justify-around content-center items-center text-white">
+    <div class="w-full md:h-[300px] pt-3 md:pt-0 bg-blue-900 md:flex justify-around content-center items-center text-white">
       <div class="h-[170px] w-[294px] mx-[30px]">
         <div class="h-[100px] w-[294px] flex mb-[25px]">
           <div class="h-[100px] w-[100px] mr-[20px]">
@@ -68,22 +105,22 @@
           <address><b>email:</b> contactostpiocam.com</address>
         </div>
       </div>
-      <div class="h-[170px] mx-[30px] content-center">
-        <b class="mb-[4px]">Liens utiles</b>
-        <ol class="ml-[2px]">
+      <div class="h-[170px] mx-auto md:mx-[30px] content-center">
+        <p class="mb-[6px] md:mb-[4px] text-center md:text-left"><b>Liens utiles</b></p>
+        <ol class="ml-[2px] text-center md:text-left">
           <li><a href="#">&#10095; Accueil</a></li>
-          <li><a href="#">&#10095; Actualités</a></li>
+          <li><a href="#actualite">&#10095; Actualités</a></li>
           <li><a href="#">&#10095; Nous contacter</a></li>
           <li><a href="#">&#10095; Faire un don</a></li>
         </ol>
       </div>
-      <div class="h-[170px] mx-[30px] content-center">
-        <b class="mb-[4px]">Champs d'apostolat</b>
-        <ol class="ml-[2px]">
-          <li><a routerLink="/spiritualite" routerLinkActive="active" ariaCurrentWhenActive="page">&#10095; Spiritualite</a></li>
+      <div class="h-[170px] mx-auto md:mx-[30px] content-center">
+        <p class="mb-[6px] md:mb-[4px] text-center md:text-left"><b>Champs d'apostolat</b></p>
+        <ol class="ml-[2px] text-center md:text-left">
           <li><a routerLink="/sante" routerLinkActive="active" ariaCurrentWhenActive="page">&#10095; Sante</a></li>
+          <li><a routerLink="/spiritualite" routerLinkActive="active" ariaCurrentWhenActive="page">&#10095; Spiritualite</a></li>
           <li><a routerLink="/environnement" routerLinkActive="active" ariaCurrentWhenActive="page">&#10095; environnement</a></li>
-          <li><a href="#">&#10095; communication</a></li>
+          <li><a routerLink="/communication" routerLinkActive="active" ariaCurrentWhenActive="page">&#10095; communication</a></li>
         </ol>
       </div>
       <div class="h-[170px] mx-[30px] content-center">
@@ -95,9 +132,9 @@
         </div>
       </div>
     </div>
-    <div class="w-full h-[100px] bg-green-100 flex content-center items-center justify-center">
-      <div class="w-[25%]"><b>© Copyright OSTPIOCAM. Tous droits réservés</b><br>Réalisé par MENREL</div>
-      <div class="w-[65%] flex justify-end">
+    <div id="contact" class="w-full md:h-[100px] bg-green-100 md:flex content-center items-center justify-center">
+      <div class="w-full md:w-[25%]"><b>© Copyright OSTPIOCAM. Tous droits réservés</b><br>Réalisé par MENREL</div>
+      <div class="w-full md:w-[65%] flex justify-around md:justify-end">
         <img class="w-[36px] h-[36px]" src="./images/youtube.jpg" alt="youtube"/>
         <img class="w-[36px] h-[36px]" src="./images/facebook.jpg" alt="facebook"/>
         <img class="w-[36px] h-[36px]" src="./images/whatsapp.jpg" alt="whatsapp"/>
@@ -109,6 +146,7 @@
   </footer>
 
 </main>
+
 
 
 

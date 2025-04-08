@@ -7,7 +7,7 @@ import { QcmComponent } from '../../qcm/qcm.component';
 
 @Component({
   selector: 'app-environnement',
-  imports: [VerticalcardtextComponent,CarouselComponent,CardtextComponent,ImgcardtextComponent,QcmComponent],
+  imports: [VerticalcardtextComponent,CardtextComponent,ImgcardtextComponent,QcmComponent],
   templateUrl: './environnement.component.html',
   styleUrl: './environnement.component.css'
 })

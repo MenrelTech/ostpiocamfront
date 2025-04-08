@@ -1,11 +1,11 @@
-<div class="flex items-center content-center w-[550px] h-[270px]">
-    <div class="rounded-[15px] w-[250px] h-[250px]">
-        <img class="rounded-[15px] w-[250px] h-[250px]" src={{image()}} alt={{alt_message()}} width="250px" height="250px" />
+<div class="md:flex my-2 md:my-0 items-center content-center w-full md:w-[550px] md:h-[270px]">
+    <div class="rounded-[15px] w-[100px] h-[100px] mx-auto md:mx-0 md:w-[250px] md:h-[250px]">
+        <img class="rounded-[15px] w-[100px] h-[100px] md:w-[250px] md:h-[250px]" src={{image()}} alt={{alt_message()}} />
     </div>
-    <div class="px-[10px] w-[250px]">
-        <p class="text-[18px] h-[24px]"><b>{{name()}}</b></p>
-        <p class="text-gray-500 text-[14px] mb-[15px] h-[20px]">{{role()}}</p>
-        <p class="text-[16px] text-justify h-[191px]">{{description()}}</p>
+    <div class="mx-auto md:mx-0 md:px-[10px] w-[250px]  mt-2 md:mt-0">
+        <p class="text-[18px] h-[24px] text-center md:text-left"><b>{{name()}}</b></p>
+        <p class="text-gray-500 text-[14px] mb-[15px] h-[20px] text-center md:text-left">{{role()}}</p>
+        <p class="text-[16px] text-justify md:h-[191px]">{{description()}}</p>
     </div>
 </div>
 

@@ -10,9 +10,21 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'ostpiocamfront';
+  hidden = true;
+  revealmenu(){
+    
+    if(!this.hidden){
+      this.hidden = true;
+    }else{
+      this.hidden = false;
+    }
+  }
+  hidemenu(){
+    this.hidden = true;
+  }
 
-subscribe(e:any){
-  console.log(e);
-}
+  subscribe(e:any){
+    console.log(e);
+  }
 
 }
