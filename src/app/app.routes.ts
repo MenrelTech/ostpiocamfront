@@ -13,6 +13,9 @@ import { AproposEnvironnementComponent } from './pages/apropos-environnement/apr
 import { AproposSpiritualiteComponent } from './pages/apropos-spiritualite/apropos-spiritualite.component';
 import { GalerieSanteComponent } from './pages/galerie-sante/galerie-sante.component';
 import { GalerieSpiritualiteComponent } from './pages/galerie-spiritualite/galerie-spiritualite.component';
+import { ActiviteSanteComponent } from './pages/activite-sante/activite-sante.component';
+import { ActiviteCommunicationComponent } from './pages/activite-communication/activite-communication.component';
+import { ActiviteEnvironnementComponent } from './pages/activite-environnement/activite-environnement.component';
 
 export const routes: Routes = [
     {
@@ -33,6 +36,10 @@ export const routes: Routes = [
         component: AproposSpiritualiteComponent
     },
     {
+        path: 'spiritualite/galerie',
+        component: GalerieSpiritualiteComponent
+    },
+    {
         path: 'sante',
         component: AccueilSanteComponent
     },
@@ -45,12 +52,20 @@ export const routes: Routes = [
         component: GalerieSanteComponent
     },
     {
+        path: 'sante/activite',
+        component: ActiviteSanteComponent
+    },
+    {
         path: 'environnement',
         component: AccueilEnvironnementComponent
     },
     {
         path: 'environnement/apropos',
         component: AproposEnvironnementComponent
+    },
+    {
+        path: 'environnement/activite',
+        component: ActiviteEnvironnementComponent
     },
     {
         path: 'environnement2',
@@ -67,5 +82,9 @@ export const routes: Routes = [
     {
         path: 'communication/apropos',
         component: AproposCommunicationComponent
-    }
+    },
+    {
+        path: 'communication/activite',
+        component: ActiviteCommunicationComponent
+    },
 ];

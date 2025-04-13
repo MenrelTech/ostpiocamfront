@@ -1,115 +1,115 @@
 <div class="w-full relative mb-[60px]">
     <div class="relative top-[60px] w-full">
-        <div class="flex w-full">
-            <div class=" relative w-[25%] h-[45px] hover:bg-yellow-300 justify-center items-center flex border-b-[5px] border-yellow-400" (mouseenter)="revealmenu()" (mouseleave)="hidemenu()" >
-                <a class="relative" routerLink="/spiritualite" routerLinkActive="active" ariaCurrentWhenActive="page">
-                    Spiritualite
-                </a>
-                <div class="absolute  w-full top-[45px] bg-yellow-100 justify-center items-center" [class.invisible]="hidden">
-                  <a class="h-[45px] w-full" href="#">
-                    <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
-                      <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
-                    </div>
-                  </a>
-                  <a class="h-[45px] w-full" href="#">
-                    <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
-                      <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
-                    </div>
-                  </a>
-                  <a class="h-[45px] w-full" href="#">
-                    <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
-                      <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
-                    </div>
-                  </a>
-                  <a class="h-[45px] w-full" href="#">
-                    <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
-                      <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
-                    </div>
-                  </a>
+      <div class="flex w-full">
+        <div class=" relative w-[25%] h-[45px] hover:bg-yellow-300 justify-center items-center flex border-b-[5px] border-yellow-400" (mouseenter)="revealmenu()" (mouseleave)="hidemenu()" >
+            <a class="relative" routerLink="/spiritualite" routerLinkActive="active" ariaCurrentWhenActive="page">
+                Spiritualite
+            </a>
+            <div class="absolute  w-full top-[45px] bg-yellow-100 justify-center items-center" [class.invisible]="hidden">
+              <a class="h-[45px] w-full" href="/spiritualite/apropos">
+                <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
+                  <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
                 </div>
-            </div>
-            <div class=" relative w-[25%] h-[45px] hover:bg-red-300 justify-center items-center flex border-b-[5px] border-red-400" (mouseenter)="revealmenu2()" (mouseleave)="hidemenu2()" >
-              <a class="relative" routerLink="/sante" routerLinkActive="active" ariaCurrentWhenActive="page">
-                  Sante
               </a>
-              <div class="absolute  w-full top-[45px] bg-red-100 justify-center items-center" [class.invisible]="hidden2">
-                <a class="h-[45px] w-full" href="#">
-                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
-                  </div>
-                </a>
-                <a class="h-[45px] w-full" href="#">
-                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
-                  </div>
-                </a>
-                <a class="h-[45px] w-full" href="#">
-                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
-                  </div>
-                </a>
-                <a class="h-[45px] w-full" href="#">
-                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class=" relative w-[25%] h-[45px] hover:bg-blue-300 justify-center items-center flex border-b-[5px] border-blue-400" (mouseenter)="revealmenu3()" (mouseleave)="hidemenu3()" >
-              <a class="relative" routerLink="/communication" routerLinkActive="active" ariaCurrentWhenActive="page">
-                  communication
+              <a class="h-[45px] w-full" href="/spiritualite/activite">
+                <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
+                  <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
+                </div>
               </a>
-              <div class="absolute  w-full top-[45px] bg-blue-100 justify-center items-center" [class.invisible]="hidden3">
-                <a class="h-[45px] w-full" href="#">
-                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
-                  </div>
-                </a>
-                <a class="h-[45px] w-full" href="#">
-                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
-                  </div>
-                </a>
-                <a class="h-[45px] w-full" href="#">
-                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
-                  </div>
-                </a>
-                <a class="h-[45px] w-full" href="#">
-                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class=" relative w-[25%] h-[45px] hover:bg-green-300 justify-center items-center flex border-b-[5px] border-green-400" (mouseenter)="revealmenu4()" (mouseleave)="hidemenu4()" >
-              <a class="relative" routerLink="/environnement" routerLinkActive="active" ariaCurrentWhenActive="page">
-                  Environnement
+              <a class="h-[45px] w-full" href="#">
+                <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
+                  <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
+                </div>
               </a>
-              <div class="absolute  w-full top-[45px] bg-green-100 justify-center items-center" [class.invisible]="hidden4">
-                <a class="h-[45px] w-full" href="#">
-                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
-                  </div>
-                </a>
-                <a class="h-[45px] w-full" href="#">
-                  <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
-                  </div>
-                </a>
-                <a class="h-[45px] w-full" href="#">
-                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
-                  </div>
-                </a>
-                <a class="h-[45px] w-full" href="#">
-                  <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
-                    <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
-                  </div>
-                </a>
-              </div>
+              <a class="h-[45px] w-full" href="/spiritualite/galerie">
+                <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
+                  <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
+                </div>
+              </a>
             </div>
         </div>
+        <div class=" relative w-[25%] h-[45px] hover:bg-red-300 justify-center items-center flex border-b-[5px] border-red-400" (mouseenter)="revealmenu2()" (mouseleave)="hidemenu2()" >
+          <a class="relative" routerLink="/sante" routerLinkActive="active" ariaCurrentWhenActive="page">
+              Sante
+          </a>
+          <div class="absolute  w-full top-[45px] bg-red-100 justify-center items-center" [class.invisible]="hidden2">
+            <a class="h-[45px] w-full" href="/sante/apropos">
+              <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
+              </div>
+            </a>
+            <a class="h-[45px] w-full" href="/sante/activite">
+              <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
+              </div>
+            </a>
+            <a class="h-[45px] w-full" href="#">
+              <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
+              </div>
+            </a>
+            <a class="h-[45px] w-full" href="/sante/galerie">
+              <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class=" relative w-[25%] h-[45px] hover:bg-blue-300 justify-center items-center flex border-b-[5px] border-blue-400" (mouseenter)="revealmenu3()" (mouseleave)="hidemenu3()" >
+          <a class="relative" href="/communication">
+              communication
+          </a>
+          <div class="absolute  w-full top-[45px] bg-blue-100 justify-center items-center" [class.invisible]="hidden3">
+            <a class="h-[45px] w-full" href="/communication/apropos">
+              <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
+              </div>
+            </a>
+            <a class="h-[45px] w-full" href="/communication/activite">
+              <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
+              </div>
+            </a>
+            <a class="h-[45px] w-full" href="#">
+              <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
+              </div>
+            </a>
+            <a class="h-[45px] w-full" href="#">
+              <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class=" relative w-[25%] h-[45px] hover:bg-green-300 justify-center items-center flex border-b-[5px] border-green-400" (mouseenter)="revealmenu4()" (mouseleave)="hidemenu4()" >
+          <a class="relative" href="/environnement">
+              Environnement
+          </a>
+          <div class="absolute  w-full top-[45px] bg-green-100 justify-center items-center" [class.invisible]="hidden4">
+            <a class="h-[45px] w-full" href="/environnement/apropos">
+              <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
+              </div>
+            </a>
+            <a class="h-[45px] w-full" href="/environnement/activite">
+              <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> Activites </p>
+              </div>
+            </a>
+            <a class="h-[45px] w-full" href="#">
+              <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> connaissance de l'eglise </p>
+              </div>
+            </a>
+            <a class="h-[45px] w-full" href="#">
+              <div class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
+                <b>&#10095;</b><p class="w-full pl-[15px]"> Galerie photos </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
         <div class="w-full h-[50px] bg-blue-50 content-center">
             <p class="ml-[70px]">
                 Accueil > Champs d'apostolat > communication > A propos de nous  
