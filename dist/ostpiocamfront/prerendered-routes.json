@@ -1,0 +1,21 @@
+{
+  "routes": {
+    "/": {},
+    "/actualite": {},
+    "/communication": {},
+    "/communication/activite": {},
+    "/communication/apropos": {},
+    "/environnement": {},
+    "/environnement/activite": {},
+    "/environnement/apropos": {},
+    "/environnement2": {},
+    "/sante": {},
+    "/sante/activite": {},
+    "/sante/apropos": {},
+    "/sante/galerie": {},
+    "/spiritualite": {},
+    "/spiritualite/activite": {},
+    "/spiritualite/apropos": {},
+    "/spiritualite/galerie": {}
+  }
+}
