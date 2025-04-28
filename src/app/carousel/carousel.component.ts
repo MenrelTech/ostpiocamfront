@@ -13,15 +13,15 @@ export class CarouselComponent {
 
 
 
-  /*startAutoplay() {
+  startAutoplay() {
     this.intervalId = setInterval(() => {
       this.nextSlide();
     }, 3000); // Change d’image toutes les 3 secondes
-  }*/
+  }
 
-  /*stopAutoplay() {
+  stopAutoplay() {
     clearInterval(this.intervalId);
-  }*/
+}
 
   nextSlide() {
     this.currentIndex = (this.currentIndex + 1) % this.images.length;
