@@ -1,11 +1,11 @@
 <div class="w-full relative mb-[60px]">
     <div class="relative top-[60px] w-full">
       <div class="flex w-full">
-        <div class=" relative w-[25%] h-[45px] hover:bg-yellow-300 justify-center items-center flex border-b-[5px] border-yellow-400" (mouseenter)="revealmenu()" (mouseleave)="hidemenu()" >
+        <div class=" relative w-[25%] h-[45px] hover:bg-yellow-300 justify-center items-center flex border-b-[5px] border-yellow-400 cursor-pointer" (mouseenter)="revealmenu()" (mouseleave)="hidemenu()" >
             <a class="relative" routerLink="/spiritualite" routerLinkActive="active" ariaCurrentWhenActive="page">
                 Spiritualite
             </a>
-            <div class="absolute  w-full top-[45px] bg-yellow-100 justify-center items-center" [class.invisible]="hidden">
+            <div class="absolute  w-[250px] left-[1px] md:w-full md:left-0  top-[45px] bg-yellow-100 justify-center items-center" [class.invisible]="hidden">
               <a class="h-[45px] w-full" href="/spiritualite/apropos">
                 <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
                   <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
@@ -28,11 +28,11 @@
               </a>
             </div>
         </div>
-        <div class=" relative w-[25%] h-[45px] hover:bg-red-300 justify-center items-center flex border-b-[5px] border-red-400" (mouseenter)="revealmenu2()" (mouseleave)="hidemenu2()" >
+        <div class=" relative w-[15%] md:w-[25%] h-[45px] hover:bg-red-300 justify-center items-center flex border-b-[5px] border-red-400 cursor-pointer" (mouseenter)="revealmenu2()" (mouseleave)="hidemenu2()" >
           <a class="relative" routerLink="/sante" routerLinkActive="active" ariaCurrentWhenActive="page">
               Sante
           </a>
-          <div class="absolute  w-full top-[45px] bg-red-100 justify-center items-center" [class.invisible]="hidden2">
+          <div class="absolute w-[250px] left-[1px] md:w-full md:left-0 top-[45px] bg-red-100 justify-center items-center" [class.invisible]="hidden2">
             <a class="h-[45px] w-full" href="/sante/apropos">
               <div class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
                 <b>&#10095;</b><p class="w-full pl-[15px]"> A propos de nous </p>
@@ -55,7 +55,7 @@
             </a>
           </div>
         </div>
-        <div class=" relative w-[25%] h-[45px] hover:bg-blue-300 justify-center items-center flex border-b-[5px] border-blue-400" (mouseenter)="revealmenu3()" (mouseleave)="hidemenu3()" >
+        <div class=" relative w-[30%] md:w-[25%] h-[45px] hover:bg-blue-300 justify-center items-center flex border-b-[5px] border-blue-400" (mouseenter)="revealmenu3()" (mouseleave)="hidemenu3()" >
           <a class="relative" href="/communication">
               communication
           </a>
@@ -82,7 +82,7 @@
             </a>
           </div>
         </div>
-        <div class=" relative w-[25%] h-[45px] hover:bg-green-300 justify-center items-center flex border-b-[5px] border-green-400" (mouseenter)="revealmenu4()" (mouseleave)="hidemenu4()" >
+        <div class=" relative w-[30%] md:w-[25%] h-[45px] hover:bg-green-300 justify-center items-center flex border-b-[5px] border-green-400" (mouseenter)="revealmenu4()" (mouseleave)="hidemenu4()" >
           <a class="relative" href="/environnement">
               Environnement
           </a>
@@ -115,7 +115,7 @@
                 Accueil > Champs d'apostolat > Sante > A propos de nous  
             </p>
         </div>
-        <div class="w-full h-[392px] content-evenly ">
+        <div class="pb-4 md:pb-0 w-full md:h-[392px] content-evenly mt-4 md:mt-0">
             <div class="mb-[40px]">
               <h2 class="text-center font-bold text-2xl text-green-700 mb-[20px]">
                 Devise
@@ -126,8 +126,8 @@
                 <div class="bg-green-300 h-[1px] w-[50px]"></div>
               </div>
             </div>
-            <div class="flex justify-center h-[202px] content-evenly">
-                <p class="text-center w-[600px]">
+            <div class="md:flex justify-center md:h-[202px] content-evenly">
+                <p class="text-center w-[80%] mx-auto md:mx-0 md:w-[600px]">
                     <b>Paix - Travail - Patrie</b><br/>
                     Lorem ipsum dolor sit amet consectetur. Neque montes enim et lacus. Ultrices magna euismod est lobortis tempus.
                     Id arcu porttitor volutpat lectus viverra elit quisque. In egestas ut pellentesque mattis sollicitudin feugiat adipiscing
@@ -135,10 +135,10 @@
                     Lobortis vestibulum viverra et sed turpis varius id phasellus vitae. Est gravida nulla id fringilla. Ac curabitur in congue
                     neque at amet risus nulla. Ac nulla vestibulum laoreet sed. Et enim tortor.
                 </p>
-                <img class="h-[202px] ml-[20px]" src="./images/Logo_Saint_Pio_International_Medical_Aid_Services_Origin_01.png" alt="Logo ostpiocam spiritualite"/>
+                <img class="md:h-[202px] ml-[20px]" src="./images/Logo_Saint_Pio_International_Medical_Aid_Services_Origin_01.png" alt="Logo ostpiocam spiritualite"/>
             </div>
         </div>
-        <div class="w-full h-[358px] bg-green-50 content-evenly">
+        <div class="pb-4 md:pb-0 w-full md:h-[358px] bg-green-50 content-evenly">
             <div class="mb-[40px]">
               <h2 class="text-center font-bold text-2xl text-green-700 mb-[20px]">
                 Historicité
@@ -149,8 +149,8 @@
                 <div class="bg-green-300 h-[1px] w-[50px]"></div>
               </div>
             </div>
-            <div class="flex justify-center">
-              <p class="text-center w-[80%]">Lorem ipsum dolor sit amet consectetur. Neque montes enim et lacus. Ultrices magna euismod est 
+            <div class="md:flex justify-center">
+              <p class="text-center mx-auto md:mx-0 w-[80%]">Lorem ipsum dolor sit amet consectetur. Neque montes enim et lacus. Ultrices magna euismod est 
                 lobortis tempus. Id arcu porttitor volutpat lectus viverra elit quisque. In egestas ut pellentesque mattis sollicitudin feugiat 
                 adipiscing venenatis egestas. Sed dignissim ac nulla dignissim vestibulum. Ut non id et pellentesque quam nibh nec natoque. 
                 Lobortis vestibulum viverra et sed turpis varius id phasellus vitae. Est gravida nulla id fringilla. Ac curabitur in congue 
@@ -162,7 +162,7 @@
               </p>
             </div>
         </div>
-        <div class="w-full h-[779px] content-evenly items-center">
+        <div class="pb-4 md:pb-0 w-full md:h-[779px] mt-4 md:mt-0 content-evenly items-center">
           <div class="mb-[40px]">
             <h2 class="text-center font-bold text-2xl text-green-700 mb-[20px]">
               Missions
@@ -173,10 +173,10 @@
               <div class="bg-green-300 h-[1px] w-[50px]"></div>
             </div>
           </div>
-          <p class="text-center w-full mb-[40px]">
+          <p class="text-center w-[90%] mx-auto md:mx-0 md:w-full mb-[40px]">
               La confrerie des disciples de Saint Padre Pio de Pietrelcina <b>( CODISAPIO )</b> a pour missions de :
           </p>
-          <div class="grid grid-cols-3 gap-4 content-center justify-items-center items-center">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 content-center justify-items-center items-center">
             <app-numberedcardtext [numero] ="1" [couleur_n]="'#D4EDDA'" [couleur_bgn]="'#0F3B1C'" [couleur_bg]="'#A3D9A5'" />
             <app-numberedcardtext [numero] ="2" [couleur_n]="'#D4EDDA'" [couleur_bgn]="'#0F3B1C'" [couleur_bg]="'#A3D9A5'" />
             <app-numberedcardtext [numero] ="3" [couleur_n]="'#D4EDDA'" [couleur_bgn]="'#0F3B1C'" [couleur_bg]="'#A3D9A5'" />
@@ -186,7 +186,7 @@
           </div>
           
         </div>
-        <div class="w-full h-[509px] bg-green-50 content-evenly items-center">
+        <div class="pb-4 md:pb-0 w-full md:h-[509px] mt-4 md:mt-0 bg-green-50 content-evenly items-center">
           <div class="mb-[40px]">
             <h2 class="text-center font-bold text-2xl text-green-700 mb-[20px]">
               Objectifs
@@ -197,17 +197,17 @@
               <div class="bg-green-300 h-[1px] w-[50px]"></div>
             </div>
           </div>
-          <p class="text-center w-full mb-[40px]">
+          <p class="text-center md:w-[90%] mx-auto md:mx-0 w-full mb-[40px]">
               La confrerie des disciples de Saint Padre Pio de Pietrelcina <b>( CODISAPIO )</b> a pour objectifs:
           </p>
-          <div class="grid grid-cols-3 gap-4 content-center justify-items-center items-center">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 content-center justify-items-center items-center">
             <app-numberedcardtext [numero] ="1" [couleur_n]="'#D4EDDA'" [couleur_bgn]="'#0F3B1C'" [couleur_bg]="'#A3D9A5'" />
             <app-numberedcardtext [numero] ="2" [couleur_n]="'#D4EDDA'" [couleur_bgn]="'#0F3B1C'" [couleur_bg]="'#A3D9A5'" />
             <app-numberedcardtext [numero] ="3" [couleur_n]="'#D4EDDA'" [couleur_bgn]="'#0F3B1C'" [couleur_bg]="'#A3D9A5'" />
           </div>
           
         </div>
-        <div class="w-full h-[1040px] justify-center content-evenly items-center grid justify-items-center">
+        <div class="pb-4 md:pb-0 w-full md:h-[1040px] justify-center content-evenly items-center grid justify-items-center">
           <div class="mb-[40px]">
             <h2 class="text-center font-bold text-2xl text-green-700 mb-[20px]">
               Organigramme
@@ -236,7 +236,7 @@
             <app-imgcardtext [image]="'./images/Fondateur1.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
           </div>
         </div>
-        <div class="w-full h-[509px] bg-green-50 content-evenly items-center grid justify-items-center">
+        <div class="w-full md:h-[509px] pb-4 md:pb-0 bg-green-50 content-evenly items-center grid justify-items-center">
           <div class="mb-[40px]">
             <h2 class="text-center font-bold text-2xl text-green-700 mb-[20px]">
               Membres du bureau elargi
@@ -247,7 +247,7 @@
               <div class="bg-green-300 h-[1px] w-[50px]"></div>
             </div>
           </div>
-          <div class="flex justify-center items-center w-full">
+          <div class="grid grid-cols-3 w-[90%] mx-auto md:mx-0 md:flex justify-items-center md:justify-center md:items-center md:w-full">
             <app-imgcardtext [image]="'./images/Fondateur2.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
             <app-imgcardtext [image]="'./images/Fondateur2.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
             <app-imgcardtext [image]="'./images/Fondateur2.png'" [alt_message]="'membre'" [name]="'Albert CAMUS'" [role]="'Directeur general'" />
@@ -257,7 +257,7 @@
           </div>
           
         </div>
-        <div class="w-full h-[358px] content-evenly">
+        <div class="w-full md:h-[358px] pb-4 md:pb-0 content-evenly">
           <div class="mb-[40px]">
             <h2 class="text-center font-bold text-2xl text-green-700 mb-[20px]">
               Nos perspectives
@@ -281,7 +281,7 @@
             </p>
           </div>
         </div>
-        <div class="w-full h-[450px] bg-green-50 content-evenly">
+        <div class="w-full md:h-[450px] bg-green-50 content-evenly">
           <div class="mb-[40px]">
             <h2 class="text-center font-bold text-2xl text-green-700 mb-[20px]">
               Les diocèses
@@ -292,7 +292,7 @@
               <div class="bg-green-300 h-[1px] w-[50px]"></div>
             </div>
           </div>
-          <div class="flex justify-center">
+          <div class="grid grid-cols-1 justify-items-center flex md:justify-center">
             <app-card [image]="'./images/centre_sante.jpg'" [icone]="'./images/localisation_vert.jpg'" [alt_message]="'diocese'" [couleur]="'#008236'" [name]="'Diocese de Maroua-Mokolo'" [lieu]="'Founangue'" [ville]="'Maroua , Extreme-Nord'" />
             <app-card [image]="'./images/centre_sante.jpg'" [icone]="'./images/localisation_vert.jpg'" [alt_message]="'diocese'" [couleur]="'#008236'" [name]="'Diocese de Maroua-Mokolo'" [lieu]="'Founangue'" [ville]="'Maroua , Extreme-Nord'" />
             <app-card [image]="'./images/centre_sante.jpg'" [icone]="'./images/localisation_vert.jpg'" [alt_message]="'diocese'" [couleur]="'#008236'" [name]="'Diocese de Maroua-Mokolo'" [lieu]="'Founangue'" [ville]="'Maroua , Extreme-Nord'" />
@@ -301,7 +301,7 @@
 
           </div>
         </div>
-        <div class="w-full h-[358px] content-evenly">
+        <div class="w-full md:h-[358px] pb-4 md:pb-0 content-evenly">
           <div class="mb-[40px]">
             <h2 class="text-center font-bold text-2xl text-green-700 mb-[20px]">
               Realisations & Resultats

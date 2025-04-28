@@ -14,6 +14,13 @@ export class AccueilEnvironnementComponent {
   hidden2 = true;
   hidden3 = true;
   hidden4 = true;
+
+  hiddeAll(){
+    if (this.hidden == false){this.hidden = true;}
+    if (this.hidden2 == false){this.hidden2 = true;}
+    if (this.hidden3 == false){this.hidden3 = true;}
+    if (this.hidden4 == false){this.hidden4 = true;}
+  }
   
   revealmenu(){
     this.hidden = false;
