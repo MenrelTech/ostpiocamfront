@@ -1,8 +1,8 @@
 export const AppRouter = {
-  home: '/',
+  home: '',
   spirituality: 'spiritualite',
   fieldsOfApostolate: "champs d'apostolat",
-  news: '/actualite',
+  news: 'actualite',
   contact: 'contact',
 };
 

@@ -18,16 +18,22 @@ export class NavbarComponent {
   links: NavLink[] = [
     { label: 'Accueil', path: AppRouter.home },
     { label: 'Àctualités', path: AppRouter.news },
-    { label: "Champs d'apostolat", path: AppRouter.fieldsOfApostolate },
+    // { label: "Champs d'apostolat", path: AppRouter.fieldsOfApostolate },
     { label: 'Spiritualités', path: AppRouter.spirituality },
     { label: 'Contact', path: AppRouter.contact },
   ];
 
-  hidden = true;
-  revealmenu() {
-    this.hidden = false;
+  isOpen = false;
+
+  hidemenu(event:any) {
+    event.stopPropagation();
+    this.isOpen = false;
   }
-  hidemenu() {
-    this.hidden = true;
+  toggleMenu() {
+    this.isOpen = !this.isOpen;
+  }
+
+  handleNavigation() {
+    this.isOpen = false
   }
 }

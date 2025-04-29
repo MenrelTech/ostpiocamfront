@@ -1,83 +1,90 @@
-<footer class="font-(family-name:--chakraregular)">
-  <div
-    class="w-full md:h-[300px] pt-3 md:pt-0 bg-blue-900 md:flex justify-around content-center items-center text-white"
-  >
-    <div class="h-[170px] w-[294px] mx-[30px]">
-      <div class="h-[142px] w-[294px] flex mb-[10px]">
-        <div class="h-[142px] w-[294px]">
-          <img
-            class="h-[142px] w-[294px]"
-            src="./images/Logo Oeuvre du Saint Padre Pio Origin-01.png"
-            alt="logo ostpiocam"
-          />
+<footer
+  class="font-(family-name:--chakraregular) bg-blue-900 text-white w-full"
+>
+  <div class="flex items-center justify-center w-full">
+    <div class="lg:max-w-[1280px] w-full flex items-end justify-between">
+      <div
+        class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4 gap-y-4 min-h-[300px] px-6 place-content-center pt-3"
+      >
+        <div class="">
+          <div class="h-[142px] flex">
+            <div class="h-[142px]">
+              <img
+                class="h-[142px]"
+                src="./images/Logo Oeuvre du Saint Padre Pio Origin-01.png"
+                alt="logo ostpiocam"
+              />
+            </div>
+          </div>
+          <div class="h-[45px]">
+            <address><b>Telephone:</b> +237 6 55 55 55 55</address>
+            <address><b>email:</b> contactostpiocam.com</address>
+          </div>
         </div>
-      </div>
-      <div class="h-[45px] w-[294px] mr-[50px]">
-        <address><b>Telephone:</b> +237 6 55 55 55 55</address>
-        <address><b>email:</b> contactostpiocam.com</address>
-      </div>
-    </div>
-    <div class="h-[170px] mx-auto md:mx-[30px] content-center">
-      <p class="mb-[6px] md:mb-[4px] text-center md:text-left">
-        <b>Liens utiles</b>
-      </p>
+        <div class="">
+          <p class="mb-4 md:text-left">
+            <b>Liens utiles</b>
+          </p>
 
-      <ul class="space-y-1 text-sm text-center md:text-left">
-        <li *ngFor="let link of usefulLinks">
-          <a
-            [routerLink]="link.path"
-            routerLinkActive="text-blue-300"
-            [routerLinkActiveOptions]="{ exact: true }"
-            class="hover:text-blue-200 transition"
-          >
-            &#10095; {{ link.label }}
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="h-[170px] mx-auto md:mx-[30px] content-center">
-      <p class="mb-[6px] md:mb-[4px] text-center md:text-left">
-        <b>Champs d'apostolat</b>
-      </p>
-      <ul class="ml-[2px] list-none text-center md:text-left">
-        <li *ngFor="let link of apostolatLinks">
-          <a
-            [routerLink]="link.path"
-            routerLinkActive="text-blue-300"
-            [routerLinkActiveOptions]="{ exact: true }"
-            class="hover:text-blue-200 transition"
-          >
-            &#10095; {{ link.label }}
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="h-[170px] mx-[30px] content-center">
-      <div><b class="mb-[9px]">Souscrire à nos newsletters</b></div>
-      <div class="mb-[9px]" id="fonta">
-        Vous serez notifié régulierement sur l'actualité de<br />
-        l'Oeuvre de St Padré Pio au Cameroun
-      </div>
-      <div class="flex">
-        <input
-          class="h-[40px] w-[250px] border-[1px] border-white px-[8px] rounded-[5px] mr-[4px]"
-          id="email"
-          type="email"
-          placeholder="Votre email"
-          [(ngModel)]="subscriberEmail"
-        />
-        <button
-          class="h-[40px] border-[1px] outline-none border-white w-[92px] rounded-[5px]"
-          (click)="subscribe()"
-        >
-          Souscrire
-        </button>
+          <ul class="space-y-1 text-sm text-center md:text-left">
+            <li *ngFor="let link of usefulLinks">
+              <a
+                [routerLink]="link.path"
+                routerLinkActive="text-blue-300"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="hover:text-blue-200 transition"
+              >
+                <span class="flex gap-x-3">&#10095; {{ link.label }}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <p class="mb-3 text-left">
+            <b>Champs d'apostolat</b>
+          </p>
+          <ul class="ml-[2px] space-y-1 list-none text-left">
+            <li *ngFor="let link of apostolatLinks">
+              <a
+                [routerLink]="link.path"
+                routerLinkActive="text-blue-300"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="hover:text-blue-200 transition"
+              >
+                &#10095; {{ link.label }}
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <div><b class="">Souscrire à nos newsletters</b></div>
+          <div class="mb-[9px]" id="fonta">
+            Vous serez notifié régulierement sur l'actualité de<br />
+            l'Oeuvre de St Padré Pio au Cameroun
+          </div>
+          <div class="flex">
+            <input
+              class="h-[40px] w-[250px] border-[1px] border-white px-[8px] rounded-[5px] mr-[4px]"
+              id="email"
+              type="email"
+              placeholder="Votre email"
+              [(ngModel)]="subscriberEmail"
+            />
+            <button
+              class="h-[40px] border-[1px] outline-none border-white w-[92px] rounded-[5px]"
+              (click)="subscribe()"
+            >
+              Souscrire
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
   <div
     id="contact"
-    class="w-full md:h-[100px] bg-green-100 md:flex content-center items-center justify-center"
+    class="w-full md:h-[100px] px-3 py-2 bg-green-100 md:flex content-center items-center justify-center"
   >
     <div class="w-full md:w-[25%]">
       <b>© Copyright OSTPIOCAM. Tous droits réservés</b><br />Réalisé par MENREL

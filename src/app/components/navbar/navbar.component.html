@@ -2,9 +2,9 @@
 
 <nav>
   <div
-    class="h-[60px] w-full flex content-center items-center fixed z-20 bg-white px-[30px] px-[10px] shadow-xl"
+    class="h-[60px] w-full flex items-center justify-between px-[30px] fixed z-20 bg-white shadow-xl"
   >
-    <div class="mr-[60px]">
+    <div class="flex items-center gap-x-10">
       <a class="items-center flex" href="#">
         <img
           class="h-[60px] w-[200px] mr-[20px]"
@@ -12,28 +12,29 @@
           alt="logo ostpiocam"
         />
       </a>
-    </div>
-    <div class="hidden md:block items-center mr-[60px]">
-      <div class="h-[60px] items-center content-center">
-        <div
-          class="h-[40px] pr-[10px] flex outline-offset-2 outline-sky-500 focus:outline-2 rounded-full items-center border-[2px] border-gray-400"
-        >
-          <input
-            class="h-[40px] focus:outline-0 px-[20px] border-x-0 border-t-0 rounded-l-lg font-(family-name:--chakraregular)"
-            type="text"
-            placeholder="Rechercher"
-          />
-          <img
-            class="rounded-full h-[30px] w-[30px]"
-            src="./images/search.png"
-            alt="recherche"
-          />
+
+      <div class="hidden md:block items-center">
+        <div class="h-[60px] items-center content-center">
+          <div
+            class="h-[40px] pr-[10px] relative flex outline-offset-2 outline-sky-500 focus:outline-2 rounded-full items-center border-[2px] border-gray-400"
+          >
+            <input
+              class="h-[40px] relative focus:outline-0  w-[250px] pl-3 pr-8 truncate border-x-0 border-t-0 rounded-l-lg font-(family-name:--chakraregular)"
+              type="text"
+              placeholder="Rechercher"
+            />
+            <img
+              class="rounded-full h-[30px] rotate-90 absolute right-2 w-[30px]"
+              src="./images/search.png"
+              alt="recherche"
+            />
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="hidden md:flex h-[60px] w-[60%] justify-end items-center">
-      <div class="w-[70%]">
+    <div class="hidden md:flex h-[60px] px-0 justify-end items-center">
+      <div class="">
         <div class="w-full">
           <ol class="flex justify-around items-center w-full">
             <li *ngFor="let link of links" role="none">
@@ -43,7 +44,7 @@
                 routerLinkActive="bg-[#0056B3] text-white"
                 #rla="routerLinkActive"
                 [routerLinkActiveOptions]="
-                  link.path === '' ? { exact: false } : { exact: true }
+                  link.path === '' ? { exact: true } : { exact: false }
                 "
                 class="p-4 transition-colors font-chakraregular text-gray-600 hover:text-blue-800"
                 [ngClass]="{
@@ -58,37 +59,40 @@
           </ol>
         </div>
       </div>
-      <div
-        class="h-[60px] items-center content-center mx-[30px] justify-items-end"
-      >
+
+      <div class="flex items-center justify-center gap-x-4">
         <div
-          class="w-[45] h-[45] items-center rounded-full border-[1px] border-gray-400"
+          class="h-full items-center"
         >
-          <a href="#">
-            <img
-              class="rounded-full"
-              src="./images/User.jpg"
-              width="26"
-              height="26"
-              alt="profile"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="justify-items-end items-center relative">
-        <div>
-          <a href="#"
-            ><h1 class="w-[30px] h-[30px] text-center bg-neutral-300">FR</h1></a
+          <div
+            class="w-[45] h-[45] items-center rounded-full border-[1px] border-gray-400"
           >
+            <a href="#">
+              <img
+                class="rounded-full"
+                src="./images/User.jpg"
+                width="26"
+                height="26"
+                alt="profile"
+              />
+            </a>
+          </div>
         </div>
-        <div>
-          <a href="#"
-            ><h1
-              class="w-[30px] h-[30px] text-center text-neutral-300 text-white bg-blue-800"
+        <div class="">
+          <div>
+            <a href="#"
+              ><h1 class=" text-center bg-neutral-300">
+                FR
+              </h1></a
             >
-              EN
-            </h1></a
-          >
+          </div>
+          <div>
+            <a href="#"
+              ><h1 class=" text-center text-white bg-blue-800">
+                EN
+              </h1></a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -96,9 +100,9 @@
     <div class="md:hidden relative ml-auto">
       <button
         id="burger-button"
-        class="text-gray-500 hover:text-blue-800 focus:outline-none"
-        (click)="revealmenu()"
-        (mouseleave)="hidemenu()"
+        class="text-gray-500 cursor-pointer hover:text-blue-800 focus:outline-none"
+        (click)="toggleMenu()"
+        ngClass="isO"
       >
         <svg
           class="w-8 h-8"
@@ -115,16 +119,21 @@
           ></path>
         </svg>
       </button>
-
-      <div
-        id="mobile-menu"
-        [class.hidden]="hidden"
-        class="absolute w-[250px] z-20 md:hidden top-[50px] right-[-30px] bg-white shadow-lg"
-      >
-        <div class="px-4 py-2">
+    </div>
+    <div
+      (click)="hidemenu($event)"
+      [ngClass]="[
+        'bg-red w-full fixed top-[60px] z-10 h-full',
+        !isOpen
+          ? 'opacity-0 hidden pointer-events-none'
+          : 'opacity-100 block pointer-events-auto'
+      ]"
+    >
+      <div class="absolute w-[250px] z-50 right-5 bg-white shadow-lg">
+        <div class="px-4 py-2 w-full">
           <div class="flex items-center mb-4 w-full">
             <div
-              class="h-[40px] pr-[10px] flex outline-offset-2 outline-sky-500 focus:outline-2 items-center rounded-full border-[2px] border-gray-400"
+              class="h-[40px] w-full relative flex outline-offset-2 outline-sky-500 focus:outline-2 items-center rounded-full border-[2px] border-gray-400"
             >
               <input
                 class="h-[40px] w-[180px] focus:outline-0 px-[20px] border-x-0 border-t-0 rounded-l-lg"
@@ -132,18 +141,19 @@
                 placeholder="Rechercher"
               />
               <img
-                class="rounded-full h-[30px] w-[30px]"
+                class="rounded-full size-6 rotate-90 absolute right-2 "
                 src="./images/search.png"
                 alt="recherche"
               />
             </div>
           </div>
 
-          <ol class="space-y-4">
-            <li *ngFor="let link of links">
+          <ol class="space-y-2 w-full">
+            <li *ngFor="let link of links" class="w-full">
               <a
-                class="block py-2 transition"
+                class="block p-2 transition cursor-pointer w-full"
                 [routerLink]="link.path"
+                (click)="handleNavigation()"
                 routerLinkActive="text-blue-800 bg-blue-50"
                 #rlaM="routerLinkActive"
                 [routerLinkActiveOptions]="{ exact: true }"
@@ -182,7 +192,7 @@
               <div>
                 <a href="#"
                   ><h1
-                    class="w-[30px] h-[30px] text-center text-neutral-300 text-white bg-blue-800"
+                    class="w-[30px] h-[30px] text-center text-white bg-blue-800"
                   >
                     EN
                   </h1></a
