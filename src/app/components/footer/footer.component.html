@@ -1,18 +1,27 @@
-<footer class="bg-blue-900 text-white font-sans">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-around items-start md:items-center py-8">
-
-    <!-- Logo & Contact -->
-    <div class="flex flex-col items-start space-y-4 mx-4">
-      <img src="./assets/images/Logo-Ostpio.png" alt="Logo OSTPIOCAM" class="h-36 w-auto" />
-      <address class="not-italic space-y-1 text-sm">
-        <p><strong>Téléphone:</strong> +237 6 55 55 55 55</p>
-        <p><strong>Email:</strong> <a href="mailto:contact&#64;ostpiocam.com" class="underline hover:text-blue-200">contact&#64;ostpiocam.com</a></p>
-      </address>
+<footer class="font-(family-name:--chakraregular)">
+  <div
+    class="w-full md:h-[300px] pt-3 md:pt-0 bg-blue-900 md:flex justify-around content-center items-center text-white"
+  >
+    <div class="h-[170px] w-[294px] mx-[30px]">
+      <div class="h-[142px] w-[294px] flex mb-[10px]">
+        <div class="h-[142px] w-[294px]">
+          <img
+            class="h-[142px] w-[294px]"
+            src="./images/Logo Oeuvre du Saint Padre Pio Origin-01.png"
+            alt="logo ostpiocam"
+          />
+        </div>
+      </div>
+      <div class="h-[45px] w-[294px] mr-[50px]">
+        <address><b>Telephone:</b> +237 6 55 55 55 55</address>
+        <address><b>email:</b> contactostpiocam.com</address>
+      </div>
     </div>
+    <div class="h-[170px] mx-auto md:mx-[30px] content-center">
+      <p class="mb-[6px] md:mb-[4px] text-center md:text-left">
+        <b>Liens utiles</b>
+      </p>
 
-    <!-- Liens utiles -->
-    <div class="flex flex-col mx-4 my-6 md:my-0">
-      <h3 class="text-lg font-bold mb-2 text-center md:text-left">Liens utiles</h3>
       <ul class="space-y-1 text-sm text-center md:text-left">
         <li *ngFor="let link of usefulLinks">
           <a
@@ -26,11 +35,11 @@
         </li>
       </ul>
     </div>
-
-    <!-- Champs d'apostolat -->
-    <div class="flex flex-col mx-4 my-6 md:my-0">
-      <h3 class="text-lg font-bold mb-2 text-center md:text-left">Champs d'apostolat</h3>
-      <ul class="space-y-1 text-sm text-center md:text-left">
+    <div class="h-[170px] mx-auto md:mx-[30px] content-center">
+      <p class="mb-[6px] md:mb-[4px] text-center md:text-left">
+        <b>Champs d'apostolat</b>
+      </p>
+      <ul class="ml-[2px] list-none text-center md:text-left">
         <li *ngFor="let link of apostolatLinks">
           <a
             [routerLink]="link.path"
@@ -43,46 +52,55 @@
         </li>
       </ul>
     </div>
-
-    <!-- Newsletter -->
-    <div class="flex flex-col mx-4 my-6 md:my-0 w-full md:w-1/4">
-      <h3 class="text-lg font-bold mb-2 text-center md:text-left">Souscrire à notre newsletter</h3>
-      <p class="text-sm mb-4 text-center md:text-left">
-        Recevez nos dernières nouvelles et événements de l'Oeuvre de St Padre Pio.
-      </p>
+    <div class="h-[170px] mx-[30px] content-center">
+      <div><b class="mb-[9px]">Souscrire à nos newsletters</b></div>
+      <div class="mb-[9px]" id="fonta">
+        Vous serez notifié régulierement sur l'actualité de<br />
+        l'Oeuvre de St Padré Pio au Cameroun
+      </div>
       <div class="flex">
         <input
+          class="h-[40px] w-[250px] border-[1px] border-white px-[8px] rounded-[5px] mr-[4px]"
+          id="email"
           type="email"
           placeholder="Votre email"
-          class="flex-1 px-3 py-2 rounded-l-md border border-white text-black focus:outline-none"
           [(ngModel)]="subscriberEmail"
         />
         <button
-          type="button"
+          class="h-[40px] border-[1px] outline-none border-white w-[92px] rounded-[5px]"
           (click)="subscribe()"
-          class="px-4 py-2 bg-blue-700 hover:bg-blue-800 rounded-r-md transition"
         >
           Souscrire
         </button>
       </div>
     </div>
-
   </div>
-
-  <!-- Footer bottom -->
-  <div class="bg-green-100 text-gray-700 py-4">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
-      <div class="mb-2 md:mb-0 text-center md:text-left">
-        © 2025 OSTPIOCAM. Tous droits réservés. Réalisé par MENREL.
-      </div>
-      <div class="flex space-x-4">
-        <a href="#" aria-label="YouTube"><img src="./assets/images/youtube.jpg" alt="YouTube" class="h-9 w-9" /></a>
-        <a href="#" aria-label="Facebook"><img src="./assets/images/facebook.jpg" alt="Facebook" class="h-9 w-9" /></a>
-        <a href="#" aria-label="WhatsApp"><img src="./assets/images/whatsapp.jpg" alt="WhatsApp" class="h-9 w-9" /></a>
-        <a href="#" aria-label="Instagram"><img src="./assets/images/instagram.jpg" alt="Instagram" class="h-9 w-9" /></a>
-        <a href="#" aria-label="X"><img src="./assets/images/x.jpg" alt="X" class="h-9 w-9" /></a>
-        <a href="#" aria-label="TikTok"><img src="./assets/images/tiktok.jpg" alt="TikTok" class="h-9 w-9" /></a>
-      </div>
+  <div
+    id="contact"
+    class="w-full md:h-[100px] bg-green-100 md:flex content-center items-center justify-center"
+  >
+    <div class="w-full md:w-[25%]">
+      <b>© Copyright OSTPIOCAM. Tous droits réservés</b><br />Réalisé par MENREL
+    </div>
+    <div class="w-full md:w-[65%] flex justify-around md:justify-end">
+      <img class="w-[36px] h-[36px]" src="./images/youtube.jpg" alt="youtube" />
+      <img
+        class="w-[36px] h-[36px]"
+        src="./images/facebook.jpg"
+        alt="facebook"
+      />
+      <img
+        class="w-[36px] h-[36px]"
+        src="./images/whatsapp.jpg"
+        alt="whatsapp"
+      />
+      <img
+        class="w-[36px] h-[36px]"
+        src="./images/instagram.jpg"
+        alt="instagram"
+      />
+      <img class="w-[36px] h-[36px]" src="./images/x.jpg" alt="x" />
+      <img class="w-[36px] h-[36px]" src="./images/tiktok.jpg" alt="tiktok" />
     </div>
   </div>
 </footer>
