@@ -16,6 +16,8 @@ import { GalerieSpiritualiteComponent } from './pages/galerie-spiritualite/galer
 import { ActiviteSanteComponent } from './pages/activite-sante/activite-sante.component';
 import { ActiviteCommunicationComponent } from './pages/activite-communication/activite-communication.component';
 import { ActiviteEnvironnementComponent } from './pages/activite-environnement/activite-environnement.component';
+import { FieldOfApostolateComponent } from './pages/fields-of-apostolate/filed-of-apostolate.component';
+import { AppRouter } from './shared/app-router/app-router';
 
 export const routes: Routes = [
     {
@@ -87,4 +89,8 @@ export const routes: Routes = [
         path: 'communication/activite',
         component: ActiviteCommunicationComponent
     },
+    {
+        path:AppRouter.fieldsOfApostolate, 
+        component:FieldOfApostolateComponent
+    }
 ];
