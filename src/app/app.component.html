@@ -2,8 +2,127 @@
 <main>
   <router-outlet></router-outlet>
 </main>
-<app-footer></app-footer>
 
+<footer class="font-(family-name:--chakraregular)">
+  <div
+    class="w-full md:h-[300px] pt-3 md:pt-0 bg-blue-900 md:flex justify-around content-center items-center text-white"
+  >
+    <div class="h-[170px] w-[294px] mx-[30px]">
+      <div class="h-[142px] w-[294px] flex mb-[10px]">
+        <div class="h-[142px] w-[294px]">
+          <img
+            class="h-[142px] w-[294px]"
+            src="./images/Logo Oeuvre du Saint Padre Pio Origin-01.png"
+            alt="logo ostpiocam"
+          />
+        </div>
+      </div>
+      <div class="h-[45px] w-[294px] mr-[50px]">
+        <address><b>Telephone:</b> +237 6 55 55 55 55</address>
+        <address><b>email:</b> contactostpiocam.com</address>
+      </div>
+    </div>
+    <div class="h-[170px] mx-auto md:mx-[30px] content-center">
+      <p class="mb-[6px] md:mb-[4px] text-center md:text-left">
+        <b>Liens utiles</b>
+      </p>
+      <ol class="ml-[2px] text-center md:text-left">
+        <li><a href="#">&#10095; Accueil</a></li>
+        <li><a href="#actualite">&#10095; Actualités</a></li>
+        <li><a href="#">&#10095; Nous contacter</a></li>
+        <li><a href="#">&#10095; Faire un don</a></li>
+      </ol>
+    </div>
+    <div class="h-[170px] mx-auto md:mx-[30px] content-center">
+      <p class="mb-[6px] md:mb-[4px] text-center md:text-left">
+        <b>Champs d'apostolat</b>
+      </p>
+      <ol class="ml-[2px] text-center md:text-left">
+        <li>
+          <a
+            routerLink="/sante"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >&#10095; Sante</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/spiritualite"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >&#10095; Spiritualite</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/environnement"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >&#10095; environnement</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/communication"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >&#10095; communication</a
+          >
+        </li>
+      </ol>
+    </div>
+    <div class="h-[170px] mx-[30px] content-center">
+      <div><b class="mb-[9px]">Souscrire à nos newsletters</b></div>
+      <div class="mb-[9px]" id="fonta">
+        Vous serez notifié régulierement sur l'actualité de<br />
+        l'Oeuvre de St Padré Pio au Cameroun
+      </div>
+      <div class="flex">
+        <input
+          class="h-[40px] w-[250px] border-[1px] border-white px-[8px] rounded-[5px] mr-[4px]"
+          id="email"
+          type="email"
+          placeholder="Votre email"
+        />
+        <button
+          class="h-[40px] border-[1px] border-white w-[92px] rounded-[5px]"
+          (click)="subscribe($event)"
+        >
+          Souscrire
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    id="contact"
+    class="w-full md:h-[100px] bg-green-100 md:flex content-center items-center justify-center"
+  >
+    <div class="w-full md:w-[25%]">
+      <b>© Copyright OSTPIOCAM. Tous droits réservés</b><br />Réalisé par MENREL
+    </div>
+    <div class="w-full md:w-[65%] flex justify-around md:justify-end">
+      <img class="w-[36px] h-[36px]" src="./images/youtube.jpg" alt="youtube" />
+      <img
+        class="w-[36px] h-[36px]"
+        src="./images/facebook.jpg"
+        alt="facebook"
+      />
+      <img
+        class="w-[36px] h-[36px]"
+        src="./images/whatsapp.jpg"
+        alt="whatsapp"
+      />
+      <img
+        class="w-[36px] h-[36px]"
+        src="./images/instagram.jpg"
+        alt="instagram"
+      />
+      <img class="w-[36px] h-[36px]" src="./images/x.jpg" alt="x" />
+      <img class="w-[36px] h-[36px]" src="./images/tiktok.jpg" alt="tiktok" />
+    </div>
+  </div>
+</footer>
 
 <!--
 <main class="main">
