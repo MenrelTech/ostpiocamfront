@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-apropos-spiritualite',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './apropos-spiritualite.component.html',
   styleUrl: './apropos-spiritualite.component.css'
 })
