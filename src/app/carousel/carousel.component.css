@@ -5,6 +5,9 @@
     margin: auto;
     overflow: hidden;
   }
+  .filt {
+    opacity: 25%;
+  }
   
   .carousel-slide {
     position: relative;

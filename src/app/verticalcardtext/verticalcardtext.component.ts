@@ -1,8 +1,9 @@
-import { Component, input } from '@angular/core';
+import { Component, input,Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-verticalcardtext',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './verticalcardtext.component.html',
   styleUrl: './verticalcardtext.component.css'
 })
@@ -12,4 +13,14 @@ export class VerticalcardtextComponent {
   name = input<string>();
   date_publication = input<string>('Publie le 11/02/2025 a 12h02');
   description = input<string>();
+  @Input() color: string = "white";
+  textcolor: { [key: string]: string } = {};
+  ngOnInit(): void {
+
+    this.textcolor = {
+      'color': this.color // Utilisation directe de la valeur de `bg`
+    };
+
+  
+}
 }
