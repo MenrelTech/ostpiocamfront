@@ -7,7 +7,7 @@ import { VerticalcardtextComponent } from '../../verticalcardtext/verticalcardte
 
 @Component({
   selector: 'app-accueil',
-  imports: [RouterLink, RouterLinkActive,CarouselComponent,CardtextComponent,CardimageComponent,VerticalcardtextComponent],
+  imports: [CarouselComponent,CardtextComponent,CardimageComponent,VerticalcardtextComponent],
   standalone: true,
   templateUrl: './accueil.component.html',
   styleUrl: './accueil.component.css'
