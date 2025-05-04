@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { NumberedcardtextComponent } from '../../numberedcardtext/numberedcardtext.component';
+import { TitlecardtextComponent } from '../../titlecardtext/titlecardtext.component';
 import { ImgcardtextComponent } from '../../imgcardtext/imgcardtext.component';
 import { CardComponent } from '../../card/card.component';
+import { NumberedcardtextComponent } from '../../numberedcardtext/numberedcardtext.component';
 
 @Component({
   selector: 'app-accueil-spiritualite',
-  imports: [NumberedcardtextComponent,ImgcardtextComponent,CardComponent],
+  imports: [NumberedcardtextComponent,TitlecardtextComponent,ImgcardtextComponent,CardComponent],
   templateUrl: './accueil-spiritualite.component.html',
   styleUrl: './accueil-spiritualite.component.css'
 })

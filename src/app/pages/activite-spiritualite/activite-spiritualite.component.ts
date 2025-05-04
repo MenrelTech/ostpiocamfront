@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CardaddressComponent } from '../../cardaddress/cardaddress.component';
 import { ImgcardtextComponent } from '../../imgcardtext/imgcardtext.component';
+import { CalendarComponent } from '../../calendar/calendar.component';
+import { RdvcardComponent } from '../../rdvcard/rdvcard.component';
 
 @Component({
   selector: 'app-activite-spiritualite',
-  imports: [CardaddressComponent,ImgcardtextComponent],
+  imports: [RdvcardComponent,CalendarComponent,CardaddressComponent],
   templateUrl: './activite-spiritualite.component.html',
   styleUrl: './activite-spiritualite.component.css'
 })

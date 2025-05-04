@@ -1,0 +1,87 @@
+.calendar-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+  }
+  
+  .day-initial {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .calendar-day {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%; /* Cercle */
+    background-color: #f9f9f9;
+    text-align: center;
+    cursor: pointer; /* Curseur pointer */
+    transition: background-color 0.3s ease;
+  }
+  
+  .calendar-day:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .event-day {
+    background-color: #FCE589;
+    font-weight: bold;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .popup-content button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-content button:hover {
+    background-color: #0056b3;
+  }

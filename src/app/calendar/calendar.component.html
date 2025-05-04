@@ -1,0 +1,40 @@
+<div class="calendar-container">
+    <!-- Sélection du mois et de l'année -->
+    <div class="controls">
+      <select (change)="onMonthChange($event)">
+        <option *ngFor="let month of months; let i = index" [value]="i" [selected]="i === currentMonth">
+          {{ month }}
+        </option>
+      </select>
+      <select (change)="onYearChange($event)">
+        <option *ngFor="let year of [2023, 2024, 2025, 2026]" [value]="year" [selected]="year === currentYear">
+          {{ year }}
+        </option>
+      </select>
+    </div>
+  
+    <!-- Initiales des jours -->
+    <div class="days-of-week">
+      <div *ngFor="let day of daysOfWeek" class="day-initial">
+        {{ day }}
+      </div>
+    </div>
+  
+    <!-- Affichage du calendrier -->
+    <div class="calendar-grid">
+      <div *ngFor="let day of daysInMonth" 
+           [class.event-day]="eventDays.has(day)" 
+           class="calendar-day"
+           (click)="onDayClick(day)">
+        {{ day }}
+      </div>
+    </div>
+  
+    <!-- Pop-up pour les détails -->
+    <div class="popup" *ngIf="selectedDayDetails">
+      <div class="popup-content">
+        <p>{{ selectedDayDetails }}</p>
+        <button (click)="closePopup()">Fermer</button>
+      </div>
+    </div>
+  </div>
