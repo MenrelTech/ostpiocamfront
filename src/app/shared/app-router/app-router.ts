@@ -4,6 +4,7 @@ export const AppRouter = {
   fieldsOfApostolate: "champs d'apostolat",
   news: 'actualite',
   contact: 'contact',
+  countdown:"count-down"
 };
 
 export const AppRouterSpirituality = {

@@ -24,6 +24,7 @@ import { BecomeVolunteerComponent } from './pages/become-volunteer/become-volunt
 import { BecomePartnerComponent } from './pages/become-partner/become-partner.component';
 import { NewLetterComponent } from './pages/news-letter/news-letter.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CountDownComponent } from './pages/count-down/count-down.component';
 
 export const routes: Routes = [
   {
@@ -125,5 +126,9 @@ export const routes: Routes = [
   {
     path:AuthRoutes.newsLetter, 
     component:NewLetterComponent
+  },
+  {
+    path:AppRouter.countdown,
+    component:CountDownComponent
   }
 ];
