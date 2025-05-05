@@ -8,7 +8,7 @@ import { Component, input,OnInit } from '@angular/core';
   styleUrl: './numberedcardtext.component.css'
 })
 export class NumberedcardtextComponent implements OnInit  {
-  contenu = input<string>();
+  contenu = input<string>("Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.");
   numero = input.required<number>();
   couleur_bg = input<string>("gray");
   couleur_bgn = input<string>("gray");

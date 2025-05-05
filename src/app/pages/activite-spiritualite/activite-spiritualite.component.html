@@ -3,49 +3,35 @@
     <div class="flex w-full">
       <div
         class="relative w-[25%] h-[45px] hover:bg-yellow-300 justify-center items-center flex border-b-[5px] border-yellow-400"
-        (mouseenter)="revealmenu()"
-        (mouseleave)="hidemenu()"
-      >
-        <a
-          class="relative"
-          routerLink="/spiritualite"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-        >
+        (mouseenter)="revealmenu()" (mouseleave)="hidemenu()">
+        <a class="relative" routerLink="/spiritualite" routerLinkActive="active" ariaCurrentWhenActive="page">
           Spiritualite
         </a>
-        <div
-          class="absolute w-full top-[45px] bg-yellow-100 justify-center items-center"
-          [class.invisible]="hidden"
-        >
+        <div class="absolute w-full top-[45px] bg-yellow-100 justify-center items-center" [class.invisible]="hidden">
           <a class="h-[45px] w-full" href="/spiritualite/apropos">
             <div
-              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center"
-            >
+              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">A propos de nous</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="/spiritualite/activite">
             <div
-              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center"
-            >
+              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">Activites</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="#">
             <div
-              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center"
-            >
+              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">connaissance de l'eglise</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="/spiritualite/galerie">
             <div
-              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center"
-            >
+              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-yellow-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">Galerie photos</p>
             </div>
@@ -54,49 +40,35 @@
       </div>
       <div
         class="relative w-[25%] h-[45px] hover:bg-red-300 justify-center items-center flex border-b-[5px] border-red-400"
-        (mouseenter)="revealmenu2()"
-        (mouseleave)="hidemenu2()"
-      >
-        <a
-          class="relative"
-          routerLink="/sante"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-        >
+        (mouseenter)="revealmenu2()" (mouseleave)="hidemenu2()">
+        <a class="relative" routerLink="/sante" routerLinkActive="active" ariaCurrentWhenActive="page">
           Sante
         </a>
-        <div
-          class="absolute w-full top-[45px] bg-red-100 justify-center items-center"
-          [class.invisible]="hidden2"
-        >
+        <div class="absolute w-full top-[45px] bg-red-100 justify-center items-center" [class.invisible]="hidden2">
           <a class="h-[45px] w-full" href="/sante/apropos">
             <div
-              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center"
-            >
+              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">A propos de nous</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="/sante/activite">
             <div
-              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center"
-            >
+              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">Activites</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="#">
             <div
-              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center"
-            >
+              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">connaissance de l'eglise</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="/sante/galerie">
             <div
-              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center"
-            >
+              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-red-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">Galerie photos</p>
             </div>
@@ -105,42 +77,33 @@
       </div>
       <div
         class="relative w-[25%] h-[45px] hover:bg-blue-300 justify-center items-center flex border-b-[5px] border-blue-400"
-        (mouseenter)="revealmenu3()"
-        (mouseleave)="hidemenu3()"
-      >
+        (mouseenter)="revealmenu3()" (mouseleave)="hidemenu3()">
         <a class="relative" href="/communication"> communication </a>
-        <div
-          class="absolute w-full top-[45px] bg-blue-100 justify-center items-center"
-          [class.invisible]="hidden3"
-        >
+        <div class="absolute w-full top-[45px] bg-blue-100 justify-center items-center" [class.invisible]="hidden3">
           <a class="h-[45px] w-full" href="/communication/apropos">
             <div
-              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center"
-            >
+              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">A propos de nous</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="/communication/activite">
             <div
-              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center"
-            >
+              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">Activites</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="#">
             <div
-              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center"
-            >
+              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">connaissance de l'eglise</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="#">
             <div
-              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center"
-            >
+              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-blue-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">Galerie photos</p>
             </div>
@@ -149,42 +112,33 @@
       </div>
       <div
         class="relative w-[25%] h-[45px] hover:bg-green-300 justify-center items-center flex border-b-[5px] border-green-400"
-        (mouseenter)="revealmenu4()"
-        (mouseleave)="hidemenu4()"
-      >
+        (mouseenter)="revealmenu4()" (mouseleave)="hidemenu4()">
         <a class="relative" href="/environnement"> Environnement </a>
-        <div
-          class="absolute w-full top-[45px] bg-green-100 justify-center items-center"
-          [class.invisible]="hidden4"
-        >
+        <div class="absolute w-full top-[45px] bg-green-100 justify-center items-center" [class.invisible]="hidden4">
           <a class="h-[45px] w-full" href="/environnement/apropos">
             <div
-              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center"
-            >
+              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">A propos de nous</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="/environnement/activite">
             <div
-              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center"
-            >
+              class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">Activites</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="#">
             <div
-              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center"
-            >
+              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">connaissance de l'eglise</p>
             </div>
           </a>
           <a class="h-[45px] w-full" href="#">
             <div
-              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center"
-            >
+              class="w-full flex pl-[20px] border-b-[0.5px] h-[45px] border-x-[0.5px] border-green-300 items-center justify-center content-center">
               <b>&#10095;</b>
               <p class="w-full pl-[15px]">Galerie photos</p>
             </div>
@@ -198,7 +152,7 @@
       </p>
     </div>
     <div class="w-full h-max content-evenly items-center">
-      <div class="mb-[40px]">
+      <div class="mb-[10px]">
         <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
           Rencontres
         </h2>
@@ -215,95 +169,36 @@
       </p>
 
       <div class="flex justify-center py-4 items-center w-full">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full place-items-center"
-        >
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de loeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full place-items-center">
+          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
+            [name]="'20e Anniversaire de loeuvre de St Padré Pio au CMR'" [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'" [localisation]="
               'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
+            " [date_debut]="'19/10/2025'" [date_fin]="'23/10/2025'" />
+          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
+            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'" [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'" [localisation]="
               'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
+            " [date_debut]="'19/10/2025'" [date_fin]="'23/10/2025'" />
+          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
+            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'" [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'" [localisation]="
               'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
+            " [date_debut]="'19/10/2025'" [date_fin]="'23/10/2025'" />
+          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
+            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'" [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'" [localisation]="
               'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
-              'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
-              'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
+            " [date_debut]="'19/10/2025'" [date_fin]="'23/10/2025'" />
+
         </div>
       </div>
-     
+
     </div>
     <div class="w-full h-max py-8 bg-yellow-50 content-evenly items-center">
       <div class="mb-[40px]">
         <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
-          Les grandes dates
+          Calendriers & grandes dates
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -312,79 +207,31 @@
         </div>
       </div>
       <p class="text-center w-full mb-[40px]">
-        Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl
-        commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu
-        feugiat.
+        Les grandes dates à venir:
       </p>
-      <div
-        class="flex w-full px-2 content-center flex-wrap gap-y-4 justify-around items-around"
-      >
-        <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
-          <div
-            class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold text-white content-center justify-center text-center"
-          >
-            <p class="content-center text-[22px]">19 <br />NOV <br />2025</p>
-          </div>
-          <div class="h-[73px] content-around">
-            <p class="font-bold text-[20px] px-[20px]">
-              20e Anniversaire de l'oeuvre de St Padré Pio
-            </p>
-            <div
-              class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right"
-            >
-              <button
-                class="h-[32px] ml-auto border-[1px] text-white bg-yellow-500 w-[82px] rounded-[5px]"
-              >
-                Details
-              </button>
-            </div>
-          </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-2 justify-items-center items-center">
+        <app-calendar [events]="[
+          { evenement: 'Jour de randonnée', date: '2025-07-10' },
+          { evenement: 'Réunion', date: '2025-07-15' },
+          { evenement: 'Anniversaire', date: '2025-07-20' }
+        ]">
+        </app-calendar>
+        <div class="grid grid-cols-1 gap-2 justify-items-center items-center">
+          <app-rdvcard [bg]="'#F8D7DA'" [color]="'#DC3545'" [hovercolor]="'#5B0F15'" />
+          <app-rdvcard [bg]="'#F8D7DA'" [color]="'#DC3545'" [hovercolor]="'#5B0F15'" />
+          <app-rdvcard [bg]="'#F8D7DA'" [color]="'#DC3545'" [hovercolor]="'#5B0F15'" />
+
         </div>
-        <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
-          <div
-            class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold text-white content-center justify-center text-center"
-          >
-            <p class="content-center text-[22px]">19 <br />NOV <br />2025</p>
-          </div>
-          <div class="h-[73px] content-around">
-            <p class="font-bold text-[20px] px-[20px]">
-              20e Anniversaire de l'oeuvre de St Padré Pio
-            </p>
-            <div
-              class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right"
-            >
-              <button
-                class="h-[32px] ml-auto border-[1px] text-white bg-yellow-500 w-[82px] rounded-[5px]"
-              >
-                Details
-              </button>
-            </div>
-          </div>
+        <div class="grid grid-cols-1 gap-2 justify-items-center items-center">
+          <app-rdvcard [bg]="'#F8D7DA'" [color]="'#DC3545'" [hovercolor]="'#5B0F15'" />
+          <app-rdvcard [bg]="'#F8D7DA'" [color]="'#DC3545'" [hovercolor]="'#5B0F15'" />
+
         </div>
-        <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
-          <div
-            class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold text-white content-center justify-center text-center"
-          >
-            <p class="content-center text-[22px]">19 <br />NOV <br />2025</p>
-          </div>
-          <div class="h-[73px] content-around">
-            <p class="font-bold text-[20px] px-[20px]">
-              20e Anniversaire de l'oeuvre de St Padré Pio
-            </p>
-            <div
-              class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right"
-            >
-              <button
-                class="h-[32px] ml-auto border-[1px] text-white bg-yellow-500 w-[82px] rounded-[5px]"
-              >
-                Details
-              </button>
-            </div>
-          </div>
-        </div>
+
       </div>
+
     </div>
-    <div class="w-full h-[450px] content-evenly items-center">
+    <div class="w-full h-max mb-[40px] content-evenly items-center">
       <div class="mb-[40px]">
         <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
           Rapport d'activite
@@ -395,18 +242,56 @@
           <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
         </div>
       </div>
-      <p class="text-center w-full mb-[40px]">
-        Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl
-        commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu
-        feugiat.
-      </p>
-      <div class="flex justify-center items-center w-full">
-        <app-imgcardtext
-          [image]="'./images/Fondateur1.png'"
-          [alt_message]="'membre'"
-          [name]="'Albert CAMUS'"
-          [role]="'Directeur general'"
-        />
+      <div class="flex w-full px-2 content-center flex-wrap gap-y-4 justify-around items-around">
+        <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
+          <div
+            class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center">
+            <p class="content-center text-[22px]">DOCX</p>
+          </div>
+          <div class="h-[73px] content-around">
+            <p class="font-bold text-[20px] px-[20px]">
+              Rapports du seminaire du 04 mai 2025
+            </p>
+            <div class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right">
+              <button class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]">
+                Telecharger &#11167;
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
+          <div
+            class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center">
+            <p class="content-center text-[22px]">DOCX</p>
+          </div>
+          <div class="h-[73px] content-around">
+            <p class="font-bold text-[20px] px-[20px]">
+              Rapports du seminaire du 04 mai 2025
+            </p>
+            <div class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right">
+              <button class="cursor-pointer h-[32px] ml-auto border-[1px]  border-yellow-500 bg-yellow-500 px-2 rounded-[5px]">
+                Telecharger &#11167;
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
+          <div
+            class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center">
+            <p class="content-center text-[22px]">DOCX</p>
+          </div>
+          <div class="h-[73px] content-around">
+            <p class="font-bold text-[20px] px-[20px]">
+              Rapports du seminaire du 04 mai 2025
+            </p>
+            <div class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right">
+              <button class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]">
+                Telecharger &#11167;
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
     <div class="w-full h-max content-evenly items-center">
@@ -421,93 +306,41 @@
         </div>
       </div>
       <p class="text-center w-full mb-[40px]">
-        Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl
-        commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu
-        feugiat.
+        Liste des évènements à venir
       </p>
 
       <div class="flex justify-center py-4 items-center w-full">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full place-items-center"
-        >
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de loeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-1 w-full place-items-center">
+          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
+            [name]="'20e Anniversaire de loeuvre de St Padré Pio au CMR'" [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'" [localisation]="
               'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
+            " [date_debut]="'19/10/2025'" [date_fin]="'23/10/2025'" />
+          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
+            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'" [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'" [localisation]="
               'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
+            " [date_debut]="'19/10/2025'" [date_fin]="'23/10/2025'" />
+          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
+            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'" [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'" [localisation]="
               'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
+            " [date_debut]="'19/10/2025'" [date_fin]="'23/10/2025'" />
+          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
+            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'" [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'" [localisation]="
               'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
+            " [date_debut]="'19/10/2025'" [date_fin]="'23/10/2025'" />
+          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
+            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'" [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'" [localisation]="
               'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
-          <app-cardaddress
-            [couleur_bg]="'#FFF9E6'"
-            [image]="'./images/logo_dossier.jpg'"
-            [alt_message]="'activite'"
-            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
-            [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'"
-            [localisation]="
+            " [date_debut]="'19/10/2025'" [date_fin]="'23/10/2025'" />
+          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
+            [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'" [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'" [localisation]="
               'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
-            "
-            [date_debut]="'19/10/2025'"
-            [date_fin]="'23/10/2025'"
-          />
+            " [date_debut]="'19/10/2025'" [date_fin]="'23/10/2025'" />
         </div>
       </div>
     </div>
