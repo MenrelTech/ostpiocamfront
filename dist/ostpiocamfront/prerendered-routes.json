@@ -1,0 +1,29 @@
+{
+  "routes": {
+    "/": {},
+    "/actualite": {},
+    "/champs d'apostolat": {},
+    "/communication": {},
+    "/communication/activite": {},
+    "/communication/apropos": {},
+    "/connexion": {},
+    "/contact": {},
+    "/count-down": {},
+    "/devenir-benevole": {},
+    "/devenir-partenaire": {},
+    "/environnement": {},
+    "/environnement/activite": {},
+    "/environnement/apropos": {},
+    "/environnement2": {},
+    "/inscription": {},
+    "/news-letter": {},
+    "/sante": {},
+    "/sante/activite": {},
+    "/sante/apropos": {},
+    "/sante/galerie": {},
+    "/spiritualite": {},
+    "/spiritualite/activite": {},
+    "/spiritualite/apropos": {},
+    "/spiritualite/galerie": {}
+  }
+}
