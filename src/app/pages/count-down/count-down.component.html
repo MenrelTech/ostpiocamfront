@@ -1,0 +1,54 @@
+<div class="flex flex-col gap-y-10">
+  <div class="flex justify-end w-full">
+    <img
+      class="md:w-[428px] md:h-[283px] ml-[20px]"
+      src="./images/Logo Oeuvre du Saint Padre Pio Origin-01.jpg"
+      alt="Logo ostpiocam"
+    />
+  </div>
+
+  <div class="flex justify-center items-center gap-x-8">
+    <div class="bg-[#C89D6A]/25 w-fit rounded-lg px-6 py-4">
+      <div class="flex flex-col items-center gap-y-1">
+        <span class="text-white font-bold text-6xl">09</span>
+        <span class="uppercase text-white text-base">jours</span>
+      </div>
+    </div>
+
+    <div class="bg-[#C89D6A]/25 w-fit rounded-lg px-6 py-4">
+      <div class="flex flex-col items-center gap-y-1">
+        <span class="text-white font-bold text-6xl">{{
+          currentDate.getDay()
+        }}</span>
+        <span class="uppercase text-white text-base">jours</span>
+      </div>
+    </div>
+
+    <div class="bg-[#C89D6A]/25 w-fit rounded-lg px-6 py-4">
+      <div class="flex flex-col items-center gap-y-1">
+        <span class="text-white font-bold text-6xl">{{
+          currentDate.getHours()
+        }}</span>
+        <span class="uppercase text-white text-base">heures</span>
+      </div>
+    </div>
+
+    <div class="bg-[#C89D6A]/25 w-fit rounded-lg px-6 py-4">
+      <div class="flex flex-col items-center gap-y-1">
+        <span class="text-white font-bold text-6xl">{{
+          currentDate.getMinutes()
+        }}</span>
+        <span class="uppercase text-white text-base">Minutes</span>
+      </div>
+    </div>
+
+    <div class="bg-[#C89D6A]/25 w-fit rounded-lg px-6 py-4">
+      <div class="flex flex-col items-center gap-y-1">
+        <span class="text-white font-bold text-6xl">{{
+          currentDate.getSeconds()
+        }}</span>
+        <span class="uppercase text-white text-base">Secondes</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -5,14 +5,19 @@ import { CardtextComponent } from '../../cardtext/cardtext.component';
 import { CardimageComponent } from '../../cardimage/cardimage.component';
 import { VerticalcardtextComponent } from '../../verticalcardtext/verticalcardtext.component';
 import { RdvcardComponent } from '../../rdvcard/rdvcard.component';
+import { CountDownComponent } from '../count-down/count-down.component';
 
 @Component({
   selector: 'app-accueil',
-  imports: [RdvcardComponent,CarouselComponent,CardtextComponent,CardimageComponent,VerticalcardtextComponent],
+  imports: [
+    RdvcardComponent,
+    CarouselComponent,
+    CardtextComponent,
+    CardimageComponent,
+    VerticalcardtextComponent
+  ],
   standalone: true,
   templateUrl: './accueil.component.html',
-  styleUrl: './accueil.component.css'
+  styleUrl: './accueil.component.css',
 })
-export class AccueilComponent {
-
-}
+export class AccueilComponent {}
