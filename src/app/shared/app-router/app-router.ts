@@ -12,3 +12,12 @@ export const AppRouterSpirituality = {
   About: '/spiritualite/apropos',
   Gallery: '/spiritualite/galerie',
 };
+
+
+export const AuthRoutes = {
+  login:"connexion", 
+  register:"inscription", 
+  volunteer:"devenir-benevole",
+  partner:"devenir-partenaire", 
+  newsLetter:"news-letter"
+}
