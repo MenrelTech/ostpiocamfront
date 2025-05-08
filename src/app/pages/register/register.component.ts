@@ -18,12 +18,13 @@ export class RegisterComponent{
   async createUser (event : MouseEvent) {
     event.preventDefault();
     let data = {
-      "first_name": this.firstName,
-      "last_name" : this.lastName,
+      "firstName": this.firstName,
+      "lastName" : this.lastName,
       "email" : this.email,
-      "phone_number" : this.telephone,
+      "phoneNumber" : this.telephone,
       "password" : this.password
     };
+    console.log(data);
     let response = await fetch("https://ostpiocamback.enotelco.com/api/register", {
       method: 'POST',
       mode: 'cors',

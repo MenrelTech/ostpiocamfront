@@ -10,31 +10,31 @@
       <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
         <label for="nom" class="font-medium text-base min-w-[212px] text-black">Noms
         </label>
-        <input type="text" id="nom" [(ngModel)]="firstName"
+        <input name="firstName" type="text" id="nom" [(ngModel)]="firstName"
           class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
       </div>
       <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
         <label for="prenom" class="font-medium text-base min-w-[212px] text-black">Prénoms
         </label>
-        <input type="text" id="prenom" [(ngModel)]="lastName"
+        <input name="lastName" type="text" id="prenom" [(ngModel)]="lastName"
           class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
       </div>
       <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
         <label for="telephone" class="font-medium text-base min-w-[212px] text-black">Telephone
         </label>
-        <input type="text" id="telephone" [(ngModel)]="telephone"
+        <input name="telephone" type="text" id="telephone" [(ngModel)]="telephone"
           class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
       </div>
       <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
         <label for="email" class="font-medium text-base min-w-[212px] text-black">Email
         </label>
-        <input type="text" id="email" [(ngModel)]="email"
+        <input name="email" type="text" id="email" [(ngModel)]="email"
           class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
       </div>
       <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
         <label for="password" class="font-medium text-base min-w-[212px] text-black">Mot de passe
         </label>
-        <input type="text" id="password" [(ngModel)]="password"
+        <input name="password" type="text" id="password" [(ngModel)]="password"
           class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
       </div>
       <button type="submit" (click)="createUser($event)"
