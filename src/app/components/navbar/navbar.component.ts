@@ -1,6 +1,6 @@
 import { NgFor, NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive,RouterOutlet } from '@angular/router';
 import { AppRouter } from '../../shared/app-router/app-router';
 
 export interface NavLink {
@@ -11,7 +11,7 @@ export interface NavLink {
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgFor, NgClass],
+  imports: [RouterOutlet,RouterLink, RouterLinkActive, NgFor, NgClass],
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {

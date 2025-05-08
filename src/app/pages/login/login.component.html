@@ -10,16 +10,31 @@
       action=""
       class="flex flex-col items-center gap-y-8 w-full  md:w-fit px-2"
     >
-      <input-form label="Nom de l'utilisateur ou email" />
-
-      <input-form label="Mot de passe" type="password" />
+    <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
+      <label for="email" class="font-medium text-base min-w-[212px] text-black">Email
+      </label>
+      <input type="text" id="email" [(ngModel)]="email"
+        class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
+    </div>
+    <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
+      <label for="password" class="font-medium text-base min-w-[212px] text-black">Mot de passe
+      </label>
+      <input type="text" id="password" [(ngModel)]="password"
+        class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
+    </div>
 
       <button
-        type="submit"
+        type="submit" (click)="userLogin($event)"
         class="px-4 py-3 bg-[#007BFF] mt-5 w-[320px] cursor-pointer text-white rounded-lg text-base font-medium border-none"
       >
         Connexion
       </button>
     </form>
+    <a routerLink="/inscription" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <p class="text-[#007BFF] text-base font-medium mt-5 cursor-pointer">
+        Vous n'avez pas de compte ? Inscrivez-vous ici
+      </p>
+    </a>
   </div>
 </section>
+<router-outlet />
