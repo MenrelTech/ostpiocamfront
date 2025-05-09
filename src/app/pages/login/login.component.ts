@@ -16,11 +16,7 @@ export class LoginComponent{
 
     let data = {
       "email": this.email,
-      "security": {
-        "credentials": {
-          "password": this.password
-        }
-      }
+      "password": this.password
     };
     let response = await fetch("https://ostpiocamback.enotelco.com/api/login_check", {
       method: 'POST',
@@ -34,7 +30,7 @@ export class LoginComponent{
     console.log(response);
     if (!response.ok) {
         if (response.status !== 400) {
-            alert('Echec lors de la creation de l\'utilisateur :' + response.status);
+            alert('Echec lors de la connexion');
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         alert('Utilisateur  déjà  existant ! Changez vos informations');

@@ -6,42 +6,69 @@
   </div>
 
   <div class="h-full flex justify-center my-10 items-center flex-col">
-    <form
-      action=""
-      class="flex flex-col items-center gap-y-4 w-[50%] px-2"
-    >
-      <input-form label="Nom complet" class="w-[100%]" />
+    <form action="" class="flex flex-col items-center gap-y-4 w-[50%] px-2">
+      <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
+        <label for="nom_complet" class="font-medium text-base min-w-[212px] text-black">Nom complet
+        </label>
+        <input type="text" id="nom_complet" name="nom_complet" [(ngModel)]="nom_complet"
+          class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
+      </div>
 
-      <input-form label="Age"  class="w-[100%]" />
+      <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
+        <label for="age" class="font-medium text-base min-w-[212px] text-black">Age
+        </label>
+        <input type="text" id="age" name="age" [(ngModel)]="age"
+          class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
+      </div>
 
-      <input-form label="Ville/Localité"  class="w-[100%]" />
+      <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
+        <label for="city" class="font-medium text-base min-w-[212px] text-black">Ville/Localité
+        </label>
+        <input type="text" id="city" name="city" [(ngModel)]="city"
+          class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
+      </div>
 
-      <input-form label="Numero de téléphone"  class="w-[100%]" />
+      <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
+        <label for="phone" class="font-medium text-base min-w-[212px] text-black">Numéro de téléphone
+        </label>
+        <input type="text" id="phone" name="phone" [(ngModel)]="phone"
+          class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
+      </div>
 
-      <input-form label="Adresse email" type="email"  class="w-[100%]" />
-      <input-form label="Mot de passe" type="password"  class="w-[100%]" />
+      <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
+        <label for="email" class="font-medium text-base min-w-[212px] text-black">Adresse email
+        </label>
+        <input type="email" id="email" name="email" [(ngModel)]="email"
+          class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
+      </div>
 
       <div class="w-full text-base font-medium">
         <p class="mb-4 text-base">Domaines dans lesquels je souhaite contribuer</p>
 
-        <div class="flex w-full justify-between items-center" >
-          <div class="flex items-center gap-x-2" *ngFor="let domain of domains">
-            <div class="w-fit">
-              <input type="checkbox" class="w-5 h-5" />
+        <div class="flex w-full justify-between items-center">
+          <fieldset class="flex gap-x-8 items-center">
+            <div class="flex items-center gap-x-2" *ngFor="let domain of domains">
+              <div class="w-fit">
+                <input type="radio" class="w-5 h-5" [value]="domain" [(ngModel)]="domaine" name="domaine"/>
+              </div>
+              <label class="block" for="choice"> {{ domain }} </label>
             </div>
-            <label class="block" for="choice"> {{ domain }} </label>
-          </div>
+          </fieldset>
+          >
         </div>
       </div>
 
       <div class="w-full text-base font-medium">
         <p class="mb-4 text-base">Disponibilités</p>
 
-        <div class="flex items-center gap-x-8" >
-          <div *ngFor="let disponibility of disponibilities" class="flex items-center gap-x-2">
-            <input type="checkbox" class="w-5 h-5" />
-            <label for="choice"> {{ disponibility }} </label>
-          </div>
+        <div class="flex items-center">
+          <fieldset class="flex gap-x-8 items-center">
+            <div *ngFor="let disponibility of disponibilities" class="flex items-center gap-x-2">
+              <input type="radio" class="w-5 h-5" [value]="disponibility" [(ngModel)]="disponibilite" name="disponibilite"/>
+              <label for="choice"> {{ disponibility }} </label>
+            </div>
+          </fieldset>
+          
         </div>
       </div>
 
@@ -54,10 +81,8 @@
         <div class="w-full">
           <textarea
             class="border w-full border-[#AAAAAA] px-2 h-[200px] text-sm focus:border-2 py-2 placeholder:text-xs placeholder:text-[#AAAAAA] focus:outline-none rounded-lg resize-none"
-            name=""
-            id=""
-            placeholder="Entrer du texte text"
-          >
+            name="message" id="message" placeholder="Entrer du texte ici..."
+            [(ngModel)]="message">
           </textarea>
         </div>
       </div>
@@ -69,21 +94,19 @@
 
         <div class="flex gap-x-10 mt-4 items-center">
           <div class="flex items-center gap-x-2">
-            <input id="choice" value="choice" type="radio" class="w-5 h-5" />
+            <input [value]="false" [(ngModel)]="agreeToBeContacted" name="Non"  type="radio" class="w-5 h-5" />
             <label class="text-sm font-medium" for="">Non</label>
           </div>
 
           <div class="flex items-center gap-x-2">
-            <input id="choice" value="choice" type="radio" class="w-5 h-5" />
+            <input [value]="true" [(ngModel)]="agreeToBeContacted" name="Oui" type="radio" class="w-5 h-5" />
             <label class="text-sm font-medium" for="">Oui</label>
           </div>
         </div>
       </div>
 
-      <button
-        type="submit"
-        class="py-3 bg-[#007BFF] mt-5 w-[350px] cursor-pointer text-white rounded-lg text-base font-medium border-none"
-      >
+      <button type="submit" (click)="becomeVolunteer($event)"
+        class="py-3 bg-[#007BFF] mt-5 w-[350px] cursor-pointer text-white rounded-lg text-base font-medium border-none">
         Valider
       </button>
     </form>
