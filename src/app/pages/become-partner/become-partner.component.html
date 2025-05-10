@@ -6,7 +6,7 @@
   </div>
 
   <div class="h-full flex justify-center my-10 items-center flex-col">
-    <form action="" class="flex flex-col items-center gap-y-4 w-[50%] px-2">
+    <form action="" class="flex flex-col items-center gap-y-4 w-full md:w-[50%] px-2">
       <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
         <label for="nom_organisation" class="font-medium text-base min-w-[212px] text-black">Nom/ Nom de l’organisation
         </label>
@@ -49,7 +49,7 @@
         </p>
 
         <div class="flex w-full justify-between items-center">
-          <fieldset class="flex justify-between gap-x-8">
+          <fieldset class="flex flex-wrap gap-y-4 justify-between gap-x-8">
             <div class="flex items-center gap-x-2" *ngFor="let partnersType of partnersTypes">
             <div class="w-fit">
               <input name="partnerType" [value]="partnersType" [(ngModel)]="partnershipType" type="radio" class="w-5 h-5" />
@@ -60,7 +60,7 @@
           
         </div>
       </div>
-      <div class="flex items-start gap-x-4 w-full">
+      <div class="flex items-start flex-col lg:flex-row gap-x-4 w-full">
         <p class="w-[400px] font-medium text-base">
           Message ou proposition de partenariat 
         </p>

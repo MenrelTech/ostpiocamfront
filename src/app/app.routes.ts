@@ -25,6 +25,10 @@ import { BecomePartnerComponent } from './pages/become-partner/become-partner.co
 import { NewLetterComponent } from './pages/news-letter/news-letter.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CountDownComponent } from './pages/count-down/count-down.component';
+import { PresentationComponent } from './pages/presentations/presentation.component';
+import { ProlegomenaComponent } from './pages/prolegomene/prolegomene.component';
+import { InfoUserComponent } from './pages/info-user/info-user.component';
+import { ChangePasswordComponent } from './pages/change-password/change-password.component';
 
 export const routes: Routes = [
   {
@@ -130,5 +134,26 @@ export const routes: Routes = [
   {
     path:AppRouter.countdown,
     component:CountDownComponent
+  }, 
+
+  {
+    path:AppRouter.presentation, 
+    component:PresentationComponent
+  }, 
+  {
+
+    path:AppRouter.prolegomena,
+    component:ProlegomenaComponent
+  }, 
+
+  {
+
+    path:AppRouter.infoUser,
+    component:InfoUserComponent
+  }, 
+
+  {
+    path:AppRouter.changePassword,
+    component:ChangePasswordComponent
   }
 ];

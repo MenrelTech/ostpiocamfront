@@ -1,0 +1,196 @@
+/* Styles pour les sous-menus déroulants */
+
+.submenu-closed {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+  pointer-events: none;
+}
+
+.submenu-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: auto;
+}
+
+.submenu-container {
+  position: absolute;
+  top: 60px; /* Ajuster selon la hauteur de votre navbar */
+  left: 0;
+  z-index: 100;
+}
+
+/* Animation de gauche à droite pour les éléments du sous-menu */
+.submenu-open .grid a {
+  animation: slideFromLeft 0.4s forwards ease-out;
+  opacity: 0;
+}
+
+/* Application d'un délai progressif pour créer un effet en cascade */
+.submenu-open .grid a:nth-child(1) { animation-delay: 0.05s; }
+.submenu-open .grid a:nth-child(2) { animation-delay: 0.1s; }
+.submenu-open .grid a:nth-child(3) { animation-delay: 0.15s; }
+.submenu-open .grid a:nth-child(4) { animation-delay: 0.2s; }
+.submenu-open .grid a:nth-child(5) { animation-delay: 0.25s; }
+.submenu-open .grid a:nth-child(6) { animation-delay: 0.3s; }
+.submenu-open .grid a:nth-child(7) { animation-delay: 0.35s; }
+.submenu-open .grid a:nth-child(8) { animation-delay: 0.4s; }
+.submenu-open .grid a:nth-child(n+9) { animation-delay: 0.45s; }
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation pour les liens de navigation principaux */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0056B3;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Effet de surbrillance au survol des liens principaux */
+.nav-link:hover {
+  color: #0056B3;
+  transform: translateY(-2px);
+}
+
+/* Animation des liens du sous-menu au survol */
+.submenu-link {
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.submenu-link:hover {
+  transform: translateX(5px);
+  background-color: rgba(0, 86, 179, 0.1);
+}
+
+/* Animation pour le menu mobile */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Pour les versions mobiles */
+@media (max-width: 768px) {
+  .max-h-0 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .max-h-96 {
+    max-height: 24rem; /* Ajustez selon vos besoins */
+    transition: max-height 0.3s ease-in;
+  }
+
+  /* Animation pour les liens mobiles */
+  .mobile-menu-open {
+    animation: fadeInDown 0.3s forwards;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Animation pour le menu mobile */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Styles pour les sous-menus responsive */
+li {
+  position: relative;
+}
+
+/* Effet de hover sur les liens du menu */
+ol > li > a:hover {
+  position: relative;
+}
+
+ol > li > a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0056B3;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+/* Pour les versions mobiles */
+@media (max-width: 768px) {
+  .max-h-0 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .max-h-96 {
+    max-height: 24rem; /* Ajustez selon vos besoins */
+    transition: max-height 0.3s ease-in;
+  }
+}

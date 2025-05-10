@@ -14,7 +14,8 @@ import { CountDownComponent } from '../count-down/count-down.component';
     CarouselComponent,
     CardtextComponent,
     CardimageComponent,
-    VerticalcardtextComponent
+    VerticalcardtextComponent,
+    RouterLink
   ],
   standalone: true,
   templateUrl: './accueil.component.html',

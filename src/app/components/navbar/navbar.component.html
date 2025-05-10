@@ -19,7 +19,7 @@
             class="h-[40px] pr-[10px] relative flex outline-offset-2 outline-sky-500 focus:outline-2 rounded-full items-center border-[2px] border-gray-400"
           >
             <input
-              class="h-[40px] relative focus:outline-0  w-[250px] pl-3 pr-8 truncate border-x-0 border-t-0 rounded-l-lg font-(family-name:--chakraregular)"
+              class="h-[40px] relative focus:outline-0 w-[250px] pl-3 pr-8 truncate border-x-0 border-t-0 rounded-l-lg font-(family-name:--chakraregular)"
               type="text"
               placeholder="Rechercher"
             />
@@ -33,41 +33,91 @@
       </div>
     </div>
 
-    <div class="hidden md:flex h-[60px] px-0 justify-end items-center">
-      <div class="">
-        <div class="w-full">
-          <ol class="flex justify-around items-center w-full">
-            <li *ngFor="let link of links" role="none">
+    <div class="hidden md:flex h-[60px] px-0 justify-end items-center relative">
+      <div class="h-full relative">
+        <div class="w-full h-full">
+          <ol class="flex justify-around items-center w-full h-full" #navLinks>
+            <li
+              *ngFor="let link of links"
+              role="none"
+              class="h-full relative group"
+            >
               <a
                 role="menuitem"
-                [routerLink]="link.path"
-                routerLinkActive="bg-[#0056B3] text-white"
+                routerLinkActive=""
                 #rla="routerLinkActive"
                 [routerLinkActiveOptions]="
                   link.path === '' ? { exact: true } : { exact: false }
                 "
-                class="p-4 transition-colors font-chakraregular text-gray-600 hover:text-blue-800"
+                class="p-4 h-full flex items-center transition-colors font-chakraregular text-gray-600 hover:text-blue-800 nav-link"
                 [ngClass]="{
-                  'bg-[#0056B3] text-white': rla.isActive,
+                  'text-[#0056B3] ': rla.isActive,
                   'text-gray-600 hover:text-blue-800': !rla.isActive
                 }"
                 [attr.aria-current]="rla.isActive ? 'page' : null"
+                (mouseenter)="showSubmenu(link)"
+                (click)="link.subMenu ? null : handleNavigation()"
               >
                 {{ link.label }}
+                <svg
+                  *ngIf="link.subMenu && link.subMenu.length > 0"
+                  class="w-4 h-4 ml-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
               </a>
             </li>
           </ol>
+
+          <div
+            *ngIf="
+              activeSubmenu?.subMenu && (activeSubmenu?.subMenu)!.length > 0
+            "
+            class="absolute left-0 bg-[#0056B3]/50 text-white shadow-lg py-4 px-6 z-50 rounded-b-lg submenu-container"
+            [ngClass]="activeSubmenu ? 'submenu-open' : 'submenu-closed'"
+            [style.width]="'100%'"
+            (mouseleave)="hideSubmenu()"
+          >
+            <div
+              [ngClass]="
+                activeSubmenu?.subMenu && (activeSubmenu?.subMenu)!.length > 4
+                  ? 'grid grid-cols-2 gap-4'
+                  : 'grid grid-cols-1 gap-4'
+              "
+            >
+              <a
+                *ngFor="let subItem of activeSubmenu?.subMenu"
+                [routerLink]="subItem.path"
+                class="p-2 w-fit transition-colors rounded-md hover:text-blue-800 submenu-link"
+                (click)="handleNavigation()"
+              >
+                &#10095; {{ subItem.label }}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="flex items-center justify-center gap-x-4">
-        <div
-          class="h-full items-center"
-        >
+      <div class="flex items-center justify-center gap-x-4 ml-4">
+        <div class="h-full flex items-center gap-x-2">
           <div
-            class="w-[45] h-[45] items-center rounded-full border-[1px] border-gray-400"
+            class="w-[30px] h-[30px] flex items-center justify-center rounded-full border-[1px] border-gray-400"
           >
-            <a routerLink="/connexion" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <a
+              routerLink="/connexion"
+              routerLinkActive="active"
+              ariaCurrentWhenActive="page"
+              class="flex items-center"
+            >
               <img
                 class="rounded-full"
                 src="./images/User.jpg"
@@ -76,19 +126,22 @@
                 alt="profile"
               />
             </a>
+
           </div>
+
+          <span *ngIf="!!email()"> {{email()}}</span>
         </div>
-        <div class="">
+        <div class="flex flex-col">
           <div>
             <a href="#"
-              ><h1 class=" text-center bg-neutral-300">
+              ><h1 class="w-[30px] h-[15px] text-center bg-neutral-300">
                 FR
               </h1></a
             >
           </div>
           <div>
             <a href="#"
-              ><h1 class=" text-center text-white bg-blue-800">
+              ><h1 class="w-[30px] h-[15px] text-center text-white bg-blue-800">
                 EN
               </h1></a
             >
@@ -102,7 +155,6 @@
         id="burger-button"
         class="text-gray-500 cursor-pointer hover:text-blue-800 focus:outline-none"
         (click)="toggleMenu()"
-        ngClass="isO"
       >
         <svg
           class="w-8 h-8"
@@ -120,50 +172,100 @@
         </svg>
       </button>
     </div>
+
+    <!-- Menu mobile -->
     <div
       (click)="hidemenu($event)"
       [ngClass]="[
-        'bg-red w-full fixed top-[60px] z-10 h-full',
-        !isOpen
-          ? 'opacity-0 hidden pointer-events-none'
-          : 'opacity-100 block pointer-events-auto'
+        'bg-black bg-opacity-30 w-full fixed top-[60px] z-10 h-full transition-all duration-300',
+        !isOpen ? 'opacity-0 invisible' : 'opacity-100 visible'
       ]"
     >
-      <div class="absolute w-[250px] z-50 right-5 bg-white shadow-lg">
+      <div
+        class="absolute w-[280px] max-h-[90vh] overflow-y-auto z-50 right-5 bg-white shadow-lg transition-transform duration-300"
+        [ngClass]="isOpen ? 'translate-x-0' : 'translate-x-full'"
+        (click)="$event.stopPropagation()"
+      >
         <div class="px-4 py-2 w-full">
           <div class="flex items-center mb-4 w-full">
             <div
               class="h-[40px] w-full relative flex outline-offset-2 outline-sky-500 focus:outline-2 items-center rounded-full border-[2px] border-gray-400"
             >
               <input
-                class="h-[40px] w-[180px] focus:outline-0 px-[20px] border-x-0 border-t-0 rounded-l-lg"
+                class="h-[40px] w-full focus:outline-0 pl-3 pr-8 border-x-0 border-t-0 rounded-l-lg"
                 type="text"
                 placeholder="Rechercher"
               />
               <img
-                class="rounded-full size-6 rotate-90 absolute right-2 "
+                class="rounded-full size-6 rotate-90 absolute right-2"
                 src="./images/search.png"
                 alt="recherche"
               />
             </div>
           </div>
 
-          <ol class="space-y-2 w-full">
+          <ol class="space-y-1 w-full">
             <li *ngFor="let link of links" class="w-full">
-              <a
-                class="block p-2 transition cursor-pointer w-full"
-                [routerLink]="link.path"
-                (click)="handleNavigation()"
-                routerLinkActive="text-blue-800 bg-blue-50"
-                #rlaM="routerLinkActive"
-                [routerLinkActiveOptions]="{ exact: true }"
-                [ngClass]="
-                  rlaM.isActive ? '' : 'text-gray-500 hover:text-blue-800'
-                "
-                [attr.aria-current]="rlaM.isActive ? 'page' : null"
-              >
-                {{ link.label }}
-              </a>
+              <div class="flex flex-col w-full">
+                <div class="flex items-center justify-between">
+                  <a
+                    class="block py-2 px-3 transition cursor-pointer w-full"
+                    (click)="toggleMobileSubmenu(link)"
+                    routerLinkActive="text-blue-800 bg-blue-50"
+                    #rlaM="routerLinkActive"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    [ngClass]="
+                      rlaM.isActive ? '' : 'text-gray-500 hover:text-blue-800'
+                    "
+                    [attr.aria-current]="rlaM.isActive ? 'page' : null"
+                  >
+                    {{ link.label }}
+                  </a>
+                  <button
+                    *ngIf="link.subMenu?.length"
+                    class="px-2 py-1"
+                    (click)="toggleMobileSubmenu(link)"
+                  >
+                    <svg
+                      class="w-5 h-5 transition-transform duration-300"
+                      [ngClass]="
+                        mobileActiveSubmenu === link ? 'rotate-180' : ''
+                      "
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Sous-menu mobile -->
+                <div
+                  *ngIf="link.subMenu?.length"
+                  class="pl-4 w-full overflow-hidden transition-all duration-300"
+                  [ngClass]="
+                    mobileActiveSubmenu === link
+                      ? 'max-h-96 mobile-menu-open'
+                      : 'max-h-0'
+                  "
+                >
+                  <a
+                    *ngFor="let subItem of link.subMenu"
+                    [routerLink]="subItem.path"
+                    class="block py-2 px-3 border-l-2 border-gray-200 text-gray-500 hover:text-blue-800 hover:border-blue-500 transition-colors submenu-link"
+                    (click)="handleNavigation()"
+                  >
+                    {{ subItem.label }}
+                  </a>
+                </div>
+              </div>
             </li>
           </ol>
 
@@ -205,4 +307,7 @@
     </div>
   </div>
 </nav>
-<router-outlet />
+
+<!-- <div class="pt-[60px]">
+  <router-outlet />
+</div> -->
