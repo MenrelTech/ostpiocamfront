@@ -6,6 +6,18 @@ import { CardimageComponent } from '../../cardimage/cardimage.component';
 import { VerticalcardtextComponent } from '../../verticalcardtext/verticalcardtext.component';
 import { RdvcardComponent } from '../../rdvcard/rdvcard.component';
 import { CountDownComponent } from '../count-down/count-down.component';
+import { CommonModule } from '@angular/common';
+
+interface Actualite {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  date: string;
+  name: string;
+  altMessage: string;
+  color: string;
+}
 
 @Component({
   selector: 'app-accueil',
@@ -15,14 +27,15 @@ import { CountDownComponent } from '../count-down/count-down.component';
     CardtextComponent,
     CardimageComponent,
     VerticalcardtextComponent,
-    RouterLink
+    RouterLink,
+    CommonModule
   ],
   standalone: true,
   templateUrl: './accueil.component.html',
   styleUrl: './accueil.component.css',
 })
 export class AccueilComponent {
-  actualites = signal([]);
+  actualites = signal<Actualite[]>([]);
   ngOnInit(){
     async function getActualities() {
       let response = await fetch("https://ostpiocamback.enotelco.com/api/publications", {
@@ -37,11 +50,11 @@ export class AccueilComponent {
         throw new Error(`HTTP error! status: ${response.status}`);          
       }else{
         let data = await response.json();
+        
         return data;
       }
     }
     getActualities().then((data) => {
-      console.log(data);
       let a = data.member.map((item : any) => {
         let couleur = "#C79100";
         if(item.title == "Environnement"){
@@ -64,8 +77,8 @@ export class AccueilComponent {
           color: couleur,
         };
       });
-      this.actualites.set(a);
-      console.log(this.actualites());
+      
+      this.actualites.set([a[0],a[1],a[2],a[3]]);
     }).catch((error) => {
       console.error('Error fetching actualities:', error);
     });
