@@ -13,50 +13,19 @@
         <div class="text-blue-700 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <div class="flex justify-center h-[600px] content-center">
-      <div class="flex w-[1200px] h-[600px]">
-        <div class="w-[600px] h-[600px]">
-          <div class="flex w-[600px]">
-            <img
-              class="h-[300px] w-[300px]"
-              src="./images/centre_sante.jpg"
-              alt="Logo ostpiocam spiritualite"
-            />
-            <img
-              class="h-[300px] w-[300px]"
-              src="./images/Logo_Saint_Pio_International_Medical_Aid_Services_Origin_01.png"
-              alt="Logo ostpiocam spiritualite"
-            />
-          </div>
-          <div class="flex w-[600px]">
-            <img
-              class="h-[300px] w-[300px]"
-              src="./images/centre_sante.jpg"
-              alt="Logo ostpiocam spiritualite"
-            />
-            <img
-              class="h-[300px] w-[300px]"
-              src="./images/Logo_Saint_Pio_International_Medical_Aid_Services_Origin_01.png"
-              alt="Logo ostpiocam spiritualite"
-            />
-          </div>
-        </div>
-        <div class="w-[600px] h-[600px] relative">
-          <div
-            class="absolute z-2 w-[600px] h-[600px] hover:bg-gray-900 hover:opacity-75 bg-transparent justify-center content-center"
-          >
-            <a
-              href="#"
-              class="opacity-100 ml-[250px] border-[2px] px-4 rounded-[5px] text-white text-[26px]"
-              >Voir plus +</a
-            >
-          </div>
-          <img
-            class="w-[600px] h-[600px]"
-            src="./images/centre_sante.jpg"
-            alt="Logo ostpiocam spiritualite"
-          />
-        </div>
+    <div class="flex justify-center  content-center">
+      <div class="grid md:grid-cols-4 grid-cols-1 w-[1200px] ">
+        <ng-container *ngFor="let image of galeries()">
+          <ng-container *ngFor="let photo of image.photos">
+            <div class="w-[300px] h-[300px]">
+              <img
+                class="w-[300px] h-[300px]"
+                src={{photo.imageUrl}}
+                alt={{photo.caption}}
+              />
+            </div>
+          </ng-container>
+        </ng-container>
       </div>
     </div>
   </div>
