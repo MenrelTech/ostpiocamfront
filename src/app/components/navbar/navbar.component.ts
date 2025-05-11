@@ -136,6 +136,32 @@ export class NavbarComponent implements AfterViewInit {
 
   email = signal<string| undefined>(undefined)
 
+  ngOnInit() {
+    async function getInfo() {
+      let response = await fetch("https://ostpiocamback.enotelco.com/api/me", {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-cache',
+        headers: {
+            'Content-Type': 'application/json',
+            'authorization': `Bearer ${window.sessionStorage.getItem('token')}`,
+        },
+      });
+      if (!response.ok) {   
+        throw new Error(`HTTP error! status: ${response.status}`);          
+      }else{
+        let data = await response.json();
+        
+        return data;
+      }
+    }
+    getInfo().then((data) => {
+      this.email.set(data.email);
+     }).catch((error) => {
+     console.error('Error Checking status user', error);
+   });
+  }
+
   ngAfterViewInit() {
     if (this.navLinksContainer) {
       setTimeout(() => {

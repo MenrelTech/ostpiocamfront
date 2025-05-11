@@ -1,12 +1,83 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CardtextComponent } from '../../cardtext/cardtext.component';
-
+import { CommonModule } from '@angular/common';
+import { VerticalcardtextComponent } from '../../verticalcardtext/verticalcardtext.component';
+interface Actualite {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  date: string;
+  name: string;
+  altMessage: string;
+  color: string;
+} 
 @Component({
   selector: 'app-actualite',
-  imports: [CardtextComponent],
+  imports: [CardtextComponent,CommonModule,VerticalcardtextComponent],
   templateUrl: './actualite.component.html',
   styleUrl: './actualite.component.css'
 })
 export class ActualiteComponent {
+  actualites = signal<Actualite[]>([]);
 
+  ngOnInit(){
+    async function getActualities(timeout = 10000) {
+      const controller = new AbortController();
+      const id = setTimeout(() => controller.abort(), timeout);
+
+      try {
+        let response = await fetch("https://ostpiocamback.enotelco.com/api/publications", {
+          method: 'GET',
+          mode: 'cors',
+          cache: 'no-cache',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          signal: controller.signal
+        });
+        clearTimeout(id);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        } else {
+          let data = await response.json();
+          return data;
+        }
+      } catch (error) {
+        clearTimeout(id);
+        throw error;
+      }
+    }
+    getActualities(20000).then((data) => {
+      let a = data.member.map((item : any) => {
+        let couleur = "#C79100";
+        if(item.title == "Environnement"){
+          couleur = "#00C7A0";
+        }else if(item.title == "Santé"){
+          couleur = "#FF6F61";
+        }else if(item.title == "Spiritualité"){
+          couleur = "#FF6F61";
+        }else if(item.title == "Communication"){
+          couleur = "#FF6F61";
+        }
+        let date = "2025-05-10T11:32:21+00:00"
+        date.slice(0,10)
+        return {
+          id: item.id,
+          title: item.title,
+          description: item.content,
+          image: item.publicationAttachments[0] ? "https://ostpiocamback.enotelco.com"+item.publicationAttachments[0].attachmentUrl : "" ,
+          date: "Le "+item.createdAt.slice(0,10)+" à "+item.createdAt.slice(11,16),
+          name: item.title,
+          altMessage : "actu_"+item.title,
+          color: couleur,
+        };
+      });
+      
+      this.actualites.set(a);
+    }).catch((error) => {
+      console.error('Error fetching actualities:', error);
+    });
+
+  }
 }

@@ -17,10 +17,10 @@
         />
 
         <div class="flex flex-col gap-y-4 mt-4 text-center">
-          <div class="text-3xl font-bold text-center">{{"Noel SiMO"}}</div>
+          <div class="text-3xl font-bold text-center">{{infoUser().firstName + " " +infoUser().lastName}}</div>
 
-          <span class="text-2xl font-medium">{{"noelsimo@gmail.com" }}</span>
-          <span class="text-xl font-medium">{{"237 699 458 614"}}</span>
+          <span class="text-2xl font-medium">{{infoUser().email}}</span>
+          <span class="text-xl font-medium">{{infoUser().phoneNumber}}</span>
         </div>
       </div>
 

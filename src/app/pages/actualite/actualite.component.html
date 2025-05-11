@@ -16,7 +16,20 @@
                 <div class="bg-blue-500 h-[1px] w-[50px]"></div>
               </div>
             </div>
-            <div class="grid grid-cols-1 gap-4  justify-items-center items-center ">
+            <div class="grid grid-cols-3 gap-4  justify-items-center items-center ">
+              <ng-container *ngFor="let actualite of actualites()">
+                <a href="/actualite" ariaCurrentWhenActive="page">
+                    <app-verticalcardtext
+                        [image]="actualite.image"
+                        [alt_message]="actualite.altMessage"
+                        [date_publication]="actualite.date"
+                        [description]="actualite.description"
+                        [name]="actualite.name"
+                        [color]="actualite.color">
+                    </app-verticalcardtext>
+                </a>
+              </ng-container>
+              <!--
               <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur1'" [name]="'Albert CAMUS'" [role]="'Fondateur'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>
               <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur2'" [name]="'Frank ONANA'" [role]="'Coordonateur general'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>
               <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur1'" [name]="'Albert CAMUS'" [role]="'Fondateur'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>
@@ -24,7 +37,7 @@
               <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur1'" [name]="'Albert CAMUS'" [role]="'Fondateur'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>
               <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur2'" [name]="'Frank ONANA'" [role]="'Coordonateur general'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>
               <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur1'" [name]="'Albert CAMUS'" [role]="'Fondateur'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>
-              <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur2'" [name]="'Frank ONANA'" [role]="'Coordonateur general'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>
+              <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur2'" [name]="'Frank ONANA'" [role]="'Coordonateur general'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>-->
             </div>
         </div>
     </div>

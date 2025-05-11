@@ -45,7 +45,7 @@ export class LoginComponent{
       let token =  data.token ;
       window.sessionStorage.setItem('token',token);
       alert('Vous êtes maintenant connecté !!');
-      window.location.assign("https://ostpiocam.org/");
+      window.location.assign("http://localhost:4200/");
     });
   }
 

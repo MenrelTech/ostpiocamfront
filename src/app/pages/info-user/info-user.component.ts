@@ -16,14 +16,14 @@ interface User {
    imports:[ImgcardtextComponent]
 })
 export class InfoUserComponent{
-   /*infoUser = signal<User>({
+   infoUser = signal<User>({
       id: 0,
-      firstName: "",
-      lastName: "",
-      phoneNumber: "",
-      createdAt: "",
+      firstName: "Noel",
+      lastName: "Simo",
+      phoneNumber: "644553322",
+      createdAt: "10/10/2023",
       comments: [],
-      email: "",
+      email: "Noel@gmail.com",
    });
    ngOnInit(){
       async function getInfo() {
@@ -33,6 +33,7 @@ export class InfoUserComponent{
           cache: 'no-cache',
           headers: {
               'Content-Type': 'application/json',
+              'authorization': `Bearer ${window.sessionStorage.getItem('token')}`,
           },
         });
         if (!response.ok) {   
@@ -44,9 +45,18 @@ export class InfoUserComponent{
         }
       }
       getInfo().then((data) => {
-         this.infoUser.set(data);
+         this.infoUser.set({
+            id: data.id,
+            firstName: data.first_name,
+            lastName: data.last_name,
+            phoneNumber: data.phone_number,
+            createdAt: data.createdAt,
+            comments: data.comments,
+            email: data.email,
+         });
+         console.log(data);
         }).catch((error) => {
         console.error('Error fetching User information:', error);
       });
-    }*/
+    }
 }
