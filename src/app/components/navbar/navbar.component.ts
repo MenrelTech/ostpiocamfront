@@ -61,7 +61,7 @@ export class NavbarComponent implements AfterViewInit {
         },
         {
           label: "Champs d'Apostolats",
-          path: "champs-d'apostolat",
+          path: "champs d'apostolat",
         },
         {
           label: 'Nos perspectives',
@@ -88,7 +88,7 @@ export class NavbarComponent implements AfterViewInit {
       subMenu: [
         {
           label: 'Spiritualités',
-          path: 'spiritualite',
+          path: AppRouter.fieldsOfApostolate + '/spiritualite',
         },
         {
           label: 'Sante',
@@ -137,8 +137,6 @@ export class NavbarComponent implements AfterViewInit {
   email = signal<string| undefined>(undefined)
 
   ngAfterViewInit() {
-    // Cette méthode s'exécute après l'initialisation de la vue
-    // Elle nous permet de mesurer la largeur réelle du conteneur de navigation
     if (this.navLinksContainer) {
       setTimeout(() => {
         this.navWidth = `${this.navLinksContainer.nativeElement.offsetWidth}px`;

@@ -11,6 +11,39 @@ export const AppRouter = {
   changePassword:"changer-de-mot-de-passe"
 };
 
+
+export const FieldOfApostolateNestedRouter = {
+  spirituality:{
+    home: 'spiritualite',
+    activities: 'activite',
+    about: 'apropos',
+    gallery: 'galerie', 
+    church:"connaissance de l'eglise"
+  }, 
+  health:{
+    home: '/sante',
+    Activities: '/sante/activite',
+    About: '/sante/apropos',
+    Gallery: '/sante/galerie',
+  }, 
+  environnement:{
+    home: '/environnement',
+    Activities: '/environnement/activite',
+    About: '/environnement/apropos',
+    Gallery: '/environnement/galerie',
+  }, 
+
+  communication:{
+    home: '/communication',
+    Activities: '/communication/activite',
+    About: '/communication/apropos',
+    Gallery:'/communication/galerie',
+
+  }
+
+
+}
+
 export const AppRouterSpirituality = {
   home: '/spiritualite',
   Activities: '/spiritualite/activite',

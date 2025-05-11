@@ -1,19 +1,37 @@
-<section class="w-full relative mb-[120px] text-red-700">
+<div class="w-full relative mb-[60px]">
   <div class="relative top-[60px] w-full">
-    <div class="w-full h-[50px] bg-red-50 content-center">
-      <p class="ml-[70px]">Accueil > Champs d'apostolat</p>
-    </div>
-    <div class="w-full content-evenly mt-[40px]">
-      <div class="mb-[40px]">
-        <h2 class="text-center font-bold text-2xl text-blue-700 mb-[20px]">
-          Actualités
-        </h2>
-        <div class="flex justify-center items-center w-full h-[5px]">
-          <div class="bg-blue-500 h-[1px] w-[50px]"></div>
-          <div class="bg-blue-800 h-[5px] w-[50px] rounded-full"></div>
-          <div class="bg-blue-500 h-[1px] w-[50px]"></div>
+    <div class="flex w-full font-(family-name:--chakraregular)">
+      <ng-container *ngFor="let menu of menus; index as i">
+        <div
+          class="relative w-[25%] h-[45px] justify-center items-center flex border-b-[5px]"
+          [ngClass]="[
+            'hover:bg-' + menu.color + '-300',
+            'border-' + menu.color + '-400'
+          ]"
+          (mouseenter)="showSubMenu(i)"
+          (mouseleave)="hideSubMenu()"
+          (click)="hideSubMenu()"
+        >
+          <a routerLink="{{ menu.path }}" class="relative">{{ menu.label }}</a>
+          <div
+            class="absolute w-full top-[45px] bg-{{ menu.color }}-100 justify-center items-center"
+            [hidden]="activeMenuIndex !== i"
+          >
+            <ng-container *ngFor="let item of menu.subItems">
+              <a class="h-[45px] w-full" [routerLink]="item.link">
+                <div
+                  class="pl-[20px] flex w-full border-b-[0.5px] h-[45px] border-x-[0.5px] items-center justify-center"
+                  [ngClass]="['border-' + menu.color + '-300']"
+                >
+                  <b>&#10095;</b>
+                  <p class="w-full pl-[15px]">{{ item.label }}</p>
+                </div>
+              </a>
+            </ng-container>
+          </div>
         </div>
-      </div>
+      </ng-container>
     </div>
+    <router-outlet ></router-outlet>
   </div>
-</section>
+</div>
