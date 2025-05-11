@@ -13,6 +13,11 @@ export class RdvcardComponent {
   @Input() bg: string = "white";
   @Input() color: string = "white";
   @Input() hovercolor: string = "";
+  @Input() jour: string = "20";
+  @Input() mois: string = "OCT";
+  @Input() annee: string = "2023";
+  @Input() title: string = "20e Anniversaire de l'oeuvre de St Padré Pio";
+  @Input() description: string = "Le 20e anniversaire de l'oeuvre de St Padré Pio est célébré avec une grande ferveur et une profonde gratitude. Cet événement marquant nous rappelle l'impact durable de son héritage spirituel et de ses enseignements sur des millions de personnes à travers le monde.";
   bg_color: { [key: string]: string } = {};
   other :  { [key: string]: string } = {};
   cardAspect : { [key: string]: string } = {};

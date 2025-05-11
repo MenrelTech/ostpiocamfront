@@ -144,30 +144,18 @@
           </div>
         </div>
         <div class="grid md:flex grid-cols-1 justify-center items-center w-full">
-          <a href="/actualite" ariaCurrentWhenActive="page">
-            <app-verticalcardtext [image]="'images/actu1.jpg'" [alt_message]="'actu_spiritualite'"
-              [date_publication]="'Publie le 11/02/2025 a 13h02'" [description]="
-                'Celebration de la fete de la jeunesse dans la Mifi en priere.'
-              " [name]="'Spiritualite'" [color]="'#C79100'"></app-verticalcardtext>
-          </a>
-          <a href="/actualite" ariaCurrentWhenActive="page">
-            <app-verticalcardtext [image]="'images/actu2.jpg'" [alt_message]="'actu_Sante'"
-              [date_publication]="'Publie le 12/01/2025 a 13h02'" [description]="
-                'Nouvelle campagne de don de sang dans le departement de la Sanaga-Maritime'
-              " [name]="'Sante'" [color]="'#A71D2A'"></app-verticalcardtext>
-          </a>
-          <a href="/actualite" ariaCurrentWhenActive="page">
-            <app-verticalcardtext [image]="'images/actu3.jpg'" [alt_message]="'actu_environnement'"
-              [date_publication]="'Publie le 06/02/2025 a 14h02'" [description]="
-                'Programme de nettoyage de la ville de Kaele par les jeunes de la communaute'
-              " [name]="'environnement'" [color]="'#1E7D33'"></app-verticalcardtext>
-          </a>
-          <a href="/actualite" ariaCurrentWhenActive="page">
-            <app-verticalcardtext [image]="'images/actu4.jpg'" [alt_message]="'actu_communication'"
-              [date_publication]="'Publie le 01/02/2025 a 09h02'" [description]="
-                'Compte rendu de la conference de presse du coordonnateur a Rome'
-              " [name]="'communication'" [color]="'#0056B3'"></app-verticalcardtext>
-          </a>
+          <ng-container *ngFor="let actualite of actualites()">
+            <a href="/actualite" ariaCurrentWhenActive="page">
+                <app-verticalcardtext
+                    [image]="actualite.image"
+                    [alt_message]="actualite.altMessage"
+                    [date_publication]="actualite.date"
+                    [description]="actualite.description"
+                    [name]="actualite.name"
+                    [color]="actualite.color">
+                </app-verticalcardtext>
+            </a>
+          </ng-container>
         </div>
       </div>
       <div class="w-full h-max py-8 content-evenly items-center">
@@ -182,12 +170,10 @@
           </div>
         </div>
         <div class="flex w-full px-2 justify-items-center grid md:grid-cols-2 gap-4 justify-around items-around">
-          <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" />
-          <app-rdvcard [bg]="'#FFF3CD'" [color]="'#FFC107'" [hovercolor]="'#664500'" />
-          <app-rdvcard [bg]="'#F8D7DA'" [color]="'#DC3545'" [hovercolor]="'#5B0F15'" />
-          <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" />
-          <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" />
-          <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" />
+          <ng-container *ngFor="let grandedate of grandesDates()">
+            <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" [title]="grandedate.title" [description]="grandedate.description" [annee]="grandedate.annee" [mois]="grandedate.mois" [jour]="grandedate.jour" [mois]="grandedate.mois" [jour]="grandedate.jour" />
+          </ng-container>
+          
         </div>
         <div class="flex justify-center items-center w-full mt-[20px] py-[20px]">
           <a href="/"><button

@@ -18,6 +18,16 @@ interface Actualite {
   altMessage: string;
   color: string;
 }
+interface GrandesDates {
+  id: number;
+  title: string;
+  description: string;
+  jour: string;
+  mois: string;
+  annee: string;
+  date: string;
+  color: string;
+}
 
 @Component({
   selector: 'app-accueil',
@@ -36,25 +46,61 @@ interface Actualite {
 })
 export class AccueilComponent {
   actualites = signal<Actualite[]>([]);
+  grandesDates = signal<GrandesDates[]>([]);
   ngOnInit(){
-    async function getActualities() {
-      let response = await fetch("https://ostpiocamback.enotelco.com/api/publications", {
-        method: 'GET',
-        mode: 'cors',
-        cache: 'no-cache',
-        headers: {
+    async function getActualities(timeout = 10000) {
+      const controller = new AbortController();
+      const id = setTimeout(() => controller.abort(), timeout);
+
+      try {
+        let response = await fetch("https://ostpiocamback.enotelco.com/api/publications", {
+          method: 'GET',
+          mode: 'cors',
+          cache: 'no-cache',
+          headers: {
             'Content-Type': 'application/json',
-        },
-      });
-      if (!response.ok) {   
-        throw new Error(`HTTP error! status: ${response.status}`);          
-      }else{
-        let data = await response.json();
-        
-        return data;
+          },
+          signal: controller.signal
+        });
+        clearTimeout(id);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        } else {
+          let data = await response.json();
+          return data;
+        }
+      } catch (error) {
+        clearTimeout(id);
+        throw error;
       }
     }
-    getActualities().then((data) => {
+    async function getDate(timeout = 10000) {
+      const controller = new AbortController();
+      const id = setTimeout(() => controller.abort(), timeout);
+
+      try {
+        let response = await fetch("https://ostpiocamback.enotelco.com/api/calendar_events", {
+          method: 'GET',
+          mode: 'cors',
+          cache: 'no-cache',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          signal: controller.signal
+        });
+        clearTimeout(id);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        } else {
+          let data = await response.json();
+          return data;
+        }
+      } catch (error) {
+        clearTimeout(id);
+        throw error;
+      }
+    }
+    getActualities(20000).then((data) => {
       let a = data.member.map((item : any) => {
         let couleur = "#C79100";
         if(item.title == "Environnement"){
@@ -66,12 +112,14 @@ export class AccueilComponent {
         }else if(item.title == "Communication"){
           couleur = "#FF6F61";
         }
+        let date = "2025-05-10T11:32:21+00:00"
+        date.slice(0,10)
         return {
           id: item.id,
           title: item.title,
           description: item.content,
-          image: item.publicationAttachments[0] ? item.publicationAttachments[0].attachmentUrl : "" ,
-          date: item.createdAt,
+          image: item.publicationAttachments[0] ? "https://ostpiocamback.enotelco.com"+item.publicationAttachments[0].attachmentUrl : "" ,
+          date: "Le "+item.createdAt.slice(0,10)+" à "+item.createdAt.slice(11,16),
           name: item.title,
           altMessage : "actu_"+item.title,
           color: couleur,
@@ -79,8 +127,39 @@ export class AccueilComponent {
       });
       
       this.actualites.set([a[0],a[1],a[2],a[3]]);
+      console.log(this.actualites())
     }).catch((error) => {
       console.error('Error fetching actualities:', error);
+    });
+    getDate(20000).then((data) => {
+      let a = data.member.map((item : any) => {
+        let couleur = "#C79100";
+        if(item.title == "Environnement"){
+          couleur = "#00C7A0";
+        }else if(item.title == "Santé"){
+          couleur = "#FF6F61";
+        }else if(item.title == "Spiritualité"){
+          couleur = "#FF6F61";
+        }else if(item.title == "Communication"){
+          couleur = "#FF6F61";
+        }
+
+        return {
+          id: item.id,
+          title: item.title,
+          description: item.description,
+          date: "Le "+item.date.slice(0,10)+" à "+item.date.slice(11,16),
+          jour: item.date.slice(8,10),
+          mois: item.date.slice(5,7),
+          annee: item.date.slice(0,4),
+          color: couleur,
+        };
+      });
+      
+      this.grandesDates.set([a[0],a[1],a[2],a[3]]);
+      console.log(this.grandesDates())
+    }).catch((error) => {
+      console.error('Error fetching grandes dates:', error);
     });
   }
 }

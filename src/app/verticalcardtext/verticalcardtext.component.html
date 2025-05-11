@@ -1,10 +1,10 @@
-<div class="items-center rounded-[8px] mx-auto md:mx-[12px] my-4 md:my-0 content-center w-[230px] h-[350px] hover:shadow-lx hover:outline-2 outline-offset-0 outline-sky-300">
+<div class="items-center rounded-[8px] mx-auto md:mx-[12px] my-4 md:my-0 content-center w-[230px] max-h-[400px] hover:shadow-lx hover:outline-2 outline-offset-0 outline-sky-300">
     <a href="/actualite">
         <div class="rounded-[8px] w-[230px] h-[180px]">
             <img class="rounded-[8px] w-[230px] h-[180px]" src={{image()}} alt={{alt_message()}}  />
         </div>
-        <div class="px-[10px] w-[230px] h-[170px]">
-            <p class="text-[17px] h-[17px] my-[5px]"  [ngStyle]="textcolor">{{name()}}</p>
+        <div class="px-[10px] w-[230px]">
+            <p class="text-[17px] my-[5px]"  [ngStyle]="textcolor">{{name()}}</p>
             <p class="text-[16px] text-justify h-[116px] font-(family-name:--chakrasemibold)">{{description()}}</p>
             <p class="text-gray-500 text-right text-[11px] mt-[10px] h-[17px]">{{date_publication()}}</p>
         </div>
