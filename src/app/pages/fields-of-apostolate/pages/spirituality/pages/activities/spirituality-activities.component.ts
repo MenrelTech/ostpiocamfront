@@ -19,6 +19,15 @@ interface Activite {
   description: string,
   contact: string
 } 
+interface Rapport {
+  id: number,
+  title: string,
+  description: string,
+  report: string,
+  reportUrl: string,
+  publishedAt: string
+}
+
 interface GrandesDates {
   id: number;
   title: string;
@@ -37,6 +46,7 @@ interface GrandesDates {
 })
 export class SpiritualityActivitiesComponent{
   activites = signal<Activite[]>([]);
+  rapport = signal<Rapport[]>([]);
   grandesDates = signal<GrandesDates[]>([]);
   grandesDates2 = signal<GrandesDates[]>([]);
   ngOnInit(){
@@ -141,9 +151,50 @@ export class SpiritualityActivitiesComponent{
       });
       this.grandesDates.set([a[0],a[1],a[2]]);
       this.grandesDates2.set([a[a.length - 1],a[a.length-2],a[a.length-3]]);
-      console.log(this.grandesDates2);
+      console.log(this.grandesDates2());
     }).catch((error) => {
       console.error('Error fetching grandes dates:', error);
+    });
+    async function getReports(timeout = 10000) {
+      const controller = new AbortController();
+      const id = setTimeout(() => controller.abort(), timeout);
+
+      try {
+        let response = await fetch("https://ostpiocamback.enotelco.com/api/activity_reports", {
+          method: 'GET',
+          mode: 'cors',
+          cache: 'no-cache',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          signal: controller.signal
+        });
+        clearTimeout(id);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        } else {
+          let data = await response.json();
+          return data;
+        }
+      } catch (error) {
+        clearTimeout(id);
+        throw error;
+      }
+    }
+    getReports(20000).then((data) => {
+      let a = data.member.map((item : any) => {
+        return {
+          id: item.id,
+          title: item.title,
+          description: item.description,
+          report : item.report,
+          reportUrl : item.reportUrl,
+          publishedAt : item.publishedAt.slice(0,10)
+        };
+      });
+      this.rapport.set([a[a.length - 1],a[a.length - 2],a[a.length - 3]]);
+    }).catch((error) => {
+      console.error('Error fetching reports:', error);
     });
 
   }

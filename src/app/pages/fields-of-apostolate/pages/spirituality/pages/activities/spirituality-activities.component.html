@@ -26,8 +26,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full place-items-center">
         <ng-container *ngFor="let activite of activites()">
           <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
-            [name]="activite.name" [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'" [localisation]="
+            [name]="activite.name" [icone1]="'./images/icone_localisation.jpg'" [icone2]="'./images/planning.jpeg'"
+            [localisation]="
             activite.location
           " [date_debut]="activite.startAt.slice(0,10)" [date_fin]="activite.endAt.slice(0,10)" />
         </ng-container>
@@ -53,14 +53,18 @@
           { evenement: 'Anniversaire', date: '2025-07-20' }
         ]">
       </app-calendar>
-      <div class="grid md:grid-cols-1 grid-cols-1 justify-items-center items-center">
+      <div class="grid md:grid-cols-1 grid-cols-1 gap-1 justify-items-center items-center">
         <ng-container *ngFor="let grandedate of grandesDates()">
-          <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" [title]="grandedate.title" [description]="grandedate.description" [annee]="grandedate.annee" [mois]="grandedate.mois" [jour]="grandedate.jour" [mois]="grandedate.mois" [jour]="grandedate.jour" />
+          <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" [title]="grandedate.title"
+            [description]="grandedate.description" [annee]="grandedate.annee" [mois]="grandedate.mois"
+            [jour]="grandedate.jour" [mois]="grandedate.mois" [jour]="grandedate.jour" />
         </ng-container>
       </div>
-      <div class="grid md:grid-cols-1 grid-cols-1 justify-items-center items-center">
+      <div class="grid md:grid-cols-1 grid-cols-1 gap-1 justify-items-center items-center">
         <ng-container *ngFor="let grandedate of grandesDates2()">
-          <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" [title]="grandedate.title" [description]="grandedate.description" [annee]="grandedate.annee" [mois]="grandedate.mois" [jour]="grandedate.jour" [mois]="grandedate.mois" [jour]="grandedate.jour" />
+          <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" [title]="grandedate.title"
+            [description]="grandedate.description" [annee]="grandedate.annee" [mois]="grandedate.mois"
+            [jour]="grandedate.jour" [mois]="grandedate.mois" [jour]="grandedate.jour" />
         </ng-container>
       </div>
     </div>
@@ -77,57 +81,25 @@
       </div>
     </div>
     <div class="flex w-full px-2 content-center flex-wrap gap-y-4 justify-around items-around">
-      <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
-        <div
-          class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center">
-          <p class="content-center text-[22px]">DOCX</p>
-        </div>
-        <div class="h-[73px] content-around">
-          <p class="font-bold text-[20px] px-[20px]">
-            Rapports du seminaire du 04 mai 2025
-          </p>
-          <div class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right">
-            <button
-              class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]">
-              Telecharger &#11167;
-            </button>
+      <ng-container *ngFor="let rapp of rapport()">
+        <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
+          <div
+            class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center">
+            <p class="content-center text-[22px]">DOCX</p>
+          </div>
+          <div class="h-[73px] content-around">
+            <p class="font-bold text-[20px] px-[20px]">
+              Rapports du seminaire du {{rapp.publishedAt}}
+            </p>
+            <div class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right">
+              <button
+                class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]">
+                Telecharger &#11167;
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
-        <div
-          class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center">
-          <p class="content-center text-[22px]">DOCX</p>
-        </div>
-        <div class="h-[73px] content-around">
-          <p class="font-bold text-[20px] px-[20px]">
-            Rapports du seminaire du 04 mai 2025
-          </p>
-          <div class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right">
-            <button
-              class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]">
-              Telecharger &#11167;
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
-        <div
-          class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center">
-          <p class="content-center text-[22px]">DOCX</p>
-        </div>
-        <div class="h-[73px] content-around">
-          <p class="font-bold text-[20px] px-[20px]">
-            Rapports du seminaire du 04 mai 2025
-          </p>
-          <div class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right">
-            <button
-              class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]">
-              Telecharger &#11167;
-            </button>
-          </div>
-        </div>
-      </div>
+      </ng-container>
     </div>
   </div>
   <div class="w-full h-max content-evenly items-center">
@@ -147,8 +119,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-1 w-full place-items-center">
         <ng-container *ngFor="let activite of activites()">
           <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
-            [name]="activite.name" [icone1]="'./images/icone_localisation.jpg'"
-            [icone2]="'./images/planning.jpeg'" [localisation]="
+            [name]="activite.name" [icone1]="'./images/icone_localisation.jpg'" [icone2]="'./images/planning.jpeg'"
+            [localisation]="
             activite.location
           " [date_debut]="activite.startAt.slice(0,10)" [date_fin]="activite.endAt.slice(0,10)" />
         </ng-container>
