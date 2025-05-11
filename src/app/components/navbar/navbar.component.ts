@@ -136,7 +136,8 @@ export class NavbarComponent implements AfterViewInit {
 
   email = signal<string| undefined>(undefined)
 
-  afterRender() {
+  ngOnInit() {
+    console.log('Navbar rendered');
     async function getInfo() {
       let response = await fetch("https://ostpiocamback.enotelco.com/api/me", {
         method: 'GET',
@@ -157,6 +158,7 @@ export class NavbarComponent implements AfterViewInit {
     }
     getInfo().then((data) => {
       this.email.set(data.email);
+      console.log(data);
      }).catch((error) => {
      console.error('Error Checking status user', error);
    });

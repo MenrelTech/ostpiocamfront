@@ -127,7 +127,6 @@ export class AccueilComponent {
       });
       
       this.actualites.set([a[0],a[1],a[2],a[3]]);
-      console.log(this.actualites())
     }).catch((error) => {
       console.error('Error fetching actualities:', error);
     });
@@ -157,7 +156,6 @@ export class AccueilComponent {
       });
       
       this.grandesDates.set([a[0],a[1],a[2],a[3]]);
-      console.log(this.grandesDates())
     }).catch((error) => {
       console.error('Error fetching grandes dates:', error);
     });

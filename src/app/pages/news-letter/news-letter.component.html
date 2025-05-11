@@ -7,22 +7,20 @@
     </div>
   </div>
 
-  <div
-    class="h-full flex justify-center min-h-[200px] mb-20 items-center flex-col"
-  >
-    <form
-      action=""
-      class="flex flex-col items-center gap-y-8 w-[50%] px-2"
-    >
+  <div class="h-full flex justify-center min-h-[200px] mb-20 items-center flex-col">
+    <form action="" class="flex flex-col items-center gap-y-8 w-[50%] px-2">
       <p class="text-2xl font-bold">
         Restez informer sur les dernières actualités de l’oeuvre de saint padre
         pio grâce à la Newsletter!
       </p>
 
       <input-form label="Votre prénom uniquement" class="w-[100%] flex-col" />
-
-      <input-form label="Votre adresse e-mail" type="email" class="w-[100%]" />
-
+      <div class="w-full flex gap-y-2 flex-col md:flex-row items-start md:items-center gap-x-4">
+        <label for="email" class="font-medium text-base min-w-[212px] text-black">votre email
+        </label>
+        <input name="email" type="email" [(ngModel)]="subscriberEmail"
+          class="border-[2px] border-[#0056B3] rounded px-2 py-3 w-full md:min-w-[350px] text-sm font-medium outline-none focus:outline-none" />
+      </div>
       <div class="flex items-center gap-x-10">
         <input type="checkbox" />
 
@@ -34,10 +32,8 @@
         </p>
       </div>
 
-      <button
-        type="submit"
-        class="px-4 py-3 bg-[#007BFF] mt-5 w-[200px] cursor-pointer text-white rounded-lg text-base font-medium border-none"
-      >
+      <button (click)="subscribe()" type="submit"
+        class="px-4 py-3 bg-[#007BFF] mt-5 w-[200px] cursor-pointer text-white rounded-lg text-base font-medium border-none">
         c'est partis
       </button>
     </form>

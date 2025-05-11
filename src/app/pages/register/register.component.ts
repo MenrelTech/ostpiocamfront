@@ -43,7 +43,7 @@ export class RegisterComponent{
         alert('Utilisateur  déjà  existant ! Changez vos informations');
     }else{
         alert('Votre compte à été crée avec succès !!');
-        window.location.assign("https://ostpiocam.org/") ;
+        window.location.href = '/';
     }
   }
 
