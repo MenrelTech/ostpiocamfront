@@ -34,6 +34,7 @@ import { CommunicationGalleryComponent } from './pages/fields-of-apostolate/page
 import { EnvironnementAboutComponent } from './pages/fields-of-apostolate/pages/environnement/pages/about/environnement-about.component';
 import { EnvironnementActivitiesComponent } from './pages/fields-of-apostolate/pages/environnement/pages/activities/environnement-activities.component';
 import { EnvironnementComponent } from './pages/fields-of-apostolate/pages/environnement/environnement.component';
+import { EnvironnementGalleryComponent } from './pages/fields-of-apostolate/pages/environnement/pages/gallery/environnement-gallery.component';
 
 export const routes: Routes = [
   {
@@ -139,12 +140,12 @@ export const routes: Routes = [
             component:EnvironnementAboutComponent
           },
           {
-            path:FieldOfApostolateNestedRouter.communication.activities, 
+            path:FieldOfApostolateNestedRouter.environnement.activities, 
             component:EnvironnementActivitiesComponent
           },
           {
-            path:FieldOfApostolateNestedRouter.communication.gallery, 
-            component:CommunicationGalleryComponent
+            path:FieldOfApostolateNestedRouter.environnement.gallery, 
+            component:EnvironnementGalleryComponent
           }
         ]
       },
