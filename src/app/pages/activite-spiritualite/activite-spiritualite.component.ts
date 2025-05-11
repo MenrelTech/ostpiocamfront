@@ -40,4 +40,5 @@ export class ActiviteSpiritualiteComponent {
   hidemenu4(){
     this.hidden4 = true;
   }
+
 }
