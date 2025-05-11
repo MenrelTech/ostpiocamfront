@@ -136,7 +136,7 @@ export class NavbarComponent implements AfterViewInit {
 
   email = signal<string| undefined>(undefined)
 
-  ngOnInit() {
+  afterRender() {
     async function getInfo() {
       let response = await fetch("https://ostpiocamback.enotelco.com/api/me", {
         method: 'GET',
