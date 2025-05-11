@@ -13,7 +13,7 @@
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <div class="flex justify-center h-[600px] content-center">
+    <div class="flex justify-center  content-center">
       <div class="flex w-[1200px] h-[600px]">
         <div class="w-[600px] h-[600px]">
           <div class="flex w-[600px]">
@@ -59,6 +59,22 @@
         </div>
       </div>
     </div>
+    <div class="flex justify-center  content-center">
+      <div class="grid md:grid-cols-4 grid-cols-1 w-[1200px] ">
+        <ng-container *ngFor="let image of galeries()">
+          <ng-container *ngFor="let photo of image.photos">
+            <div class="w-[300px] h-[300px]">
+              <img
+                class="w-[300px] h-[300px]"
+                src={{photo.imageUrl}}
+                alt={{photo.caption}}
+              />
+            </div>
+          </ng-container>
+        </ng-container>
+      </div>
+    </div>
+
   </div>
   <div class="w-full h-[300px] content-evenly mt-[200px]">
     <div class="mb-[40px]">
