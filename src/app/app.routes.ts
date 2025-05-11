@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { AccueilSpiritualiteComponent } from './pages/accueil-spiritualite/accueil-spiritualite.component';
 import { AccueilSanteComponent } from './pages/accueil-sante/accueil-sante.component';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { AccueilEnvironnementComponent } from './pages/accueil-environnement/accueil-environnement.component';
@@ -17,7 +16,11 @@ import { ActiviteSanteComponent } from './pages/activite-sante/activite-sante.co
 import { ActiviteCommunicationComponent } from './pages/activite-communication/activite-communication.component';
 import { ActiviteEnvironnementComponent } from './pages/activite-environnement/activite-environnement.component';
 import { FieldOfApostolateComponent } from './pages/fields-of-apostolate/filed-of-apostolate.component';
-import { AppRouter, AuthRoutes } from './shared/app-router/app-router';
+import {
+  AppRouter,
+  AuthRoutes,
+  FieldOfApostolateNestedRouter,
+} from './shared/app-router/app-router';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { BecomeVolunteerComponent } from './pages/become-volunteer/become-volunteer.component';
@@ -29,6 +32,11 @@ import { PresentationComponent } from './pages/presentations/presentation.compon
 import { ProlegomenaComponent } from './pages/prolegomene/prolegomene.component';
 import { InfoUserComponent } from './pages/info-user/info-user.component';
 import { ChangePasswordComponent } from './pages/change-password/change-password.component';
+import { SpiritualityComponent } from './pages/fields-of-apostolate/pages/spirituality/spirituality.component';
+import { SpiritualityAboutComponent } from './pages/fields-of-apostolate/pages/spirituality/pages/about/spirituality-about.component';
+import { SpiritualityGalleryComponent } from './pages/fields-of-apostolate/pages/spirituality/pages/galerie/spirituality-galery.component';
+import { SpiritualityActivitiesComponent } from './pages/fields-of-apostolate/pages/spirituality/pages/activities/spirituality-activities.component';
+import { SpiritualityChurchComponent } from './pages/fields-of-apostolate/pages/spirituality/pages/church/spirituality-church.component';
 
 export const routes: Routes = [
   {
@@ -36,10 +44,10 @@ export const routes: Routes = [
     component: AccueilComponent,
   },
 
-  {
-    path: 'spiritualite',
-    component: AccueilSpiritualiteComponent,
-  },
+  // {
+  //   path: 'spiritualite',
+  //   component:SpiritualityComponent,
+  // },
   {
     path: 'spiritualite/activite',
     component: ActiviteSpiritualiteComponent,
@@ -103,11 +111,39 @@ export const routes: Routes = [
   {
     path: AppRouter.fieldsOfApostolate,
     component: FieldOfApostolateComponent,
+    children: [
+      { path: '', redirectTo: 'spiritualite', pathMatch: 'full' },
+      {
+        path: FieldOfApostolateNestedRouter.spirituality.home,
+        component: SpiritualityComponent,
+        children:[
+          {
+            path:"", redirectTo:FieldOfApostolateNestedRouter.spirituality.about, pathMatch:"full", 
+          }, 
+          {
+            path:FieldOfApostolateNestedRouter.spirituality.about, 
+            component:SpiritualityAboutComponent
+          }, 
+          {
+            path:FieldOfApostolateNestedRouter.spirituality.activities,
+            component:SpiritualityActivitiesComponent
+          }, 
+          {
+            path:FieldOfApostolateNestedRouter.spirituality.gallery, 
+            component:SpiritualityGalleryComponent
+          }, 
+          {
+            path:FieldOfApostolateNestedRouter.spirituality.church, 
+            component:SpiritualityChurchComponent
+          }
+        ]
+      },
+    ],
   },
 
   {
-    path:AppRouter.contact,
-    component:ContactComponent
+    path: AppRouter.contact,
+    component: ContactComponent,
   },
 
   {
@@ -117,43 +153,41 @@ export const routes: Routes = [
 
   {
     path: AuthRoutes.register,
-    component:RegisterComponent
-  }, 
-  {
-    path:AuthRoutes.volunteer, 
-    component:BecomeVolunteerComponent
-  }, 
-  {
-    path:AuthRoutes.partner, 
-    component:BecomePartnerComponent
+    component: RegisterComponent,
   },
   {
-    path:AuthRoutes.newsLetter, 
-    component:NewLetterComponent
+    path: AuthRoutes.volunteer,
+    component: BecomeVolunteerComponent,
   },
   {
-    path:AppRouter.countdown,
-    component:CountDownComponent
-  }, 
+    path: AuthRoutes.partner,
+    component: BecomePartnerComponent,
+  },
+  {
+    path: AuthRoutes.newsLetter,
+    component: NewLetterComponent,
+  },
+  {
+    path: AppRouter.countdown,
+    component: CountDownComponent,
+  },
 
   {
-    path:AppRouter.presentation, 
-    component:PresentationComponent
-  }, 
+    path: AppRouter.presentation,
+    component: PresentationComponent,
+  },
   {
-
-    path:AppRouter.prolegomena,
-    component:ProlegomenaComponent
-  }, 
-
-  {
-
-    path:AppRouter.infoUser,
-    component:InfoUserComponent
-  }, 
+    path: AppRouter.prolegomena,
+    component: ProlegomenaComponent,
+  },
 
   {
-    path:AppRouter.changePassword,
-    component:ChangePasswordComponent
-  }
+    path: AppRouter.infoUser,
+    component: InfoUserComponent,
+  },
+
+  {
+    path: AppRouter.changePassword,
+    component: ChangePasswordComponent,
+  },
 ];

@@ -61,7 +61,7 @@ export class NavbarComponent implements AfterViewInit {
         },
         {
           label: "Champs d'Apostolats",
-          path: "champs-d'apostolat",
+          path: "champs d'apostolat",
         },
         {
           label: 'Nos perspectives',
@@ -88,7 +88,7 @@ export class NavbarComponent implements AfterViewInit {
       subMenu: [
         {
           label: 'Spiritualités',
-          path: 'spiritualite',
+          path: AppRouter.fieldsOfApostolate + '/spiritualite',
         },
         {
           label: 'Sante',

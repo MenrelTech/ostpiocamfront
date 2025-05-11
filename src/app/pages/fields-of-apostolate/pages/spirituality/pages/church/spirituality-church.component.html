@@ -1,0 +1,313 @@
+<div >
+  <div class="w-full h-[50px] bg-yellow-50 content-center">
+    <p class="ml-[70px]">Accueil > Champs d'apostolat > Sante > Activités</p>
+  </div>
+
+  <div class="w-full h-max content-evenly items-center">
+    <div class="mb-[10px]">
+      <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+        Rencontres
+      </h2>
+      <div class="flex justify-center items-center w-full h-[5px]">
+        <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+        <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+        <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+      </div>
+    </div>
+    <p class="text-center w-full mb-[40px]">
+      Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl
+      commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu
+      feugiat.
+    </p>
+
+    <div class="flex justify-center py-4 items-center w-full">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full place-items-center"
+      >
+        <app-cardaddress
+          [couleur_bg]="'#FFF9E6'"
+          [image]="'./images/logo_dossier.jpg'"
+          [alt_message]="'activite'"
+          [name]="'20e Anniversaire de loeuvre de St Padré Pio au CMR'"
+          [icone1]="'./images/icone_localisation.jpg'"
+          [icone2]="'./images/planning.jpeg'"
+          [localisation]="
+            'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
+          "
+          [date_debut]="'19/10/2025'"
+          [date_fin]="'23/10/2025'"
+        />
+        <app-cardaddress
+          [couleur_bg]="'#FFF9E6'"
+          [image]="'./images/logo_dossier.jpg'"
+          [alt_message]="'activite'"
+          [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
+          [icone1]="'./images/icone_localisation.jpg'"
+          [icone2]="'./images/planning.jpeg'"
+          [localisation]="
+            'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
+          "
+          [date_debut]="'19/10/2025'"
+          [date_fin]="'23/10/2025'"
+        />
+        <app-cardaddress
+          [couleur_bg]="'#FFF9E6'"
+          [image]="'./images/logo_dossier.jpg'"
+          [alt_message]="'activite'"
+          [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
+          [icone1]="'./images/icone_localisation.jpg'"
+          [icone2]="'./images/planning.jpeg'"
+          [localisation]="
+            'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
+          "
+          [date_debut]="'19/10/2025'"
+          [date_fin]="'23/10/2025'"
+        />
+        <app-cardaddress
+          [couleur_bg]="'#FFF9E6'"
+          [image]="'./images/logo_dossier.jpg'"
+          [alt_message]="'activite'"
+          [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
+          [icone1]="'./images/icone_localisation.jpg'"
+          [icone2]="'./images/planning.jpeg'"
+          [localisation]="
+            'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
+          "
+          [date_debut]="'19/10/2025'"
+          [date_fin]="'23/10/2025'"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="w-full h-max py-8 bg-yellow-50 content-evenly items-center">
+    <div class="mb-[40px]">
+      <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+        Calendriers & grandes dates
+      </h2>
+      <div class="flex justify-center items-center w-full h-[5px]">
+        <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+        <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+        <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+      </div>
+    </div>
+    <p class="text-center w-full mb-[40px]">Les grandes dates à venir:</p>
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 gap-2 justify-items-center items-center"
+    >
+      <app-calendar
+        [events]="[
+          { evenement: 'Jour de randonnée', date: '2025-07-10' },
+          { evenement: 'Réunion', date: '2025-07-15' },
+          { evenement: 'Anniversaire', date: '2025-07-20' }
+        ]"
+      >
+      </app-calendar>
+      <div class="grid grid-cols-1 gap-2 justify-items-center items-center">
+        <app-rdvcard
+          [bg]="'#F8D7DA'"
+          [color]="'#DC3545'"
+          [hovercolor]="'#5B0F15'"
+        />
+        <app-rdvcard
+          [bg]="'#F8D7DA'"
+          [color]="'#DC3545'"
+          [hovercolor]="'#5B0F15'"
+        />
+        <app-rdvcard
+          [bg]="'#F8D7DA'"
+          [color]="'#DC3545'"
+          [hovercolor]="'#5B0F15'"
+        />
+      </div>
+      <div class="grid grid-cols-1 gap-2 justify-items-center items-center">
+        <app-rdvcard
+          [bg]="'#F8D7DA'"
+          [color]="'#DC3545'"
+          [hovercolor]="'#5B0F15'"
+        />
+        <app-rdvcard
+          [bg]="'#F8D7DA'"
+          [color]="'#DC3545'"
+          [hovercolor]="'#5B0F15'"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="w-full h-max mb-[40px] content-evenly items-center">
+    <div class="mb-[40px]">
+      <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+        Rapport d'activite
+      </h2>
+      <div class="flex justify-center items-center w-full h-[5px]">
+        <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+        <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+        <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+      </div>
+    </div>
+    <div
+      class="flex w-full px-2 content-center flex-wrap gap-y-4 justify-around items-around"
+    >
+      <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
+        <div
+          class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center"
+        >
+          <p class="content-center text-[22px]">DOCX</p>
+        </div>
+        <div class="h-[73px] content-around">
+          <p class="font-bold text-[20px] px-[20px]">
+            Rapports du seminaire du 04 mai 2025
+          </p>
+          <div
+            class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right"
+          >
+            <button
+              class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]"
+            >
+              Telecharger &#11167;
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
+        <div
+          class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center"
+        >
+          <p class="content-center text-[22px]">DOCX</p>
+        </div>
+        <div class="h-[73px] content-around">
+          <p class="font-bold text-[20px] px-[20px]">
+            Rapports du seminaire du 04 mai 2025
+          </p>
+          <div
+            class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right"
+          >
+            <button
+              class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]"
+            >
+              Telecharger &#11167;
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
+        <div
+          class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center"
+        >
+          <p class="content-center text-[22px]">DOCX</p>
+        </div>
+        <div class="h-[73px] content-around">
+          <p class="font-bold text-[20px] px-[20px]">
+            Rapports du seminaire du 04 mai 2025
+          </p>
+          <div
+            class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right"
+          >
+            <button
+              class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]"
+            >
+              Telecharger &#11167;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full h-max content-evenly items-center">
+    <div class="mb-[40px]">
+      <h2 class="text-center font-bold text-2xl text-yellow-700 mb-[20px]">
+        Evennements
+      </h2>
+      <div class="flex justify-center items-center w-full h-[5px]">
+        <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+        <div class="bg-yellow-700 h-[5px] w-[50px] rounded-full"></div>
+        <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
+      </div>
+    </div>
+    <p class="text-center w-full mb-[40px]">Liste des évènements à venir</p>
+
+    <div class="flex justify-center py-4 items-center w-full">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-1 w-full place-items-center"
+      >
+        <app-cardaddress
+          [couleur_bg]="'#FFF9E6'"
+          [image]="'./images/logo_dossier.jpg'"
+          [alt_message]="'activite'"
+          [name]="'20e Anniversaire de loeuvre de St Padré Pio au CMR'"
+          [icone1]="'./images/icone_localisation.jpg'"
+          [icone2]="'./images/planning.jpeg'"
+          [localisation]="
+            'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
+          "
+          [date_debut]="'19/10/2025'"
+          [date_fin]="'23/10/2025'"
+        />
+        <app-cardaddress
+          [couleur_bg]="'#FFF9E6'"
+          [image]="'./images/logo_dossier.jpg'"
+          [alt_message]="'activite'"
+          [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
+          [icone1]="'./images/icone_localisation.jpg'"
+          [icone2]="'./images/planning.jpeg'"
+          [localisation]="
+            'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
+          "
+          [date_debut]="'19/10/2025'"
+          [date_fin]="'23/10/2025'"
+        />
+        <app-cardaddress
+          [couleur_bg]="'#FFF9E6'"
+          [image]="'./images/logo_dossier.jpg'"
+          [alt_message]="'activite'"
+          [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
+          [icone1]="'./images/icone_localisation.jpg'"
+          [icone2]="'./images/planning.jpeg'"
+          [localisation]="
+            'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
+          "
+          [date_debut]="'19/10/2025'"
+          [date_fin]="'23/10/2025'"
+        />
+        <app-cardaddress
+          [couleur_bg]="'#FFF9E6'"
+          [image]="'./images/logo_dossier.jpg'"
+          [alt_message]="'activite'"
+          [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
+          [icone1]="'./images/icone_localisation.jpg'"
+          [icone2]="'./images/planning.jpeg'"
+          [localisation]="
+            'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
+          "
+          [date_debut]="'19/10/2025'"
+          [date_fin]="'23/10/2025'"
+        />
+        <app-cardaddress
+          [couleur_bg]="'#FFF9E6'"
+          [image]="'./images/logo_dossier.jpg'"
+          [alt_message]="'activite'"
+          [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
+          [icone1]="'./images/icone_localisation.jpg'"
+          [icone2]="'./images/planning.jpeg'"
+          [localisation]="
+            'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
+          "
+          [date_debut]="'19/10/2025'"
+          [date_fin]="'23/10/2025'"
+        />
+        <app-cardaddress
+          [couleur_bg]="'#FFF9E6'"
+          [image]="'./images/logo_dossier.jpg'"
+          [alt_message]="'activite'"
+          [name]="'20e Anniversaire de l’oeuvre de St Padré Pio au CMR'"
+          [icone1]="'./images/icone_localisation.jpg'"
+          [icone2]="'./images/planning.jpeg'"
+          [localisation]="
+            'Cathédrale Notre Dame des Victoires Yaoundé, Cameroun'
+          "
+          [date_debut]="'19/10/2025'"
+          [date_fin]="'23/10/2025'"
+        />
+      </div>
+    </div>
+  </div>
+</div>
