@@ -92,15 +92,15 @@ export class NavbarComponent implements AfterViewInit {
         },
         {
           label: 'Sante',
-          path: 'sante',
+          path: AppRouter.fieldsOfApostolate + '/sante',
         },
         {
           label: 'Communication',
-          path: 'communication',
+          path: AppRouter.fieldsOfApostolate +  '/communication',
         },
         {
           label: 'Environnement',
-          path: 'environnement',
+          path: AppRouter.fieldsOfApostolate  +  '/environnement',
         },
       ],
     },

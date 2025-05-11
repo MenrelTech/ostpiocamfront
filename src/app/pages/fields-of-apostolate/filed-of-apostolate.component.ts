@@ -42,10 +42,9 @@ export class FieldOfApostolateComponent {
       path: '/sante',
       color: 'red',
       subItems: [
-        { label: 'À propos de nous', link: '/sante/apropos' },
-        { label: 'Activités', link: '/sante/activite' },
-        { label: "Connaissance de l'Église", link: '/sante/connaissance-eglise' },
-        { label: 'Galerie photos', link: '/sante/galerie' },
+        { label: 'À propos de nous', link: "/champs d'apostolat/sante/apropos" },
+        { label: 'Activités', link: "/champs d'apostolat/sante/activite" },
+        { label: 'Galerie photos', link: "/champs d'apostolat/sante/galerie" },
       ],
     },
     {
@@ -53,10 +52,9 @@ export class FieldOfApostolateComponent {
       path: '/communication',
       color: 'blue',
       subItems: [
-        { label: 'À propos de nous', link: '/communication/apropos' },
-        { label: 'Activités', link: '/communication/activite' },
-        { label: "Connaissance de l'Église", link: '/communication/connaissance-eglise' },
-        { label: 'Galerie photos', link: '/communication/galerie' },
+        { label: 'À propos de nous', link: "/champs d'apostolat/communication/apropos" },
+        { label: 'Activités', link: "/champs d'apostolat/communication/activite"},
+        { label: 'Galerie photos', link: "/champs d'apostolat/communication/galerie"  },
       ],
     },
     {
@@ -64,10 +62,9 @@ export class FieldOfApostolateComponent {
       path: '/environnement',
       color: 'green',
       subItems: [
-        { label: 'À propos de nous', link: '/environnement/apropos' },
-        { label: 'Activités', link: '/environnement/activite' },
-        { label: "Connaissance de l'Église", link: '/environnement/connaissance-eglise' },
-        { label: 'Galerie photos', link: '/environnement/galerie' },
+        { label: 'À propos de nous', link:"/champs d'apostolat/environnement/apropos" },
+        { label: 'Activités', link: "/champs d'apostolat/environnement/activite" },
+        { label: 'Galerie photos', link:"/champs d'apostolat//environnement/galerie" },
       ],
     },
   ];

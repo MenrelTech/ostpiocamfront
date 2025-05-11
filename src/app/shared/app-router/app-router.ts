@@ -21,23 +21,23 @@ export const FieldOfApostolateNestedRouter = {
     church:"connaissance de l'eglise"
   }, 
   health:{
-    home: '/sante',
-    Activities: '/sante/activite',
-    About: '/sante/apropos',
-    Gallery: '/sante/galerie',
+    home: 'sante',
+    about: 'apropos',
+    activities: 'activite',
+    gallery: 'galerie', 
   }, 
   environnement:{
-    home: '/environnement',
-    Activities: '/environnement/activite',
-    About: '/environnement/apropos',
-    Gallery: '/environnement/galerie',
+    home: 'environnement',
+    about: 'apropos',
+    activities: 'activite',
+    gallery: 'galerie', 
   }, 
 
   communication:{
-    home: '/communication',
-    Activities: '/communication/activite',
-    About: '/communication/apropos',
-    Gallery:'/communication/galerie',
+    home: 'communication',
+    about: 'apropos',
+    activities: 'activite',
+    gallery: 'galerie', 
 
   }
 
