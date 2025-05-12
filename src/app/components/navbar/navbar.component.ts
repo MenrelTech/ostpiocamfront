@@ -47,9 +47,9 @@ export class NavbarComponent implements AfterViewInit {
       label: 'Accueil',
       path: AppRouter.home,
       subMenu: [
-        { label: 'Presentation', path: '' },
+        { label: 'Présentation', path: '' },
         { label: 'Actualité', path: 'actualite' },
-        { label: 'Prolegomenes', path: 'prolegomene' },
+        { label: 'Prolégomènes', path: 'prolegomene' },
         { label: 'Nos prestataires', path: 'nos-prestataire' },
         {
           label: 'Fondateurs & Responsable',
@@ -70,7 +70,7 @@ export class NavbarComponent implements AfterViewInit {
       ],
     },
     {
-      label: 'Àctualités',
+      label: 'Actualités',
       path: AppRouter.news,
       subMenu: [
         { label: 'A la une ', path: 'a-la-une' },
@@ -83,15 +83,15 @@ export class NavbarComponent implements AfterViewInit {
       ],
     },
     {
-      label: "Champs d'apostolat",
+      label: "Champs d'Apostolat",
       path: AppRouter.fieldsOfApostolate,
       subMenu: [
         {
-          label: 'Spiritualités',
+          label: 'Spiritualité',
           path: AppRouter.fieldsOfApostolate + '/spiritualite',
         },
         {
-          label: 'Sante',
+          label: 'Santé',
           path: AppRouter.fieldsOfApostolate + '/sante',
         },
         {
@@ -118,11 +118,11 @@ export class NavbarComponent implements AfterViewInit {
           path: 'devenir-partenaire',
         },
         {
-          label: 'Souscrire a la news letter',
+          label: 'Souscrire à la Newsletter',
           path: 'news-letter',
         },
         {
-          label: 'Nous contactez',
+          label: 'Nous contacter',
           path: 'contact',
         },
       ],
