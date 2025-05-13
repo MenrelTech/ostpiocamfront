@@ -134,13 +134,13 @@ export class SpiritualityActivitiesComponent{
       let a : GrandesDates[]  = data.member.map((item : any) => {
         let couleur = "#C79100";
         if(item.area == "Environnement"){
-          couleur = "#00C7A0";
+          couleur = "#05DE72";
         }else if(item.area == "Santé"){
-          couleur = "#FF6F61";
+          couleur = "#FE6467";
         }else if(item.area == "Spiritualité"){
-          couleur = "#FF6F61";
+          couleur = "#FCC600";
         }else if(item.area == "Communication"){
-          couleur = "#FF6F61";
+          couleur = "#51A1FE";
         }
 
         return {

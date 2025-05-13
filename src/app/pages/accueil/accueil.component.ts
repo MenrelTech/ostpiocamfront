@@ -18,6 +18,11 @@ interface Actualite {
   altMessage: string;
   color: string;
 }
+interface Col{
+  bg: string,
+  color: string,
+  hovercolor: string
+}
 interface GrandesDates {
   id: number;
   title: string;
@@ -26,7 +31,7 @@ interface GrandesDates {
   mois: string;
   annee: string;
   date: string;
-  color: string;
+  color: Col;
 }
 
 @Component({
@@ -103,17 +108,40 @@ export class AccueilComponent {
     getActualities(20000).then((data) => {
       let a = data.member.map((item : any) => {
         let couleur = "#C79100";
+        let col =  {
+          bg :'#D4EDDA' ,
+          color :'#28A745', 
+          hovercolor:'#0F3B1C'
+        };
         if(item.area == "Environnement"){
+          col =  {
+            bg :'#D4EDDA' ,
+            color :'#28A745', 
+            hovercolor:'#0F3B1C'
+          };
           couleur = "#05DE72";
         }else if(item.area == "Santé"){
+          col =  {
+            bg :'#F8D7DA' ,
+            color :'#DC3545', 
+            hovercolor:'#5B0F15'
+          };
           couleur = "#FE6467";
         }else if(item.area == "Spiritualité"){
+          col =  {
+            bg :'#FFF3CD' ,
+            color :'#FFC107', 
+            hovercolor:'#664500'
+          };
           couleur = "#FCC600";
         }else if(item.area == "Communication"){
-          couleur = "#51A1FE";
+          col =  {
+            bg :'#9EC5E8' ,
+            color :'#007BFF', 
+            hovercolor:'#0056B3'
+          };
         }
-        let date = "2025-05-10T11:32:21+00:00"
-        date.slice(0,10)
+        console.log(col)
         return {
           id: item.id,
           title: item.title,
@@ -122,7 +150,7 @@ export class AccueilComponent {
           date: "Le "+item.createdAt.slice(0,10)+" à "+item.createdAt.slice(11,16),
           name: item.area,
           altMessage : "actu_"+item.title,
-          color: couleur,
+          color: col,
         };
       });
       

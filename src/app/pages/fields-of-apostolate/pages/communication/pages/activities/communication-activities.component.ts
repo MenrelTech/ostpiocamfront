@@ -27,6 +27,11 @@ interface Rapport {
   reportUrl: string,
   publishedAt: string
 }
+interface Col{
+  bg: string,
+  color: string,
+  hovercolor: string
+}
 
 interface GrandesDates {
   id: number;
@@ -36,7 +41,7 @@ interface GrandesDates {
   mois: string;
   annee: string;
   date: string;
-  color: string;
+  color: Col;
 }
 interface EventCalendar {
   evenement: string;
@@ -132,14 +137,39 @@ export class CommunicationActivitiesComponent {
       getDate(20000).then((data) => {
         let a : GrandesDates[]  = data.member.map((item : any) => {
           let couleur = "#C79100";
+          let col =  {
+            bg :'#D4EDDA' ,
+            color :'#28A745', 
+            hovercolor:'#0F3B1C'
+          };
           if(item.area == "Environnement"){
-            couleur = "#00C7A0";
+            col =  {
+              bg :'#D4EDDA' ,
+              color :'#28A745', 
+              hovercolor:'#0F3B1C'
+            };
+            couleur = "#05DE72";
           }else if(item.area == "Santé"){
-            couleur = "#FF6F61";
+            col =  {
+              bg :'#F8D7DA' ,
+              color :'#DC3545', 
+              hovercolor:'#5B0F15'
+            };
+            couleur = "#FE6467";
           }else if(item.area == "Spiritualité"){
-            couleur = "#FF6F61";
+            col =  {
+              bg :'#FFF3CD' ,
+              color :'#FFC107', 
+              hovercolor:'#664500'
+            };
+            couleur = "#FCC600";
           }else if(item.area == "Communication"){
-            couleur = "#FF6F61";
+            col =  {
+              bg :'#9EC5E8' ,
+              color :'#007BFF', 
+              hovercolor:'#0056B3'
+            };
+            couleur = "#51A1FE";
           }
   
           return {
@@ -150,7 +180,7 @@ export class CommunicationActivitiesComponent {
             jour: item.date.slice(8,10),
             mois: item.date.slice(5,7),
             annee: item.date.slice(0,4),
-            color: couleur,
+            color: col,
           };
         });
         this.grandesDates.set([a[0],a[1],a[2]]);
