@@ -150,7 +150,7 @@ export class AccueilComponent {
             hovercolor:'#0056B3'
           };
         }
-        console.log(col)
+
         return {
           id: item.id,
           title: item.title,
