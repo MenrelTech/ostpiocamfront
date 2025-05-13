@@ -39,6 +39,18 @@
               <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur1'" [name]="'Albert CAMUS'" [role]="'Fondateur'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>
               <app-cardtext [image]="'images/Fondateur2.png'" [alt_message] = "'Fondateur2'" [name]="'Frank ONANA'" [role]="'Coordonateur general'" [description]="'Lorem ipsum dolor sit amet consectetur. Volutpat vitae blandit nisl commodo nam ultrices tempus id. Sed gravida porttitor aliquam arcu feugiat. Nulla orci sed vitae malesuada at.Lorem ipsum dolor sit amet consectetur.'" ></app-cardtext>-->
             </div>
+            <div class="grid grid-cols-1 gap-4  justify-items-center items-center w-full mt-[40px]">
+              <ng-container *ngFor="let actualite of actualites()">
+                <app-cardActuality
+                  [image]="actualite.image"
+                  [alt_message]="actualite.altMessage"
+                  [area]="actualite.name"
+                  [description]="actualite.description"
+                  [name]="actualite.title"
+                  [date]="actualite.date"
+                />
+              </ng-container>
+            </div>
         </div>
     </div>
 </div>

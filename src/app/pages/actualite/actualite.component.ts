@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { CardtextComponent } from '../../cardtext/cardtext.component';
 import { CommonModule } from '@angular/common';
+import cardActualityComponent from '../../cardActuality/cardActuality.component';
 import { VerticalcardtextComponent } from '../../verticalcardtext/verticalcardtext.component';
 interface Actualite {
   id: number;
@@ -14,7 +15,7 @@ interface Actualite {
 } 
 @Component({
   selector: 'app-actualite',
-  imports: [CardtextComponent,CommonModule,VerticalcardtextComponent],
+  imports: [CardtextComponent,CommonModule,VerticalcardtextComponent,cardActualityComponent],
   templateUrl: './actualite.component.html',
   styleUrl: './actualite.component.css'
 })
@@ -51,14 +52,15 @@ export class ActualiteComponent {
     getActualities(20000).then((data) => {
       let a = data.member.map((item : any) => {
         let couleur = "#C79100";
-        if(item.title == "Environnement"){
-          couleur = "#00C7A0";
-        }else if(item.title == "Santé"){
-          couleur = "#FF6F61";
-        }else if(item.title == "Spiritualité"){
-          couleur = "#FF6F61";
-        }else if(item.title == "Communication"){
-          couleur = "#FF6F61";
+        if(item.area == "Environnement"){
+
+          couleur = "#05DE72";
+        }else if(item.area == "Santé"){
+
+          couleur = "#FE6467";
+        }else if(item.area == "Spiritualité"){
+
+          couleur = "#FCC600";
         }
         let date = "2025-05-10T11:32:21+00:00"
         date.slice(0,10)
@@ -68,7 +70,7 @@ export class ActualiteComponent {
           description: item.content,
           image: item.publicationAttachments[0] ? "https://ostpiocamback.enotelco.com"+item.publicationAttachments[0].attachmentUrl : "" ,
           date: "Le "+item.createdAt.slice(0,10)+" à "+item.createdAt.slice(11,16),
-          name: item.title,
+          name: item.area,
           altMessage : "actu_"+item.title,
           color: couleur,
         };
