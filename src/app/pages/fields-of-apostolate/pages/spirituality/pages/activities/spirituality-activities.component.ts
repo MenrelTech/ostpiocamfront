@@ -38,6 +38,10 @@ interface GrandesDates {
   date: string;
   color: string;
 }
+interface EventCalendar {
+  evenement: string;
+  date : string;
+}
 
 @Component({
   standalone:true, 
@@ -47,6 +51,7 @@ interface GrandesDates {
 export class SpiritualityActivitiesComponent{
   activites = signal<Activite[]>([]);
   rapport = signal<Rapport[]>([]);
+  eventCalendar = signal<EventCalendar[]>([]);
   grandesDates = signal<GrandesDates[]>([]);
   grandesDates2 = signal<GrandesDates[]>([]);
   ngOnInit(){
@@ -126,15 +131,15 @@ export class SpiritualityActivitiesComponent{
       }
     }
     getDate(20000).then((data) => {
-      let a = data.member.map((item : any) => {
+      let a : GrandesDates[]  = data.member.map((item : any) => {
         let couleur = "#C79100";
-        if(item.title == "Environnement"){
+        if(item.area == "Environnement"){
           couleur = "#00C7A0";
-        }else if(item.title == "Santé"){
+        }else if(item.area == "Santé"){
           couleur = "#FF6F61";
-        }else if(item.title == "Spiritualité"){
+        }else if(item.area == "Spiritualité"){
           couleur = "#FF6F61";
-        }else if(item.title == "Communication"){
+        }else if(item.area == "Communication"){
           couleur = "#FF6F61";
         }
 
@@ -151,7 +156,14 @@ export class SpiritualityActivitiesComponent{
       });
       this.grandesDates.set([a[0],a[1],a[2]]);
       this.grandesDates2.set([a[a.length - 1],a[a.length-2],a[a.length-3]]);
-      console.log(this.grandesDates2());
+      this.eventCalendar.set(a.map((values,index) => 
+        {
+          return {
+            "date": values.annee+"-"+values.mois+"-"+values.jour,
+            "evenement": values.title,
+          }
+        }
+    ));
     }).catch((error) => {
       console.error('Error fetching grandes dates:', error);
     });

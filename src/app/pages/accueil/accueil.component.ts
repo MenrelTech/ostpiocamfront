@@ -103,14 +103,14 @@ export class AccueilComponent {
     getActualities(20000).then((data) => {
       let a = data.member.map((item : any) => {
         let couleur = "#C79100";
-        if(item.title == "Environnement"){
-          couleur = "#00C7A0";
-        }else if(item.title == "Santé"){
-          couleur = "#FF6F61";
-        }else if(item.title == "Spiritualité"){
-          couleur = "#FF6F61";
-        }else if(item.title == "Communication"){
-          couleur = "#FF6F61";
+        if(item.area == "Environnement"){
+          couleur = "#05DE72";
+        }else if(item.area == "Santé"){
+          couleur = "#FE6467";
+        }else if(item.area == "Spiritualité"){
+          couleur = "#FCC600";
+        }else if(item.area == "Communication"){
+          couleur = "#51A1FE";
         }
         let date = "2025-05-10T11:32:21+00:00"
         date.slice(0,10)
@@ -120,7 +120,7 @@ export class AccueilComponent {
           description: item.content,
           image: item.publicationAttachments[0] ? "https://ostpiocamback.enotelco.com"+item.publicationAttachments[0].attachmentUrl : "" ,
           date: "Le "+item.createdAt.slice(0,10)+" à "+item.createdAt.slice(11,16),
-          name: item.title,
+          name: item.area,
           altMessage : "actu_"+item.title,
           color: couleur,
         };

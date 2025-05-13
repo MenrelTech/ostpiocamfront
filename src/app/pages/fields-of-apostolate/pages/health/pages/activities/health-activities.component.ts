@@ -42,6 +42,11 @@ interface GrandesDates {
   color: string;
 }
 
+interface EventCalendar {
+  evenement: string;
+  date : string;
+}
+
 @Component({
   standalone:true,
   templateUrl:"./health-activities.component.html",
@@ -54,6 +59,8 @@ export class HealthActivitiesComponent{
   rapport = signal<Rapport[]>([]);
   grandesDates = signal<GrandesDates[]>([]);
   grandesDates2 = signal<GrandesDates[]>([]);
+  eventCalendar = signal<EventCalendar[]>([]);
+  
   ngOnInit(){
     async function getActivites(timeout = 10000) {
       const controller = new AbortController();
@@ -156,7 +163,14 @@ export class HealthActivitiesComponent{
       });
       this.grandesDates.set([a[0],a[1],a[2]]);
       this.grandesDates2.set([a[a.length - 1],a[a.length-2],a[a.length-3]]);
-      console.log(this.grandesDates2());
+      this.eventCalendar.set(a.map((values:GrandesDates,index:number) => 
+        {
+          return {
+            "date": values.annee+"-"+values.mois+"-"+values.jour,
+            "evenement": values.title,
+          }
+        }
+    ));
     }).catch((error) => {
       console.error('Error fetching grandes dates:', error);
     });

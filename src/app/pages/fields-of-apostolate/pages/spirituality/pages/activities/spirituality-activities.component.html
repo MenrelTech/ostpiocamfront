@@ -45,11 +45,7 @@
     </div>
     <p class="text-center w-full mb-[40px]">Les grandes dates à venir:</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-1 justify-items-center items-center">
-      <app-calendar [events]="[
-          { evenement: 'Jour de randonnée', date: '2025-07-10' },
-          { evenement: 'Réunion', date: '2025-07-15' },
-          { evenement: 'Anniversaire', date: '2025-07-20' }
-        ]">
+      <app-calendar [events]="eventCalendar()">
       </app-calendar>
       <div class="grid md:grid-cols-1 grid-cols-1 gap-1 justify-items-center items-center">
         <ng-container *ngFor="let grandedate of grandesDates()">
