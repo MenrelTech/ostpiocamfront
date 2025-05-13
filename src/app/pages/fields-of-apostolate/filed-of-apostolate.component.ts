@@ -42,8 +42,9 @@ export class FieldOfApostolateComponent {
       path: '/sante',
       color: 'red',
       subItems: [
-        { label: 'À propos de nous', link: "/champs d'apostolat/sante/apropos" },
-        { label: 'Activités', link: "/champs d'apostolat/sante/activite" },
+        { label: 'St Pio BRSF', link: "/champs d'apostolat/sante/apropos" },
+        // { label: 'Activités', link: "/champs d'apostolat/sante/activite" }
+        { label: 'SIME AS', link: "/champs d'apostolat/sante/sime-as" },
         { label: 'Galerie photos', link: "/champs d'apostolat/sante/galerie" },
       ],
     },
@@ -64,7 +65,7 @@ export class FieldOfApostolateComponent {
       subItems: [
         { label: 'À propos de nous', link:"/champs d'apostolat/environnement/apropos" },
         { label: 'Activités', link: "/champs d'apostolat/environnement/activite" },
-        { label: 'Galerie photos', link:"/champs d'apostolat//environnement/galerie" },
+        { label: 'Galerie photos', link:"/champs d'apostolat/environnement/galerie" },
       ],
     },
   ];

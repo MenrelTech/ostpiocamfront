@@ -12,6 +12,9 @@ export class CardimageComponent implements OnInit {
   image = input<string>(); // image en entrée
   alt_message = input<string>();
   couleur = input<string>("white");
+
+  hoverText = input<string | undefined>("")
+  hoverTitle = input<string | undefined>("")
   @Input() bg: string = "white";
 
   bg_color: { [key: string]: string } = {};

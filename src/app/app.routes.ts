@@ -25,7 +25,6 @@ import { SpiritualityActivitiesComponent } from './pages/fields-of-apostolate/pa
 import { SpiritualityChurchComponent } from './pages/fields-of-apostolate/pages/spirituality/pages/church/spirituality-church.component';
 import { HealthComponent } from './pages/fields-of-apostolate/pages/health/health.component';
 import { HealthAboutComponent } from './pages/fields-of-apostolate/pages/health/pages/about/health-about.component';
-import { HealthActivitiesComponent } from './pages/fields-of-apostolate/pages/health/pages/activities/health-activities.component';
 import { HealthGalleryComponent } from './pages/fields-of-apostolate/pages/health/pages/gallery/health-gallery.component';
 import { CommunicationComponent } from './pages/fields-of-apostolate/pages/communication/communication.component';
 import { CommunicationActivitiesComponent } from './pages/fields-of-apostolate/pages/communication/pages/activities/communication-activities.component';
@@ -36,6 +35,9 @@ import { EnvironnementActivitiesComponent } from './pages/fields-of-apostolate/p
 import { EnvironnementComponent } from './pages/fields-of-apostolate/pages/environnement/environnement.component';
 import { EnvironnementGalleryComponent } from './pages/fields-of-apostolate/pages/environnement/pages/gallery/environnement-gallery.component';
 import { RealizationComponent } from './pages/fields-of-apostolate/pages/spirituality/pages/realisation/realisation.component';
+import { EnvironnementHistoryComponent } from './pages/fields-of-apostolate/pages/environnement/pages/history/environnement-history.component';
+import { HealthSimeComponent } from './pages/fields-of-apostolate/pages/health/pages/sime/health-sime.component';
+import { HealthHistoryComponent } from './pages/fields-of-apostolate/pages/health/pages/history/health-history.component';
 
 export const routes: Routes = [
   {
@@ -97,13 +99,18 @@ export const routes: Routes = [
             component: HealthAboutComponent,
           },
           {
-            path: FieldOfApostolateNestedRouter.health.activities,
-            component: HealthActivitiesComponent,
-          },
-          {
             path: FieldOfApostolateNestedRouter.health.gallery,
             component: HealthGalleryComponent,
           },
+
+          {
+            path:FieldOfApostolateNestedRouter.health.sime,
+            component:HealthSimeComponent
+          },{
+            path:FieldOfApostolateNestedRouter.health.history,
+            component:HealthHistoryComponent
+          }
+          
 
         ],
       },  
@@ -152,6 +159,10 @@ export const routes: Routes = [
           {
             path:FieldOfApostolateNestedRouter.environnement.gallery, 
             component:EnvironnementGalleryComponent
+          }, 
+          {
+            path:FieldOfApostolateNestedRouter.environnement.history,
+            component:EnvironnementHistoryComponent
           }
         ]
       },
