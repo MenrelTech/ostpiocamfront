@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { CarouselComponent } from '../../carousel/carousel.component';
 import { CardtextComponent } from '../../cardtext/cardtext.component';
 import { CardimageComponent } from '../../cardimage/cardimage.component';
 import { VerticalcardtextComponent } from '../../verticalcardtext/verticalcardtext.component';
 import { RdvcardComponent } from '../../rdvcard/rdvcard.component';
-import { CountDownComponent } from '../count-down/count-down.component';
 import { CommonModule } from '@angular/common';
+import { AppRouter } from '../../shared/app-router/app-router';
 
 interface Actualite {
   id: number;
@@ -52,7 +52,16 @@ interface GrandesDates {
 export class AccueilComponent {
   actualites = signal<Actualite[]>([]);
   grandesDates = signal<GrandesDates[]>([]);
-  ngOnInit(){
+
+
+  activityLink = AppRouter.fieldsOfApostolate + '/spiritualite'; 
+  healthLink = AppRouter.fieldsOfApostolate + '/sante'; 
+
+  communicationLink = AppRouter.fieldsOfApostolate +  '/communication'; 
+
+  environnementLink = AppRouter.fieldsOfApostolate  +  '/environnement'
+
+  ngOnInit(){; 
     async function getActualities(timeout = 10000) {
       const controller = new AbortController();
       const id = setTimeout(() => controller.abort(), timeout);

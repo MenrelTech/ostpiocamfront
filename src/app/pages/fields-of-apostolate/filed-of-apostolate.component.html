@@ -3,7 +3,7 @@
     <div class="flex w-full font-(family-name:--chakraregular)">
       <ng-container *ngFor="let menu of menus; index as i">
         <div
-          class="relative w-[25%] h-[45px] justify-center items-center flex border-b-[5px]"
+          class="relative w-[25%] h-[45px] z-10 justify-center items-center flex border-b-[5px]"
           [ngClass]="[
             'hover:bg-' + menu.color + '-300',
             'border-' + menu.color + '-400'
