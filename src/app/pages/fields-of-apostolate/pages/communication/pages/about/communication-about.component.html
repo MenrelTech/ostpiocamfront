@@ -89,11 +89,19 @@
         <div class="bg-blue-500 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <div class="flex justify-center items-center w-full">
-      <app-verticalcardtext [image]="'images/actu1.jpg'" [alt_message]="'actu_spiritualite'" [date_publication]="'Publie le 11/02/2025 a 13h02'" [description]="'Celebration de la fete de la jeunesse dans la Mifi en priere.'" [name]="'Spiritualite'"></app-verticalcardtext>
-      <app-verticalcardtext [image]="'images/actu2.jpg'" [alt_message]="'actu_Sante'" [date_publication]="'Publie le 12/01/2025 a 13h02'" [description]="'Nouvelle campagne de don de sang dans le departement de la Sanaga-Maritime'" [name]="'Sante'"></app-verticalcardtext>
-      <app-verticalcardtext [image]="'images/actu3.jpg'" [alt_message]="'actu_environnement'" [date_publication]="'Publie le 06/02/2025 a 14h02'" [description]="'Programme de nettoyage de la ville de Kaele par les jeunes de la communaute'" [name]="'environnement'"></app-verticalcardtext>
-      <app-verticalcardtext [image]="'images/actu4.jpg'" [alt_message]="'actu_communication'" [date_publication]="'Publie le 01/02/2025 a 09h02'" [description]="'Compte rendu de la conference de presse du coordonnateur a Rome'" [name]="'communication'"></app-verticalcardtext>
+    <div class="grid md:flex grid-cols-1 justify-center items-center w-full">
+      <ng-container *ngFor="let actualite of actualites()">
+        <a href="/actualite" ariaCurrentWhenActive="page">
+            <app-verticalcardtext
+                [image]="actualite.image"
+                [alt_message]="actualite.altMessage"
+                [date_publication]="actualite.date"
+                [description]="actualite.description"
+                [name]="actualite.name"
+                [color]="actualite.color">
+            </app-verticalcardtext>
+        </a>
+      </ng-container>
     </div>
 </div>
 <div class="w-full h-[300px] content-evenly">

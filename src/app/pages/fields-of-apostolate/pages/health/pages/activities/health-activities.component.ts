@@ -1,8 +1,11 @@
-import { Component,signal } from "@angular/core";
+import { Component, signal } from "@angular/core";
 import { CardaddressComponent } from "../../../../../../cardaddress/cardaddress.component";
+import { ImgcardtextComponent } from "../../../../../../imgcardtext/imgcardtext.component";
 import { RdvcardComponent } from "../../../../../../rdvcard/rdvcard.component";
 import { CalendarComponent } from "../../../../../../calendar/calendar.component";
-import { CommonModule } from '@angular/common';
+import { CommonModule } from "@angular/common";
+
+
 
 interface Activite {
   id: number;
@@ -38,22 +41,26 @@ interface GrandesDates {
   date: string;
   color: string;
 }
+
 interface EventCalendar {
   evenement: string;
   date : string;
 }
 
 @Component({
-  standalone:true, 
-  templateUrl:"./spirituality-activities.component.html",
+  standalone:true,
+  templateUrl:"./health-activities.component.html",
   imports: [CardaddressComponent,CommonModule, RdvcardComponent, CalendarComponent]
 })
-export class SpiritualityActivitiesComponent{
+export class HealthActivitiesComponent{
+
   activites = signal<Activite[]>([]);
+
   rapport = signal<Rapport[]>([]);
-  eventCalendar = signal<EventCalendar[]>([]);
   grandesDates = signal<GrandesDates[]>([]);
   grandesDates2 = signal<GrandesDates[]>([]);
+  eventCalendar = signal<EventCalendar[]>([]);
+  
   ngOnInit(){
     async function getActivites(timeout = 10000) {
       const controller = new AbortController();
@@ -131,15 +138,15 @@ export class SpiritualityActivitiesComponent{
       }
     }
     getDate(20000).then((data) => {
-      let a : GrandesDates[]  = data.member.map((item : any) => {
+      let a = data.member.map((item : any) => {
         let couleur = "#C79100";
-        if(item.area == "Environnement"){
+        if(item.title == "Environnement"){
           couleur = "#00C7A0";
-        }else if(item.area == "Santé"){
+        }else if(item.title == "Santé"){
           couleur = "#FF6F61";
-        }else if(item.area == "Spiritualité"){
+        }else if(item.title == "Spiritualité"){
           couleur = "#FF6F61";
-        }else if(item.area == "Communication"){
+        }else if(item.title == "Communication"){
           couleur = "#FF6F61";
         }
 
@@ -156,7 +163,7 @@ export class SpiritualityActivitiesComponent{
       });
       this.grandesDates.set([a[0],a[1],a[2]]);
       this.grandesDates2.set([a[a.length - 1],a[a.length-2],a[a.length-3]]);
-      this.eventCalendar.set(a.map((values,index) => 
+      this.eventCalendar.set(a.map((values:GrandesDates,index:number) => 
         {
           return {
             "date": values.annee+"-"+values.mois+"-"+values.jour,
@@ -210,4 +217,6 @@ export class SpiritualityActivitiesComponent{
     });
 
   }
+
+
 }
