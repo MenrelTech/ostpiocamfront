@@ -1,4 +1,6 @@
-<div class="w-full px-2  h-max hover:shadow-lx hover:outline-2 outline-offset-0 outline-sky-300">
+<div
+  class="w-full px-2 h-max hover:shadow-lx hover:outline-2 outline-offset-0 outline-sky-300"
+>
   <div class="flex items-center w-full h-max rounded-[8px] content-center">
     <a class="grid justify-items-center" href="#">
       <div class="rounded-[8px] w-full h-full">
@@ -12,7 +14,11 @@
         <p class="text-xl text-center">
           <b>{{ name() }}</b>
         </p>
-        <p class="text-gray-500 text-sm text-center">{{ role() }}</p>
+
+        <p *ngIf="!!subRole()" class="text-gray-500 text-base text-center">
+          {{ subRole() }}
+        </p>
+        <p class="text-gray-500 text-base text-center">{{ role() }}</p>
       </div>
     </a>
   </div>

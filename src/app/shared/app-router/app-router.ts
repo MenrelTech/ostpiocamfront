@@ -18,7 +18,8 @@ export const FieldOfApostolateNestedRouter = {
     activities: 'activite',
     about: 'apropos',
     gallery: 'galerie', 
-    church:"connaissance de l'eglise"
+    church:"connaissance de l'eglise",
+    realization:"realisation"
   }, 
   health:{
     home: 'sante',

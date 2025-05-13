@@ -3,6 +3,8 @@ import { NumberedcardtextComponent } from '../../../../../../numberedcardtext/nu
 import { ImgcardtextComponent } from '../../../../../../imgcardtext/imgcardtext.component';
 import { TitlecardtextComponent } from '../../../../../../titlecardtext/titlecardtext.component';
 import { CardComponent } from '../../../../../../card/card.component';
+import { RouterLink } from '@angular/router';
+import { FieldOfApostolateNestedRouter } from '../../../../../../shared/app-router/app-router';
 
 @Component({
   standalone: true,
@@ -12,6 +14,11 @@ import { CardComponent } from '../../../../../../card/card.component';
     ImgcardtextComponent,
     TitlecardtextComponent,
     CardComponent,
+    RouterLink
   ],
 })
-export class SpiritualityAboutComponent {}
+export class SpiritualityAboutComponent {
+
+
+  realizationPath = FieldOfApostolateNestedRouter.spirituality.realization
+}
