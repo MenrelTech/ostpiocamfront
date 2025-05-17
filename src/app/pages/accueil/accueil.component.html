@@ -1,19 +1,18 @@
 <div class="w-full relative mb-[60px]">
   <div class="relative w-full">
-    <div class="relative">
+    <div class="relative w-full">
       <app-carousel
         [images]="[
-          'images/slide1.jpg',
-          'images/slide2.jpg',
-          'images/slide3.jpg',
-          'images/slide4.jpg'
+          'images/carousel_3.png',
+          'images/carousel_1.png',
+          'images/carousel_2.png',
+          'images/carousel_3.png'
         ]"
       ></app-carousel>
     </div>
+
     <div class="mt-[80px]">
-      <div
-        class="w-full md:max-h-[548px] pt-5 md:pt-0 pb-5 md:pb-0 content-evenly"
-      >
+       <div class="w-full h-max pt-5 md:pt-0 pb-5 md:pb-0 content-evenly">
         <div class="mb-[40px]">
           <h2
             class="text-center font-bold text-3xl text-blue-700 mb-[20px] font-(family-name:--arimabold)"
@@ -27,16 +26,14 @@
           </div>
         </div>
         <div
-          class="md:flex md:justify-center md:justify-items-center md:items-center w-full px-[20px]"
+          class="md:flex md:justify-center px-4 md:justify-items-center md:items-center w-full"
         >
           <img
-            class="md:w-[428px] md:h-[283px] ml-[20px]"
+            class="md:w-[428px] md:h-[283px] md:ml-[20px] "
             src="./images/Logo Oeuvre du Saint Padre Pio Origin-01.jpg"
             alt="Logo ostpiocam"
           />
-          <p
-            class="text-justify md:max-h-[283px] md:max-w-[677px] font-(family-name:--chakraregular)"
-          >
+          <p class="text-justify font-(family-name:--chakraregular)">
             <span class="font-bold text-blue-700"
               >L’œuvre de Saint Padre Pio au Cameroun</span
             >
@@ -68,7 +65,7 @@
         </div>
       </div>
       <div
-        class="w-full md:max-h-[409px] pt-5 md:pt-0 pb-5 md:pb-0 bg-blue-50 content-evenly"
+        class="w-full h-max pt-5 md:pt-0 pb-5 md:pb-0 bg-blue-50 content-evenly"
       >
         <div class="mb-[40px] mt-[30px]">
           <h2
@@ -83,7 +80,9 @@
           </div>
         </div>
         <div class="flex justify-center">
-          <p class="text-center w-[80%] font-(family-name:--chakraregular)">
+          <p
+            class="text-left w-[90%] md:w-[80%] font-(family-name:--chakraregular)"
+          >
             <span class="font-bold text-blue-700"
               >L’œuvre de Saint Padre Pio au Cameroun</span
             >
@@ -114,7 +113,7 @@
           >
         </div>
       </div>
-      <div class="w-full md:h-[850px] pt-5 md:pt-0 pb-5 md:pb-0 content-evenly">
+      <div class="w-full pt-5 md:pt-0 pb-5 md:pb-0 content-evenly">
         <div class="mb-[20px] mt-[30px]">
           <h2
             class="text-center font-bold text-3xl text-blue-700 mb-[20px] font-(family-name:--arimabold)"
@@ -166,8 +165,8 @@
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
           </div>
         </div>
-        <div class="md:flex justify-center items-center w-full">
-          <a routerLink="{{ activityLink }}">
+        <div class="flex justify-center items-center bg-red-400 w-full flex-wrap gap-y-6">
+          <a class="" routerLink="{{ activityLink }}">
             <app-cardimage
               [image]="'images/spiritualite.jpg'"
               [alt_message]="'spiritualite'"
@@ -176,7 +175,6 @@
               [title]="'Spiritualité'"
               hoverText="Suivez l'exemple  du Padre Pio : mediation, sacrements et paix de l'âme"
             ></app-cardimage>
-
           </a>
           <a routerLink="{{ healthLink }}">
             <app-cardimage
@@ -209,8 +207,6 @@
               [title]="'Environnement'"
               hoverTitle="La création est un don de Dieu"
               hoverText="Apprenez à la protéger avec respect "
-
-
             ></app-cardimage>
           </a>
         </div>
@@ -291,7 +287,7 @@
         </div>
       </div>
       <div
-        class="w-full md:h-[500px] pt-5 md:pt-0 pb-5 md:pb-0 bg-blue-50 content-evenly"
+        class="w-full h-max pt-5 md:pt-0 pb-5 md:pb-0 bg-blue-50 content-evenly"
       >
         <div class="pb-[40px]">
           <h2
@@ -306,7 +302,7 @@
           </div>
         </div>
         <div class="flex justify-center">
-          <p class="text-justify w-[80%] font-(family-name:--chakraregular)">
+          <p class="text-justify w-[90%] md:w-[80%] font-(family-name:--chakraregular)">
             Fidèle à sa mission d’évangélisation intégrale et de service de
             l’homme dans toutes ses dimensions, l’Œuvre de Saint Padre Pio au
             Cameroun se projette résolument vers l’avenir avec des ambitions
@@ -348,9 +344,11 @@
           >
         </div>
       </div>
-      <div class="w-full h-[300px] content-evenly">
+      <div class="w-full h-max mt-8 content-evenly">
         <div class="mb-[40px]">
-          <h2 class="text-center font-bold text-3xl text-blue-700 mb-[20px]">
+          <h2
+            class="text-center font-bold text-3xl font-(family-name:--arimabold) text-blue-700 mb-[20px]"
+          >
             Nos entités/organisations formalisantes
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
@@ -359,29 +357,29 @@
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
           </div>
         </div>
-        <div class="flex justify-center items-center w-full">
+        <div class="flex justify-center items-center w-full flex-wrap gap-y-6">
           <img
-            class="w-[175px] h-[100px] mx-[30px]"
+            class="w-[200px] lg:w-[175px] h-[100px] mx-[30px]"
             src="./images/Logo_Confrerie_des_Disciples_de_Saint_Padre_Pio_Origin_01.png"
             alt="bgfi"
           />
           <img
-            class="w-[175px] h-[100px] mx-[30px]"
+            class="w-[200px] lg:w-[175px] h-[100px] object-cover mx-[30px]"
             src="./images/Logo Saint Pio Blood Relief Suffering Foundation Origin-01.jpg"
             alt="crtv"
           />
           <img
-            class="w-[175px] h-[100px] mx-[30px]"
+            class="w-[200px] md:w-[175px] h-[100px] object-cover mx-[30px]"
             src="./images/Logo_Saint_Pio_International_Medical_Aid_Services_Origin_01.png"
             alt="huawei"
           />
           <img
-            class="w-[175px] h-[100px] mx-[30px]"
+            class="w-[200px] md:w-[175px] h-[100px] object-cover mx-[30px]"
             src="./images/Logo La voie de Padre Pio Origin-01.png"
             alt="sabc"
           />
           <img
-            class="w-[175px] h-[100px] mx-[30px]"
+            class="w-[200px] md:w-[175px] h-[100px] object-cover mx-[30px]"
             src="./images/Logo Green World for Man Origin-01.jpg"
             alt="cisco"
           />

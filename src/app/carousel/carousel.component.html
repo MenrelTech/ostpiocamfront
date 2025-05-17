@@ -2,7 +2,7 @@
 <div class="carousel-container mb-[60px]" (mouseenter)="stopAutoplay()" (mouseleave)="startAutoplay()" >
     <!-- Images -->
     <div class="carousel-slide relative">
-      <img [src]="images[currentIndex]" class="carousel-image" alt="Slide image"/>
+      <img [src]="images[currentIndex]" class="carousel-image object-cover" alt="Slide image"/>
       <p class="z-10 absolute w-[400px] text-wrap left-20 bottom-30 text-[36px] font-bold text-white font-(family-name:--arimabold)">
         {{content}}
       </p>
