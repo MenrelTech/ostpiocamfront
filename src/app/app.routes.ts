@@ -34,10 +34,10 @@ import { EnvironnementAboutComponent } from './pages/fields-of-apostolate/pages/
 import { EnvironnementActivitiesComponent } from './pages/fields-of-apostolate/pages/environnement/pages/activities/environnement-activities.component';
 import { EnvironnementComponent } from './pages/fields-of-apostolate/pages/environnement/environnement.component';
 import { EnvironnementGalleryComponent } from './pages/fields-of-apostolate/pages/environnement/pages/gallery/environnement-gallery.component';
-import { RealizationComponent } from './pages/fields-of-apostolate/pages/spirituality/pages/realisation/realisation.component';
 import { EnvironnementHistoryComponent } from './pages/fields-of-apostolate/pages/environnement/pages/history/environnement-history.component';
 import { HealthSimeComponent } from './pages/fields-of-apostolate/pages/health/pages/sime/health-sime.component';
 import { HealthHistoryComponent } from './pages/fields-of-apostolate/pages/health/pages/history/health-history.component';
+import { SpiritualityRealizationComponent } from './pages/fields-of-apostolate/pages/spirituality/pages/realisation/spirituality-realisation.component';
 
 export const routes: Routes = [
   {
@@ -80,7 +80,7 @@ export const routes: Routes = [
           },
           {
             path:FieldOfApostolateNestedRouter.spirituality.realization,
-            component:RealizationComponent
+            component:SpiritualityRealizationComponent
           }
         ],
       },

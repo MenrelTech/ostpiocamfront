@@ -20,5 +20,7 @@ import { FieldOfApostolateNestedRouter } from '../../../../../../shared/app-rout
 export class SpiritualityAboutComponent {
 
 
-  realizationPath = FieldOfApostolateNestedRouter.spirituality.realization
+
+  realizationPath = "/champs d'apostolat/spiritualite/realisation" 
+  
 }
