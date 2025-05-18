@@ -3,6 +3,7 @@ import { NumberedcardtextComponent } from '../../../../../../numberedcardtext/nu
 import { RouterLink } from '@angular/router';
 import { CommonModule, NgFor } from '@angular/common';
 import { HealthCarComponent } from '../../../../../../health-car/health-car.component';
+import { RdvcardComponent } from "../../../../../../rdvcard/rdvcard.component";
 
 interface GrandesDates {
   id: number;
@@ -29,7 +30,9 @@ interface Col {
     HealthCarComponent,
     NumberedcardtextComponent,
     RouterLink,
-    CommonModule
+    CommonModule,
+    NgFor,
+    RdvcardComponent
 ],
 })
 export class HealthAboutComponent {

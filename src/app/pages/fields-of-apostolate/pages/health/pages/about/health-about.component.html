@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="w-full flex flex-col  justify-center items-center">
+    <div class="w-full flex flex-col justify-center items-center">
       <div class="flex flex-col lg:flex-row w-[80%] justify-center h-max">
         <p class="text-left md:text-center px-2">
           <b>Compassion - Réaction- Action</b><br />
@@ -64,200 +64,218 @@
       </div>
     </div>
 
-  <div class="w-full h-max py-8 bg-red-50 content-evenly items-center">
-    <div class="mb-[40px]">
-      <h2
-        class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
-      >
-        Missions
-      </h2>
-      <div class="flex justify-center items-center w-full h-[5px]">
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-        <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-      </div>
-    </div>
-    <p class="text-center w-full mb-[40px]">Nous avons pour missions:</p>
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 content-center justify-items-center items-center"
-    >
-      <app-numberedcardtext
-        *ngFor="let mission of missions; let i = index"
-        [numero]="i + 1"
-        [couleur_n]="'#F2C7CB'"
-        [couleur_bgn]="'#5B0F15'"
-        [couleur_bg]="'#F29B9E'"
-        contenu="{{ mission }}"
-        class="lg:last:col-start-2"
-      />
-    </div>
-
-    <div class="mb-4"></div>
-  </div>
-
-  <div class="w-full h-max py-8 content-evenly items-center">
-    <div class="mb-[40px]">
-      <h2
-        class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
-      >
-        Nos leviers d’Actions
-      </h2>
-      <div class="flex justify-center items-center w-full h-[5px]">
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-        <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-      </div>
-    </div>
-    <p class="text-center w-full mb-[40px]">Nous avons pour missions:</p>
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 content-center justify-items-center items-center"
-    >
-      <app-numberedcardtext
-        *ngFor="let action of actions; let i = index"
-        [numero]="i + 1"
-        [couleur_n]="'#F2C7CB'"
-        [couleur_bgn]="'#5B0F15'"
-        [couleur_bg]="'#F29B9E'"
-        contenu="{{ action }}"
-        class="md:last:col-start-2"
-      />
-    </div>
-
-    <div class="mb-4"></div>
-  </div>
-
-  <div class="w-full h-max py-8 bg-red-50">
-    <div class="mb-[40px]">
-      <h2
-        class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
-      >
-        Les Grandes dates
-      </h2>
-      <div class="flex justify-center items-center w-full h-[5px]">
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-        <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-      </div>
-    </div>
-    <div class="flex justify-center"></div>
-  </div>
-
-  <div class="w-full h-max py-8 content-evenly">
-    <div class="mb-[40px]">
-      <h2
-        class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
-      >
-        Nos Valeurs
-      </h2>
-      <div class="flex justify-center items-center w-full h-[5px]">
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-        <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-      </div>
-    </div>
-    <div class="w-full flex justify-center">
-      <ul class="list-disc w-[90%] md:w-[80%] list-outside ms-8">
-        <li
-          class="font-medium font-(family-name:--chakrameduim)"
-          *ngFor="let value of values"
+    <div class="w-full h-max py-8 bg-red-50 content-evenly items-center">
+      <div class="mb-[40px]">
+        <h2
+          class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
         >
-          {{ value }}
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="w-full h-max py-8 bg-red-50 content-evenly">
-    <div class="mb-[40px]">
-      <h2
-        class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
+          Missions
+        </h2>
+        <div class="flex justify-center items-center w-full h-[5px]">
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+          <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+        </div>
+      </div>
+      <p class="text-center w-full mb-[40px]">Nous avons pour missions:</p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 content-center justify-items-center items-center"
       >
-        Nos perspectives
-      </h2>
-      <div class="flex justify-center items-center w-full h-[5px]">
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-        <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
+        <app-numberedcardtext
+          *ngFor="let mission of missions; let i = index"
+          [numero]="i + 1"
+          [couleur_n]="'#F2C7CB'"
+          [couleur_bgn]="'#5B0F15'"
+          [couleur_bg]="'#F29B9E'"
+          contenu="{{ mission }}"
+          class="lg:last:col-start-2"
+        />
+      </div>
+
+      <div class="mb-4"></div>
+    </div>
+
+    <div class="w-full h-max py-8 content-evenly items-center">
+      <div class="mb-[40px]">
+        <h2
+          class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
+        >
+          Nos leviers d’Actions
+        </h2>
+        <div class="flex justify-center items-center w-full h-[5px]">
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+          <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+        </div>
+      </div>
+      <p class="text-center w-full mb-[40px]">Nous avons pour missions:</p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 content-center justify-items-center items-center"
+      >
+        <app-numberedcardtext
+          *ngFor="let action of actions; let i = index"
+          [numero]="i + 1"
+          [couleur_n]="'#F2C7CB'"
+          [couleur_bgn]="'#5B0F15'"
+          [couleur_bg]="'#F29B9E'"
+          contenu="{{ action }}"
+          class="md:last:col-start-2"
+        />
+      </div>
+
+      <div class="mb-4"></div>
+    </div>
+
+    <div class="w-full h-max py-8 bg-red-50">
+      <div class="mb-[40px]">
+        <h2
+          class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
+        >
+          Les Grandes dates
+        </h2>
+        <div class="flex justify-center items-center w-full h-[5px]">
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+          <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+        </div>
+      </div>
+      <div
+        class="flex w-full px-2 justify-items-center grid md:grid-cols-2 gap-4 justify-around items-around"
+      >
+        <ng-container *ngFor="let date of grandesDates()">
+          <app-rdvcard
+            bg="#F8D7DA"
+            color="#DC3545"
+            hovercolor="#5B0F15"
+            title="{{ date.title }}"
+            description="{{ date.description }}"
+            annee="{{ date.annee }}"
+            jour="{{ date.jour }}"
+            mois="{{ date.mois }}"
+          />
+        </ng-container>
       </div>
     </div>
-    <div class="flex justify-center">
-      <div class="text-left w-[90%] md:w-[80%]">
-        <p>
-          <b>Perspectives à court terme</b>
-        </p>
 
-        <ul class="list-disc list-outside ms-8">
+    <div class="w-full h-max py-8 content-evenly">
+      <div class="mb-[40px]">
+        <h2
+          class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
+        >
+          Nos Valeurs
+        </h2>
+        <div class="flex justify-center items-center w-full h-[5px]">
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+          <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <ul class="list-disc w-[90%] md:w-[80%] list-outside ms-8">
           <li
-            class="font-(family-name:--chakrameduim) font-medium"
-            *ngFor="let perspective of perspectives"
+            class="font-medium font-(family-name:--chakrameduim)"
+            *ngFor="let value of values"
           >
-            {{ perspective }}
+            {{ value }}
           </li>
         </ul>
       </div>
     </div>
 
-    <div class="w-full flex items-center justify-center">
-      <a routerLink="{{ perspectivesLink }}">
-        <button
-          class="px-4 cursor-pointer py-2 mt-4 text-white text-base rounded-lg bg-red-700"
+    <div class="w-full h-max py-8 bg-red-50 content-evenly">
+      <div class="mb-[40px]">
+        <h2
+          class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
         >
-          En savoir plus
-        </button>
-      </a>
-    </div>
-  </div>
+          Nos perspectives
+        </h2>
+        <div class="flex justify-center items-center w-full h-[5px]">
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+          <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="text-left w-[90%] md:w-[80%]">
+          <p>
+            <b>Perspectives à court terme</b>
+          </p>
 
-  <div class="w-full h-max my-8 py-10 bg-red-50 content-evenly">
-    <div class="mb-[40px]">
-      <h2
-        class="text-center font-bold font-(family-name:--arimabold) text-2xl text-red-700 mb-[20px]"
-      >
-        Les Zones d’intervention
-      </h2>
-      <div class="flex justify-center items-center w-full h-[5px]">
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-        <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
+          <ul class="list-disc list-outside ms-8">
+            <li
+              class="font-(family-name:--chakrameduim) font-medium"
+              *ngFor="let perspective of perspectives"
+            >
+              {{ perspective }}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w-full flex items-center justify-center">
+        <a routerLink="{{ perspectivesLink }}">
+          <button
+            class="px-4 cursor-pointer py-2 mt-4 text-white text-base rounded-lg bg-red-700"
+          >
+            En savoir plus
+          </button>
+        </a>
       </div>
     </div>
 
-    <div class="w-full flex items-center justify-center">
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 w-[90%] gap-4">
-        <app-health-car
-          [image]="'./images/carousel_1.png'"
-          [alt_message]="'sante'"
-          [couleur]="'#A41523'"
-          [name]="'REGION DU CENTRE'"
-        />
+    <div class="w-full h-max my-8 py-10 bg-red-50 content-evenly">
+      <div class="mb-[40px]">
+        <h2
+          class="text-center font-bold font-(family-name:--arimabold) text-2xl text-red-700 mb-[20px]"
+        >
+          Les Zones d’intervention
+        </h2>
+        <div class="flex justify-center items-center w-full h-[5px]">
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+          <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
+          <div class="bg-red-300 h-[1px] w-[50px]"></div>
+        </div>
+      </div>
 
-        <app-health-car
-          [image]="'./images/carousel_1.png'"
-          [alt_message]="'sante'"
-          [couleur]="'#A41523'"
-          [name]="'REGION DU LITTORAL'"
-        />
+      <div class="w-full flex items-center justify-center">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 w-[90%] gap-4"
+        >
+          <app-health-car
+            [image]="'./images/carousel_1.png'"
+            [alt_message]="'sante'"
+            [couleur]="'#A41523'"
+            [name]="'REGION DU CENTRE'"
+          />
 
-        <app-health-car
-          [image]="'./images/carousel_1.png'"
-          [alt_message]="'sante'"
-          [couleur]="'#A41523'"
-          [name]="'REGION DE L’EST'"
-        />
+          <app-health-car
+            [image]="'./images/carousel_1.png'"
+            [alt_message]="'sante'"
+            [couleur]="'#A41523'"
+            [name]="'REGION DU LITTORAL'"
+          />
 
-        <app-health-car
-          [image]="'./images/carousel_1.png'"
-          [alt_message]="'sante'"
-          [couleur]="'#A41523'"
-          [name]="'REGION DE L’ADAMAOUA'"
-        />
+          <app-health-car
+            [image]="'./images/carousel_1.png'"
+            [alt_message]="'sante'"
+            [couleur]="'#A41523'"
+            [name]="'REGION DE L’EST'"
+          />
 
-        <app-health-car
-          [image]="'./images/carousel_1.png'"
-          [alt_message]="'sante'"
-          [couleur]="'#A41523'"
-          [name]="'REGION DE L’EXTRÊME NORD'"
-        />
+          <app-health-car
+            [image]="'./images/carousel_1.png'"
+            [alt_message]="'sante'"
+            [couleur]="'#A41523'"
+            [name]="'REGION DE L’ADAMAOUA'"
+          />
+
+          <app-health-car
+            [image]="'./images/carousel_1.png'"
+            [alt_message]="'sante'"
+            [couleur]="'#A41523'"
+            [name]="'REGION DE L’EXTRÊME NORD'"
+          />
+        </div>
       </div>
     </div>
   </div>
