@@ -38,8 +38,6 @@ import { EnvironnementGalleryComponent } from './pages/fields-of-apostolate/page
 import { EnvironnementHistoryComponent } from './pages/fields-of-apostolate/pages/environnement/pages/history/environnement-history.component';
 import { HealthSimeComponent } from './pages/fields-of-apostolate/pages/health/pages/sime/health-sime.component';
 import { HealthHistoryComponent } from './pages/fields-of-apostolate/pages/health/pages/history/health-history.component';
-import { HealthGeneralityComponent } from './pages/fields-of-apostolate/pages/health/pages/generality/health-generality.component';
-import { HealthPerspectiveComponent } from './pages/fields-of-apostolate/pages/health/pages/perspective/health-perspective.components';
 import { SpiritualityRealizationComponent } from './pages/fields-of-apostolate/pages/spirituality/pages/realisation/spirituality-realisation.component';
 import { PerspectivesComponent } from './pages/fields-of-apostolate/pages/health/pages/perspectives/perspectives.component';
 import { GeneralitiesComponent } from './pages/fields-of-apostolate/pages/health/pages/generalities/generalities.component';
@@ -106,10 +104,6 @@ export const routes: Routes = [
           {
             path: FieldOfApostolateNestedRouter.health.gallery,
             component: HealthGalleryComponent,
-          },
-          {
-            path: FieldOfApostolateNestedRouter.health.generalities,
-            component: HealthGeneralityComponent,
           },
           {
             path: FieldOfApostolateNestedRouter.health.sime,

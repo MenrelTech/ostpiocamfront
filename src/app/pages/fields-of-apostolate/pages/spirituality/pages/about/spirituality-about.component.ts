@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NumberedcardtextComponent } from '../../../../../../numberedcardtext/numberedcardtext.component';
-import { TitlecardtextComponent } from '../../../../../../titlecardtext/titlecardtext.component';
 import { CardComponent } from '../../../../../../card/card.component';
 import { RouterLink } from '@angular/router';
 import { OrganigrammeComponent } from '../../../../../../organigramme/organigramme.component';
@@ -12,7 +11,6 @@ import { ItemSectionComponent } from '../../../../../../components/section-card/
   templateUrl: './spirituality-about.component.html',
   imports: [
     NumberedcardtextComponent,
-    TitlecardtextComponent,
     CardComponent,
     RouterLink,
     OrganigrammeComponent,

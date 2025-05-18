@@ -1,11 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { CardComponent } from '../../../../../../card/card.component';
 import { NumberedcardtextComponent } from '../../../../../../numberedcardtext/numberedcardtext.component';
 import { RouterLink } from '@angular/router';
 import { CommonModule, NgFor } from '@angular/common';
 import { HealthCarComponent } from '../../../../../../health-car/health-car.component';
-import { ImgcardtextComponent } from '../../../../../../imgcardtext/imgcardtext.component';
-import { RdvcardComponent } from '../../../../../../rdvcard/rdvcard.component';
 
 interface GrandesDates {
   id: number;
@@ -26,18 +23,14 @@ interface Col {
   standalone: true,
   templateUrl: './health-about.component.html',
   imports: [
-    CardComponent,
     NumberedcardtextComponent,
     RouterLink,
     NgFor,
     HealthCarComponent,
-    CardComponent,
-    ImgcardtextComponent,
     NumberedcardtextComponent,
     RouterLink,
-    CommonModule,
-    RdvcardComponent,
-  ],
+    CommonModule
+],
 })
 export class HealthAboutComponent {
   genralityLink = "/champs d'apostolat/sante/generalités";
