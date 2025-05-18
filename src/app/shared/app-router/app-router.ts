@@ -27,6 +27,8 @@ export const FieldOfApostolateNestedRouter = {
     gallery: 'galerie',
     sime: 'sime-as',
     history: 'historicité',
+    generality: 'généralité',
+    perspective: 'perspective',
   },
   environnement: {
     home: 'environnement',

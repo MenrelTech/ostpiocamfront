@@ -1,10 +1,10 @@
 <div class="h-[125px] w-[400px] flex rounded-[15px]" (mouseenter)="setcolor()" (mouseleave)="resetcolor()" [ngStyle]="bg_color">
     <div [ngStyle]="other"
         class="h-[125px] w-[100px] flex rounded-[15px] font-bold text-white content-center justify-center text-center">
-        <p class="content-center text-[22px]">{{jour}} <br />{{mois}} <br />{{annee}}</p>
+        <p class="content-center text-[22px]">{{jour}} <br />{{month}} <br />{{annee}}</p>
     </div>
     <div class="h-[73px] w-[300px] content-around">
-        <p class="font-bold  overflow-y-hidden h-[61px]  w-[300px] text-[20px] px-[10px]">
+        <p class="font-(family-name:--chakrabold)  overflow-y-hidden h-[61px]  w-[300px] text-[20px] px-[10px]">
             {{title ? title : "20e Anniversaire de l'oeuvre de St Padré Pio"}}
         </p>
         <div class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right">

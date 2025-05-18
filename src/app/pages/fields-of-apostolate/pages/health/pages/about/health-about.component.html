@@ -5,7 +5,7 @@
 
   <div class="w-full h-[392px] content-evenly">
     <div class="mb-[40px]">
-      <h2 class="text-center font-bold text-2xl text-red-700 mb-[20px]">
+      <h2 class="text-center  font-(family-name:--arimabold) text-3xl text-red-700 mb-[20px]">
         Généralités
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
@@ -14,9 +14,9 @@
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <div class="flex justify-center h-[202px] content-evenly">
+    <div class="flex justify-center h-[202px] caontent-evenly">
       <p class="text-center w-[600px]">
-        <b>Togetherness - Universality - Health</b><br />
+        <b>Compassion - Réaction - Action</b><br />
         La Saint Pio International Medical Aid Services (SIMEAS) est une
         organisation humanitaire nouvellement créée dont la devise est
         Fraternité- Universalité-Santé. Cette initiative  vise à répondre aux
@@ -31,105 +31,20 @@
         alt="Logo sante"
       />
     </div>
-  </div>
-  <div class="w-full h-[358px] bg-red-50 content-evenly">
-    <div class="mb-[40px]">
-      <h2 class="text-center font-bold text-2xl text-red-700 mb-[20px]">
-        Historicité
-      </h2>
-      <div class="flex justify-center items-center w-full h-[5px]">
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-        <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-      </div>
-    </div>
     <div class="flex flex-col items-center justify-center">
-      <div class="text-left w-[80%]">
-        <p class="mb-2">
-          L’organisation est née d’une analyse situationnelle : de nombreuses
-          populations et Formations Sanitaires (FOSA) situées dans des zones
-          d’accès difficiles au Cameroun manquent cruellement de produits de
-          soins primaires, de médicaments essentiels, de matériels
-          médico-sanitaires adéquats et de qualité.
-        </p>
-
-        <p>
-          Ce constat a été établi suite à de multiples missions de terrain
-          menées depuis 2008, culminant avec une tournée nationale dans les dix
-          régions du pays entre novembre 2022 et Janvier 2023 par Saint Pio
-          Blood Relief Suffering Foundation et la Fédération Camerounaise pour
-          le Don Bénévole de Sang (FECADOBES).
-        </p>
-      </div>
-
-      <a routerLink="{{link}}">
+      <a routerLink="{{linkGeneralite}}">
         <button
-          class="px-4 cursor-pointer py-2 mt-4 text-white text-base rounded-lg bg-[#0056B3]"
+          class="px-4 cursor-pointer py-2 mt-4 text-white text-base rounded-lg bg-red-700"
         >
           En savoir plus
         </button>
       </a>
     </div>
-  </div>
 
-  <div class="w-full h-max my-8 py-4 content-evenly items-center">
-    <div class="mb-[40px]">
-      <h2 class="text-center font-bold text-2xl text-red-700 mb-[20px]">
-        Objectifs
-      </h2>
-      <div class="flex justify-center items-center w-full h-[5px]">
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-        <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-      </div>
-    </div>
-    <p class="text-center w-full mb-[40px]">
-      Notre objectif général est de réduire la fracture entre les grandes villes
-      d’une part et les zones reculées, enclavées et <br />
-      pauvres d’autre part, dans l’accès à la Santé et au bien-être. Pluq
-      spécifiquement :
-    </p>
-    <div
-      class="grid grid-cols-3 gap-x-4 gap-y-10 place-content-center content-center justify-items-center items-center"
-    >
-      <app-numberedcardtext
-        [numero]="1"
-        [couleur_n]="'#F2C7CB'"
-        [couleur_bgn]="'#5B0F15'"
-        [couleur_bg]="'#F29B9E'"
-        contenu=" Renforcer les capacités logistiques  en termes d’équipements médico-sanitaires et autres, des Formations Sanitaires(FOSA) des zones reculées, enclavées et/ou pauvres ;"
-      />
-      <app-numberedcardtext
-        [numero]="2"
-        [couleur_n]="'#F2C7CB'"
-        [couleur_bgn]="'#5B0F15'"
-        [couleur_bg]="'#F29B9E'"
-        contenu="Améliorer l’accès des Groupes et Communautés vulnérables aux soins de Santé "
-      />
-      <app-numberedcardtext
-        [numero]="3"
-        [couleur_n]="'#F2C7CB'"
-        [couleur_bgn]="'#5B0F15'"
-        [couleur_bg]="'#F29B9E'"
-        contenu="Accompagner les dynamiques de mobilisations des ressources au sein des FOSA  des zones reculées, enclavées et pauvres "
-      />
-    </div>
-
-    <div
-      class="grid grid-cols-1 mt-20 place-content-center content-center justify-items-center items-center"
-    >
-      <app-numberedcardtext
-        [numero]="4"
-        [couleur_n]="'#F2C7CB'"
-        [couleur_bgn]="'#5B0F15'"
-        [couleur_bg]="'#F29B9E'"
-        contenu="Renforcer la résilience des Groupes et Communautés vulnérables aux chocs, catastrophes, urgences à caractères humanitaires "
-      />
-    </div>
   </div>
-  <div class="w-full h-max py-8 content-evenly items-center">
-    <div class="mb-[40px]">
-      <h2 class="text-center font-bold text-2xl text-red-700 mb-[20px]">
+  <div class="w-full h-max  bg-red-50 py-8 content-evenly items-center">
+    <div class="mb-[80px]">
+      <h2 class="text-center font-(family-name:--arimabold) text-3xl text-red-700 mb-[20px]">
         Missions
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
@@ -140,38 +55,86 @@
     </div>
     <p class="text-center w-full mb-[40px]">Nous avons pour missions:</p>
     <div
-      class="grid grid-cols-3 gap-4 content-center justify-items-center items-center"
+      class="mx-auto  mb-[40px] md:w-[70%] grid grid-cols-3 gap-x-0 gap-y-14 content-center  justify-items-center items-center"
     >
       <app-numberedcardtext
         [numero]="1"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu="Assurer l’accès à la santé dans les zones reculées, enclavées et pauvres."
+        contenu="Appuyer la politique nationale du don de sang"
       />
       <app-numberedcardtext
         [numero]="2"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu="Mobiliser et coordonner des spécialistes et bénévoles pour des actions humanitaires"
+        contenu="Regrouper, recruter et encadrer les donneurs bénévoles"
       />
       <app-numberedcardtext
         [numero]="3"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu="Promouvoir le plaidoyer et le lobbying pour l’amélioration des politiques de santé publique."
+        contenu="Défendre les intérêts des donneurs et former les acteurs"
       />
-    </div>
-  </div>
 
-  <div
-    class="w-full h-max py-8 justify-center content-evenly items-center grid justify-items-center"
-  >
+      <app-numberedcardtext
+        [numero]="4"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Intervenir sur les questions transfusionnelles au Cameroun et à l’international"
+      />
+      <app-numberedcardtext
+        [numero]="5"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Fournir des services de santé non lucratifs et limiter les coûts"
+      />
+      <app-numberedcardtext
+        [numero]="6"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Agir comme assemblée, facilitateur et soutien des politiques transfusionnelles"
+      />
+
+      <app-numberedcardtext
+        [numero]="7"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Créer un espace d’échange, d’entraide et de gestion des urgences sanguines"
+      />
+      <app-numberedcardtext
+        [numero]="8"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Promouvoir le bénévolat et l’engagement à travers diverses activités"
+      />
+      <app-numberedcardtext
+        [numero]="9"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Renforcer les capacités d’approvisionnement en sang"
+      />
+        <app-numberedcardtext
+        [numero]="10"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Mobiliser, organiser et coordonner les collectes de sang pour améliorer la santé des patients"
+      />
+    </div>
+  </div>
+  <div class="w-full h-max py-8 content-evenly items-center">
     <div class="mb-[40px]">
-      <h2 class="text-center font-bold text-2xl text-red-700 mb-[20px]">
-        Organigramme
+      <h2 class="text-center font-(family-name:--arimabold) text-3xl text-red-700 mb-[20px]">
+        Nos leviers d'actions
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -179,75 +142,96 @@
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <div class="flex justify-center items-center w-full">
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+    <div
+      class="mx-auto md:w-[70%] mb-[40px] grid grid-cols-3 gap-x-0 gap-y-14 content-center justify-items-center items-center"
+    >
+      <app-numberedcardtext
+        [numero]="1"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Information, Sensibilisation, Formation & Education"
       />
-    </div>
-    <div class="w-[95%] h-[2px] bg-red-900"></div>
-    <div class="flex justify-between items-center w-full">
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+      <app-numberedcardtext
+        [numero]="2"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Mobilisation sociale et des ressources"
       />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+      <app-numberedcardtext
+        [numero]="3"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu=" Recrutement de Donneurs Bénévoles"
       />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+
+      <app-numberedcardtext
+        [numero]="4"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Organisation des Campagnes de collectes de sang"
       />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+      <app-numberedcardtext
+        [numero]="5"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Fidélisation de Donneurs Bénévoles Volontaires  de Sang Réguliers Non Rémunérés (DBVRSR)"
       />
-    </div>
-    <div class="w-full h-[2px] bg-red-900"></div>
-    <div class="flex justify-between items-center w-full">
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+      <app-numberedcardtext
+        [numero]="6"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Valorisation et Partenariats"
       />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+
+      <app-numberedcardtext
+        [numero]="7"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Plaidoyer & Lobbying"
       />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+      <app-numberedcardtext
+        [numero]="8"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Plaidoyer & Lobbying"
       />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+      <app-numberedcardtext
+        [numero]="9"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Equipements"
+      />
+      <app-numberedcardtext
+        [numero]="10"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Organisation des Evènements"
+      />
+      <app-numberedcardtext
+        [numero]="11"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Soutien et encouragement à l’Etude et la Recherche globale"
       />
     </div>
   </div>
-  <div
-    class="w-full h-max py-8 bg-red-50 content-evenly items-center grid justify-items-center"
-  >
+    <div class="w-full h-max py-8  bg-red-50 mt-8 content-evenly items-center">
     <div class="mb-[40px]">
-      <h2 class="text-center font-bold text-2xl text-red-700 mb-[20px]">
-        Membres du bureau elargi
+      <h2
+        class="text-center font-bold font-(family-name:--arimabold) text-3xl text-red-700 mb-[20px]"
+      >
+        Les Grandes dates
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -255,36 +239,80 @@
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <div class="flex justify-around items-center w-full">
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+    <div
+      class="flex w-full px-2 justify-items-center grid md:grid-cols-2 gap-4 justify-around items-around"
+    >
+      <ng-container *ngFor="let grandedate of grandesDates()">
+        <app-rdvcard
+          [bg]="'#F8D7DA'"
+          [color]="'#DC3545'"
+          [hovercolor]="'#5B0F15'"
+          [title]="grandedate.title"
+          [description]="grandedate.description"
+          [annee]="grandedate.annee"
+          [mois]="grandedate.mois"
+          [jour]="grandedate.jour"
+          [mois]="grandedate.mois"
+          [jour]="grandedate.jour"
+        />
+      </ng-container>
+    </div>
+  </div>
+  <div class="w-fullh-max py-8 content-evenly">
+    <div class="mb-[40px]">
+      <h2 class="text-center font-(family-name:--arimabold) text-3xl text-red-700 mb-[20px]">
+        Nos valeurs
+      </h2>
+      <div class="flex justify-center items-center w-full h-[5px]">
+        <div class="bg-red-300 h-[1px] w-[50px]"></div>
+        <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
+        <div class="bg-red-300 h-[1px] w-[50px]"></div>
+      </div>
+    </div>
+    <div
+      class="mx-auto md:w-[70%] mb-[40px] grid grid-cols-3 gap-x-0 gap-y-14 text-center font-bold content-center justify-items-center items-center"
+    >
+      <app-numberedcardtext
+        [numero]="1"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Volontariat"
       />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+            <app-numberedcardtext
+        [numero]="2"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Bénévolat."
       />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+            <app-numberedcardtext
+        [numero]="3"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Non-Profit"
       />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+
+            <app-numberedcardtext
+        [numero]="1"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Engagement Citoyen & Chrétien."
+      />
+            <app-numberedcardtext
+        [numero]="1"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
+        contenu="Esprit de Sacrifice"
       />
     </div>
   </div>
-  <div class="w-full h-max py-8 content-evenly">
+  <div class="w-full bg-red-50 h-max py-8 content-evenly">
     <div class="mb-[40px]">
-      <h2 class="text-center font-bold text-2xl text-red-700 mb-[20px]">
+      <h2 class="text-center font-(family-name:--arimabold) text-3xl text-red-700 mb-[20px]">
         Nos perspectives
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
@@ -295,52 +323,48 @@
     </div>
     <div class="flex justify-center">
       <div class="text-left w-[80%]">
-        <p>
-          <b>Cliniques mobiles :</b> <br />
-          Organisation de cliniques mobiles équipées de matériel médical de base
-          pour atteindre les villages isolés et offrir des consultations
-          spécialisées gratuites & Distributions de kits de soins, et de
-          médicaments essentiels,
-        </p>
+        <b>perspectives à court terme :</b>
+        <ul class="ml-4">
+          <li>
+            Créer un numéro rouge pour répondre rapidement aux sollicitations.
+          </li>
 
-        <p>
-          <b>Formation du personnel local  :</b> <br />
-          Mise en place de programmes de formation pour le personnel de santé
-          local afin d’améliorer leurs compétences et leurs capacités à gérer
-          les problèmes de santé  courants.
-        </p>
+          <li>
+            Faciliter l’accès aux produits sanguins, voire tendre vers la gratuité
+          </li>
 
-        <p>
-          <b>Approvisionnement en médicaments :</b> renforcement du Système mise
-          en place dans le cadre d’un réseau d’approvisionnement en médicaments
-          essentiels pour les Formations Sanitaires  des zones reculées,
-          enclavées et/ou pauvres en collaboration avec le Ministère de la Santé
-          Publique à travers les Fonds Régionaux de Promotion de la Santé
-          (FRPS), les laboratoires pharmaceutiques et des ONGs Internationales
-          et autres Parties Prenantes en respectant le circuit SYNAME.
-        </p>
+          <li>
+            Établir des accords de coopération avec les hôpitaux.
+          </li>
 
-        <p>
-          <b>Télémédecine :</b> <br />
-          Mise en place de systèmes de télémédecine permettant aux
-          professionnels de  Santé des zones reculées, enclavées et /ou pauvres
-          de consulter des spécialistes à distances pour des cas complexes
-        </p>
+          <li>
+            Mettre en place un partenariat avec le Ministère de la Santé publique.
+          </li>
 
-        <p>
-          <b>Campagnes de sensibilisation :</b> <br />
-          Organisation d’ateliers éducatifs  et de campagnes de sensibilisation
-          sur l’hygiène, la nutrition,la gestion des déchets et la prévention
-          des maladies courantes dans les Communautés isolées en coaction avec
-          les Fonds Régionaux de Promotion de la Santé (FRPS) et autres Parties
-          Prenantes.
-        </p>
+          <li>
+            Coopérer avec la Fédération internationale des donneurs bénévoles de sang et autres institutions.
+          </li>
+
+          <li>Organiser des activités de plaidoyer, comme le congrès sous-régional d’Afrique centrale et des Grands Lacs sur les associations de donneurs
+
+          </li>
+        </ul>
+
       </div>
     </div>
+        <div class="flex flex-col items-center justify-center">
+      <a routerLink="{{linkPerspective}}">
+        <button
+          class="px-4 cursor-pointer py-2 mt-4 text-white text-base rounded-lg bg-red-700"
+        >
+          En savoir plus
+        </button>
+      </a>
+    </div>
   </div>
-  <div class="w-full h-max py-10 bg-red-50 content-evenly">
+  <div class="w-full h-max py-10 content-evenly">
     <div class="mb-[40px]">
-      <h2 class="text-center font-bold text-2xl text-red-700 mb-[20px]">
+      <h2 class="text-center font-(family-name:--arimabold) text-3xl text-red-700 mb-[20px]">
         Les Zones d’intervention
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
@@ -353,50 +377,50 @@
     <div class="w-full flex items-center justify-center">
       <div class="flex w-[90%] gap-x-4">
         <app-card
-          [image]="'./images/centre_sante.jpg'"
+          [image]="'./images/carousel_1.png'"
           [icone]="'./images/localisation_rouge.jpg'"
-          [alt_message]="'diocese'"
+          [alt_message]="'centre de santé'"
           [couleur]="'#A41523'"
-          [name]="'Diocèse de Maroua-Mokolo'"
-          [lieu]="'Founangué'"
-          [ville]="'Maroua , Extreme-Nord'"
+          [name]="'REGION DU CENTRE'"
+          [lieu]="''"
+          [ville]="''"
         />
         <app-card
-          [image]="'./images/centre_sante.jpg'"
+          [image]="'./images/carousel_1.png'"
           [icone]="'./images/localisation_rouge.jpg'"
-          [alt_message]="'diocese'"
+          [alt_message]="'centre de santé'"
           [couleur]="'#A41523'"
-          [name]="'Archidiocèse de Yaoundé'"
-          [lieu]="'Poste centrale'"
-          [ville]="'Yaoundé , Centre'"
+          [name]="'REGION DU LITTORAL'"
+          [lieu]="''"
+          [ville]="''"
         />
         <app-card
-          [image]="'./images/centre_sante.jpg'"
+          [image]="'./images/carousel_1.png'"
           [icone]="'./images/localisation_rouge.jpg'"
-          [alt_message]="'diocese'"
+          [alt_message]="'REGION DE L\'EST'"
           [couleur]="'#A41523'"
-          [name]="'Archidiocèse de Douala'"
-          [lieu]="'Bonanjo'"
-          [ville]="'Douala , Littoral'"
+          [name]="'REGION DE L\'EST'"
+          [lieu]="''"
+          [ville]="''"
         />
         <app-card
-          [image]="'./images/centre_sante.jpg'"
+          [image]="'./images/carousel_1.png'"
           [icone]="'./images/localisation_rouge.jpg'"
-          [alt_message]="'diocese'"
+          [alt_message]="'REGION DE L\'ADAMOUA'"
           [couleur]="'#A41523'"
-          [name]="'Diocèse de Kribi'"
-          [lieu]="'Akom 2'"
-          [ville]="'Kribi , Sud'"
+          [name]="'REGION DE L\'ADAMOUA'"
+          [lieu]="''"
+          [ville]="''"
         />
 
         <app-card
-          [image]="'./images/centre_sante.jpg'"
+          [image]="'./images/carousel_1.png'"
           [icone]="'./images/localisation_rouge.jpg'"
-          [alt_message]="'diocese'"
+          [alt_message]="'centre de santé'"
           [couleur]="'#A41523'"
-          [name]="'Diocèse de Bafoussam'"
-          [lieu]="'Evéché'"
-          [ville]="'Bafoussam , Ouest'"
+          [name]="'REGION DE L\'EXTREME-NORD'"
+          [lieu]="''"
+          [ville]="''"
         />
       </div>
     </div>
