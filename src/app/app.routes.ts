@@ -38,6 +38,8 @@ import { EnvironnementHistoryComponent } from './pages/fields-of-apostolate/page
 import { HealthSimeComponent } from './pages/fields-of-apostolate/pages/health/pages/sime/health-sime.component';
 import { HealthHistoryComponent } from './pages/fields-of-apostolate/pages/health/pages/history/health-history.component';
 import { SpiritualityRealizationComponent } from './pages/fields-of-apostolate/pages/spirituality/pages/realisation/spirituality-realisation.component';
+import { PerspectivesComponent } from './pages/fields-of-apostolate/pages/health/pages/perspectives/perspectives.component';
+import { GeneralitiesComponent } from './pages/fields-of-apostolate/pages/health/pages/generalities/generalities.component';
 
 export const routes: Routes = [
   {
@@ -79,9 +81,9 @@ export const routes: Routes = [
             component: SpiritualityChurchComponent,
           },
           {
-            path:FieldOfApostolateNestedRouter.spirituality.realization,
-            component:SpiritualityRealizationComponent
-          }
+            path: FieldOfApostolateNestedRouter.spirituality.realization,
+            component: SpiritualityRealizationComponent,
+          },
         ],
       },
 
@@ -104,67 +106,74 @@ export const routes: Routes = [
           },
 
           {
-            path:FieldOfApostolateNestedRouter.health.sime,
-            component:HealthSimeComponent
-          },{
-            path:FieldOfApostolateNestedRouter.health.history,
-            component:HealthHistoryComponent
+            path: FieldOfApostolateNestedRouter.health.sime,
+            component: HealthSimeComponent,
+          },
+          {
+            path: FieldOfApostolateNestedRouter.health.history,
+            component: HealthHistoryComponent,
+          },
+          {
+            path:FieldOfApostolateNestedRouter.health.perspective,
+            component:PerspectivesComponent
+          }, 
+          {
+            path:FieldOfApostolateNestedRouter.health.generalities,
+            component:GeneralitiesComponent
           }
-          
-
         ],
-      },  
+      },
 
       {
         path: FieldOfApostolateNestedRouter.communication.home,
         component: CommunicationComponent,
-        children:[
+        children: [
           {
             path: '',
             redirectTo: FieldOfApostolateNestedRouter.communication.about,
             pathMatch: 'full',
           },
           {
-            path:FieldOfApostolateNestedRouter.communication.about, 
-            component:CommunicationAboutComponent
+            path: FieldOfApostolateNestedRouter.communication.about,
+            component: CommunicationAboutComponent,
           },
           {
-            path:FieldOfApostolateNestedRouter.communication.activities, 
-            component:CommunicationActivitiesComponent
+            path: FieldOfApostolateNestedRouter.communication.activities,
+            component: CommunicationActivitiesComponent,
           },
           {
-            path:FieldOfApostolateNestedRouter.communication.gallery, 
-            component:CommunicationGalleryComponent
-          }
-        ]
+            path: FieldOfApostolateNestedRouter.communication.gallery,
+            component: CommunicationGalleryComponent,
+          },
+        ],
       },
 
       {
         path: FieldOfApostolateNestedRouter.environnement.home,
         component: EnvironnementComponent,
-        children:[
+        children: [
           {
             path: '',
             redirectTo: FieldOfApostolateNestedRouter.environnement.about,
             pathMatch: 'full',
           },
           {
-            path:FieldOfApostolateNestedRouter.environnement.about, 
-            component:EnvironnementAboutComponent
+            path: FieldOfApostolateNestedRouter.environnement.about,
+            component: EnvironnementAboutComponent,
           },
           {
-            path:FieldOfApostolateNestedRouter.environnement.activities, 
-            component:EnvironnementActivitiesComponent
+            path: FieldOfApostolateNestedRouter.environnement.activities,
+            component: EnvironnementActivitiesComponent,
           },
           {
-            path:FieldOfApostolateNestedRouter.environnement.gallery, 
-            component:EnvironnementGalleryComponent
-          }, 
+            path: FieldOfApostolateNestedRouter.environnement.gallery,
+            component: EnvironnementGalleryComponent,
+          },
           {
-            path:FieldOfApostolateNestedRouter.environnement.history,
-            component:EnvironnementHistoryComponent
-          }
-        ]
+            path: FieldOfApostolateNestedRouter.environnement.history,
+            component: EnvironnementHistoryComponent,
+          },
+        ],
       },
     ],
   },

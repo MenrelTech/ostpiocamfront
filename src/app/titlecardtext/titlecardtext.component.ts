@@ -1,8 +1,9 @@
 import {  Component, input,OnInit } from '@angular/core';
+import { RegisterComponent } from "../pages/register/register.component";
 
 @Component({
   selector: 'app-titlecardtext',
-  imports: [],
+  imports: [RegisterComponent],
   templateUrl: './titlecardtext.component.html',
   styleUrl: './titlecardtext.component.css'
 })

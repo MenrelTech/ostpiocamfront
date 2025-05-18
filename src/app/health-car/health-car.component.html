@@ -1,0 +1,21 @@
+<div
+  class="shadow-lg flex flex-col justify-center items-center bg-neutral-100 rounded-lg w-full md:w-[270px] h-max hover:shadow-lx"
+>
+  <a href="#">
+    <div class="rounded-t-lg w-full h-full">
+      <img
+        class="rounded-t-lg w-full md:w-[250px] lg:w-[270px] object-cover h-[260px]"
+        src="{{ image() }}"
+        alt="{{ alt_message() }}"
+      />
+    </div>
+    <div class="flex w-full items-center justify-center">
+      <p
+        class="text-yellow-500 text-center py-2 font-(family-name:--arimabold) text-base "
+        [style]="couleur_texte"
+      >
+        <b>{{ name() }}</b>
+      </p>
+    </div>
+  </a>
+</div>
