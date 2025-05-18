@@ -30,6 +30,7 @@ import { CommunicationComponent } from './pages/fields-of-apostolate/pages/commu
 import { CommunicationActivitiesComponent } from './pages/fields-of-apostolate/pages/communication/pages/activities/communication-activities.component';
 import { CommunicationAboutComponent } from './pages/fields-of-apostolate/pages/communication/pages/about/communication-about.component';
 import { CommunicationGalleryComponent } from './pages/fields-of-apostolate/pages/communication/pages/gallery/communication-gallery.component';
+import { CommunicationGeneralityComponent } from './pages/fields-of-apostolate/pages/communication/pages/generality/communication-generality.component';
 import { EnvironnementAboutComponent } from './pages/fields-of-apostolate/pages/environnement/pages/about/environnement-about.component';
 import { EnvironnementActivitiesComponent } from './pages/fields-of-apostolate/pages/environnement/pages/activities/environnement-activities.component';
 import { EnvironnementComponent } from './pages/fields-of-apostolate/pages/environnement/environnement.component';
@@ -145,7 +146,11 @@ export const routes: Routes = [
           {
             path:FieldOfApostolateNestedRouter.communication.gallery, 
             component:CommunicationGalleryComponent
-          }
+          },
+          {
+            path:FieldOfApostolateNestedRouter.communication.generality, 
+            component:CommunicationGeneralityComponent
+          },
         ]
       },
 

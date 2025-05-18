@@ -1,7 +1,12 @@
 import { Component, Input,signal } from '@angular/core';
 import { VerticalcardtextComponent } from '../../../../../../verticalcardtext/verticalcardtext.component';
 import { ImgcardtextComponent } from '../../../../../../imgcardtext/imgcardtext.component';
+import { NumberedcardtextComponent } from "../../../../../../numberedcardtext/numberedcardtext.component";
+import { CardComponent } from "../../../../../../card/card.component";
+
+
 import { CommonModule } from '@angular/common';
+import { RouterLink } from "@angular/router";
 
 interface Actualite {
   id: number;
@@ -17,11 +22,12 @@ interface Actualite {
 @Component({
   standalone: true,
   templateUrl: './communication-about.component.html',
-  imports: [VerticalcardtextComponent, ImgcardtextComponent,CommonModule],
+  imports: [VerticalcardtextComponent, ImgcardtextComponent,CommonModule,RouterLink,NumberedcardtextComponent,CardComponent],
   styleUrl: './communication-about.component.css',
   selector: 'app-accueil-communication',
 })
 export class CommunicationAboutComponent {
+  linkGeneralite = "/champs d'apostolat/communication/généralité"
   actualites = signal<Actualite[]>([]);
   hidden = true;
   hidden2 = true;

@@ -2,12 +2,12 @@
 
 <div>
   <div class="w-full h-[50px] bg-red-50 content-center">
-    <p class="ml-[70px] font-(family-name:--chakraregular)">Accueil > Champs d’Apostolat > Santé > SIME AS</p>
+    <p class="ml-[70px] font-(family-name:--chakraregular)">Accueil > Champs d’Apostolat > Santé > SIMEAS</p>
   </div>
 
   <div class="w-full h-max my-8 content-evenly">
     <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]">
+      <h2 class="text-center font-(family-name:--arimabold) font-bold text-3xl text-red-700 mb-[20px]">
         Généralités
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
@@ -36,7 +36,7 @@
   </div>
   <div class="w-full h-[358px] bg-red-50 content-evenly">
     <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]">
+      <h2 class="text-center font-(family-name:--arimabold) font-bold text-3xl text-red-700 mb-[20px]">
         Historicité
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
@@ -46,7 +46,7 @@
       </div>
     </div>
     <div class="flex flex-col items-center justify-center">
-      <div class="text-left w-[80%]">
+      <div class="text-justify w-[80%]">
         <p class="mb-2">
           L’organisation est née d’une analyse situationnelle : de nombreuses
           populations et Formations Sanitaires (FOSA) situées dans des zones
@@ -76,7 +76,7 @@
 
   <div class="w-full h-max my-8 py-4 content-evenly items-center">
     <div class="mb-[40px]">
-      <h2 class="text-center font-bold text-2xl text-red-700 mb-[20px]">
+      <h2 class="text-center font-(family-name:--arimabold) text-3xl text-red-700 mb-[20px]">
         Objectifs
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
@@ -85,31 +85,45 @@
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <p class="text-center w-full mb-[40px]">
-      Notre objectif général est de réduire la fracture entre les grandes villes
-      d’une part et les zones reculées, enclavées et <br />
-      pauvres d’autre part, dans l’accès à la Santé et au bien-être. Pluq
-      spécifiquement :
+        <p class="text-center w-full mb-[40px]">
+       Notre objectif général est de :
     </p>
     <div
-      class="grid grid-cols-3 gap-x-4 gap-y-10 place-content-center content-center justify-items-center items-center"
+      class="grid grid-cols-1 gap-x-4 gap-y-10 place-content-center content-center justify-items-center items-center"
     >
       <app-numberedcardtext
         [numero]="1"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
+        contenu=" réduire la fracture entre les grandes villes
+      d’une part et les zones reculées, enclavées et 
+      pauvres d’autre part, dans l’accès à la Santé et au bien-être."
+      />
+    </div>
+    <p class="text-center w-full my-[40px]">
+       Plus
+      spécifiquement :
+    </p>
+    <div
+      class="grid grid-cols-3 gap-x-4 gap-y-10 place-content-center content-center justify-items-center items-center"
+    >
+      <app-numberedcardtext
+        [numero]="2"
+        [couleur_n]="'#F2C7CB'"
+        [couleur_bgn]="'#5B0F15'"
+        [couleur_bg]="'#F29B9E'"
         contenu=" Renforcer les capacités logistiques  en termes d’équipements médico-sanitaires et autres, des Formations Sanitaires(FOSA) des zones reculées, enclavées et/ou pauvres ;"
       />
       <app-numberedcardtext
-        [numero]="2"
+        [numero]="3"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
         contenu="Améliorer l’accès des Groupes et Communautés vulnérables aux soins de Santé "
       />
       <app-numberedcardtext
-        [numero]="3"
+        [numero]="4"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
@@ -121,7 +135,7 @@
       class="grid grid-cols-1 mt-20 place-content-center content-center justify-items-center items-center"
     >
       <app-numberedcardtext
-        [numero]="4"
+        [numero]="5"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
@@ -129,9 +143,9 @@
       />
     </div>
   </div>
-  <div class="w-full h-max py-8 content-evenly items-center">
+  <div class="w-full h-max py-8 bg-red-50 content-evenly items-center">
     <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]">
+      <h2 class="text-center font-(family-name:--arimabold) font-bold text-3xl text-red-700 mb-[20px]">
         Missions
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
@@ -142,7 +156,7 @@
     </div>
     <p class="text-center w-full font-(family-name:--chakraregular) mb-[40px]">Nous avons pour missions:</p>
     <div
-      class="grid grid-cols-3 gap-4 content-center justify-items-center items-center"
+      class="grid grid-cols-3  mb-7 gap-4 content-center justify-items-center items-center"
     >
       <app-numberedcardtext
         [numero]="1"
@@ -172,7 +186,7 @@
     class="w-full h-max py-8 justify-center content-evenly items-center grid justify-items-center"
   >
     <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]">
+      <h2 class="text-center font-(family-name:--arimabold) font-bold text-3xl text-red-700 mb-[20px]">
         Organigramme
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
@@ -182,111 +196,17 @@
       </div>
     </div>
     <div class="flex justify-center items-center w-full">
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
+      <img
+        class="md:w-full md:h-[600px] "
+        src="./images/Schéma directeur simeas.jpg"
+        alt="organigramme"
       />
     </div>
-    <div class="w-[95%] h-[2px] bg-red-900"></div>
-    <div class="flex justify-between items-center w-full">
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-    </div>
-    <div class="w-full h-[2px] bg-red-900"></div>
-    <div class="flex justify-between items-center w-full">
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-    </div>
+    
   </div>
-  <div
-    class="w-full h-max py-8 bg-red-50 content-evenly items-center grid justify-items-center"
-  >
+  <div class="w-full h-max py-8  bg-red-50 content-evenly">
     <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]">
-        Membres du bureau elargi
-      </h2>
-      <div class="flex justify-center items-center w-full h-[5px]">
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-        <div class="bg-red-700 h-[5px] w-[50px] rounded-full"></div>
-        <div class="bg-red-300 h-[1px] w-[50px]"></div>
-      </div>
-    </div>
-    <div class="flex justify-around items-center w-full">
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-      <app-imgcardtext
-        [image]="'./images/Fondateur2.png'"
-        [alt_message]="'membre'"
-        [name]="'Noel SIMO'"
-        [role]="'Fondateur'"
-      />
-    </div>
-  </div>
-  <div class="w-full h-max py-8 content-evenly">
-    <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]">
+      <h2 class="text-center font-(family-name:--arimabold) font-bold text-3xl text-red-700 mb-[20px]">
         Nos perspectives
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
@@ -340,9 +260,9 @@
       </div>
     </div>
   </div>
-  <div class="w-full h-max py-10 bg-red-50 content-evenly">
+  <div class="w-full h-max py-10 content-evenly">
     <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]">
+      <h2 class="text-center font-(family-name:--arimabold) font-bold text-3xl text-red-700 mb-[20px]">
         Les Zones d’intervention
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">

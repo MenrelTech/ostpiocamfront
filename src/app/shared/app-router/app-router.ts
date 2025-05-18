@@ -43,6 +43,7 @@ export const FieldOfApostolateNestedRouter = {
     about: 'apropos',
     activities: 'activite',
     gallery: 'galerie',
+    generality: 'généralité',
   },
 };
 
