@@ -69,20 +69,7 @@ export class NavbarComponent implements AfterViewInit {
         },
       ],
     },
-    {
-      label: 'Actualités',
-      path: AppRouter.news,
-      subMenu: [
-        { label: 'A la une ', path: 'a-la-une' },
-        { label: 'Communiqués & interviews', path: 'communiqués-interviews' },
-        { label: "Rapport d'activités", path: "rapport-d'activités" },
         {
-          label: 'Archives',
-          path: 'archives',
-        },
-      ],
-    },
-    {
       label: "Champs d'Apostolat",
       path: AppRouter.fieldsOfApostolate,
       subMenu: [
@@ -105,6 +92,19 @@ export class NavbarComponent implements AfterViewInit {
       ],
     },
     // { label: 'Spiritualités', path: AppRouter.spirituality },
+    {
+      label: 'Actualités',
+      path: AppRouter.news,
+      subMenu: [
+        { label: 'A la une ', path: 'a-la-une' },
+        { label: 'Communiqués & interviews', path: 'communiqués-interviews' },
+        { label: "Rapport d'activités", path: "rapport-d'activités" },
+        {
+          label: 'Archives',
+          path: 'archives',
+        },
+      ],
+    },
     {
       label: 'Contact',
       path: AppRouter.contact,

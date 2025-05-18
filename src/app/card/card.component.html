@@ -5,10 +5,12 @@
         </div>
         <div class="items-center py-[10px]  content-center">
             <p class="text-yellow-500 text-center text-[14px] h-[20px] mb-[5px]" [style] ="couleur_texte" ><b>{{name()}}</b></p>
-            <p class="text-[16px] text-center font-bold h-[20px]"><b>{{lieu()}}</b></p>
-            <p class="flex w-full justify-center mt-[10px] text-center text-[12px] h-[20px] content-center items-center">
-                <img class="h-[20px] w-[20px]" src={{icone()}} alt="localisation" /> {{ville()}}
-            </p>
+            <div *ngIf="( lieu() !== '' )">
+                <p class="text-[16px] text-center font-bold h-[20px]"><b>{{lieu()}}</b></p>
+                <p class="flex w-full justify-center mt-[10px] text-center text-[12px] h-[20px] content-center items-center">
+                    <img class="h-[20px] w-[20px]" src={{icone()}} alt="localisation" /> {{ville()}} 
+                </p>
+            </div>
         </div>
     </a>
 </div>

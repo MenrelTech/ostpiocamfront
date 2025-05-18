@@ -83,11 +83,11 @@
     <div class="hidden md:flex h-[60px] px-0 justify-end items-center relative">
       <div class="h-full relative">
         <div (mouseleave)="hideSubmenu()" class="w-full h-full">
-          <ol class="flex justify-around items-center w-full h-full" #navLinks>
+          <ol class="flex font-(family-name:--chakraregular) justify-around items-center w-full h-full" #navLinks>
             <li
               *ngFor="let link of links"
               role="none"
-              class="h-full relative group"
+              class="h-full relative group font-(family-name:--chakraregular)"
             >
               <a
                 role="menuitem"
@@ -144,7 +144,7 @@
               <a
                 *ngFor="let subItem of activeSubmenu?.subMenu"
                 [routerLink]="subItem.path"
-                class="w-fit transition-colors rounded-md hover:text-blue-800 submenu-link"
+                class="w-fit transition-colors font-(family-name:--chakraregular) rounded-md hover:text-blue-800 submenu-link"
                 (click)="handleNavigation()"
               >
                 &#10095; {{ subItem.label }}
