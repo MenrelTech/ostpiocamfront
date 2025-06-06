@@ -7,6 +7,7 @@ import { VerticalcardtextComponent } from '../../verticalcardtext/verticalcardte
 import { RdvcardComponent } from '../../rdvcard/rdvcard.component';
 import { CommonModule } from '@angular/common';
 import { AppRouter } from '../../shared/app-router/app-router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 interface Actualite {
   id: number;
@@ -43,13 +44,15 @@ interface GrandesDates {
     CardimageComponent,
     VerticalcardtextComponent,
     RouterLink,
-    CommonModule
+    CommonModule,
+    TranslateModule
   ],
   standalone: true,
   templateUrl: './accueil.component.html',
   styleUrl: './accueil.component.css',
 })
 export class AccueilComponent {
+
   actualites = signal<Actualite[]>([]);
   grandesDates = signal<GrandesDates[]>([]);
 
@@ -197,4 +200,5 @@ export class AccueilComponent {
       console.error('Error fetching grandes dates:', error);
     });
   }
+
 }
