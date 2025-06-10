@@ -3,6 +3,7 @@ import { CardtextComponent } from '../../cardtext/cardtext.component';
 import { CommonModule } from '@angular/common';
 import cardActualityComponent from '../../cardActuality/cardActuality.component';
 import { VerticalcardtextComponent } from '../../verticalcardtext/verticalcardtext.component';
+import { TranslateModule } from '@ngx-translate/core';
 interface Actualite {
   id: number;
   title: string;
@@ -15,7 +16,7 @@ interface Actualite {
 } 
 @Component({
   selector: 'app-actualite',
-  imports: [CardtextComponent,CommonModule,VerticalcardtextComponent,cardActualityComponent],
+  imports: [CommonModule,cardActualityComponent,TranslateModule],
   templateUrl: './actualite.component.html',
   styleUrl: './actualite.component.css'
 })

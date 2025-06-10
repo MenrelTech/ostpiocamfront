@@ -1,7 +1,7 @@
 <div class="w-full relative mb-[60px]">
   <div class="relative top-[60px] w-full">
     <div class="flex w-full font-(family-name:--chakraregular)">
-      <ng-container *ngFor="let menu of menus; index as i">
+      <ng-container *ngFor="let menu of (menus$ |async) trackBy: trackByPath index as i">
         <div
           class="relative w-[25%] h-[45px] z-10 justify-center items-center flex border-b-[5px]"
           [ngClass]="[

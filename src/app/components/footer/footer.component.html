@@ -27,7 +27,7 @@
           </p>
 
           <ul class="space-y-1 text-sm text-center md:text-left">
-            <li *ngFor="let link of usefulLinks">
+            <li *ngFor="let link of (usefulLinks$ | async); trackBy: trackByPath">
               <a
                 [routerLink]="link.path"
                 routerLinkActive="text-blue-300"
@@ -44,7 +44,7 @@
             <b>Champs d'Apostolat</b>
           </p>
           <ul class="ml-[2px] space-y-1 list-none text-left">
-            <li *ngFor="let link of apostolatLinks">
+            <li *ngFor="let link of (apostolatLinks$ | async); trackBy: trackByPath">
               <a
                 [routerLink]="link.path"
                 routerLinkActive="text-blue-300"
@@ -57,17 +57,16 @@
           </ul>
         </div>
         <div class="">
-          <div><b class="">Souscrire à nos newsletters</b></div>
+          <div><b class="">{{"footer.subscribe-title" | translate}}</b></div>
           <div class="mb-[9px]" id="fonta">
-            Vous serez notifié régulierement sur l'actualité de<br />
-            l'Oeuvre de St Padré Pio au Cameroun
+            {{"footer.subscribe-text" | translate}}
           </div>
           <div class="flex">
             <input
               class="h-[40px] w-[250px] border-[1px] border-white px-[8px] rounded-[5px] mr-[4px]"
               id="email"
               type="email"
-              placeholder="Votre email"
+              [placeholder]="'footer.subscribe-place-holder' | translate"
               [(ngModel)]="subscriberEmail"
             />
             <button

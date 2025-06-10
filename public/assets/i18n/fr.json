@@ -1,0 +1,308 @@
+{
+  "links": [
+    {
+      "label": "Accueil",
+      "path": "",
+      "subMenu": [
+        { "label": "Présentation", "path": "" },
+        { "label": "Actualité", "path": "actualite" },
+        { "label": "Prolégomènes", "path": "prolegomene" },
+        { "label": "Nos prestataires", "path": "nos-prestataire" },
+        {
+          "label": "Fondateurs & Responsable",
+          "path": "fondateurs&responsable"
+        },
+        {
+          "label": "Les grandes dates",
+          "path": "grandes-dates"
+        },
+        {
+          "label": "Champs d'Apostolats",
+          "path": "champs d'apostolat"
+        },
+        {
+          "label": "Nos perspectives",
+          "path": "nos-perspectives"
+        }
+      ]
+    },
+    {
+      "label": "Champs d'Apostolat",
+      "path": "champs d'apostolat",
+      "subMenu": [
+        {
+          "label": "Spiritualité",
+          "path": "champs d'apostolat/spiritualite"
+        },
+        {
+          "label": "Santé",
+          "path": "champs d'apostolat/sante"
+        },
+        {
+          "label": "Communication",
+          "path": "champs d'apostolat/communication"
+        },
+        {
+          "label": "Environnement",
+          "path": "champs d'apostolat/environnement"
+        }
+      ]
+    },
+    {
+      "label": "Actualités",
+      "path": "actualite",
+      "subMenu": [
+        { "label": "A la une ", "path": "a-la-une" },
+        {
+          "label": "Communiqués & interviews",
+          "path": "communiqués-interviews"
+        },
+        { "label": "Rapport d'activités", "path": "rapport-d'activités" },
+        {
+          "label": "Archives",
+          "path": "archives"
+        }
+      ]
+    },
+    {
+      "label": "Contact",
+      "path": "contact",
+      "subMenu": [
+        {
+          "label": "Devenir bénévole",
+          "path": "devenir-benevole"
+        },
+        {
+          "label": "Devenir partenaire",
+          "path": "devenir-partenaire"
+        },
+        {
+          "label": "Souscrire à la Newsletter",
+          "path": "news-letter"
+        },
+        {
+          "label": "Nous contacter",
+          "path": "contact"
+        }
+      ]
+    }
+  ],
+
+  "footer": {
+    "usefulLinks": [
+      { "label": "Accueil", "path": "" },
+      { "label": "Actualités", "path": "actualites" },
+      { "label": "Nous contacter", "path": "contact" },
+      { "label": "Faire un don", "path": "don" }
+    ],
+    "apostolatLinks": [
+      { "label": "Santé", "path": "sante" },
+      { "label": "Spiritualité", "path": "spiritualite" },
+      { "label": "Environnement", "path": "environnement" },
+      { "label": "Communication", "path": "communication" }
+    ],
+    "subscribe-title": "Souscrire à nos newsletters",
+    "subscribe-text": "Vous serez notifié régulierement sur l'actualité de l'Oeuvre de St Padré Pio au Cameroun",
+    "subscribe-action": "Souscrire",
+    "subscribe-place-holder": "Votre email"
+  },
+
+  "home": {
+    "title": "Présentation",
+    "subtitle": "L’œuvre de Saint Padre Pio au Cameroun",
+    "carrousel": "Une vision humanitaire du Cameroun et du monde",
+    "carrouselTitle": [
+      "Une vision humanitaire du Cameroun et du monde",
+      "Du sang disponible pour tous en toutes circonstance",
+      "La prière comme arme de préservation de la paix",
+      "Une voix qui éduque et édifie le monde"
+    ],
+    "presentation-title": "L’œuvre de Saint Padre Pio au Cameroun",
+    "presentation-des": " est une initiative inspirée de la spiritualité et de l’engagement de Saint Padre Pio, visant à rassembler sous une même structure toutes les entités et actions portées en son nom dans le pays. Elle a pour mission de promouvoir la foi vivante, le service du prochain et l’unité des acteurs engagés autour de quatre axes principaux : la Spiritualité, la Santé, la Communication et l’Environnement. Fondée en 2005 à travers la Confrérie des Disciples de Saint Padre Pio (CODISAPIO), elle a progressivement donné naissance à plusieurs œuvres concrètes telles que la Saint Pio Blood Relief Suffering Foundation pour le don de sang, SIMEAS pour l’aide médicale dans les zones reculées, La Voix de Padre Pio Cameroun pour une communication enracinée dans la foi, et Green World for Man pour la promotion d’une écologie humaine centrée sur la dignité de l’homme.",
+    "presentation-read-more": "En savoir plus ",
+    "Prolegomena": "Prolégomènes",
+    "Prolegomena-title": "L’œuvre de Saint Padre Pio au Cameroun",
+    "Prolegomena-des": "trouve son origine dans un élan de foi, de prière et de service, nourri par la vie et l’exemple de Saint Padre Pio. Ce site web n’est pas simplement un espace d’information, mais un lieu de rencontre spirituelle, de témoignage et de mobilisation autour d’une mission : faire rayonner la charité, la compassion et l’unité dans notre société. Dans un monde traversé par la souffrance, les divisions et la perte de repères, l’Œuvre veut être une réponse concrète à l’appel de Dieu, en s’appuyant sur des actions visibles dans les domaines de la spiritualité, de la santé, de la communication et de l’environnement. À travers ce portail, chacun est invité à découvrir, comprendre, prier et s’engager, avec l’espérance que Saint Padre Pio continue d’intercéder pour notre pays et d’inspirer des chemins de foi vivante et active.",
+    "founder&responsable": "Fondateurs & Responsables",
+    "founder-card-text": {
+      "one": {
+        "name": "Noel SIMO",
+        "role": "Fondateur",
+        "des": " L’Œuvre de Saint Padre Pio au Cameroun est née d’un profond désir de faire vivre, ici et maintenant, l’héritage spirituel et humain de ce grand saint. Elle est le fruit de la prière, de l’écoute et de l’obéissance à une intuition intérieure, celle de rassembler toutes les bonnes volontés autour d’un idéal : servir Dieu en servant l’homme. Que cette plateforme soit un espace d’unité, de lumière et de ferveur pour tous ceux qui souhaitent marcher humblement sur les traces de Padre Pio, avec foi, charité et engagement sincère."
+      },
+      "two": {
+        "name": "Noel SIMO",
+        "role": "Coordonateur general",
+        "des": "Porter l’Œuvre de Saint Padre Pio est à la fois une grâce et une responsabilité. Dans un monde en quête de repères, elle incarne un chemin d’espérance fondé sur la prière, l’action concrète et la fraternité. Notre mission est de garder vivant le message du saint, d’agir avec foi dans les domaines qui touchent le cœur de l’homme : la santé, la spiritualité, l’environnement et la communication. Ensemble, unis dans l’amour du Christ, nous poursuivons cette aventure divine, avec courage et fidélité. Que chacun y trouve sa place et s’y sente appelé."
+      }
+    },
+    "main-field-apostolate": {
+      "title": "Champs d'Apostolat",
+      "spirituality": {
+        "title": "Spiritualité",
+        "text": "Suivez l'exemple  du Padre Pio : mediation, sacrements et paix de l'âme"
+      },
+      "health": {
+        "title": "Santé",
+        "text": "Le corps est un temple",
+        "hover": "Soignez vous par des approches douces en union avec prière"
+      },
+      "communication": {
+        "title": "Communication",
+        "text": "Parlez avec charité",
+        "hover": "Développez une parole vraie et bienveillante"
+      },
+      "environement": {
+        "title": "Environnement",
+        "text": "La création est un don de Dieu",
+        "hover": "Apprenez à la protéger avec respect"
+      }
+    },
+    "main-global-news": {
+      "title": "Actualités globales"
+    },
+    "key-dates": {
+      "title": "Les Grandes dates"
+    },
+    "perspectives": {
+      "title": "Perspectives",
+      "des": "Fidèle à sa mission d’évangélisation intégrale et de service de l’homme dans toutes ses dimensions, l’Œuvre de Saint Padre Pio au Cameroun se projette résolument vers l’avenir avec des ambitions claires et structurantes. À court terme, elle envisage la construction de sanctuaires dédiés à Saint Padre Pio dans les principales provinces ecclésiastiques du pays. Ces lieux saints seront non seulement des espaces de recueillement et de prière, mais aussi des centres de pèlerinage, de formation spirituelle et de rassemblement fraternel pour les fidèles, dans un esprit de communion et de renouveau missionnaire.Sur le long terme, plusieurs projets de grande portée sont en gestation. D’abord, la mise en place d’un Centre d’information spirituelle sur la vie des saints, avec un accent particulier sur celle de Saint Padre Pio, offrira aux jeunes, aux chercheurs et aux fidèles un espace d’instruction, de recherche et de ressourcement autour des figures marquantes de la sainteté. Ce centre vise à raviver la foi et à susciter des vocations par le témoignage de vies offertes à Dieu. Ensuite, l’Œuvre ambitionne de construire un centre hospitalier de référence, baptisé « Hôpital Saint Padre Pio de Pietrelcina », qui incarnera l’amour du prochain dans sa forme la plus concrète. Cet établissement combinera excellence médicale, accueil humain et accompagnement spirituel, dans la droite ligne de l’idéal de compassion et de service que portait Saint Padre Pio.Ces projets, portés par la foi, la prière et la générosité des partenaires, permettront à l’Œuvre de s’enraciner durablement dans le paysage ecclésial et social du Cameroun, en y apportant lumière, espérance et transformation profonde"
+    }
+  },
+
+  "general-presentation": {
+    "title": "Présentation de l’oeuvre",
+    "sub-title": "Accueil > Présentation de l’œuvre",
+    "para1": {
+      "text": {
+        "gras": "L’œuvre de Saint Padre Pio au Cameroun",
+        "des": "est une Institution théocratique pour rassembler et assurer la coordination parfaite de toutes les entités et/ou organisations de l’écosystème créées et engagées sous une seule tente pour « que tout ensemble ne fasse qu’un »  non seulement en vue d’une meilleure promotion et de la défense de la Cause du Saint éponyme dans notre pays mais aussi et surtout pour plus de perspicacité doublée des résultats d’effets et d’impacts"
+      }
+    },
+    "para2": "Elle porte ainsi quatre Champs d’Apostolat fondamentaux axés notamment sur l’angle de la Spiritualité, la Santé, la Communication et bien sûr  de l’Environnement.",
+    "para3": {
+      "firt": "Ses prémices ont été officiellement jetées en semence courant 2005 par la",
+      "second": "Confrérie des Disciples de Saint Padre Pio de Pietrelcina(CODISAPIO)",
+      "third": "la racine principale matrice, mamelle nourricière qui inhibe tout le tronc qui aujourd’hui est devenu un grand arbre à oiseaux."
+    },
+    "para4": {
+      "html": "A côté de la dimension surnaturelle proprement dite, il se dégage le volet sanitaire soutenu par <b>Saint Pio Blood Relief Suffering</b> Foundation  une des variables lourdes et pilier de soutènement issu des initiatives ou actions très fécondes de la CODISAPIO sur le terrain pour apporter une efficacité, une pertinence et une dimension éthique accrue à l’activité promotionnelle globale de la Transfusion Sanguine et du Don de Sang en particulier au Cameroun en apportant un visage humain aux malades dès l’an de grâce 2008."
+    },
+
+    "para5": {
+      "html": "<span>Au surplus</span>, sur le versant de la Santé,<b> Saint Pio International Medical Aid Services (SIMEAS)</b> se positionne comme étant l’un des puissants leviers  de l’Oeuvre dans sa globalité pour réduire la fracture entre les zones urbaines d’une part et celles reculées, enclavées et pauvres d’autre part à l’accès à la Santé au bien-être."
+    },
+
+    "para6": "<span >Sur le plan</span> de la Communication , <b>« La Voie de Padre Pio Cameroun »</b>, quant à elle répond dans ce processus à un réel besoin, celui d’abord d’autonomisation et du relai libre et fidèle de l’Information, celui  de mieux communiquer sans fioritures sur les rendus ou remontées de terrains inhérentes à nos propres initiatives et de déploiement maitrisé. Raison pour laquelle au-delà de tout, son leitmotiv est : «faire et faire connaître ce que nous sommes et faisons. »",
+    "para7": "<span >Face aux effets</span> néfastes d’une mondialisation mal orientée, <b>la Voie de Padre Pio</b> est un outil stratégique de l’œuvre dans un contexte de laïcité, de consumérisme, de relativisme religieux et de cléricalisme ombrageux  mais surtout de crise de l’identité chrétienne pour re-essayer  avec nos limites et insuffisances d’apprendre à croire et à appeler à l’engagement en faveur de la foi vive et active suivant la vision et la doctrine spirituelle de Saint Padre Pio de Pietrelcina",
+    "para8": "<span>Ce grand </span>projet éditorial est une dynamique qui dynamite toute forme d’inertie dans un monde qui veut vivre et construire sans l’Architecte, sans le moindre sens de la Transcendance",
+    "para9": "Il sort des fonts baptismaux en Septembre 2011 avec sa première version écrite.",
+    "para10": "<span>Sur le plan Environnemental</span>,<b>Un Monde Vert pour l’Homme (Green World for Man (GWM)</b> tout comme Saint Pio Blood Relief Suffering Foundation collaborent à assurer une écologie humaine, en contribuant fortement à la promotion de notre espace de vie en commençant d’emblée par  « la protection de  l’Homme » ’objet et sujet formel de la Création."
+  },
+
+  "prolegomena": {
+    "title": "Prolégomènes",
+    "sub-title": "Accueil > Prolégomènes",
+    "para1": "<span>Toute œuvre</span> authentiquement chrétienne naît dans le silence, s’enracine dans la prière, s’éprouve dans la souffrance, et s’épanouit dans l’amour. L’œuvre de Saint Padre Pio au Cameroun ne fait pas exception. Elle est, dès l’origine, une réponse fidèle à l’appel à la sainteté dans le monde contemporain, un cri silencieux du cœur vers Dieu, un engagement incarné au service de l’homme, image vivante de son Créateur.  ",
+    "para2": "<span>À travers</span> ce site web, nous n’ambitionnons pas seulement d’exposer des actions, de présenter des structures ou de communiquer des informations. Nous cherchons, dans l’humilité et la lumière, à offrir un lieu de convergence spirituelle et de communion fraternelle, une plateforme de ressourcement, de témoignage et d’engagement.",
+    "para3": "<span>Dans une société</span> de plus en plus fragmentée,désorientée par des repères mouvants, ce portail veut redire avec force que la foi n’est pas une abstraction, mais une vie vécue, incarnée dans des initiatives concrètes, inspirées par l’Évangile et la figure lumineuse de Saint Padre Pio de Pietrelcina — humble capucin, mystique stigmatisé, homme de douleur et de charité.",
+    "para4": "<span>Pourquoi Padre Pio</span> ? Parce qu’il est un modèle radical de fidélité à Dieu dans l’épreuve, un passeur de grâce dans l’intercession, un serviteur de l’humanité souffrante, et un prophète silencieux pour notre temps. Le Cameroun, comme tant d'autres nations, traverse des saisons de turbulences : crises de valeurs, crises sanitaires, déséquilibres sociaux, désert spirituel parfois... Dans ce contexte, l’Œuvre de Saint Padre Pio se veut boussole et refuge, levier d'espérance et ferment d’unité.",
+    "para5": "<span> L’œuvre s’articule</span> autour de quatre axes majeurs : Spiritualité, Santé, Communication, et Environnement — chacun répondant à une soif réelle de notre époque. Elle ne cherche pas à séduire mais à servir, non à dominer mais à rassembler, non à imposer mais à inspirer.",
+    "para6": "<span>Les structures</span> comme CODISAPIO, SIMEAS, Saint Pio Blood Relief Suffering Foundation, La Voix de Padre Pio Cameroun ou Green World for Man, loin d’être des coquilles vides, sont les membres vivants d’un même corps animé par une seule et même vision : faire de l’amour de Dieu une réalité palpable dans les âmes, les corps, les relations et les terres.",
+    "para7": "<span>Que ces prolégomènes</span> soient donc une porte d’entrée intérieure pour tous ceux qui visiteront ce site : pèlerins de passage, chercheurs de sens, malades en quête de consolation, jeunes en quête de repères, bénévoles désireux de s’engager, croyants avides de témoignages vivants.",
+    "para8": "<span>À vous tous</span>, nous disons bienvenue, non comme à de simples visiteurs mais comme à des frères en chemin. Ce site est un lieu de foi vivante, un appel à la prière, à l’action, à la compassion. Puisse Saint Padre Pio vous accompagner et vous bénir à chaque page, à chaque rencontre, à chaque pas.",
+    "para9": "Il sort des fonts baptismaux en Septembre 2011 avec sa première version écrite.",
+    "para10": "« Prie, espère et ne t’inquiète pas. » — Saint Padre Pio"
+  },
+  "actualities": {
+    "title": "Actualités",
+    "sub-title": "Accueil > Actualités"
+  },
+
+  "field-apostolate": {
+    "menus": [
+      {
+        "label": "Spiritualité",
+        "path": "/spiritualite",
+        "color": "yellow",
+        "subItems": [
+          {
+            "label": "À propos de nous",
+            "link": "/champs d'apostolat/spiritualite/apropos"
+          },
+          {
+            "label": "Activités",
+            "link": "/champs d'apostolat/spiritualite/activite"
+          },
+          {
+            "label": "Connaissance de l'Église",
+            "link": "/champs d'apostolat/spiritualite/connaissance de l'eglise"
+          },
+          {
+            "label": "Galerie photos",
+            "link": "/champs d'apostolat/spiritualite/galerie"
+          }
+        ]
+      },
+      {
+        "label": "Santé",
+        "path": "/sante",
+        "color": "red",
+        "subItems": [
+          {
+            "label": "St Pio BRSF",
+            "link": "/champs d'apostolat/sante/apropos"
+          },
+          { "label": "SIME AS", "link": "/champs d'apostolat/sante/sime-as" },
+          {
+            "label": "Galerie photos",
+            "link": "/champs d'apostolat/sante/galerie"
+          }
+        ]
+      },
+      {
+        "label": "Communication",
+        "path": "/communication",
+        "color": "blue",
+        "subItems": [
+          {
+            "label": "À propos de nous",
+            "link": "/champs d'apostolat/communication/apropos"
+          },
+          {
+            "label": "Activités",
+            "link": "/champs d'apostolat/communication/activite"
+          },
+          {
+            "label": "Galerie photos",
+            "link": "/champs d'apostolat/communication/galerie"
+          }
+        ]
+      },
+      {
+        "label": "Environnement",
+        "path": "/environnement",
+        "color": "green",
+        "subItems": [
+          {
+            "label": "À propos de nous",
+            "link": "/champs d'apostolat/environnement/apropos"
+          },
+          {
+            "label": "Activités",
+            "link": "/champs d'apostolat/environnement/activite"
+          },
+          {
+            "label": "Galerie photos",
+            "link": "/champs d'apostolat/environnement/galerie"
+          }
+        ]
+      }
+    ],
+    "spirituality": {}
+  },
+
+  "see-more": "Voir plus",
+  "read-more": "En savoir plus",
+  "ours-partners": "Nos entités/organisations formalisantes"
+}

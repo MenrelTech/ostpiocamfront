@@ -12,12 +12,12 @@
     </div>
 
     <div class="mt-[80px]">
-       <div class="w-full h-max pt-5 md:pt-0 pb-5 md:pb-0 content-evenly">
+      <div class="w-full h-max pt-5 md:pt-0 pb-5 md:pb-0 content-evenly">
         <div class="mb-[40px]">
           <h2
             class="text-center font-bold text-3xl text-blue-700 mb-[20px] font-(family-name:--arimabold)"
           >
-            {{"home.title" | translate}}
+            {{ "home.title" | translate }}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
@@ -28,9 +28,9 @@
         <div
           class="md:flex md:justify-center px-4 md:justify-items-center md:items-center w-full"
         >
-          <div class=" md:w-[30%] md:h-[500px]">
+          <div class="md:w-[30%] md:h-[500px]">
             <img
-              class="md:w-full md:h-[240px] "
+              class="md:w-full md:h-[240px]"
               src="./images/Logo Oeuvre du Saint Padre Pio Origin-01.jpg"
               alt="Logo ostpiocam"
             />
@@ -39,26 +39,13 @@
               src="./images/Logo Jubilé des 20 ans de presence et d'actions version corrigée VF-01.jpg"
               alt="Logo jubile ostpiocam"
             />
-            
           </div>
 
           <p class="text-justify md:w-[60%] font-(family-name:--chakraregular)">
-            <span class="font-bold text-blue-700"
-              >L’œuvre de Saint Padre Pio au Cameroun</span
-            >
-            est une initiative inspirée de la spiritualité et de l’engagement de
-            Saint Padre Pio, visant à rassembler sous une même structure toutes
-            les entités et actions portées en son nom dans le pays. Elle a pour
-            mission de promouvoir la foi vivante, le service du prochain et
-            l’unité des acteurs engagés autour de quatre axes principaux : la
-            Spiritualité, la Santé, la Communication et l’Environnement. Fondée
-            en 2005 à travers la Confrérie des Disciples de Saint Padre Pio
-            (CODISAPIO), elle a progressivement donné naissance à plusieurs
-            œuvres concrètes telles que la Saint Pio Blood Relief Suffering
-            Foundation pour le don de sang, SIMEAS pour l’aide médicale dans les
-            zones reculées, La Voix de Padre Pio Cameroun pour une communication
-            enracinée dans la foi, et Green World for Man pour la promotion
-            d’une écologie humaine centrée sur la dignité de l’homme.
+            <span class="font-bold text-blue-700">{{
+              "home.presentation-title" | translate
+            }}</span>
+            {{ "home.presentation-des" | translate }}
           </p>
         </div>
         <div
@@ -68,7 +55,7 @@
             ><button
               class="w-[125px] h-[40px] rounded-lg text-white bg-blue-900 cursor-pointer font-(family-name:--chakraregular)"
             >
-              En savoir plus
+              {{ "home.presentation-read-more" | translate }}
             </button></a
           >
         </div>
@@ -80,7 +67,7 @@
           <h2
             class="text-center font-bold text-3xl text-blue-700 mb-[20px] font-(family-name:--arimabold)"
           >
-            Prolégomènes
+            {{ "home.Prolegomena" | translate }}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
@@ -92,22 +79,10 @@
           <p
             class="text-left w-[90%] md:w-[80%] font-(family-name:--chakraregular)"
           >
-            <span class="font-bold text-blue-700"
-              >L’œuvre de Saint Padre Pio au Cameroun</span
-            >
-            trouve son origine dans un élan de foi, de prière et de service,
-            nourri par la vie et l’exemple de Saint Padre Pio. Ce site web n’est
-            pas simplement un espace d’information, mais un lieu de rencontre
-            spirituelle, de témoignage et de mobilisation autour d’une mission :
-            faire rayonner la charité, la compassion et l’unité dans notre
-            société. Dans un monde traversé par la souffrance, les divisions et
-            la perte de repères, l’Œuvre veut être une réponse concrète à
-            l’appel de Dieu, en s’appuyant sur des actions visibles dans les
-            domaines de la spiritualité, de la santé, de la communication et de
-            l’environnement. À travers ce portail, chacun est invité à
-            découvrir, comprendre, prier et s’engager, avec l’espérance que
-            Saint Padre Pio continue d’intercéder pour notre pays et d’inspirer
-            des chemins de foi vivante et active.
+            <span class="font-bold text-blue-700">{{
+              "home.Prolegomena-title" | translate
+            }}</span>
+            {{ "home.Prolegomena-des" | translate }}
           </p>
         </div>
         <div
@@ -117,7 +92,7 @@
             ><button
               class="w-[125px] h-[40px] rounded-lg text-white bg-blue-900 cursor-pointer font-(family-name:--chakraregular)"
             >
-              En savoir plus
+              {{ "home.presentation-read-more" | translate }}
             </button></a
           >
         </div>
@@ -127,7 +102,7 @@
           <h2
             class="text-center font-bold text-3xl text-blue-700 mb-[20px] font-(family-name:--arimabold)"
           >
-            Fondateurs & Responsables
+            {{ "home.founder&responsable" | translate }}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
@@ -139,23 +114,22 @@
           class="grid grid-cols-1 gap-[40px] justify-items-center items-center w-full px-[20px]"
         >
           <app-cardtext
-            [image]="'images/Fondateur2.png'"
-            [alt_message]="'Fondateur1'"
-            [name]="'Noel SIMO'"
-            [role]="'Fondateur'"
-            [description]="
-              'L’Œuvre de Saint Padre Pio au Cameroun est née d’un profond désir de faire vivre, ici et maintenant, l’héritage spirituel et humain de ce grand saint. Elle est le fruit de la prière, de l’écoute et de l’obéissance à une intuition intérieure, celle de rassembler toutes les bonnes volontés autour d’un idéal : servir Dieu en servant l’homme. Que cette plateforme soit un espace d’unité, de lumière et de ferveur pour tous ceux qui souhaitent marcher humblement sur les traces de Padre Pio, avec foi, charité et engagement sincère.'
-            "
-          ></app-cardtext>
+            image="images/Fondateur2.png"
+            alt_message="Fondateur1"
+            [name]="'home.founder-card-text.one.name' | translate"
+            [role]="'home.founder-card-text.one.role' | translate"
+            [description]="'home.founder-card-text.one.des' | translate"
+          >
+          </app-cardtext>
+
           <app-cardtext
-            [image]="'images/Fondateur2.png'"
-            [alt_message]="'Fondateur2'"
-            [name]="'Noel SIMO'"
-            [role]="'Coordonateur general'"
-            [description]="
-              'Porter l’Œuvre de Saint Padre Pio est à la fois une grâce et une responsabilité. Dans un monde en quête de repères, elle incarne un chemin d’espérance fondé sur la prière, l’action concrète et la fraternité. Notre mission est de garder vivant le message du saint, d’agir avec foi dans les domaines qui touchent le cœur de l’homme : la santé, la spiritualité, l’environnement et la communication. Ensemble, unis dans l’amour du Christ, nous poursuivons cette aventure divine, avec courage et fidélité. Que chacun y trouve sa place et s’y sente appelé.'
-            "
-          ></app-cardtext>
+            image="images/Fondateur2.png"
+            alt_message="Fondateur2"
+            [name]="'home.founder-card-text.two.name' | translate"
+            [role]="'home.founder-card-text.two.role' | translate"
+            [description]="'home.founder-card-text.two.des' | translate"
+          >
+          </app-cardtext>
         </div>
       </div>
       <div
@@ -166,7 +140,7 @@
             id="champsapostolat"
             class="text-center font-bold text-3xl text-blue-700 mb-[20px] font-(family-name:--arimabold)"
           >
-            Champs d'Apostolat
+            {{"home.main-field-apostolate.title" | translate}}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
@@ -174,15 +148,17 @@
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
           </div>
         </div>
-        <div class="flex justify-center items-center bg-blue-50 w-full flex-wrap gap-y-6">
+        <div
+          class="flex justify-center items-center bg-blue-50 w-full flex-wrap gap-y-6"
+        >
           <a class="" routerLink="{{ activityLink }}">
             <app-cardimage
               [image]="'images/spiritualite.jpg'"
               [alt_message]="'spiritualite'"
               [bg]="'#FCE589'"
               [couleur]="'yellow'"
-              [title]="'Spiritualité'"
-              hoverText="Suivez l'exemple  du Padre Pio : mediation, sacrements et paix de l'âme"
+              [title]="'home.main-field-apostolate.spirituality.title' | translate"
+              [hoverText]="'home.main-field-apostolate.spirituality.text' | translate"
             ></app-cardimage>
           </a>
           <a routerLink="{{ healthLink }}">
@@ -191,9 +167,9 @@
               [alt_message]="'sante'"
               [bg]="'#F29B9E'"
               [couleur]="'red'"
-              [title]="'Santé'"
-              hoverTitle="Le corps est un temple"
-              hoverText="Soignez vous par des approches douces en union avec prière"
+              [title]="'home.main-field-apostolate.health.title' | translate"
+              [hoverTitle]="'home.main-field-apostolate.health.text' | translate"
+              [hoverText]="'home.main-field-apostolate.health.hover' | translate"
             ></app-cardimage>
           </a>
           <a routerLink="{{ communicationLink }}">
@@ -202,9 +178,9 @@
               [alt_message]="'communication'"
               [bg]="'#9EC5E8'"
               [couleur]="'blue'"
-              [title]="'Communication'"
-              hoverTitle="Parlez avec charité"
-              hoverText="Développez une parole vraie et bienveillante"
+              [title]="'home.main-field-apostolate.health.title' | translate"
+              [hoverTitle]="'home.main-field-apostolate.health.text' | translate"
+              [hoverText]="'home.main-field-apostolate.health.hover' | translate"
             ></app-cardimage>
           </a>
           <a routerLink="{{ environnementLink }}">
@@ -213,9 +189,9 @@
               [alt_message]="'environnement'"
               [bg]="'#97F2AC'"
               [couleur]="'green'"
-              [title]="'Environnement'"
-              hoverTitle="La création est un don de Dieu"
-              hoverText="Apprenez à la protéger avec respect "
+              [title]="'home.main-field-apostolate.health.title' | translate"
+              [hoverTitle]="'home.main-field-apostolate.health.text' | translate"
+              [hoverText]="'home.main-field-apostolate.health.hover' | translate"
             ></app-cardimage>
           </a>
         </div>
@@ -226,7 +202,7 @@
             id="actualites"
             class="text-center font-bold text-3xl text-blue-700 mb-[20px] font-(family-name:--arimabold)"
           >
-            Actualités globales
+            {{"home.main-global-news.title" | translate}}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
@@ -257,7 +233,8 @@
           <h2
             class="text-center font-bold font-(family-name:--arimabold) text-3xl text-blue-700 mb-[20px]"
           >
-            Les Grandes dates
+          {{"home.key-dates.title" | translate}}
+
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-blue-300 h-[1px] w-[50px]"></div>
@@ -290,7 +267,7 @@
             ><button
               class="w-[125px] h-[40px] rounded-lg text-white bg-blue-900 cursor-pointer font-(family-name:--chakraregular)"
             >
-              Voir plus
+              {{"see-more" | translate}}
             </button></a
           >
         </div>
@@ -302,7 +279,7 @@
           <h2
             class="text-center font-bold text-3xl text-blue-700 mt-[20px] mb-[20px] font-(family-name:--arimabold)"
           >
-            Nos perspectives
+            {{"home.perspectives.title" | translate}}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
@@ -311,44 +288,19 @@
           </div>
         </div>
         <div class="flex justify-center">
-          <p class="text-justify w-[90%] md:w-[80%] font-(family-name:--chakraregular)">
-            Fidèle à sa mission d’évangélisation intégrale et de service de
-            l’homme dans toutes ses dimensions, l’Œuvre de Saint Padre Pio au
-            Cameroun se projette résolument vers l’avenir avec des ambitions
-            claires et structurantes. À court terme, elle envisage la
-            construction de sanctuaires dédiés à Saint Padre Pio dans les
-            principales provinces ecclésiastiques du pays. Ces lieux saints
-            seront non seulement des espaces de recueillement et de prière, mais
-            aussi des centres de pèlerinage, de formation spirituelle et de
-            rassemblement fraternel pour les fidèles, dans un esprit de
-            communion et de renouveau missionnaire. Sur le long terme, plusieurs
-            projets de grande portée sont en gestation. D’abord, la mise en
-            place d’un Centre d’information spirituelle sur la vie des saints,
-            avec un accent particulier sur celle de Saint Padre Pio, offrira aux
-            jeunes, aux chercheurs et aux fidèles un espace d’instruction, de
-            recherche et de ressourcement autour des figures marquantes de la
-            sainteté. Ce centre vise à raviver la foi et à susciter des
-            vocations par le témoignage de vies offertes à Dieu. Ensuite,
-            l’Œuvre ambitionne de construire un centre hospitalier de référence,
-            baptisé « Hôpital Saint Padre Pio de Pietrelcina », qui incarnera
-            l’amour du prochain dans sa forme la plus concrète. Cet
-            établissement combinera excellence médicale, accueil humain et
-            accompagnement spirituel, dans la droite ligne de l’idéal de
-            compassion et de service que portait Saint Padre Pio. Ces projets,
-            portés par la foi, la prière et la générosité des partenaires,
-            permettront à l’Œuvre de s’enraciner durablement dans le paysage
-            ecclésial et social du Cameroun, en y apportant lumière, espérance
-            et transformation profonde
+          <p
+            class="text-justify w-[90%] md:w-[80%] font-(family-name:--chakraregular)"
+          >
+           {{"home.perspectives.des" | translate}}
           </p>
         </div>
-
       </div>
       <div class="w-full h-max mt-8 content-evenly">
         <div class="mb-[40px]">
           <h2
             class="text-center font-bold text-3xl font-(family-name:--arimabold) text-blue-700 mb-[20px]"
           >
-            Nos entités/organisations formalisantes
+           {{"ours-partners" | translate}}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
@@ -356,7 +308,9 @@
             <div class="bg-blue-500 h-[1px] w-[50px]"></div>
           </div>
         </div>
-        <div class="md:flex md:justify-center md:items-center w-full flex-wrap gap-y-6">
+        <div
+          class="md:flex md:justify-center md:items-center w-full flex-wrap gap-y-6"
+        >
           <img
             class="w-[200px] lg:w-[175px] h-[100px] mx-[30px]"
             src="./images/Logo_Confrerie_des_Disciples_de_Saint_Padre_Pio_Origin_01.png"

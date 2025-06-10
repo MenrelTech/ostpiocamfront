@@ -30,9 +30,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.initializeLanguage();
-    this.translate.get('data').subscribe((text: string) => {
-      console.log(text, "datatatata");
-    });
   }
 
   private initializeLanguage() {
@@ -69,8 +66,4 @@ export class AppComponent implements OnInit {
     console.log(e);
   }
 
-  switchLanguage(lang: string) {
-    this.translate.use(lang);
-    localStorage.setItem('lang', lang);
-  }
 }

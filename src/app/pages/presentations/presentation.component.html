@@ -1,12 +1,16 @@
 <section>
   <div class="relative top-[60px] h-full mb-[100px] w-full">
     <div class="w-full h-[50px] bg-[#F8F9FA] content-center">
-      <p class="ml-[70px] font-(family-name:--chakraregular)">Accueil > Présentation de l’œuvre</p>
+      <p class="ml-[70px] font-(family-name:--chakraregular)">
+        {{ "general-presentation.sub-title" | translate }}
+      </p>
     </div>
 
     <div class="bg-[#EBF4FB] py-4 flex justify-center items-center">
-      <h1 class="text-[#0056B3]  font-(family-name:--arimabold) text-4xl font-bold">
-        Présentation de l’oeuvre
+      <h1
+        class="text-[#0056B3] font-(family-name:--arimabold) text-4xl font-bold"
+      >
+        {{ "general-presentation.title" | translate }}
       </h1>
     </div>
   </div>
@@ -14,95 +18,48 @@
   <div class="h-max w-full mb-20 flex items-center justify-center">
     <div class="w-[90%]">
       <p class="text-base">
-        <b class="font-medium">L’œuvre de Saint Padre Pio au Cameroun</b>
-        est une Institution théocratique pour rassembler et assurer la
-        coordination parfaite de toutes les entités et/ou organisations de
-        l’écosystème créées et engagées sous une seule tente pour « que tout
-        ensemble ne fasse qu’un »  non seulement en vue d’une meilleure
-        promotion et de la défense de la Cause du Saint éponyme dans notre pays
-        mais aussi et surtout pour plus de perspicacité doublée des résultats
-        d’effets et d’impacts.
+        <b class="font-medium">{{
+          "general-presentation.para1.text.gras" | translate
+        }}</b>
+        {{ "general-presentation.para1.text.des" | translate }}
       </p>
 
-      <p class="mt-2">
-        <span class=""> Elle porte </span> ainsi quatre Champs d’Apostolat
-        fondamentaux axés notamment sur l’angle de la Spiritualité, la Santé, la
-        Communication et bien sûr  de l’Environnement.
+      <p class="mt-2 font-medium">
+        {{ "general-presentation.para2" | translate }}
       </p>
 
-      <p class="mt-2">
-         <span class="">Ses prémices</span> ont été officiellement jetées
-        en semence courant 2005 par la
-        <b
-          >Confrérie des Disciples de Saint Padre Pio de Pietrelcina
-           (CODISAPIO)</b
-        >
-        la racine principale matrice, mamelle nourricière qui inhibe tout le
-        tronc qui aujourd’hui est devenu un grand arbre à oiseaux.
+      <p class="mt-2 text-left">
+         <span> {{"general-presentation.para3.firt" | translate }}</span>
+        <b> {{"general-presentation.para3.second" | translate }}</b>
+        {{"general-presentation.para3.third" | translate }}
       </p>
 
-      <p class="mt-2">
-        <span class="">A côté de</span> la dimension surnaturelle
-        proprement dite, il se dégage le volet sanitaire soutenu par
-        <b>Saint Pio Blood Relief Suffering</b>
-        Foundation  une des variables lourdes et pilier de soutènement issu des
-        initiatives ou actions très fécondes de la CODISAPIO sur le terrain pour
-        apporter une efficacité, une pertinence et une dimension éthique accrue
-        à l’activité promotionnelle globale de la Transfusion Sanguine et du Don
-        de Sang en particulier au Cameroun en apportant un visage humain aux
-        malades dès l’an de grâce 2008.
+      <p class="mt-2" [innerHTML]="'general-presentation.para4.html' | translate">
+     
       </p>
 
-      <p class="mt-2">
-        <span class="">Au surplus</span>, sur le versant de la Santé,<b>
-          Saint Pio International Medical Aid Services (SIMEAS)</b
-        >
-        se positionne comme étant l’un des puissants leviers  de l’Oeuvre dans
-        sa globalité pour réduire la fracture entre les zones urbaines d’une
-        part et celles reculées, enclavées et pauvres d’autre part à l’accès à
-        la Santé au bien-être.
+      <p class="mt-2" [innerHTML]="'general-presentation.para5.html' | translate">
+       
       </p>
 
-      <p class="mt-2">
-        <span class="">Sur le plan</span> de la Communication , <b
-          >« La Voie de Padre Pio Cameroun »</b
-        >, quant à elle répond dans ce processus à un réel besoin, celui d’abord
-        d’autonomisation et du relai libre et fidèle de l’Information, celui  de
-        mieux communiquer sans fioritures sur les rendus ou remontées de
-        terrains inhérentes à nos propres initiatives et de déploiement
-        maitrisé. Raison pour laquelle au-delà de tout, son leitmotiv est : «
-        faire et faire connaître ce que nous sommes et faisons. »
+      <p class="mt-2" [innerHTML]="'general-presentation.para6' | translate">
+        
       </p>
 
-      <p class="mt-2">
-        <span class="">Face aux effets</span> néfastes d’une mondialisation
-        mal orientée, <b>la Voie de Padre Pio</b> est un outil stratégique de
-        l’œuvre dans un contexte de laïcité, de consumérisme, de relativisme
-        religieux et de cléricalisme ombrageux  mais surtout de crise de
-        l’identité chrétienne pour re-essayer  avec nos limites et insuffisances
-        d’apprendre à croire et à appeler à l’engagement en faveur de la foi
-        vive et active suivant la vision et la doctrine spirituelle de Saint
-        Padre Pio de Pietrelcina
+      <p class="mt-2" [innerHTML]="'general-presentation.para7' | translate">
+      
       </p>
 
-      <p class="mt-2">
-        <span class="">Ce grand </span>projet éditorial est une dynamique
-        qui dynamite toute forme d’inertie dans un monde qui veut vivre et
-        construire sans l’Architecte, sans le moindre sens de la Transcendance
+      <p class="mt-2"[innerHTML]="'general-presentation.para8' | translate">
+  
       </p>
 
-      <p class="mt-2">
-        Il sort des fonts baptismaux en Septembre 2011 avec sa première version
-        écrite.
+      <p class="mt-2" [innerHTML]="'general-presentation.para9' | translate">
+      
       </p>
 
-      <p class="mt-2">
-        <span class="">Sur le plan Environnemental</span>,
-        <b>Un Monde Vert pour l’Homme (Green World for Man (GWM)</b> tout comme
-        Saint Pio Blood Relief Suffering Foundation collaborent à assurer une
-        écologie humaine, en contribuant fortement à la promotion de notre
-        espace de vie en commençant d’emblée par  « la protection de  l’Homme »
-        ’objet et sujet formel de la Création.
+      <p class="mt-2" [innerHTML]="'general-presentation.para10' | translate">
+
       </p>
     </div>
   </div>

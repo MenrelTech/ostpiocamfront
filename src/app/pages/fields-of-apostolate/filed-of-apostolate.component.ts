@@ -1,7 +1,9 @@
 // field-of-apostolate.component.ts
 import { Component } from '@angular/core';
-import { NgClass, NgFor } from '@angular/common';
+import { AsyncPipe, NgClass, NgFor } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
 
 interface SubMenuItem {
   label: string;
@@ -18,14 +20,41 @@ interface MainMenuItem {
 @Component({
   selector: 'app-field-of-apostolate',
   standalone: true,
-  imports: [RouterLink, RouterOutlet, NgFor,NgClass],
+  imports: [
+    RouterLink,
+    RouterOutlet,
+    NgFor,
+    NgClass,
+    TranslateModule,
+    AsyncPipe,
+  ],
   templateUrl: './filed-of-apostolate.component.html',
-
 })
 export class FieldOfApostolateComponent {
   activeMenuIndex: number | null = null;
+  menus$!: Observable<MainMenuItem[]>;
 
-  menus: MainMenuItem[] = [
+  constructor(private translate: TranslateService) {
+    this.menus$ = this.translate.stream('field-apostolate.menus');
+  }
+
+  trackByPath(_: number, link: MainMenuItem) {
+    return link.path;
+  }
+
+  showSubMenu(index: number) {
+    this.activeMenuIndex = index;
+  }
+
+  hideSubMenu() {
+    this.activeMenuIndex = null;
+  }
+}
+
+/*
+  menus: MainMenuItem[] = 
+  
+  [
     {
       label: 'Spiritualité',
       path: '/spiritualite',
@@ -69,12 +98,4 @@ export class FieldOfApostolateComponent {
       ],
     },
   ];
-
-  showSubMenu(index: number) {
-    this.activeMenuIndex = index;
-  }
-
-  hideSubMenu() {
-    this.activeMenuIndex = null;
-  }
-}
+*/
