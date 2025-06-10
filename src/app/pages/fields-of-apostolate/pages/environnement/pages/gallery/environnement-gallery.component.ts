@@ -30,7 +30,7 @@ export class EnvironnementGalleryComponent{
       const id = setTimeout(() => controller.abort(), timeout);
 
       try {
-        let response = await fetch("https://ostpiocamback.enotelco.com/api/galleries", {
+        let response = await fetch("https://ostpiocamback.enotelco.com/api/galleries"+'/4', {
           method: 'GET',
           mode: 'cors',
           cache: 'no-cache',
@@ -52,25 +52,24 @@ export class EnvironnementGalleryComponent{
       }
     }
     getGalerie(20000).then((data) => {
-      let a = data.member.map((item : any) => {
+      let a = data.photos.map((item : any) => {
       return {
-        id: item.id,
-        title: item.title,
-        description: item.description,
-        photos: item.photos.map((photo: any) => ({
+        id: data.id,
+        title: data.title,
+        description: data.description,
+        photos: data.photos.map((photo: any) => ({
           id: photo.id,
           image: photo.image,
           imageUrl: "https://ostpiocamback.enotelco.com"+photo.imageUrl,
           caption: photo.caption,
           createdAt: photo.createdAt
         })),
-        createdAt: item.createdAt
+        createdAt: data.createdAt
 
       };
     });
     
     this.galeries.set(a);
-    console.log(a[0].photos[0].imageUrl);
     }).catch((error) => {
       console.error('Error fetching galleries:', error);
     });
