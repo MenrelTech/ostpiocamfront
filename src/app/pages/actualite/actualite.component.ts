@@ -76,7 +76,7 @@ export class ActualiteComponent {
           color: couleur,
         };
       });
-      
+      a.sort((a: Actualite, b: Actualite) => new Date(b.date).getTime() - new Date(a.date).getTime());
       this.actualites.set(a);
     }).catch((error) => {
       console.error('Error fetching actualities:', error);
