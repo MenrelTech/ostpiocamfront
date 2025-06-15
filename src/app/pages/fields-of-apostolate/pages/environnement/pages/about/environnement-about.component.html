@@ -1,8 +1,8 @@
 <div>
   <div
-    class="w-full h-[50px] font-(family-name:--chakraregular) bg-green-50 content-center"
+    class="w-full h-[50px] pl-[70px] font-(family-name:--chakraregular) bg-green-50 content-center"
   >
-    Accueil > Champs d'Apostolat > environnement > A propos de nous
+    {{ "field-apostolate.environement.about.origin.sub-title" | translate }}
   </div>
 
   <div class="w-full h-max my-8 flex flex-col items-center justify-center">
@@ -10,7 +10,7 @@
       <h2
         class="text-center font-(family-name:--arimabold) font-bold text-2xl text-green-700 mb-[20px]"
       >
-        Génèse
+        {{ "field-apostolate.environement.about.origin.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-green-300 h-[1px] w-[50px]"></div>
@@ -26,14 +26,10 @@
       />
       <p class="text-justify font-(family-name:--chakraregular)">
         <span class="flex items-center justify-center"
-          ><b>Paix - Travail - Patrie</b><br
+          ><b></b><br
         /></span>
-        Au commencement, l’idée du Concept  d’une Organisation a germé d’un
-        constat très amer ; de nombreuses réticences, déceptions et difficultés
-        rencontrées  lors des campagnes  de sensibilisation à la biodiversité 
-        avec pour principal angle de discussion préalable la promotion d’une
-        écologie humaine auprès des grandes institutions de la république, des
-        entreprises, des ONGs et  des groupes médiatiques
+
+        {{ "field-apostolate.environement.about.origin.para" | translate }}
       </p>
     </div>
   </div>
@@ -42,7 +38,7 @@
       <h2
         class="text-center font-(family-name:--arimabold) font-bold text-2xl text-green-700 mb-[20px]"
       >
-        Historicité
+        {{ "field-apostolate.environement.about.history.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-green-300 h-[1px] w-[50px]"></div>
@@ -55,26 +51,15 @@
     >
       <div class="text-justify w-full px-4 md:w-[80%]">
         <p class="font-(family-name:--chakraregular)">
-          Ces campagnes menées entre 2012 et 2014, notamment lors des
-          déploiements relatifs aux activités commémoratives de la Journée
-          Mondiale du Donneur de Sang (JMDS) et de la «  Foire Promote 2014 »
-          par moment autour du 23 Septembre spécialement, ont révélé un profond 
-          manque d’engagement sur les questions environnentales en général et 
-          au Don de Sang en particulier au cœur d’une Société totalement
-          déstructurée en proie à la « dictature du bruit ».
+          {{ "field-apostolate.environement.about.history.para1" | translate }}
         </p>
 
         <p class="my-2">
-          Dans un contexte très problématique, durant cette période, plus de 300
-          Entreprises et autres Organisations de la Société Civile ont été
-          sensibilisées aux enjeux  du Don de Sang  et de la Transfusion
-          Sanguine  au Cameroun
+          {{ "field-apostolate.environement.about.history.para2" | translate }}
         </p>
 
         <p>
-          De fait, la sécurité transfusionnelle est un enjeu majeur de santé
-          publique qui vise à protéger les patients et  à garantir la qualité
-          des soins.
+          {{ "field-apostolate.environement.about.history.para3" | translate }}
         </p>
       </div>
 
@@ -82,7 +67,7 @@
         <button
           class="px-4 py-2 mt-4 text-white text-base rounded-lg bg-green-700"
         >
-          En savoir plus
+          {{ "see-more" | translate }}
         </button>
       </a>
     </div>
@@ -93,7 +78,7 @@
       <h2
         class="text-center font-(family-name:--arimabold) font-bold text-2xl text-green-700 mb-[20px]"
       >
-        Objectifs
+        {{ "field-apostolate.environement.about.objectives.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-green-300 h-[1px] w-[50px]"></div>
@@ -102,7 +87,7 @@
       </div>
     </div>
     <p class="text-center font-(family-name:--chakraregular) w-full mb-[40px]">
-      Nous avons pour Objectifs :
+      {{ "field-apostolate.environement.about.objectives.text" | translate }}
     </p>
 
     <div class="flex flex-col justify-center items-center">
@@ -112,7 +97,9 @@
           [couleur_n]="'#FFF'"
           [couleur_bgn]="'#0F3B1C'"
           [couleur_bg]="'#A3D9A5'"
-          contenu="Valoriser la place de l’Homme comme acteur central de la préservation de la biodiversité"
+          [contenu]="
+            'field-apostolate.environement.about.objectives.one' | translate
+          "
         />
       </div>
 
@@ -124,14 +111,18 @@
           [couleur_n]="'#FFF'"
           [couleur_bgn]="'#0F3B1C'"
           [couleur_bg]="'#A3D9A5'"
-          contenu="Vulgariser les politiques, les stratégies et les acteurs qui promeuvent les liens entre Santé et Environnement"
+          [contenu]="
+            'field-apostolate.environement.about.objectives.two' | translate
+          "
         />
         <app-numberedcardtext
           [numero]="3"
           [couleur_n]="'#FFF'"
           [couleur_bgn]="'#0F3B1C'"
           [couleur_bg]="'#A3D9A5'"
-          contenu="Initier des actions favorables au renforcement durable du lien entre Santé et Environnement "
+          [contenu]="
+            'field-apostolate.environement.about.objectives.three' | translate
+          "
         />
 
         <app-numberedcardtext
@@ -139,7 +130,9 @@
           [couleur_n]="'#FFF'"
           [couleur_bgn]="'#0F3B1C'"
           [couleur_bg]="'#A3D9A5'"
-          contenu="Susciter l’engagement des acteurs étatiques et non étatiques en faveur de la promotion d’une écologie intégrale."
+          [contenu]="
+            'field-apostolate.environement.about.objectives.four' | translate
+          "
         />
       </div>
     </div>
@@ -151,7 +144,7 @@
       <h2
         class="text-center font-bold font-(family-name:--arimabold) text-2xl text-green-700 mb-[20px]"
       >
-        Schéma Directeur
+        {{ "director" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-green-300 h-[1px] w-[50px]"></div>
@@ -644,7 +637,9 @@
       <h2
         class="text-center font-bold font-(family-name:--arimabold) text-2xl text-green-700 mb-[20px]"
       >
-        Nos perspectives
+        {{
+          "field-apostolate.environement.about.perspectives.title" | translate
+        }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-green-300 h-[1px] w-[50px]"></div>
@@ -655,28 +650,29 @@
     <div class="flex flex-col items-center justify-center">
       <div class="text-justify font-(family-name:--chakraregular) w-[80%]">
         <div>
-          <b>A court & Moyen termes</b> <br />
+          <b>
+            {{
+              "field-apostolate.environement.about.perspectives.short-term"
+                | translate
+            }}
+          </b>
+          <br />
 
           <ul class="list-disc list-outside ms-8">
             <li class="text-justify w-full">
-              Accompagner le plaidoyer conjoint  de Saint Pio Blood Relief
-              Suffering Foundation et de la FECADOBES dans le cadre de sa
-              démarche projetée d’érections des ‘’ Monuments symboliques »
-              dédiés aux  « DONNEURS DE SANG » aux Centres de villes de
-              certaines Communes d’Arrondissement dans les Régions du Cameroun
-              en vue d’inciter d’avantages les Populations à la Culture du de
-              Don de Sang Bénévole, Volontaire, Régulier et Non Rémunéré ;
+              {{
+                "field-apostolate.environement.about.perspectives.short-term-text1"
+                  | translate
+              }}
             </li>
 
-            <li class="mt-8">
-              Œuvrer auprès des plus Hautes Autorités du pays afin qu’elles
-              Instruisent à chaque Département  Ministériel  et autres
-              Institutions publiques ou privées de considérer  <br />
-
-              et de consigner dans leurs agendas respectifs la date du14 Juin 
-              qui est celle de la Célébration de la Journée Mondiale du Donneur
-              de Sang (JMDS) .
-            </li>
+            <li
+              class="mt-8"
+              [innerHTML]="
+                'field-apostolate.environement.about.perspectives.short-term-text2'
+                  | translate
+              "
+            ></li>
           </ul>
         </div>
 
@@ -691,7 +687,9 @@
       <h2
         class="text-center font-(family-name:--arimabold) font-bold text-2xl text-green-700 mb-[20px]"
       >
-        Zones d’Intervention
+        {{
+          "field-apostolate.environement.about.intervention.title" | translate
+        }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-green-300 h-[1px] w-[50px]"></div>
@@ -709,7 +707,10 @@
           [icone]="'./images/flower.png'"
           [alt_message]="'diocese'"
           [couleur]="'#1E7D33'"
-          [name]="'REGION DU CENTRE'"
+          [name]="
+            'field-apostolate.environement.about.intervention.center'
+              | translate
+          "
           [lieu]="''"
           [ville]="''"
         />
@@ -718,7 +719,10 @@
           [icone]="'./images/flower.png'"
           [alt_message]="'diocese'"
           [couleur]="'#1E7D33'"
-          [name]="'REGION DU LITTORAL'"
+          [name]="
+            'field-apostolate.environement.about.intervention.littoral'
+              | translate
+          "
           [lieu]="''"
           [ville]="''"
         />
@@ -727,7 +731,9 @@
           [icone]="'./images/flower.png'"
           [alt_message]="'diocese'"
           [couleur]="'#1E7D33'"
-          [name]="'REGION DE L’OUEST'"
+          [name]="
+            'field-apostolate.environement.about.intervention.west' | translate
+          "
           [lieu]="''"
           [ville]="''"
         />
@@ -736,7 +742,9 @@
           [icone]="'./images/flower.png'"
           [alt_message]="'diocese'"
           [couleur]="'#1E7D33'"
-          [name]="'REGION DE L’EST'"
+          [name]="
+            'field-apostolate.environement.about.intervention.east' | translate
+          "
           [lieu]="''"
           [ville]="''"
         />
@@ -746,7 +754,10 @@
           [icone]="'./images/flower.png'"
           [alt_message]="'diocese'"
           [couleur]="'#1E7D33'"
-          [name]="'REGION DE L’ADAMAOUA'"
+          [name]="
+            'field-apostolate.environement.about.intervention.adamaoua'
+              | translate
+          "
           [lieu]="''"
           [ville]="''"
         />

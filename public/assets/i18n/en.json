@@ -538,35 +538,135 @@
       }
     },
 
+    "communication": {
+      "global-new": {
+        "news": {
+          "title": "News",
+          "sub-title": "Home Pagel > Fields of Apostolate > Communication > Activities",
+          "text": "Here are the latest announcements from CODISAPIO"
+        },
+        "calendar": {
+          "title": "Calendar & Key dates",
+          "text": "Upcoming key dates:"
+        },
+
+        "rapport": {
+          "title": "Activity reports",
+          "text": "Reports from the",
+          "download": "Download"
+        },
+
+        "event": {
+          "title": "Events",
+          "text": "List of upcoming events"
+        }
+      },
+
+      "gallery": {
+        "title": "Photos gallery",
+        "sub-title": "Home Page >Fields of Apostolate > Communication > Gallery "
+      },
+      "generality": {
+        "page": "<div class=\"ml-4 w-full h-[50px] font-(family-name:--chakraregular) content-center\">Home Page&gt; Fields of Apostolate &gt; Communication &gt; Generality</div><div class=\"relative w-full mb-10\"><div class=\"bg-blue-50 py-4 flex justify-center items-center\"><h1 class=\"text-blue-700 font-(family-name:--arimabold) text-4xl font-bold\">Generality</h1></div></div><div class=\"w-full flex flex-col font-(family-name:--chakraregular) items-center justify-center\"><div class=\"w-[90%]\"><p>The \"Path of Padre Pio\" is a living reality. It is a Press and Communication Group in development, an important link of the work of Saint Padre Pio in Cameroon. The primary and essential objective of this universal editorial project is to radiate forth the splendour of the Truth of CHRIST, the Saviour of all mankind through the Cause of Padre Pio in Cameroon and throughout the world, by means of concrete and multiform actions whose fundamental matrix is rooted in:</p><p class=\"my-2\">- Spirituality</p><p class=\"my-2\">- Health</p><p class=\"my-2\">- Environment</p><p class=\"my-2\">Clearly, initially, a bilingual quarterly of information, \"The Voice of Padre Pio\" is, above all, the first and foremost a Work of the Church in the service to Humanity. Initiated and planned by Brother Noël SIMO, the Director of Publication and also the Head of the entire work of Saint Padre Pio in Cameroon, it highlights the transforming mission of the Christian as the \"salt of the earth and light of the world\" (Mt 5:14) through the resplendent reflection of living Faith.</p><p class=\"my-2\">In the global thematic approach, as previously indicated, \"The Path of Padre Pio\" also aims to contribute to participatory development through strengthened collaboration, providing a positive offering on education, building, and the ethics of voluntary, regular, and unpaid Blood Donation. This is a significant variable; environmental health though the sure, the real, and constant testimony of Christian mysticism at full throttle from a communicative perspective.</p><p class=\"mt-6\">Ignited by the fire of the Holy Spirit, all actors involved in the process from Editorial to Distribution of product, whose grace copy is offered at 500 FCFA, aspire to sanctifying professional perfection.</p><p class=\"my-2\">The design, realization, and printing are the fruits of the talents of devoted souls to the Cause of God and the rightful Ideal of His Kingdom.</p><p class=\"mt-2 mb-6\">This newspaper, launched in 2011, is printed in 1,000 copies and distributed by the Parishes of the Catholic and Protestant Churches</p></div></div>"
+      },
+      "about": {
+        "title": "Generality",
+        "text": "<b class=\"text-[20px] font-(family-name:--chakrabold)\">«Prayer is the best weapon. It is the key that opens God’s heart. Never get tire of praying » Padre Pio </b><br />The Path of Padre Pio is a living reality. It is a Press and Communication Group in development, an important link of the work of Saint Padre Pio in Cameroon. The primary and essential objective of this universal editorial project is to radiate forth the splendour of the Truth of CHRIST, the Saviour of all mankind through the Cause of Padre Pio in Cameroon and throughout the world, by means of concrete and multiform actions whose fundamental matrix is rooted in: Spirituality,Health,Environment",
+        "text2": "Means of Communication",
+        "one": "In the short term Cybernetics Print media",
+        "two": "In the medium term Radio Television",
+        "three": "In the long term Printing ",
+        "intervention": {
+          "title": "Areas of Intervention",
+          "adamaoua": "ADAMAOUA REGION",
+          "center": "CENTRER REGION",
+          "east": "EAST REGION",
+          "littoral": "LITTORAL REGION",
+          "north": "FAR NORTH REGION"
+        }
+      }
+    },
+    "environement": {
+      "global-new": {
+        "news": {
+          "title": "News",
+          "sub-title": "Home Pagel > Fields of Apostolate > Environement > Activities",
+          "text": "Here are the latest announcements from CODISAPIO"
+        },
+        "calendar": {
+          "title": "Calendar & Key dates",
+          "text": "Upcoming key dates:"
+        },
+
+        "rapport": {
+          "title": "Activity reports",
+          "text": "Reports from the",
+          "download": "Download"
+        },
+
+        "event": {
+          "title": "Events",
+          "text": "List of upcoming events"
+        }
+      },
+
+      "gallery": {
+        "title": "Photos gallery",
+        "sub-title": "Home Page >Fields of Apostolate > Environement > Gallery "
+      },
+
+      "about": {
+        "title": "Generality",
+        "text": "<b class=\"text-[20px] font-(family-name:--chakrabold)\">«Prayer is the best weapon. It is the key that opens God’s heart. Never get tire of praying » Padre Pio </b><br />The Path of Padre Pio is a living reality. It is a Press and Communication Group in development, an important link of the work of Saint Padre Pio in Cameroon. The primary and essential objective of this universal editorial project is to radiate forth the splendour of the Truth of CHRIST, the Saviour of all mankind through the Cause of Padre Pio in Cameroon and throughout the world, by means of concrete and multiform actions whose fundamental matrix is rooted in: Spirituality,Health,Environment",
+        "text2": "Means of Communication",
+        "one": "In the short term Cybernetics Print media",
+        "two": "In the medium term Radio Television",
+        "three": "In the long term Printing ",
+        "intervention": {
+          "title": "Areas of Intervention",
+          "adamaoua": "ADAMAOUA REGION",
+          "center": "CENTRER REGION",
+          "east": "EAST REGION",
+          "littoral": "LITTORAL REGION",
+          "north": "FAR NORTH REGION",
+          "west":"WEST REGION "
+        },
+        "perspectives":{
+          "title":"Perspectives",
+          "short-term":"Short Term:", 
+          "short-term-text1":"- Support the joint advocacy of the Saint Pio Blood Relief Suffering Foundation and FECADOBES in the context of its planned erections of \"symbolic monuments\" dedicated to \"BLOOD DONORS\" in certain municipal centres in the regions of Cameroon with a view to further encouraging the population to embrace the culture of voluntary, regular, and unpaid blood donation;",
+          "short-term-text2":"-Work with the highest authorities in the country to instruct each ministerial department and other public or private institutions to consider and mark June 14, the date of World Blood Donor Day (WBDS), in their respective agendas."
+        },
+        "objectives":{
+          "title":"Objectives",
+          "text":"Our general objective is to:",
+          "one":"Inform decision-makers, high-level officials in central administrations, and business leaders, particularly targeting Human Resources and Communication Directors, about the level of needs and supply of blood and associated challenges",
+          "two":"Raise awareness about the importance of blood donation and blood transfusion;",
+          "three":"Strengthen the culture of voluntary blood donation within companies and institutions by drawing the attention of major  corporate leaders (HR Directors, Communication Directors);",
+          "four":"Promote the culture of Voluntary, Regular, and Unpaid Blood Donation within companies and institutions; "
+        },
+
+        "history":{
+          "title":"History",
+          "para1":"These campaigns, conducted between 2012 and 2014 particularly during the deployments related to the commemoration of World Blood Donor Day (WBDS) and the \"Promote Fair 2014,\" especially around September 23 revealed a profound lack of commitment to environmental issues in general and blood donation in particular, in a society completely disorganized and plagued by the \"dictatorship of noise.\"In this problematic context, over 300 companies and other civil society organizations were made aware of the stakes involved in blood donation and blood transfusion in Cameroon. ",
+          "para2":"Indeed, transfusion safety is a major public health issue aimed at protecting patients and ensuring the quality of care. The Saint Pio Blood Relief Suffering Foundation, behind these initiatives, had to face a path strewn with many obstacles.",
+          "para3":"With ambitious objectives and disappointing responses in its cross-cutting and combined actions given the magnitude of the situation, it became necessary to reinvent itself. In an environment where the culture of \"spontaneous giving\" is not yet deeply ingrained, there is also a general reluctance to publicly discuss blood donation, usually only highlighted around World Blood Donor Day on June 14, which is deemed sufficient."
+        }, 
+        "origin":{
+          "title":"Origins",
+          "sub-title":"Home Pagel > Fields of Apostolate > Environement > About us",
+          "para":"In the beginning, the idea of the concept for an organization emerged from a very bitter observation; several hesitations, disappointments, and difficulties encountered during awareness campaigns on biodiversity, primarily focused on promoting a human ecology among major institutions of the republic, businesses, NGOs, and media groupss"
+        }
+      }
+    },
+
     "realization": {
       "page": "<div class=\"w-full h-[50px] bg-yellow-50 content-center font-(family-name:--chakraregular)\"><p class=\"ml-1 md:ml-[70px]\">Home Page &gt; Fields of Apostolate &gt; Spirituality &gt; About us &gt; Key achievements</p></div><div class=\"relative w-full mb-10\"><div class=\"bg-yellow-50 py-4 flex justify-center items-center\"><h1 class=\"text-yellow-700 text-4xl font-bold\">Key Achievements </h1></div></div><div class=\"mt-10 px-4 md:px-20\"><h3 class=\"text-[#FFC107] mb-4 text-2xl font-(family-name:--chakrabold)\">Direct Results</h3><div class=\"grid gap-y-8\"><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">1- Communication</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Two press conferences focused on Padre Pio were organized (May 3 and September 23, 2010)</li><li>Establishment of the journal \"The Voice of PADRE PIO\".</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">2- Charity</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Four charitable visits were made to the following sites: Nkoabang Orphanage Ngalan Leprosarium (Mbalmayo) Mfou Main Prison Bethany Viacam Center (Nkolmesseng-Yaoundé))</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">3- Spiritual</span><p>Several pilgrimages organized within Cameroon to Marian sanctuaries and spiritual sites such as:</p><b>In Cameroon:</b><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Our Lady Oasis of Peace in Nsenglong, Mbalmayo (2005-2008)</li><li>Our Lady of the Cenacle, Mvolyé (now Nazareth House)</li><li>Our Lady Queen of Peace, Mvolyé and Mont Febé</li><li>Our Lady of Doumelong (Bafoussam) (2002-2012)</li><li>Notre Dame de Doumelong (Bafoussam) (2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012)</li><li>Our Lady of Peace, Nsimalen</li><li>Our Lady of Peace, Cathedral Saints Peter and Paul (Douala)</li><li>Monastery of Our Lady of the Assumption, Nkolngon (Obala) (2008-2022)</li><li>Our Lady of the Most Holy Rosary (Mbalmayo)</li><li>Sacred Heart Sanctuary, Mvolyé and Mokolo</li><li>Franciscan Sisters of the Sacred Heart of Elat-Minkom (after Nkoabang)</li></ul><b> International:</b><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Italy</li><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Rome, Place Saint Pierre (2016)</li><li>Florence (2016)</li><li>San Giovanni Rotondo,( 2016)</li><li>Rome, Place Saint Pierre (2017)</li><li>San Giovanni Rotondo (2017)</li><li>Florence (2017)</li></ul><li>France</li><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Basilica of the Sacred Heart of Montmartre (2016)</li><li>Chapel of Our Lady of the Miraculous Medal in Paris (2016)</li><li>Notre Dame Cathedral in Paris (2016)</li></ul></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">4- Spiritual and event highlightsl</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Saint PADRE PIO Spiritual Fortnight, 2006 (Archdiocese of Yaoundé)</li><li>40th Anniversary of the Heavenly Birth of the Servant of God Saint PADRE PIO (2008) across Cameroon’s dioceses</li><li>Ebolowa,Yagoua ,Ngaoundéré,Maroua . 2008</li><li>Jubilee of the 100th Anniversary of Father Pio’s Priestly Ordination (2010, Yaoundé)</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">5- Medical</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Over 500 awareness campaigns and blood drives conducted in cities such as Yaoundé, Douala, Kumbo, Bafoussam.</li><li>More than 15,000 blood bags collected in collaboration with Saint Pio Blood Relief Suffering Foundation, FECADOBES, and other partners</li><li>Sensitization of over 2,000 healthcare professionals on human dignity in medical and transfusion practices.</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">6- Social and Humanitarian,</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Many lives saved and alleviated.</li><li>Millions informed and sensitized about the importance of blood donation.</li><li>Thousands of faithful from other religious backgrounds (Muslims, Protestants, Animists) have discovered and now know Saint PADRE PIO.</li><li>Thousands of Catholic faithful now seek the intercession of Father Pio,</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">7- Liturgical</span><p>September 23, the universal commemoration day of Saint Padre Pio’s liturgical memory, is now included in most diocesan liturgical calendars in Cameroon, thanks to advocacy efforts starting with the Archdiocese of Yaoundé in 2006 and spreading to other dioceses.</p><p>Hundreds of copies of the Proper Mass of Saint Padre Pio were distributed in many parishes between 2005 and 2011..</p></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">8- Pastoral</span><p>Many Living Ecclesial Communities (CEV) named after Saint Padre Pio have been established, especially in the Archdiocese of Douala (e.g., CEV Saint PADRE PIO of Makepe, Parishes of Saint Sacrament of Ndongbong, Saint Dominique Savio in Bonapriso, Kotto Parish).</p><p>Christians actively participate in the sacraments</p><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Since 2006, encouragement to form prayer groups inspired by Padre Pio’s spirituality in the Northwest Region (Shisong, Kumbo, Bamenda) and revival of older groups such as Saint Juliani in Sop (since 2002).</li><li>In 2008, creation of the prayer group at Notre Dame of the Seven Sorrows Parish, New-Bell, Douala.</li></ul></div></div><h3 class=\"text-[#FFC107] my-4 text-2xl font-(family-name:--chakrabold)\">Indirect Results</h3><div class=\"grid gap-y-8 mb-20\"><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">9- Caritas</span><p>Global revitalization of charitable actions in Cameroon’s parishes and dioceses, notably through the initiative “Barefoot Lent” launched during the 2010 Jubilee of Saint Padre Pio’s priestly ordination. Positive impact at the level of the National Episcopal Conference of Cameroon (CENC), dioceses, and parishes.</p></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">10- Scientific</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Hundreds of Cameroonian and international doctors and healthcare workers have discovered Padre Pio and integrated the link between science and faith.</li><li>Some scientific societies and journals now show special interest in the blood donation efforts and the “Padre Pio phenomenon.</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">11- Spiritual, Moral, and Psychological</span><p>GrSaint Padre Pio is recognized as a great contemporary saint with extraordinary favors, working invisibly to support the blood transfusion system in Cameroon.</p><p>Disciples and devotees are animated by absolute trust in God.</p><p>The faithful have truly embraced that suffering or difficulties should not hinder their faith life</p></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">12- Ethical</span><p>Continuous communication with healthcare personnel and authorities, inspired by Saint Padre Pio’s teachings, has fostered greater compassion in patient care and medical practice in many health facilities in Cameroon. Quote from Padre Pio:“You doctors also have a mission to accomplish, just like me. I speak to you of duties at a time when everyone talks about rights. (…) Your mission is to heal the sick; but if you do not bring love to the bedside of the sick, I fear that the medicines will not do much good…”</p></div></div></div>"
     }
   },
 
-  "global-new": {
-    "news": {
-      "title": "News",
-      "sub-title": "Home Pagel > Fields of Apostolate > Spirituality> Activities",
-      "text": "Here are the latest announcements from CODISAPIO"
-    },
-    "calendar": {
-      "title": "Calendar & Key dates",
-      "text": "Upcoming key dates:"
-    },
-
-    "rapport": {
-      "title": "Activity reports",
-      "text": "Reports from the",
-      "download": "Download"
-    },
-
-    "event": {
-      "title": "Events",
-      "text": "List of upcoming events"
-    }
-  },
-
   "see-more": "Read more",
   "read-more": "Read more",
-  "ours-partners": "Ours Partners"
+  "ours-partners": "Ours Partners",
+  "director":"Directeur Schema"
 }

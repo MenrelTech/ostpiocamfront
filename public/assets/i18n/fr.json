@@ -531,35 +531,135 @@
       }
     },
 
+    "communication": {
+      "global-new": {
+        "news": {
+          "title": "Annonces",
+          "sub-title": "Accueil > Champs d'Apostolat > Communication > Activités",
+          "text": "Voici les dernières annonces de CODISAPIO"
+        },
+        "calendar": {
+          "title": "Calendrier & Grandes dates",
+          "text": "Les grandes dates à venir:"
+        },
+
+        "rapport": {
+          "title": "Rapport d'activite",
+          "text": "Rapports du seminaire du",
+          "download": "Telecharger"
+        },
+
+        "event": {
+          "title": "Evènements",
+          "text": "Liste des évènements à venir"
+        }
+      },
+      "gallery": {
+        "title": "Galerie Photos",
+        "sub-title": "Accueil > Champs d'Apostolat > Communication > Galerie"
+      },
+
+      "generality": {
+        "page": "<div class=\"ml-4 w-full h-[50px] font-(family-name:--chakraregular) content-center\">Accueil &gt; Champs d'Apostolat &gt; Communication &gt; Généralités</div><div class=\"relative w-full mb-10\"><div class=\"bg-blue-50 py-4 flex justify-center items-center\"><h1 class=\"text-blue-700 font-(family-name:--arimabold) text-4xl font-bold\">Généralités</h1></div></div><div class=\"w-full flex flex-col font-(family-name:--chakraregular) items-center justify-center\"><div class=\"w-[90%]\"><p>La « Voie de Padre Pio » est une réalité vivante. C’est un Groupe de Presse et de Communication en gestation, une Artère importante de l’œuvre de Saint Padre Pio au Cameroun. L’objectif premier et essentiel de ce projet éditorial à caractère universel est de faire rayonner la splendeur de la Vérité du CHRIST Sauveur de tous les Hommes à travers la Cause de Padre Pio au Cameroun et dans le monde, par des actions concrètes et multiformes dont la matrice fondamentale plonge ses racines dans :</p><p class=\"my-2\">- La Spiritualité</p><p class=\"my-2\">- La Santé</p><p class=\"my-2\">- L'Environnement</p><p class=\"my-2\">Elle se veut, trimestriel bilingue d’informations. « La Voie de Padre Pio est avant tout, une Œuvre de l’Eglise au service de l’Humanité. Initiée et envisagée par le Frère Noël SIMO, Directeur de Publication et par ailleurs Responsable de toute l’œuvre de Saint Padre Pio au Cameroun ; elle met en relief la mission transformatrice du chrétien « sel de la terre et lumière du monde » Mt 5,14 par le reflet resplendissant de la Foi vive.</p><p class=\"my-2\">Dans l’approche thématique globale, comme précédemment signalé, « La Voie de Padre Pio » aussi voudrait-elle contribuer au développement participatif par la collaboration renforcée en apportant une offre positive sur l’éducation,l’édification,et l’éthique de la culture du Don de Sang Bénévole, Volontaire ,Régulier et Non Rémunéré. Qui en est une variable lourde ; la Santé environnementale par le témoignage sûr, réel et constant de la Mystique chrétienne à plein régime sous l’angle communicationnel.</p><p class=\"mt-6\">Allumés par le feu du Saint-Esprit, tous les acteurs qui interviennent dans le circuit qui va de la Rédaction à la Distribution du produit dont l’exemplaire de grâce est offert à 500 FCFA aspirent à la perfection professionnelle sanctifiante.</p><p class=\"my-2\">La conception, la Réalisation et l’Impression sont le fruit du talent des âmes mordues par la Cause de Dieu et l’Idéal juste de son Royaume</p><p class=\"mt-2 mb-6\">Ce Journal sorti des fonts baptismaux en 2011, est tiré en 1000 exemplaires distribués par les Paroisses de l’Eglise Catholique et Protestante au Cameroun.</p></div></div>"
+      },
+      "about": {
+        "title": "Généralités",
+        "text": "<b class=\"text-[20px] font-(family-name:--chakrabold)\">« La prière est la meilleure arme. C’est la clé qui ouvre le cœur de Dieu.Ne vous lassez jamais de prier » Padre Pio</b><br />« La prière est la meilleure arme. C’est la clé qui ouvre le cœur de Dieu.Ne vous lassez jamais de prier » Padre Pio La « Voie de Padre Pio » est une réalité vivante. C’est un Groupe de Presse et de Communication en gestation, une Artère importante de l’œuvre de Saint Padre Pio au Cameroun. L’objectif premier et essentiel de ce projet éditorial à caractère universel est de faire rayonner lasplendeur de la Vérité du CHRIST Sauveur de tous les Hommes à travers la Cause de Padre Pio au Cameroun et dans le monde, par des actions concrètes et multiformes dont la matrice fondamentale plonge ses racines dans :  La Spiritualité , La Santé, L’Environnement.",
+        "text2": "Moyens de communication",
+        "one": "Sur le court terme CYbernétique Presse écrite",
+        "two": "Sur le moyen terme Radio Televison",
+        "three": "Sur le long terme Imprimerie",
+        "intervention": {
+          "title": "Les Zones d’intervention",
+          "center": "REGION DU CENTRE",
+          "adamaoua": "REGION DE L’ADAMAOUA",
+          "east": "REGION DE L’EST",
+          "littoral": "REGION DU LITTORAL",
+          "north": "REGION DE L’EXTRÊME NORD"
+        }
+      }
+    },
+
+    "environement": {
+      "global-new": {
+        "news": {
+          "title": "Annonces",
+          "sub-title": "Accueil > Champs d'Apostolat > Environnement > Activités",
+          "text": "Voici les dernières annonces de CODISAPIO"
+        },
+        "calendar": {
+          "title": "Calendrier & Grandes dates",
+          "text": "Les grandes dates à venir:"
+        },
+
+        "rapport": {
+          "title": "Rapport d'activite",
+          "text": "Rapports du seminaire du",
+          "download": "Telecharger"
+        },
+
+        "event": {
+          "title": "Evènements",
+          "text": "Liste des évènements à venir"
+        }
+      },
+      "gallery": {
+        "title": "Galerie Photos",
+        "sub-title": "Accueil > Champs d'Apostolat > Environnement > Galerie"
+      },
+
+      "about": {
+        "title": "Généralités",
+        "text": "<b class=\"text-[20px] font-(family-name:--chakrabold)\">« La prière est la meilleure arme. C’est la clé qui ouvre le cœur de Dieu.Ne vous lassez jamais de prier » Padre Pio</b><br />« La prière est la meilleure arme. C’est la clé qui ouvre le cœur de Dieu.Ne vous lassez jamais de prier » Padre Pio La « Voie de Padre Pio » est une réalité vivante. C’est un Groupe de Presse et de Communication en gestation, une Artère importante de l’œuvre de Saint Padre Pio au Cameroun. L’objectif premier et essentiel de ce projet éditorial à caractère universel est de faire rayonner lasplendeur de la Vérité du CHRIST Sauveur de tous les Hommes à travers la Cause de Padre Pio au Cameroun et dans le monde, par des actions concrètes et multiformes dont la matrice fondamentale plonge ses racines dans :  La Spiritualité , La Santé, L’Environnement.",
+        "text2": "Moyens de communication",
+        "one": "Sur le court terme CYbernétique Presse écrite",
+        "two": "Sur le moyen terme Radio Televison",
+        "three": "Sur le long terme Imprimerie",
+        "intervention": {
+          "title": "Les Zones d’intervention",
+          "center": "REGION DU CENTRE",
+          "adamaoua": "REGION DE L’ADAMAOUA",
+          "east": "REGION DE L’EST",
+          "littoral": "REGION DU LITTORAL",
+          "north": "REGION DE L’EXTRÊME NORD",
+          "west": "REGION DE L'OUEST"
+        },
+
+        "perspectives": {
+          "title": "Nos perspectives",
+          "short-term": "A court & Moyen termes:",
+          "short-term-text1": "Accompagner le plaidoyer conjoint  de Saint Pio Blood Relief Suffering Foundation et de la FECADOBES dans le cadre de sa démarche projetée d’érections des ‘’ Monuments symboliques »dédiés aux  « DONNEURS DE SANG » aux Centres de villes de certaines Communes d’Arrondissement dans les Régions du Cameroun en vue d’inciter d’avantages les Populations à la Culture du de Don de Sang Bénévole, Volontaire, Régulier et Non Rémunéré ;",
+          "short-term-text2": "Œuvrer auprès des plus Hautes Autorités du pays afin qu’elles Instruisent à chaque Département  Ministériel  et autres Institutions publiques ou privées de considérer  <br /> et de consigner dans leurs agendas respectifs la date du14 Juin  qui est celle de la Célébration de la Journée Mondiale du Donneur de Sang (JMDS) ."
+        },
+        "objectives": {
+          "title": "Objectifs",
+          "text": "Nous avons pour Objectifs :",
+          "one": "Valoriser la place de l’Homme comme acteur central de la préservation de la biodiversité",
+          "two": "Vulgariser les politiques, les stratégies et les acteurs qui promeuvent les liens entre Santé et Environnement ;",
+          "three": "Initier des actions favorables au renforcement durable du lien entre Santé et Environnement ",
+          "four": "Susciter l’engagement des acteurs étatiques et non étatiques en faveur de la promotion d’une écologie intégrale."
+        },
+        "history": {
+          "title": "Historicité",
+          "para1": "Ces campagnes menées entre 2012 et 2014, notamment lors des déploiements relatifs aux activités commémoratives de la Journée Mondiale du Donneur de Sang (JMDS) et de la «  Foire Promote 2014 » par moment autour du 23 Septembre spécialement, ont révélé un profond  manque d’engagement sur les questions environnentales en général et  au Don de Sang en particulier au cœur d’une Société totalement déstructurée en proie à la « dictature du bruit ».",
+          "para2": "Dans un contexte très problématique, durant cette période, plus de 300 Entreprises et autres Organisations de la Société Civile ont été sensibilisées aux enjeux  du Don de Sang  et de la Transfusion Sanguine  au Cameroun",
+          "para3": "De fait, la sécurité transfusionnelle est un enjeu majeur de santé publique qui vise à protéger les patients et  à garantir la qualité des soins."
+        },
+        "origin": {
+          "title": "Génèse",
+          "sub-title": " Accueil > Champs d'Apostolat > environnement > A propos de nous",
+          "para":"Au commencement, l’idée du Concept  d’une Organisation a germé d’un constat très amer ; de nombreuses réticences, déceptions et difficultés rencontrées  lors des campagnes  de sensibilisation à la biodiversité  avec pour principal angle de discussion préalable la promotion d’une écologie humaine auprès des grandes institutions de la république, des entreprises, des ONGs et  des groupes médiatiques"
+        }
+      }
+    },
+
     "realization": {
       "page": "<div class=\"w-full h-[50px] bg-yellow-50 content-center font-(family-name:--chakraregular)\"><p class=\"ml-1 md:ml-[70px]\">Accueil &gt; Champs d’apostolat &gt; Spiritualité &gt; A propos de nous &gt; Réalisations phares</p></div><div class=\"relative w-full mb-10\"><div class=\"bg-yellow-50 py-4 flex justify-center items-center\"><h1 class=\"text-yellow-700 text-4xl font-bold\">Réalisations phares</h1></div></div><div class=\"mt-10 px-4 md:px-20\"><h3 class=\"text-[#FFC107] mb-4 text-2xl font-(family-name:--chakrabold)\">Résultats directs</h3><div class=\"grid gap-y-8\"><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">1- Sur le plan communicationnel</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Deux Conférences de Presse organisées et directement centrées sur PADRE PIO (03 Mai et 23 Septembre 2010)</li><li>La mise sur pied du Journal ‘’ La Voix de PADRE PIO’’</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">2- Sur le plan caritatif,</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">04 visites charitables ont été effectuées dans les sites suivants : l’Orphelinat de Nkoabang, la Léproserie de Ngalan (Mbalmayo),la Prison Principale de Mfou,Centre Béthanie Viacam (Nkolmesseng-Yaoundé)</li><li>La mise sur pied du Journal ‘’ La Voix de PADRE PIO’’</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">3- Sur le plan spirituel</span><p>Quelques destinations des pèlerinages organisés</p><b>Au Cameroun:</b><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Sanctuary Marial  Notre Dame Oasis de la Paix de Nsenglong à Mbalmayo (2005, 2006, 2007,2008),</li><li>Notre Dame du Cénacle Mvolyé (aujourd’hui, Maison Nazareth)</li><li>Notre Dame Marie Reine de la Paix Mvolyé</li><li>Notre Dame Marie Reine de la Paix Mont Febé</li><li>Notre Dame de Doumelong (Bafoussam) (2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012)</li><li>ND de la Paix Nsimalen</li><li>Notre Dame de la Paix, Cathédrale Saints Pierre et Paul (Douala)</li><li>Monastère Notre Dame de l’Assomption  de Nkolngon (Obala) (2008,2009, 2010, 2011,2012-2022)</li><li>Notre Dame du Très Saint Rosaire,(Mbalmayo)</li><li>Sanctuaire du Sacré Cœur de Jésus Mvolyé et Mokolo</li><li>Sœurs Franciscaines du Sacré Cœur d’Elat -Minkom (après Nkoabang)</li></ul><b>A l’étranger:</b><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Italie</li><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Rome, Place Saint Pierre (2016)</li><li>Florence (2016)</li><li>San Giovanni Rotondo,( 2016)</li><li>Rome, Place Saint Pierre (2017)</li><li>San Giovanni Rotondo (2017)</li><li>Florence (2017)</li></ul><li>France</li><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Basilique du Sacré-Cœur du Montmartre (2016)</li><li>Chapelle Notre -Dame de la Médaille Miraculeuse (Rue du Bac-Paris)  (2016)</li><li>Cathédrale ND de Paris (2016)</li></ul></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">4- Sur plan Spirituel et Evènementiel</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">La «  Quinzaine Spirituelle Saint PADRE PIO ,2006 l’Archidiocèse de Yaoundé (Paroisse Christ-Roi de Tsinga)</li><li>Le « Quarantenaire de la Naissance au Ciel du Serviteur de Dieu Saint PADRE PIO de Pietrelcina »  les Diocèses du Cameroun principalement (Archidiocèses et Diocèses de Yaoundé, Douala, Bertoua, Garoua, Bamenda, Bafoussam, Mbalmayo,Yagoua,Maroua-Mokolo</li><li>Ebolowa,Yagoua ,Ngaoundéré,Maroua . 2008</li><li>Le Jubilé du «  Centenaire d’Ordination Sacerdotale du Père PIO au Cameroun » 2010 à Yaoundé</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">5- Sur le plan médical,</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Plus de 500 Campagnes d’information, de sensibilisation et de collectes de Sang accompagnées (Yaoundé, Douala, Kumbo, Bafoussam…)</li><li>Plus de 15.000 poches de Sang collectées dans la Collaboration avec Saint Pio Blood Relief Suffering Foundation,FECADOBES et autres Partenaires ;</li><li>Plus de 2000 Personnel de Santé (Médecins, infirmiers…) sensibilisés sur la notion de la dignité humaine quant à la pratique médicale et transfusionnelle</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">6- Sur le plan social, et humanitaire,</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Plusieurs vies humaines ont été sauvées et soulagées</li><li>Des millions populations informées et sensibilisés sur le Don de Sang et son importance,</li><li>Des milliers de Fidèles des autres bords religieux (Musulmans, Protestants et Animistes) ont découvert et connaissent désormais Saint PADRE PIO ;</li><li>Des milliers de Fidèles catholiques connaissent et recherchent dorénavant, l’intercession du Père PIO,</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">7- Sur le plan liturgique,</span><p>La date du 23 Septembre jour de la Commémoration universelle  de la Mémoire Liturgique suivant le Sanctoral est désormais inscrite dans la plupart des Calendriers Liturgiques des Diocèses du Cameroun grâce à un grand effort de plaidoyer et de lobbying menés par la Confrérie des Disciples de Saint PADRE PIO en commençant par l’Archidiocèse de Yaoundé (ADY) dès 2006 et partant d’autres Diocèses du Cameroun l’Année suivante.</p><p>La multiplication et distribution en Centaines de Copies de la Messe Propre de Saint Padre Pio dans Plusieurs Paroisses de l’Eglise qui est au Cameroun entre 2005-2011.</p></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">8- Sur le plan pastoral,</span><p>Aujourd’hui, de nombreuses Communautés Ecclésiales Vivantes (CEV) sont créées et ont pour nom de baptême ,le Saint éponyme fruits bénéfiques engagées pleinement sur le terrain en vue de sa connaissance priée et des fruits de sainteté abondants depuis l’An de grâce 2005 ; le cas de l’Archidiocèse de Douala en est une parfaite illustration ( CEV Saint PADRE PIO de Makepe,Paroisse Saint Sacrement de Ndongbong,Paroisse Saint Dominique Savio,Bonapriso,Paroisse de KOTTO…</p><p>Les Chrétiens vivent les Sacrements</p><ul class=\"ml-10 list-disc list-outside ms-8\"><li>2006, Incitation à la mise sur pied des Groupes de Prière à la Spiritualité de PADRE PIO dans la Région du Nord-Ouest ( Shisong ,Kumbo et  Bamenda…) Et la relance d’un « Ancien Groupe » dénommé Saint Juliani existant à Sop dans le Bui « depuis » 2002</li><li>2008 : Création du Groupe de Prière de la Paroisse Notre Dame des Sept Douleurs New-Bell à Douala</li></ul></div></div><h3 class=\"text-[#FFC107] my-4 text-2xl font-(family-name:--chakrabold)\">Résultats indirects</h3><div class=\"grid gap-y-8 mb-20\"><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">9- Sur le plan de la CARITAS</span><p>La redynamisation globale des actions caritatives dans les Paroisses de l’Eglise particulière du Cameroun et de Codas Caritas dans les Diocèses est la conséquence directe de l’heureuse initiative baptisée ‘’CAREME PIEDS NUS ‘’ dans l’optique de contribuer à la revitalisation du volet CARITAS au sein de l’Eglise à l’occasion du Jubilé du Centenaire d’Ordination de Saint PADRE PIO au Cameroun en 2010 au regard d’un certains nombres d’actions engagées au niveau de la Conférence Episcopale Nationale du Cameroun (CENC) , des Diocèses et des Paroisses.</p></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">10- Sur le plan Scientifique</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Des centaines de Médecins et Personnel de Santé camerounais et d’ailleurs ont découvert PADRE PIO et ont intégré le lien entre la Science et la Foi ;</li><li>Des Certaines de Sociétés savantes et revues scientifiques éprouvent désormais un intérêt particulier aux actions menées et cherchent davantage à comprendre le Don de Sang et le ‘’Phénomène’’ PADRE PIO ;</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">11- Sur le plan spirituel</span><p>Grand Saint de l’ère contemporaine aux faveurs spéciales et extraordinaires œuvre dans l’invisible à l’accompagnement sûr et durable du Système de Transfusion au Cameroun ;</p><p>Sur le plan moral, les Disciples, Amis et /ou dévots de PADRE PIO sont animés par une confiance absolue en DIEU.</p><p>Sur le plan psychologique, les Fidèles ont véritablement intégré que la Souffrance ou les difficultés ne doivent pas être un frein à leur vie de Foi</p><p>Sur le plan institutionnel, grâce à l’accompagnement spirituel de la Confrérie et des actions concrètes à travers son bras séculier que représente Saint PIO Blood Relief Suffering Foundation,le climat du Don de Sang en particulier et de la Transfusion Sanguine au Cameroun s’améliore peu à peu en dépit de quelques lacunes latentes constatées.</p></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">12- Sur le plan de l’Ethique</span><p>La communication permanente avec les Personnels de Santé et les Autorités globales suivant l’esprit des prescriptions de Saint Padre Pio a mis un peu de tendresse quant à l’accueil des malades et surtout la pratique médicale dans de nombreuses Formations Sanitaires du Cameroun. « Vous aussi medecins, vous avez une Mission à accomplir, tout comme moi. Je vous parle de devoirs à une époque où tout le monde parle de droits. (…) Votre Mission c’est de soigner les malades ; mais si vous n’apportez pas l’amour au chevet des Malades, je crains fort que les médicaments ne servent pas à grande chose… » Padre Pio</p></div></div></div>"
     }
   },
 
-  "global-new": {
-    "news": {
-      "title": "Annonces",
-      "sub-title": "Accueil > Champs d'Apostolat > Spiritualité > Activités",
-      "text": "Voici les dernières annonces de CODISAPIO"
-    },
-    "calendar": {
-      "title": "Calendrier & Grandes dates",
-      "text": "Les grandes dates à venir:"
-    },
-
-    "rapport": {
-      "title": "Rapport d'activite",
-      "text": "Rapports du seminaire du",
-      "download": "Telecharger"
-    },
-
-    "event": {
-      "title": "Evènements",
-      "text": "Liste des évènements à venir"
-    }
-  },
-
   "see-more": "Voir plus",
   "read-more": "En savoir plus",
-  "ours-partners": "Nos entités/organisations formalisantes"
+  "ours-partners": "Nos entités/organisations formalisantes",
+  "director": "Schéma Directeur"
 }

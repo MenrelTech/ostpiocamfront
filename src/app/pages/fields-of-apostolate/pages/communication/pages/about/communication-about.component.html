@@ -4,7 +4,7 @@
       <h2
         class="text-center font-(family-name:--arimabold) text-3xl text-blue-700 mb-[20px]"
       >
-        Généralités
+        {{ "field-apostolate.communication.about.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-blue-300 h-[1px] w-[50px]"></div>
@@ -24,20 +24,9 @@
         />
         <p
           class="text-justify md:w-[50%] px-4 font-(family-name:--chakraregular)"
+          [innerHTML]="'field-apostolate.communication.about.text' | translate"
         >
-          <b class="text-[20px] font-(family-name:--chakrabold)"
-            >Paix - Travail - Patrie</b
-          ><br />
-          « La prière est la meilleure arme. C’est la clé qui ouvre le cœur de
-          Dieu.Ne vous lassez jamais de prier » Padre Pio La « Voie de Padre
-          Pio » est une réalité vivante. C’est un Groupe de Presse et de
-          Communication en gestation, une Artère importante de l’œuvre de Saint
-          Padre Pio au Cameroun. L’objectif premier et essentiel de ce projet
-          éditorial à caractère universel est de faire rayonner la splendeur de
-          la Vérité du CHRIST Sauveur de tous les Hommes à travers la Cause de
-          Padre Pio au Cameroun et dans le monde, par des actions concrètes et
-          multiformes dont la matrice fondamentale plonge ses racines dans :  La
-          Spiritualité , La Santé, L’Environnement.
+        
         </p>
       </div>
     </div>
@@ -46,7 +35,7 @@
         <button
           class="px-4 cursor-pointer py-2 mt-4 text-white text-base rounded-lg bg-blue-700"
         >
-          En savoir plus
+          {{ "see-more" | translate }}
         </button>
       </a>
     </div>
@@ -58,7 +47,8 @@
       <h2
         class="text-center font-(family-name:--arimabold) text-3xl text-blue-700 mb-[20px]"
       >
-        Moyens de communication
+        {{ "field-apostolate.communication.about.text2" | translate }}
+        
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-blue-300 h-[1px] w-[50px]"></div>
@@ -66,37 +56,29 @@
         <div class="bg-blue-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <div
-      class=" grid grid-cols-1 md:grid-cols-3  gap-x-6 gap-y-10"
-    >
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10">
       <app-numberedcardtext
         [numero]="1"
         [couleur_n]="'#D6E9F8'"
         [couleur_bgn]="'#002752'"
         [couleur_bg]="'#9EC5E8'"
-        contenu="Sur le court terme
-
-CYbernétique 
-Presse écrite"
+        [contenu]="'field-apostolate.communication.about.one' |translate"
       />
       <app-numberedcardtext
         [numero]="2"
         [couleur_n]="'#D6E9F8'"
         [couleur_bgn]="'#002752'"
         [couleur_bg]="'#9EC5E8'"
-        contenu="Sur le moyen terme
+        [contenu]="'field-apostolate.communication.about.two' |translate"
 
-Radio
-Televison"
+
       />
       <app-numberedcardtext
         [numero]="3"
         [couleur_n]="'#D6E9F8'"
         [couleur_bgn]="'#002752'"
         [couleur_bg]="'#9EC5E8'"
-        contenu="Sur le long terme
-
-Imprimerie"
+        [contenu]="'field-apostolate.communication.about.three' |translate"
       />
     </div>
 
@@ -105,7 +87,7 @@ Imprimerie"
         <h2
           class="text-center font-(family-name:--arimabold) text-3xl text-blue-700 mb-[20px]"
         >
-          Les Zones d’intervention
+          {{"field-apostolate.communication.about.intervention.title" |translate}}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-blue-300 h-[1px] w-[50px]"></div>
@@ -115,13 +97,15 @@ Imprimerie"
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 w-[90%] gap-x-4">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 w-[90%] gap-x-4"
+        >
           <app-card
             [image]="'./images/Image PNG.png'"
             [icone]="'./images/localisation_rouge.jpg'"
             [alt_message]="'centre de santé'"
             [couleur]="'#0056B3'"
-            [name]="'REGION DU CENTRE'"
+            [name]="'field-apostolate.communication.about.intervention.center' |translate"
             [lieu]="''"
             [ville]="''"
           />
@@ -130,7 +114,7 @@ Imprimerie"
             [icone]="'./images/localisation_rouge.jpg'"
             [alt_message]="'centre de santé'"
             [couleur]="'#0056B3'"
-            [name]="'REGION DU LITTORAL'"
+            [name]="'field-apostolate.communication.about.intervention.littoral' |translate"
             [lieu]="''"
             [ville]="''"
           />
@@ -139,7 +123,7 @@ Imprimerie"
             [icone]="'./images/localisation_rouge.jpg'"
             [alt_message]="'REGION DE L\'EST'"
             [couleur]="'#0056B3'"
-            [name]="'REGION DE L\'EST'"
+            [name]="'field-apostolate.communication.about.intervention.east' |translate"
             [lieu]="''"
             [ville]="''"
           />
@@ -148,7 +132,8 @@ Imprimerie"
             [icone]="'./images/localisation_rouge.jpg'"
             [alt_message]="'REGION DE L\'ADAMOUA'"
             [couleur]="'#0056B3'"
-            [name]="'REGION DE L\'ADAMOUA'"
+            [name]="'field-apostolate.communication.about.intervention.adamaoua' |translate"
+            
             [lieu]="''"
             [ville]="''"
           />
@@ -158,7 +143,7 @@ Imprimerie"
             [icone]="'./images/localisation_rouge.jpg'"
             [alt_message]="'centre de santé'"
             [couleur]="'#0056B3'"
-            [name]="'REGION DE L\'EXTREME-NORD'"
+            [name]="'field-apostolate.communication.about.intervention.north' |translate"
             [lieu]="''"
             [ville]="''"
           />
