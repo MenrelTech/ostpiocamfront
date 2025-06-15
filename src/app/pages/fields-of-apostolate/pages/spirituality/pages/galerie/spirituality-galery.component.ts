@@ -1,5 +1,6 @@
 import { Component,signal } from "@angular/core";
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from "@ngx-translate/core";
 
 interface Galerie {
   id: 1,
@@ -21,7 +22,7 @@ interface Galerie {
 @Component({
   standalone:true, 
   templateUrl:"./spirituality-galery.component.html",
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
 })
 export class SpiritualityGalleryComponent{
   galeries = signal<Galerie[]>([]);

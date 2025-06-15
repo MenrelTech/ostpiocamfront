@@ -3,6 +3,7 @@ import { CardaddressComponent } from "../../../../../../cardaddress/cardaddress.
 import { RdvcardComponent } from "../../../../../../rdvcard/rdvcard.component";
 import { CalendarComponent } from "../../../../../../calendar/calendar.component";
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from "@ngx-translate/core";
 
 interface Activite {
   id: number;
@@ -46,7 +47,7 @@ interface EventCalendar {
 @Component({
   standalone:true, 
   templateUrl:"./spirituality-activities.component.html",
-  imports: [CardaddressComponent,CommonModule, RdvcardComponent, CalendarComponent]
+  imports: [CardaddressComponent,CommonModule, RdvcardComponent, CalendarComponent,TranslateModule]
 })
 export class SpiritualityActivitiesComponent{
   activites = signal<Activite[]>([]);

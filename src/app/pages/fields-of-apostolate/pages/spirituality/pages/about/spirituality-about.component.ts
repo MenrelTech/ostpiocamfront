@@ -5,6 +5,7 @@ import { RouterLink } from '@angular/router';
 import { OrganigrammeComponent } from '../../../../../../organigramme/organigramme.component';
 import { SectionCardComponent } from '../../../../../../components/section-card/section-card.component';
 import { ItemSectionComponent } from '../../../../../../components/section-card/secetion-card-item.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   standalone: true,
@@ -16,6 +17,7 @@ import { ItemSectionComponent } from '../../../../../../components/section-card/
     OrganigrammeComponent,
     SectionCardComponent,
     ItemSectionComponent,
+    TranslateModule
   ],
 })
 export class SpiritualityAboutComponent {

@@ -3,7 +3,7 @@
     class="w-full font-(family-name:--chakraregular) h-[50px] bg-red-50 content-center"
   >
     <p class="px-2 md:ml-[70px] font-(family-name:--chakraregular)">
-      Accueil > Champs d’Apostolat > Santé > St Pio BRSF
+      {{ "field-apostolate.health.sub-title" | translate }}
     </p>
   </div>
 
@@ -12,7 +12,7 @@
       <h2
         class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
       >
-        Généralités
+        {{ "field-apostolate.health.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -22,35 +22,9 @@
     </div>
 
     <div class="w-full flex flex-col justify-center items-center">
-      <div class="flex flex-col lg:flex-row w-[80%] justify-center h-max">
-        <p class="text-left md:text-center px-2">
-          <b>Compassion - Réaction- Action</b><br />
-
-          <span>Des personnes de bonne volonté,</span>
-
-          <span
-            >Vu la loi N°90/053 du 19 Décembre 1990 portant sur la liberté
-            d’Association réaffirmée par le préambule de la Constitution
-            Camerounaise du 18 Janvier 1996 ;</span
-          >
-
-          <span>
-            Sensibles à la souffrance des patients en détresse pour le manque de
-            sang dans nos établissements hospitaliers ;
-          </span>
-
-          <span>
-            Convaincues que la mise sur pied d’une chaîne de solidarité et
-            d’entraide peut contribuer au soulagement de ces malades.
-          </span>
-
-          <span> Ont décidé de servir d’interface par une Association. </span>
-        </p>
-        <img
-          class="h-[202px] ml-[20px]"
-          src="./images/logo-sante.png"
-          alt="Logo sante"
-        />
+      <div class="flex flex-col lg:flex-row w-[80%] justify-center h-max"
+        [innerHTML]="'field-apostolate.health.page' | translate"
+      >
       </div>
 
       <div class="w-full flex items-center justify-center">
@@ -58,7 +32,7 @@
           <button
             class="px-4 cursor-pointer py-2 mt-4 text-white text-base rounded-lg bg-red-700"
           >
-            En savoir plus
+            {{ "see-more" | translate }}
           </button>
         </a>
       </div>
@@ -69,7 +43,7 @@
         <h2
           class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
         >
-          Missions
+          {{"field-apostolate.health.missions.title" | translate}}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -77,18 +51,18 @@
           <div class="bg-red-300 h-[1px] w-[50px]"></div>
         </div>
       </div>
-      <p class="text-center w-full mb-[40px]">Nous avons pour missions:</p>
+      <p class="text-center w-full mb-[40px]">{{"field-apostolate.health.missions.text" | translate}}</p>
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 content-center justify-items-center items-center"
       >
         <app-numberedcardtext
-          *ngFor="let mission of missions; let i = index"
+          *ngFor="let mission of missions$ | async; trackBy: trackByPath let i = index"
           [numero]="i + 1"
           [couleur_n]="'#F2C7CB'"
           [couleur_bgn]="'#5B0F15'"
           [couleur_bg]="'#F29B9E'"
           contenu="{{ mission }}"
-          class="lg:last:col-start-2"
+          class="lg:last:col-start-2 text-center"
         />
       </div>
 
@@ -100,7 +74,7 @@
         <h2
           class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
         >
-          Nos leviers d’Actions
+          {{"field-apostolate.health.level-action.title" |translate}}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -108,12 +82,12 @@
           <div class="bg-red-300 h-[1px] w-[50px]"></div>
         </div>
       </div>
-      <p class="text-center w-full mb-[40px]">Nous avons pour missions:</p>
+      <p class="text-center w-full mb-[40px]"> {{"field-apostolate.health.level-action.text" |translate}}</p>
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 content-center justify-items-center items-center"
       >
         <app-numberedcardtext
-          *ngFor="let action of actions; let i = index"
+          *ngFor="let action of actions$ | async; trackBy: trackByPath  let i = index "
           [numero]="i + 1"
           [couleur_n]="'#F2C7CB'"
           [couleur_bgn]="'#5B0F15'"
@@ -131,7 +105,7 @@
         <h2
           class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
         >
-          Les Grandes dates
+           {{"field-apostolate.health.key-dates.title" |translate}}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -162,7 +136,7 @@
         <h2
           class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
         >
-          Nos Valeurs
+          {{"field-apostolate.health.our-values.title" |translate}}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -174,7 +148,7 @@
         <ul class="list-disc w-[90%] md:w-[80%] list-outside ms-8">
           <li
             class="font-medium font-(family-name:--chakrameduim)"
-            *ngFor="let value of values"
+            *ngFor="let value of values$ | async trackBy: trackByPath"
           >
             {{ value }}
           </li>
@@ -187,7 +161,7 @@
         <h2
           class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
         >
-          Nos perspectives
+          {{"field-apostolate.health.prospects.title" |translate}}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -198,13 +172,13 @@
       <div class="flex justify-center">
         <div class="text-left w-[90%] md:w-[80%]">
           <p>
-            <b>Perspectives à court terme</b>
+            <b>{{"field-apostolate.health.prospects.text" |translate}}</b>
           </p>
 
           <ul class="list-disc list-outside ms-8">
             <li
               class="font-(family-name:--chakrameduim) font-medium"
-              *ngFor="let perspective of perspectives"
+              *ngFor="let perspective of perspectives$ |async trackBy: trackByPath"
             >
               {{ perspective }}
             </li>
@@ -217,7 +191,7 @@
           <button
             class="px-4 cursor-pointer py-2 mt-4 text-white text-base rounded-lg bg-red-700"
           >
-            En savoir plus
+            {{ "see-more" | translate }}
           </button>
         </a>
       </div>
@@ -228,7 +202,7 @@
         <h2
           class="text-center font-bold font-(family-name:--arimabold) text-2xl text-red-700 mb-[20px]"
         >
-          Les Zones d’intervention
+          {{"field-apostolate.health.intervention.title" |translate}}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -245,35 +219,39 @@
             [image]="'./images/carousel_1.png'"
             [alt_message]="'sante'"
             [couleur]="'#A41523'"
-            [name]="'REGION DU CENTRE'"
+            [name]="'field-apostolate.health.intervention.center' |translate"
           />
 
           <app-health-car
             [image]="'./images/carousel_1.png'"
             [alt_message]="'sante'"
             [couleur]="'#A41523'"
-            [name]="'REGION DU LITTORAL'"
+            [name]="'field-apostolate.health.intervention.littoral' |translate"
+            
           />
 
           <app-health-car
             [image]="'./images/carousel_1.png'"
             [alt_message]="'sante'"
             [couleur]="'#A41523'"
-            [name]="'REGION DE L’EST'"
+            [name]="'field-apostolate.health.intervention.east' |translate"
+
           />
 
           <app-health-car
             [image]="'./images/carousel_1.png'"
             [alt_message]="'sante'"
             [couleur]="'#A41523'"
-            [name]="'REGION DE L’ADAMAOUA'"
+            [name]="'field-apostolate.health.intervention.adamaoua' |translate"
+
           />
 
           <app-health-car
             [image]="'./images/carousel_1.png'"
             [alt_message]="'sante'"
             [couleur]="'#A41523'"
-            [name]="'REGION DE L’EXTRÊME NORD'"
+            [name]="'field-apostolate.health.intervention.north' |translate"
+            
           />
         </div>
       </div>

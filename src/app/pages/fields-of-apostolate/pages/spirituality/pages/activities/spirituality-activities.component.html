@@ -1,14 +1,18 @@
 <div>
   <div class="w-full h-[50px] bg-yellow-50 content-center">
     <p class="ml-[70px] font-(family-name:--chakraregular)">
-      Accueil > Champs d'Apostolat > Spiritualité > Activités
+      {{
+        "field-apostolate.spirituality.global-new.news.sub-title" | translate
+      }}
     </p>
   </div>
 
   <div class="w-full h-max my-8 content-evenly items-center">
     <div class="mb-[10px]">
-      <h2 class="text-center font-(family-name:--arimabold) font-bold text-2xl text-yellow-700 mb-[20px]">
-        Annonces
+      <h2
+        class="text-center font-(family-name:--arimabold) font-bold text-2xl text-yellow-700 mb-[20px]"
+      >
+        {{ "field-apostolate.spirituality.global-new.news.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -17,25 +21,35 @@
       </div>
     </div>
     <p class="text-center w-full font-(family-name:--chakraregular) mb-[40px]">
-      Voici les dernières annonces de CODISAPIO
+      {{ "field-apostolate.spirituality.global-new.news.text" | translate }}
     </p>
 
     <div class="flex justify-center py-4 items-center w-full">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full place-items-center">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full place-items-center"
+      >
         <ng-container *ngFor="let activite of activites()">
-          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
-            [name]="activite.name" [icone1]="'./images/icone_localisation.jpg'" [icone2]="'./images/planning.jpeg'"
-            [localisation]="
-            activite.location
-          " [date_debut]="activite.startAt.slice(0,10)" [date_fin]="activite.endAt.slice(0,10)" />
+          <app-cardaddress
+            [couleur_bg]="'#FFF9E6'"
+            [image]="'./images/logo_dossier.jpg'"
+            [alt_message]="'activite'"
+            [name]="activite.name"
+            [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'"
+            [localisation]="activite.location"
+            [date_debut]="activite.startAt.slice(0, 10)"
+            [date_fin]="activite.endAt.slice(0, 10)"
+          />
         </ng-container>
       </div>
     </div>
   </div>
   <div class="w-full h-max py-8 bg-yellow-50 content-evenly items-center">
     <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) text-2xl text-yellow-700 mb-[20px]">
-        Calendriers & grandes dates
+      <h2
+        class="text-center font-(family-name:--arimabold) text-2xl text-yellow-700 mb-[20px]"
+      >
+        {{ "field-apostolate.spirituality.global-new.calendar.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -43,30 +57,57 @@
         <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <p class="text-center w-full font-(family-name:--chakraregular) mb-[40px]">Les grandes dates à venir:</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-1 justify-items-center items-center">
-      <app-calendar [events]="eventCalendar()">
-      </app-calendar>
-      <div class="grid md:grid-cols-1 grid-cols-1 gap-1 justify-items-center items-center">
+    <p class="text-center w-full font-(family-name:--chakraregular) mb-[40px]">
+      {{ "field-apostolate.spirituality.global-new.calendar.text" | translate }}
+    </p>
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-1 justify-items-center items-center"
+    >
+      <app-calendar [events]="eventCalendar()"> </app-calendar>
+      <div
+        class="grid md:grid-cols-1 grid-cols-1 gap-1 justify-items-center items-center"
+      >
         <ng-container *ngFor="let grandedate of grandesDates2()">
-          <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" [title]="grandedate.title"
-            [description]="grandedate.description" [annee]="grandedate.annee" [mois]="grandedate.mois"
-            [jour]="grandedate.jour" [mois]="grandedate.mois" [jour]="grandedate.jour" />
+          <app-rdvcard
+            [bg]="'#D4EDDA'"
+            [color]="'#28A745'"
+            [hovercolor]="'#0F3B1C'"
+            [title]="grandedate.title"
+            [description]="grandedate.description"
+            [annee]="grandedate.annee"
+            [mois]="grandedate.mois"
+            [jour]="grandedate.jour"
+            [mois]="grandedate.mois"
+            [jour]="grandedate.jour"
+          />
         </ng-container>
       </div>
-      <div class="grid md:grid-cols-1 grid-cols-1 gap-1 justify-items-center items-center">
+      <div
+        class="grid md:grid-cols-1 grid-cols-1 gap-1 justify-items-center items-center"
+      >
         <ng-container *ngFor="let grandedate of grandesDates()">
-          <app-rdvcard [bg]="'#D4EDDA'" [color]="'#28A745'" [hovercolor]="'#0F3B1C'" [title]="grandedate.title"
-            [description]="grandedate.description" [annee]="grandedate.annee" [mois]="grandedate.mois"
-            [jour]="grandedate.jour" [mois]="grandedate.mois" [jour]="grandedate.jour" />
+          <app-rdvcard
+            [bg]="'#D4EDDA'"
+            [color]="'#28A745'"
+            [hovercolor]="'#0F3B1C'"
+            [title]="grandedate.title"
+            [description]="grandedate.description"
+            [annee]="grandedate.annee"
+            [mois]="grandedate.mois"
+            [jour]="grandedate.jour"
+            [mois]="grandedate.mois"
+            [jour]="grandedate.jour"
+          />
         </ng-container>
       </div>
     </div>
   </div>
   <div class="w-full h-max my-10 content-evenly items-center">
     <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) font-bold text-2xl text-yellow-700 mb-[20px]">
-        Rapport d'activite
+      <h2
+        class="text-center font-(family-name:--arimabold) font-bold text-2xl text-yellow-700 mb-[20px]"
+      >
+        {{ "field-apostolate.spirituality.global-new.report.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -74,21 +115,33 @@
         <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <div class="flex w-full px-2 content-center flex-wrap gap-y-4 justify-around items-around">
+    <div
+      class="flex w-full px-2 content-center flex-wrap gap-y-4 justify-around items-around"
+    >
       <ng-container *ngFor="let rapp of rapport()">
         <div class="h-[125px] w-[400px] flex bg-yellow-100 rounded-[15px]">
           <div
-            class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center">
+            class="h-[125px] w-[200px] flex bg-yellow-500 rounded-[15px] font-bold content-center justify-center text-center"
+          >
             <p class="content-center text-[22px]">DOCX</p>
           </div>
           <div class="h-[73px] content-around">
-            <p class="font-bold font-(family-name:--chakraregular) text-[20px] px-[20px]">
-              Rapports du seminaire du {{rapp.publishedAt}}
+            <p
+              class="font-bold font-(family-name:--chakraregular) text-[20px] px-[20px]"
+            >
+              {{ "field-apostolate.spirituality.global-new.report.text" | translate }}
+              {{ rapp.publishedAt }}
             </p>
-            <div class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right">
+            <div
+              class="w-full flex px-[20px] mt-[20px] content-right justify-right items-right"
+            >
               <button
-                class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]">
-                Telecharger &#11167;
+                class="cursor-pointer h-[32px] ml-auto border-[1px] border-yellow-500 bg-yellow-500 px-2 rounded-[5px]"
+              >
+                {{
+                  "field-apostolate.spirituality.global-new.report.download" | translate
+                }}
+                &#11167;
               </button>
             </div>
           </div>
@@ -98,8 +151,10 @@
   </div>
   <div class="w-full h-max my-8 content-evenly items-center">
     <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) font-bold text-2xl text-yellow-700 mb-[20px]">
-        Evennements
+      <h2
+        class="text-center font-(family-name:--arimabold) font-bold text-2xl text-yellow-700 mb-[20px]"
+      >
+        {{ "field-apostolate.spirituality.global-new.event.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -107,16 +162,26 @@
         <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <p class="text-center w-full font-(family-name:--chakraregular) mb-[40px]">Liste des évènements à venir</p>
+    <p class="text-center w-full font-(family-name:--chakraregular) mb-[40px]">
+      {{ "field-apostolate.spirituality.global-new.event.text" | translate }}
+    </p>
 
     <div class="flex justify-center py-4 items-center w-full">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-1 w-full place-items-center">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-1 w-full place-items-center"
+      >
         <ng-container *ngFor="let activite of activites()">
-          <app-cardaddress [couleur_bg]="'#FFF9E6'" [image]="'./images/logo_dossier.jpg'" [alt_message]="'activite'"
-            [name]="activite.name" [icone1]="'./images/icone_localisation.jpg'" [icone2]="'./images/planning.jpeg'"
-            [localisation]="
-            activite.location
-          " [date_debut]="activite.startAt.slice(0,10)" [date_fin]="activite.endAt.slice(0,10)" />
+          <app-cardaddress
+            [couleur_bg]="'#FFF9E6'"
+            [image]="'./images/logo_dossier.jpg'"
+            [alt_message]="'activite'"
+            [name]="activite.name"
+            [icone1]="'./images/icone_localisation.jpg'"
+            [icone2]="'./images/planning.jpeg'"
+            [localisation]="activite.location"
+            [date_debut]="activite.startAt.slice(0, 10)"
+            [date_fin]="activite.endAt.slice(0, 10)"
+          />
         </ng-container>
       </div>
     </div>

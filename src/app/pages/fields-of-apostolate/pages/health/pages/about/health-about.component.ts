@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { NumberedcardtextComponent } from '../../../../../../numberedcardtext/numberedcardtext.component';
 import { RouterLink } from '@angular/router';
-import { CommonModule, NgFor } from '@angular/common';
+import { AsyncPipe, CommonModule, NgFor } from '@angular/common';
 import { HealthCarComponent } from '../../../../../../health-car/health-car.component';
-import { RdvcardComponent } from "../../../../../../rdvcard/rdvcard.component";
+import { RdvcardComponent } from '../../../../../../rdvcard/rdvcard.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
 
 interface GrandesDates {
   id: number;
@@ -32,62 +34,35 @@ interface Col {
     RouterLink,
     CommonModule,
     NgFor,
-    RdvcardComponent
-],
+    RdvcardComponent,
+    TranslateModule,
+    AsyncPipe,
+  ],
 })
 export class HealthAboutComponent {
   genralityLink = "/champs d'apostolat/sante/generalités";
-
   perspectivesLink = "/champs d'apostolat/sante/perspective";
+  missions$!: Observable<string[]>;
+  actions$!:Observable<string[]>;
+  values$!:Observable<string[]>;
+  perspectives$!:Observable<string[]>
 
-  missions: string[] = [
-    'Appuyer la politique nationale du don de sang',
-    'Regrouper, recruter et encadrer les donneurs bénévoles',
-    'Défendre les intérêts des donneurs et former les acteurs',
-    'Intervenir sur les questions transfusionnelles au Cameroun et à l’international',
-    'Fournir des services de santé non lucratifs et limiter les coûts',
-    'Agir comme assemblée, facilitateur et soutien des politiques transfusionnelles',
-    'Créer un espace d’échange, d’entraide et de gestion des urgences sanguines',
-    'Promouvoir le bénévolat et l’engagement à travers diverses activités',
-    'Renforcer les capacités d’approvisionnement en sang',
-    'Mobiliser, organiser et coordonner les collectes de sang pour améliorer la santé des patients',
-  ];
+  constructor(private readonly translate: TranslateService) {
+    this.missions$ = this.translate.stream('field-apostolate.health.missions.data');
+    this.actions$ = this.translate.stream('field-apostolate.health.level-action.actions'); 
+    this.values$ = this.translate.stream('field-apostolate.health.our-values.values');
+    this.perspectives$ = this.translate.stream('field-apostolate.health.prospects.data')
+  }
 
-  actions: string[] = [
-    'Information, Sensibilisation, Formation & Education',
-    'Mobilisation sociale et des ressources',
-    'Recrutement de Donneurs Bénévoles',
-    'Organisation des Campagnes de collectes de sang',
-    'Fidélisation de Donneurs Bénévoles Volontaires  de Sang Réguliers Non Rémunérés (DBVRSR)',
-    'Valorisation et Partenariats',
-    'Plaidoyer & Lobbying',
-    'Equipements',
-    'Organisation des Evènements',
-    'Soutien et encouragement à l’Etude et la Recherche globale',
-  ];
-
-  values: string[] = [
-    'Volontariat',
-    'Bénévolat.',
-    ' Non-Profit',
-    'Engagement Citoyen & Chrétien.',
-    'Esprit de Sacrifice',
-  ];
-
-  perspectives: string[] = [
-    'Créer un numéro rouge pour répondre rapidement aux sollicitations.',
-    'Faciliter l’accès aux produits sanguins, voire tendre vers la gratuité.',
-    'Établir des accords de coopération avec les hôpitaux.',
-    'Mettre en place un partenariat avec le Ministère de la Santé publique.',
-    'Coopérer avec la Fédération internationale des donneurs bénévoles de sang et autres institutions.',
-    'Organiser des activités de plaidoyer, comme le congrès sous-régional d’Afrique centrale et des Grands Lacs sur les associations de donneurs',
-  ];
+  trackByPath(_: number, link: string) {
+    return link;
+  }
 
   grandesDates = signal<GrandesDates[]>([]);
 
   link = "/champs d'apostolat/sante/historicité";
-  linkGeneralite = "//champs d'apostolat/sante/généralité";
-  linkPerspective = "//champs d'apostolat/sante/perspective";
+  linkGeneralite = "/champs d'apostolat/sante/généralité";
+  linkPerspective = "/champs d'apostolat/sante/perspective";
   ngOnInit() {
     async function getDate(timeout = 10000) {
       const controller = new AbortController();

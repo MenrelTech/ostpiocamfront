@@ -87,7 +87,7 @@
             #navLinks
           >
             <li
-              *ngFor="let link of (links$ | async ) trackBy: trackByPath"
+              *ngFor="let link of links$ | async; trackBy: trackByPath"
               role="none"
               class="h-full relative group font-(family-name:--chakraregular)"
             >
@@ -183,30 +183,30 @@
         <div class="flex h-full items-center justify-center flex-col space-y-2">
           <!-- Bouton FR -->
           <a (click)="switchLanguage('fr')" class="block cursor-pointer">
-            <h1
+            <div
+              class="flex items-center justify-center"
               [ngClass]="{
                 'w-[30px] h-[25px] text-center text-white bg-blue-800':
                   currentLang === 'fr',
-                'w-[30px] h-[25px] text-center bg-neutral-300':
-                  currentLang !== 'fr'
+                'w-[30px] h-[25px] text-center ': currentLang !== 'fr'
               }"
             >
-              FR
-            </h1>
+              <img class="size-5" src="./images/france.png" alt="flag-french" />
+            </div>
           </a>
 
           <!-- Bouton EN -->
           <a (click)="switchLanguage('en')" class="block cursor-pointer">
-            <h1
+            <div
+              class="flex items-center justify-center"
               [ngClass]="{
                 'w-[30px] h-[25px] text-center text-white bg-blue-800':
                   currentLang === 'en',
-                'w-[30px] h-[25px] text-center bg-neutral-300':
-                  currentLang !== 'en'
+                'w-[30px] h-[25px] text-center': currentLang !== 'en'
               }"
             >
-              EN
-            </h1>
+              <img class="size-5" src="./images/anglais.png" alt="flag-ang" />
+            </div>
           </a>
         </div>
       </div>
@@ -267,7 +267,10 @@
           </div>
 
           <ol class="space-y-1 w-full">
-            <li *ngFor="let link of (links$ | async ) trackBy: trackByPath " class="w-full">
+            <li
+              *ngFor="let link of links$ | async; trackBy: trackByPath"
+              class="w-full"
+            >
               <div class="flex flex-col w-full">
                 <div class="flex items-center justify-between">
                   <a
@@ -351,35 +354,40 @@
             </div>
 
             <div class="flex space-x-2">
-              <!-- Bouton FR -->
-              <div class="cursor-pointer">
-                <a (click)="switchLanguage('fr')">
-                  <h1
-                    class="w-[30px] h-[26px] text-center"
-                    [ngClass]="{
-                      'text-white bg-blue-800': currentLang === 'fr',
-                      'bg-neutral-300 text-black': currentLang !== 'fr'
-                    }"
-                  >
-                    FR
-                  </h1>
-                </a>
-              </div>
+              <a (click)="switchLanguage('fr')" class="block cursor-pointer">
+                <div
+                  class="flex items-center justify-center"
+                  [ngClass]="{
+                    'w-[30px] h-[25px] text-center text-white bg-blue-800':
+                      currentLang === 'fr',
+                    'w-[30px] h-[25px] text-center ': currentLang !== 'fr'
+                  }"
+                >
+                  <img
+                    class="size-5"
+                    src="./images/france.png"
+                    alt="flag-french"
+                  />
+                </div>
+              </a>
 
               <!-- Bouton EN -->
-              <div class="cursor-pointer">
-                <a (click)="switchLanguage('en')">
-                  <h1
-                    class="w-[30px]  h-[26px] text-center"
-                    [ngClass]="{
-                      'text-white bg-blue-800': currentLang === 'en',
-                      'bg-neutral-300 text-black': currentLang !== 'en'
-                    }"
-                  >
-                    EN
-                  </h1>
-                </a>
-              </div>
+              <a (click)="switchLanguage('en')" class="block cursor-pointer">
+                <div
+                  class="flex items-center justify-center"
+                  [ngClass]="{
+                    'w-[30px] h-[25px] text-center text-white bg-blue-800':
+                      currentLang === 'en',
+                    'w-[30px] h-[25px] text-center': currentLang !== 'en'
+                  }"
+                >
+                  <img
+                    class="size-5"
+                    src="./images/anglais.png"
+                    alt="flag-ang"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>

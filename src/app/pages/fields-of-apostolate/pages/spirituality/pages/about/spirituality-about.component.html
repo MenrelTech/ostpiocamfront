@@ -3,7 +3,7 @@
     class="w-full h-[50px] bg-yellow-50 content-center font-(family-name:--chakraregular)"
   >
     <p class="ml-1 md:ml-[70px]">
-      Accueil > Champs d’Apostolat > Spiritualité > A propos de nous
+      {{ "field-apostolate.spirituality.header-text" | translate }}
     </p>
   </div>
 
@@ -12,7 +12,7 @@
       <h2
         class="text-center font-bold text-2xl text-yellow-700 mb-[20px] font-(family-name:--arimabold)"
       >
-        Présentation
+        {{ "field-apostolate.spirituality.presentation.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -30,22 +30,12 @@
           src="./images/Logo_Confrerie_des_Disciples_de_Saint_Padre_Pio_Origin_01.png"
           alt="Logo ostpiocam spiritualite"
         />
-        <p class="text-left px-4 font-(family-name:--chakraregular)">
-          <span class="w-full flex justify-center items-center">
-            <b class="text-[20px] font-(family-name:--chakrabold)"
-              >Prière - Pénitence - Charité</b
-            ><br />
-          </span>
-          <b
-            >La CODISAPIO (Confrérie des Disciples de Saint Padre Pio de
-            Pietrelcina) </b
-          >est le noyau fondateur de l’Œuvre de Saint Padre Pio au Cameroun. Née
-          en 2005, elle rassemble des fidèles animés par la spiritualité de
-          Saint Pio, engagés dans la prière, le service, l’évangélisation et la
-          charité. Elle porte l’élan initial qui a donné naissance à un vaste
-          écosystème apostolique, enraciné dans la foi, l’amour du prochain et
-          la mission chrétienne
-        </p>
+        <p
+          class="text-left px-4 font-(family-name:--chakraregular)"
+          [innerHTML]="
+            'field-apostolate.spirituality.presentation.des' | translate
+          "
+        ></p>
       </div>
     </div>
 
@@ -54,7 +44,7 @@
         <h2
           class="text-center font-bold text-2xl text-yellow-700 mb-[20px] font-(family-name:--arimabold)"
         >
-          Historicité
+          {{ "field-apostolate.spirituality.history" | translate }}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -62,50 +52,13 @@
           <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
         </div>
       </div>
-      <div class="flex justify-center">
-        <p
-          class="text-justify w-[90%] md:w-[80%] font-(family-name:--chakraregular)"
-        >
-          La Confrérie des Disciples de Saint PADRE PIO de Pietrelcina est une
-          Association privée de l’Eglise  qui tire sa source d’un ensemble de
-          fidèles chrétiens catholiques (laïcs, prêtres, religieux…) d’horizons
-          divers et fervents admirateurs et dévots qui ont dédié leur existence
-          au service de JESUS –CHRIST, de l’Eglise et des Hommes, sur les traces
-          de Saint PADRE PIO.<br />
-          Elle existe conformément aux Textes Conciliaires de Vatican II sur la
-          nouvelle évangélisation. Elle est la suite logique de l’appel sans
-          cesse renouvelé du Père PIO.<br />
-          La première assise officielle a eu lieu le 25 Août 2005 à la suite
-          d’une table ronde à la Paroisse Siège CHRIST-ROI de Tsinga,
-          Yaoundé-Cameroun en présence du curé de la place, Vicaire Episcopal
-          d’alors du Pôle, ancien Vicaire Général de l’Archidiocèse de Yaoundé,
-          Mgr l’Abbé MBALA –KYE Achille.<br />
-          Elle est initiée et animée par les Laïcs, avec l’encadrement spirituel
-          des Prêtres locaux. C’est une Œuvre de l’Eglise pour l’Eglise et avec
-          l’Eglise, dans l’esprit de la Révélation.  <br />
-          Dans la visibilité réelle, la Confrérie des Disciples de Saint PADRE
-          PIO de Pietrelcina, est une véritable chaîne de solidarité chrétienne.
-          Elle est la résultante spécifique d’une histoire  d’amour avec le Père
-          PIO.  C’est aussi le fruit de l’aboutissement d’une grande soif, d’une
-          large réflexion, d’une œuvre mûre restituée et nourrie en réaction aux
-          messages issus des trois lettres du Vénérable aujourd’hui Saint Jean
-          Paul II à savoir :<br />
-             <b>
-            <li>Lettre apostolique « Rosarium Virginis Marie»,</li>
-          </b>
-          sur le Rosaire de la Vierge Marie ou l’année du Rosaire, Octobre
-          2002.<br />
-             <b>
-            <li>Lettre Encyclique « Ecclesia de Eucharistia»,</li>
-          </b>
-          l’Eglise vit de l’Eucharistie, sur l’Eucharistie dans son rapport avec
-          l’Eglise, Avril 2003.<br />
-             <b> <li>Lettre apostolique « Mane Nobiscum Domine »</li> </b>,
-          Reste avec nous Seigneur pour l’Année de l’Eucharistie, Octobre
-          2004<br />
-        </p>
-      </div>
 
+      <div class="flex items-center justify-center w-full">
+        <div
+          class="flex flex-col w-[90%] md:w-[80%]"
+          [innerHTML]="'field-apostolate.spirituality.history-text' | translate"
+        ></div>
+      </div>
     </div>
 
     <div class="w-full h-max px-2 py-8 content-evenly items-center">
@@ -113,7 +66,7 @@
         <h2
           class="text-center font-bold text-2xl text-yellow-700 mb-[20px] font-(family-name:--arimabold)"
         >
-          Missions
+          {{ "field-apostolate.spirituality.mission" | translate }}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -126,13 +79,7 @@
         <p
           class="text-left w-[90%] md:w-[80%] font-(family-name:--chakraregular)"
         >
-                      Elle a pour mission essentielle l’activité spirituelle et
-          caritative en vue d’une démarche de sanctification personnelle et
-          collective. Au-delà de sa participation à la vie spirituelle,
-          matérielle et financière vis-à-vis de l’Eglise par une vie de
-          présence, illustrée dans Mt 25,31-41, elle apporte aussi son
-          assistance aux marginalisés et/ou pauvres (orphelinats, prisons,
-          centre d’accueil, Hôpitaux…).
+          {{ "field-apostolate.spirituality.mission-text" | translate }}
         </p>
       </div>
     </div>
@@ -142,7 +89,7 @@
         <h2
           class="text-center font-bold text-2xl text-yellow-700 mb-[20px] font-(family-name:--arimabold)"
         >
-          Objectifs
+          {{ "field-apostolate.spirituality.objectives.title" | translate }}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -152,10 +99,10 @@
       </div>
       <p
         class="text-center w-full mb-[40px] px-2 font-(family-name:--chakraregular)"
-      >
-        La confrerie des disciples de Saint Padre Pio de Pietrelcina
-        <b>( CODISAPIO )</b> a pour objectifs:
-      </p>
+        [innerHTML]="
+          'field-apostolate.spirituality.objectives.sub-title' | translate
+        "
+      ></p>
 
       <div class="w-full flex px-2 py-8 justify-center items-center">
         <div class="lg:w-[70%] h-max mx-auto">
@@ -168,7 +115,7 @@
               [couleur_bgn]="'#744210'"
               [couleur_bg]="'#FCE589'"
               [contenu]="
-                '	Faire découvrir le visage spirituel  de Saint PADRE PIO à nos Communautés Chrétiennes et  Humaines, par le biais de la Prière, la Pénitence et la Charité dans une attitude réparatrice et contemplative en vue de sa connaissance priée . '
+                'field-apostolate.spirituality.objectives.one' | translate
               "
             />
             <app-numberedcardtext
@@ -177,7 +124,7 @@
               [couleur_bgn]="'#744210'"
               [couleur_bg]="'#FCE589'"
               [contenu]="
-                ' Amener les Fidèles Catholiques en particulier et les âmes de bonne volonté à incarner dans leurs habitudes et attitudes la Vision de la doctrine spirituelle du Père Pio portée vers les vertus théologales à savoir ( Foi,Espérance,Charité) .'
+                'field-apostolate.spirituality.objectives.two' | translate
               "
             />
             <app-numberedcardtext
@@ -186,7 +133,7 @@
               [couleur_bgn]="'#744210'"
               [couleur_bg]="'#FCE589'"
               [contenu]="
-                '	Respecter et promouvoir la vie des Sacrements par une charité basée sur l’Evangile et nos Frères, les humains par un soutien multiforme : spirituel, moral, matériel/financier dans la mesure du possible .'
+                'field-apostolate.spirituality.objectives.three' | translate
               "
             />
             <app-numberedcardtext
@@ -195,7 +142,7 @@
               [couleur_bgn]="'#744210'"
               [couleur_bg]="'#FCE589'"
               [contenu]="
-                '	Respecter et promouvoir la vie des Sacrements par une charité basée sur l’Evangile et nos Frères, les humains par un soutien multiforme : spirituel, moral, matériel/financier dans la mesure du possible .'
+                'field-apostolate.spirituality.objectives.four' | translate
               "
             />
           </div>
@@ -208,7 +155,7 @@
         <h2
           class="text-center font-bold text-2xl text-yellow-700 mb-[20px] font-(family-name:--arimabold)"
         >
-          Fronts d'actions
+          {{ "field-apostolate.spirituality.action-front.title" | translate }}
         </h2>
         <div class="flex justify-center items-center w-full h-[5px]">
           <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -218,31 +165,68 @@
       </div>
       <p
         class="text-center w-full mb-[40px] px-2 font-(family-name:--chakraregular)"
-      >
-        Les fronts d’action de la confrerie des disciples de Saint Padre Pio de
-        Pietrelcina
-        <b>( CODISAPIO )</b> sont les suivants :
-      </p>
+        [innerHTML]="
+          'field-apostolate.spirituality.action-front.sub-title' | translate
+        "
+      ></p>
 
       <div class="w-full flex px-2 py-8 justify-center items-center">
         <div class="lg:w-[70%]">
           <div
             class="grid grid-cols-1 place-content-center md:grid-cols-2 h-max gap-x-4 gap-y-14 lg:gap-y-14"
           >
-            <app-section-card title="Spirituel">
-              <app-item-section [items]="spirituelItems"></app-item-section>
+            <app-section-card
+              [title]="
+                'field-apostolate.spirituality.action-front.spiritual'
+                  | translate
+              "
+            >
+              <app-item-section
+                [items]="
+                  'field-apostolate.spirituality.action-front.spirituelItems'
+                    | translate
+                "
+              ></app-item-section>
             </app-section-card>
 
-            <app-section-card title="Humanitaire et caritatif">
-              <app-item-section [items]="humanItems"></app-item-section>
+            <app-section-card
+              [title]="
+                'field-apostolate.spirituality.action-front.humanity'
+                  | translate
+              "
+            >
+              <app-item-section
+                [items]="
+                  'field-apostolate.spirituality.action-front.humanItems'
+                    | translate
+                "
+              ></app-item-section>
             </app-section-card>
 
-            <app-section-card title="Sportif">
-              <app-item-section [items]="sports"></app-item-section>
+            <app-section-card
+              [title]="
+                'field-apostolate.spirituality.action-front.sportif' | translate
+              "
+            >
+              <app-item-section
+                [items]="
+                  'field-apostolate.spirituality.action-front.sports'
+                    | translate
+                "
+              ></app-item-section>
             </app-section-card>
 
-            <app-section-card title="Culturel">
-              <app-item-section [items]="sports"></app-item-section>
+            <app-section-card
+              [title]="
+                'field-apostolate.spirituality.action-front.culture' | translate
+              "
+            >
+              <app-item-section
+                [items]="
+                  'field-apostolate.spirituality.action-front.cultural'
+                    | translate
+                "
+              ></app-item-section>
             </app-section-card>
           </div>
         </div>
@@ -253,7 +237,7 @@
           <h2
             class="text-center font-bold text-2xl text-yellow-700 mb-[20px] font-(family-name:--arimabold)"
           >
-            Les diocèses
+            {{ "field-apostolate.spirituality.the-dioceses.title" | translate }}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -271,7 +255,9 @@
               [icone]="'./images/icone_localisation.jpg'"
               [alt_message]="'diocese'"
               [couleur]="'#C48C00'"
-              [name]="'Archidiocèse de Yaoundé'"
+              [name]="
+                'field-apostolate.spirituality.the-dioceses.yaounde' | translate
+              "
               [lieu]="''"
               [ville]="'Yaoundé , Centre'"
             />
@@ -280,7 +266,9 @@
               [icone]="'./images/icone_localisation.jpg'"
               [alt_message]="'diocese'"
               [couleur]="'#C48C00'"
-              [name]="'Archidiocèse de Douala'"
+              [name]="
+                'field-apostolate.spirituality.the-dioceses.douala' | translate
+              "
               [lieu]="''"
               [ville]="'Douala , Littoral'"
             />
@@ -289,7 +277,9 @@
               [icone]="'./images/icone_localisation.jpg'"
               [alt_message]="'diocese'"
               [couleur]="'#C48C00'"
-              [name]="'Archidiocèse de Garoua'"
+              [name]="
+                'field-apostolate.spirituality.the-dioceses.garoua' | translate
+              "
               [lieu]="''"
               [ville]="'Garoua , Nord'"
             />
@@ -298,7 +288,9 @@
               [icone]="'./images/icone_localisation.jpg'"
               [alt_message]="'diocese'"
               [couleur]="'#C48C00'"
-              [name]="'Diocèse de Maroua-Mokolo'"
+              [name]="
+                'field-apostolate.spirituality.the-dioceses.maroua' | translate
+              "
               [lieu]="''"
               [ville]="'Maroua , Extreme-Nord'"
             />
@@ -307,7 +299,9 @@
               [icone]="'./images/icone_localisation.jpg'"
               [alt_message]="'diocese'"
               [couleur]="'#C48C00'"
-              [name]="'Diocèse d’Obala'"
+              [name]="
+                'field-apostolate.spirituality.the-dioceses.obala' | translate
+              "
               [lieu]="''"
               [ville]="'Obala , Centre'"
             />
@@ -321,7 +315,7 @@
           <h2
             class="text-center font-bold text-2xl text-yellow-700 mb-[20px] font-(family-name:--arimabold)"
           >
-            Schéma directeur
+            {{ "field-apostolate.spirituality.master-plan.title" | translate }}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -338,7 +332,7 @@
           <h2
             class="text-center font-bold text-2xl text-yellow-700 mb-[20px] font-(family-name:--arimabold)"
           >
-            Realisations & Resultats
+            {{ "field-apostolate.spirituality.realization.title" | translate }}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -350,25 +344,7 @@
           <p
             class="text-left px-2 lg:w-[80%] mb-10 font-(family-name:--chakraregular)"
           >
-                        Depuis sa création en 2005, la Confrérie des Disciples
-            de Saint Padre Pio (CODISAPIO) a marqué l'Église du Cameroun par une
-            action spirituelle, sociale et humanitaire intense. Elle a organisé
-            des conférences de presse, publié un journal, réalisé des
-            pèlerinages au Cameroun, en Italie et en France, et soutenu les plus
-            vulnérables à travers des visites caritatives et la promotion du don
-            de sang (plus de 15 000 poches collectées). Son action a également
-            renforcé la pratique liturgique autour de Padre Pio, aboutissant à
-            l’inscription de sa mémoire liturgique dans plusieurs diocèses.
-            CODISAPIO a favorisé la création de Groupes de Prière, le
-            développement des CEV à son nom, et sensibilisé personnel médical,
-            fidèles catholiques et non-catholiques à l’éthique, à la dignité
-            humaine et au lien entre foi et science. Sa contribution dépasse le
-            domaine religieux, influençant la société camerounaise sur les plans
-            moral, psychologique, institutionnel et scientifique. Grâce à son
-            bras séculier, la Saint Pio Blood Relief Suffering Foundation, la
-            Confrérie continue d’inspirer des actions concrètes dans un esprit
-            de prière, pénitence et charité, selon l’exemple de son saint
-            patron.
+            {{ "field-apostolate.spirituality.realization.text" | translate }}
           </p>
         </div>
         <div
@@ -378,7 +354,7 @@
             ><button
               class="w-[125px] h-[40px] rounded-lg text-white bg-yellow-900 cursor-pointer font-(family-name:--chakraregular)"
             >
-              En savoir plus
+              {{ "read-more" | translate }}
             </button></a
           >
         </div>
@@ -388,7 +364,7 @@
           <h2
             class="text-center font-bold text-2xl text-yellow-700 mb-[20px] font-(family-name:--arimabold)"
           >
-            Nos perspectives
+            {{ "field-apostolate.spirituality.prospects.title" | translate }}
           </h2>
           <div class="flex justify-center items-center w-full h-[5px]">
             <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
@@ -396,35 +372,9 @@
             <div class="bg-yellow-300 h-[1px] w-[50px]"></div>
           </div>
         </div>
-        <div class="flex flex-col justify-center items-center">
-          <p
-            class="text-justify lg:w-[80%] px-2 font-(family-name:--chakraregular)"
-          >
-            <b>Sur le court terme</b> : La mise en œuvre de micro-projets
-            pastoraux et agricoles est une initiative précieuse pour soutenir
-            l’Église locale et les personnes vulnérables. Cela permet d’avoir un
-            impact immédiat et concret sur la communauté.
-          </p>
-
-          <p
-            class="text-left lg:w-[80%] px-2 font-(family-name:--chakraregular)"
-          >
-            <b>Moyen terme</b> : La création du Grand Chœur Saint Padre Pio et
-            le lancement du Saint Pio Catering Service and Logistic montrent une
-            volonté d’unifier et de structurer les activités communautaires. Le
-            projet Saint Pio Scholarship Academy for Vulnerabilities est
-            également une belle initiative pour accompagner les plus fragiles
-            dans leur formation et leur développement.
-          </p>
-
-          <p
-            class="text-left lg:w-[80%] px-2 font-(family-name:--chakraregular)"
-          >
-            <b>Long terme</b> : Les congrès prévus, tant au niveau national
-            qu’international, sont des événements majeurs qui permettront de
-            renforcer les liens entre les fidèles et de promouvoir la
-            spiritualité de Saint Padre Pio à une échelle plus large.
-          </p>
+        <div class="flex flex-col justify-center items-center" 
+        [innerHTML]="'field-apostolate.spirituality.prospects.text' | translate">
+         
         </div>
       </div>
     </div>
