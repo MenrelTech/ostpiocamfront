@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NumberedcardtextComponent } from '../../../../../../numberedcardtext/numberedcardtext.component';
 import { HealthCarComponent } from "../../../../../../health-car/health-car.component";
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   standalone: true,
@@ -10,7 +11,8 @@ import { HealthCarComponent } from "../../../../../../health-car/health-car.comp
     RouterLink,
     NumberedcardtextComponent,
     RouterLink,
-    HealthCarComponent
+    HealthCarComponent,
+    TranslateModule
 ],
 })
 export class HealthSimeComponent {

@@ -1,7 +1,7 @@
 <div>
   <div class="w-full h-[50px] bg-red-50 content-center">
     <p class="ml-[70px] font-(family-name:--chakraregular)">
-      Accueil > Champs d’Apostolat > Santé > SIME AS
+      {{ "field-apostolate.health.sime-as.sub-title" | translate }}
     </p>
   </div>
 
@@ -10,7 +10,7 @@
       <h2
         class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
       >
-        Généralités
+        {{ "field-apostolate.health.sime-as.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -23,16 +23,10 @@
       <div class="flex flex-col w-full md:w-[80%] lg:flex-row">
         <p
           class="text-left px-4 md:text-center font-(family-name:--chakraregular)"
-        >
-          <b>Togetherness - Universality - Health</b><br />
-          La Saint Pio International Medical Aid Services (SIMEAS) est une
-          organisation humanitaire nouvellement créée dont la devise est
-          Fraternité- Universalité-Santé. Cette initiative  vise à répondre aux
-          défis d’accessibilité des couches les plus défavorisées aux soins de
-          santé primaires, aux médicaments essentiels et aux équipements
-          médico-sanitaires dans les zones reculées, enclavées et pauvres au
-          cœur des Peuples,langues,tribus et Nations du Cosmos
-        </p>
+          [innerHTML]="
+            'field-apostolate.health.sime-as.origin.title' | translate
+          "
+        ></p>
         <img
           class="h-[202px] ml-[20px]"
           src="./images/Logo_Saint_Pio_International_Medical_Aid_Services_Origin_01.png"
@@ -46,7 +40,7 @@
       <h2
         class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
       >
-        Historicité
+        {{ "field-apostolate.health.sime-as.history.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -57,19 +51,11 @@
     <div class="flex flex-col items-center justify-center">
       <div class="text-left w-full px-4 md:w-[80%]">
         <p class="mb-2">
-          L’organisation est née d’une analyse situationnelle : de nombreuses
-          populations et Formations Sanitaires (FOSA) situées dans des zones
-          d’accès difficiles au Cameroun manquent cruellement de produits de
-          soins primaires, de médicaments essentiels, de matériels
-          médico-sanitaires adéquats et de qualité.
+          {{ "field-apostolate.health.sime-as.history.text1" | translate }}
         </p>
 
         <p>
-          Ce constat a été établi suite à de multiples missions de terrain
-          menées depuis 2008, culminant avec une tournée nationale dans les dix
-          régions du pays entre novembre 2022 et Janvier 2023 par Saint Pio
-          Blood Relief Suffering Foundation et la Fédération Camerounaise pour
-          le Don Bénévole de Sang (FECADOBES).
+          {{ "field-apostolate.health.sime-as.history.text2" | translate }}
         </p>
       </div>
 
@@ -77,7 +63,7 @@
         <button
           class="px-4 cursor-pointer py-2 mt-4 text-white text-base rounded-lg bg-red-700"
         >
-          En savoir plus
+          {{ "see-more" | translate }}
         </button>
       </a>
     </div>
@@ -85,8 +71,10 @@
 
   <div class="w-full h-max my-8 py-4 content-evenly items-center">
     <div class="mb-[40px]">
-      <h2 class="text-center font-(family-name:--arimabold) text-3xl text-red-700 mb-[20px]">
-        Objectifs
+      <h2
+        class="text-center font-(family-name:--arimabold) text-3xl text-red-700 mb-[20px]"
+      >
+        {{ "field-apostolate.health.sime-as.objectives.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -94,7 +82,9 @@
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <p class="text-center w-full mb-[40px]">Notre objectif général est de :</p>
+    <p class="text-center w-full mb-[40px]">
+      {{ "field-apostolate.health.sime-as.objectives.text" | translate }}
+    </p>
 
     <div class="flex justify-center items-center my-10">
       <app-numberedcardtext
@@ -102,45 +92,41 @@
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu=" réduire la fracture entre les grandes villes
-      d’une part et les zones reculées, enclavées et 
-      pauvres d’autre part, dans l’accès à la Santé et au bien-être."
+        [contenu]="'field-apostolate.health.sime-as.objectives.one' | translate"
       />
     </div>
     <p class="text-center w-full my-[40px]">
-       Plus
-      spécifiquement :
+      {{ "field-apostolate.health.sime-as.objectives.text2" | translate }}
     </p>
+
     <div
-      class="grid grid-cols-3 gap-x-4 gap-y-10 place-content-center content-center justify-items-center items-center"
+      class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 place-content-center justify-items-center items-center"
     >
       <app-numberedcardtext
         [numero]="2"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu=" Renforcer les capacités logistiques  en termes d’équipements médico-sanitaires et autres, des Formations Sanitaires(FOSA) des zones reculées, enclavées et/ou pauvres ;"
+        [contenu]="'field-apostolate.health.sime-as.objectives.two' | translate"
       />
-    </div>
-
-    <p class="text-center w-full my-10">Plus Spécifiquement :</p>
-    
-    <div
-      class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 place-content-center justify-items-center items-center"
-    >
       <app-numberedcardtext
         [numero]="3"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu="Renforcer les capacités logistiques  en termes d’équipements médico-sanitaires et autres, des Formations Sanitaires(FOSA) des zones reculées, enclavées et/ou pauvres ; "
+        [contenu]="
+          'field-apostolate.health.sime-as.objectives.three' | translate
+        "
       />
+
       <app-numberedcardtext
         [numero]="4"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu="Améliorer l’accès des Groupes et Communautés vulnérables aux soins de Santé  "
+        [contenu]="
+          'field-apostolate.health.sime-as.objectives.four' | translate
+        "
       />
 
       <app-numberedcardtext
@@ -148,15 +134,9 @@
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu="Accompagner les dynamiques de mobilisations des ressources au sein des FOSA  des zones reculées, enclavées et pauvres "
-      />
-
-      <app-numberedcardtext
-        [numero]="5"
-        [couleur_n]="'#F2C7CB'"
-        [couleur_bgn]="'#5B0F15'"
-        [couleur_bg]="'#F29B9E'"
-        contenu="Renforcer la résilience des Groupes et Communautés vulnérables aux chocs, catastrophes, urgences à caractères humanitaires"
+        [contenu]="
+          'field-apostolate.health.sime-as.objectives.five' | translate
+        "
         class="lg:last:col-start-2"
       />
     </div>
@@ -166,7 +146,7 @@
       <h2
         class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
       >
-        Missions
+        {{ "field-apostolate.health.sime-as.missions.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -175,7 +155,7 @@
       </div>
     </div>
     <p class="text-center w-full font-(family-name:--chakraregular) mb-[40px]">
-      Nous avons pour missions:
+      {{ "field-apostolate.health.sime-as.missions.text" | translate }}
     </p>
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 content-center justify-items-center items-center"
@@ -185,22 +165,21 @@
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu="Assurer l’accès à la santé dans les zones reculées, enclavées et pauvres."
+        [contenu]="'field-apostolate.health.sime-as.missions.one' | translate"
       />
       <app-numberedcardtext
         [numero]="2"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu="Mobiliser et coordonner des spécialistes et bénévoles pour des actions humanitaires"
+        [contenu]="'field-apostolate.health.sime-as.missions.two' | translate"
       />
       <app-numberedcardtext
         [numero]="3"
         [couleur_n]="'#F2C7CB'"
         [couleur_bgn]="'#5B0F15'"
         [couleur_bg]="'#F29B9E'"
-        contenu="Promouvoir le plaidoyer et le lobbying pour l’amélioration des politiques de santé publique."
-       
+        [contenu]="'field-apostolate.health.sime-as.missions.three' | translate"
       />
 
       <div class="mb-5"></div>
@@ -214,7 +193,7 @@
       <h2
         class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
       >
-        Schéma Directeur
+        {{ "field-apostolate.health.sime-as.director.title" | translate }}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -666,7 +645,6 @@
         </defs>
       </svg>
     </div>
-    
   </div>
 
   <div class="w-full h-max py-8 bg-red-50 content-evenly">
@@ -674,7 +652,7 @@
       <h2
         class="text-center font-(family-name:--arimabold) font-bold text-2xl text-red-700 mb-[20px]"
       >
-        Nos perspectives
+        {{"field-apostolate.health.sime-as.prospects.title" |translate}}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -682,59 +660,20 @@
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
       </div>
     </div>
-    <div class="flex justify-center items-center">
-      <div class="text-left font-(family-name:--chakraregular) w-[80%]">
-        <p>
-          <b>Cliniques mobiles :</b> <br />
-          Organisation de cliniques mobiles équipées de matériel médical de base
-          pour atteindre les villages isolés et offrir des consultations
-          spécialisées gratuites & Distributions de kits de soins, et de
-          médicaments essentiels,
-        </p>
-
-        <p>
-          <b>Formation du personnel local  :</b> <br />
-          Mise en place de programmes de formation pour le personnel de santé
-          local afin d’améliorer leurs compétences et leurs capacités à gérer
-          les problèmes de santé  courants.
-        </p>
-
-        <p>
-          <b>Approvisionnement en médicaments :</b> renforcement du Système mise
-          en place dans le cadre d’un réseau d’approvisionnement en médicaments
-          essentiels pour les Formations Sanitaires  des zones reculées,
-          enclavées et/ou pauvres en collaboration avec le Ministère de la Santé
-          Publique à travers les Fonds Régionaux de Promotion de la Santé
-          (FRPS), les laboratoires pharmaceutiques et des ONGs Internationales
-          et autres Parties Prenantes en respectant le circuit SYNAME.
-        </p>
-
-        <p>
-          <b>Télémédecine :</b> <br />
-          Mise en place de systèmes de télémédecine permettant aux
-          professionnels de  Santé des zones reculées, enclavées et /ou pauvres
-          de consulter des spécialistes à distances pour des cas complexes
-        </p>
-
-        <p>
-          <b>Campagnes de sensibilisation :</b> <br />
-          Organisation d’ateliers éducatifs  et de campagnes de sensibilisation
-          sur l’hygiène, la nutrition,la gestion des déchets et la prévention
-          des maladies courantes dans les Communautés isolées en coaction avec
-          les Fonds Régionaux de Promotion de la Santé (FRPS) et autres Parties
-          Prenantes.
-        </p>
-      </div>
+    <div class="flex justify-center items-center"
+    [innerHTML]="'field-apostolate.health.sime-as.prospects.page'|translate"
+    
+    >
+    
     </div>
   </div>
 
-  
   <div class="w-full h-max my-8 py-10 content-evenly">
     <div class="mb-[40px]">
       <h2
         class="text-center font-bold font-(family-name:--arimabold) text-2xl text-red-700 mb-[20px]"
       >
-        Les Zones d’intervention
+        {{"field-apostolate.health.sime-as.intervention.title"|translate}}
       </h2>
       <div class="flex justify-center items-center w-full h-[5px]">
         <div class="bg-red-300 h-[1px] w-[50px]"></div>
@@ -749,38 +688,42 @@
           [image]="'./images/carousel_1.png'"
           [alt_message]="'sante'"
           [couleur]="'#A41523'"
-          [name]="'REGION DU CENTRE'"
+          [name]="'field-apostolate.health.sime-as.intervention.center'|translate"
         />
 
         <app-health-car
           [image]="'./images/carousel_1.png'"
           [alt_message]="'sante'"
           [couleur]="'#A41523'"
-          [name]="'REGION DU LITTORAL'"
+          [name]="'field-apostolate.health.sime-as.intervention.littoral'|translate"
+          
         />
 
         <app-health-car
           [image]="'./images/carousel_1.png'"
           [alt_message]="'sante'"
           [couleur]="'#A41523'"
-          [name]="'REGION DE L’EST'"
+          [name]="'field-apostolate.health.sime-as.intervention.east'|translate"
+          
         />
 
         <app-health-car
           [image]="'./images/carousel_1.png'"
           [alt_message]="'sante'"
           [couleur]="'#A41523'"
-          [name]="'REGION DE L’ADAMAOUA'"
+          [name]="'field-apostolate.health.sime-as.intervention.adamaoua'|translate"
+
         />
 
         <app-health-car
           [image]="'./images/carousel_1.png'"
           [alt_message]="'sante'"
           [couleur]="'#A41523'"
-          [name]="'REGION DE L’EXTRÊME NORD'"
+          [name]="'field-apostolate.health.sime-as.intervention.north'|translate"
+          
         />
       </div>
     </div>
   </div>
- 
 </div>
+

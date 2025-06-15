@@ -1,20 +1,24 @@
-import { NgFor } from "@angular/common";
+import { AsyncPipe, NgFor } from "@angular/common";
 import { Component } from "@angular/core";
+import { TranslateModule, TranslateService } from "@ngx-translate/core";
+import { Observable } from "rxjs";
 
 @Component({
   standalone:true,
   templateUrl:"./perspectives.component.html", 
-  imports:[NgFor]
+  imports:[NgFor, TranslateModule, AsyncPipe]
 })
 export class PerspectivesComponent{
-  longPerspectives:string[] = [
-    "Créer un numéro rouge pour répondre rapidement aux sollicitations.",
-    "Faciliter l’accès aux produits sanguins, voire tendre vers la gratuité.",
-    "Établir des accords de coopération avec les hôpitaux.",
-    "Mettre en place un partenariat avec le Ministère de la Santé publique.",
-    "Coopérer avec la Fédération internationale des donneurs bénévoles de sang et autres institutions.",
-    "Organiser des activités de plaidoyer, comme le congrès sous-régional d’Afrique centrale et des Grands Lacs sur les associations de donneurs."
-  ]
+
+  longPerspectives$!:Observable<string[]>
+
+  constructor(private readonly translate:TranslateService){
+    this.longPerspectives$ = this.translate.stream("field-apostolate.health.prospect-page.data");
+
+  }
+    trackByPath(_: number, link: string) {
+    return link;
+  }
 
 
 }

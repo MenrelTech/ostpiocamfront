@@ -2,7 +2,7 @@
   <div
     class="w-full h-[50px] font-(family-name:--chakraregular) content-center"
   >
-    Accueil > Champs d’apostolats > Santé> St Pio BSRF > Perspectives
+    {{"field-apostolate.health.prospect-page.sub-title" |translate}}
   </div>
 
   <div class="relative w-full mb-10">
@@ -10,7 +10,7 @@
       <h1
         class="text-[#A71D2A] font-(family-name:--arimabold) text-4xl font-bold"
       >
-        Perspectives
+        {{"field-apostolate.health.prospect-page.title" |translate}}
       </h1>
     </div>
   </div>
@@ -19,66 +19,21 @@
     class="w-full flex flex-col font-(family-name:--chakraregular) items-center justify-center"
   >
     <div class="w-[90%]">
-      <p>Perspectives à court terme</p>
+      <p> {{"field-apostolate.health.prospect-page.short-term" |translate}} </p>
 
-      <ul class="list-disc font-(family-name:--chakraregular) list-outside ms-8">
-        <li *ngFor="let item of longPerspectives">
-          {{item}}
+      <ul
+        class="list-disc font-(family-name:--chakraregular) list-outside ms-8"
+      >
+        <li *ngFor="let item of longPerspectives$ |async  trackBy: trackByPath">
+          {{ item }}
         </li>
       </ul>
+      <div [innerHTML]="'field-apostolate.health.prospect-page.page'|translate" >
 
-      <p class="mt-6">Perspectives à moyen terme</p>
+      </div>
 
-      <ul class="list-disc list-outside ms-8 mb-6"> 
-        <li>
-          Lancer des projets de développement pour le bien-être des donneurs et
-          des structures associées :
-        </li>
-
-        <ul class="ml-10 list-disc list-outside ms-8">
-          <li>École de formation professionnelle,</li>
-          <li>Fermes,</li>
-          <li>Formation du personnel au Cameroun et à l’étranger.</li>
-        </ul>
-
-        <li>
-          Construire le siège de la Fondation.
-        </li>
-
-        <li>
-          Créer une structure logistique et de restauration pour les donneurs : « Saint Pio Logistics and Catering services (LoCas) ».
-        </li>
-
-        <li>
-          Mettre en place un groupe média comprenant :
-        </li>
-
-        <ul class="ml-10 list-disc list-outside ms-8">
-          <li>
-            Un journal,
-          </li>
-
-          <li>
-            Une radio,
-          </li>
-
-          <li>
-            Une chaîne TV.
-          </li>
-
-          <li>
-            Améliorer l’organisation et la gestion interne.
-          </li>
-        </ul>
-      </ul>
-
-      <p>
-        Perspectives à long terme
-      </p>
-
-      <li class="mb-10">
-        Étendre les zones d’intervention à travers le Cameroun et à l’international.
-      </li>
+     
     </div>
   </div>
 </div>
+
