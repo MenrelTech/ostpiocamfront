@@ -1,0 +1,665 @@
+{
+  "links": [
+    {
+      "label": "Accueil",
+      "path": "",
+      "subMenu": [
+        { "label": "Présentation", "path": "" },
+        { "label": "Actualité", "path": "actualite" },
+        { "label": "Prolégomènes", "path": "prolegomene" },
+        { "label": "Nos prestataires", "path": "nos-prestataire" },
+        {
+          "label": "Fondateurs & Responsable",
+          "path": "fondateurs&responsable"
+        },
+        {
+          "label": "Les grandes dates",
+          "path": "grandes-dates"
+        },
+        {
+          "label": "Champs d'Apostolats",
+          "path": "champs d'apostolat"
+        },
+        {
+          "label": "Nos perspectives",
+          "path": "nos-perspectives"
+        }
+      ]
+    },
+    {
+      "label": "Champs d'Apostolat",
+      "path": "champs d'apostolat",
+      "subMenu": [
+        {
+          "label": "Spiritualité",
+          "path": "champs d'apostolat/spiritualite"
+        },
+        {
+          "label": "Santé",
+          "path": "champs d'apostolat/sante"
+        },
+        {
+          "label": "Communication",
+          "path": "champs d'apostolat/communication"
+        },
+        {
+          "label": "Environnement",
+          "path": "champs d'apostolat/environnement"
+        }
+      ]
+    },
+    {
+      "label": "Actualités",
+      "path": "actualite",
+      "subMenu": [
+        { "label": "A la une ", "path": "a-la-une" },
+        {
+          "label": "Communiqués & interviews",
+          "path": "communiqués-interviews"
+        },
+        { "label": "Rapport d'activités", "path": "rapport-d'activités" },
+        {
+          "label": "Archives",
+          "path": "archives"
+        }
+      ]
+    },
+    {
+      "label": "Contact",
+      "path": "contact",
+      "subMenu": [
+        {
+          "label": "Devenir bénévole",
+          "path": "devenir-benevole"
+        },
+        {
+          "label": "Devenir partenaire",
+          "path": "devenir-partenaire"
+        },
+        {
+          "label": "Souscrire à la Newsletter",
+          "path": "news-letter"
+        },
+        {
+          "label": "Nous contacter",
+          "path": "contact"
+        }
+      ]
+    }
+  ],
+
+  "footer": {
+    "usefulLinks": [
+      { "label": "Accueil", "path": "" },
+      { "label": "Actualités", "path": "actualites" },
+      { "label": "Nous contacter", "path": "contact" },
+      { "label": "Faire un don", "path": "don" }
+    ],
+    "apostolatLinks": [
+      { "label": "Santé", "path": "sante" },
+      { "label": "Spiritualité", "path": "spiritualite" },
+      { "label": "Environnement", "path": "environnement" },
+      { "label": "Communication", "path": "communication" }
+    ],
+    "subscribe-title": "Souscrire à nos newsletters",
+    "subscribe-text": "Vous serez notifié régulierement sur l'actualité de l'Oeuvre de St Padré Pio au Cameroun",
+    "subscribe-action": "Souscrire",
+    "subscribe-place-holder": "Votre email"
+  },
+
+  "home": {
+    "title": "Présentation",
+    "subtitle": "L’œuvre de Saint Padre Pio au Cameroun",
+    "carrousel": "Une vision humanitaire du Cameroun et du monde",
+    "carrouselTitle": [
+      "Une vision humanitaire du Cameroun et du monde",
+      "Du sang disponible pour tous en toutes circonstance",
+      "La prière comme arme de préservation de la paix",
+      "Une voix qui éduque et édifie le monde"
+    ],
+    "presentation-title": "L’œuvre de Saint Padre Pio au Cameroun",
+    "presentation-des": " est une initiative inspirée de la spiritualité et de l’engagement de Saint Padre Pio, visant à rassembler sous une même structure toutes les entités et actions portées en son nom dans le pays. Elle a pour mission de promouvoir la foi vivante, le service du prochain et l’unité des acteurs engagés autour de quatre axes principaux : la Spiritualité, la Santé, la Communication et l’Environnement. Fondée en 2005 à travers la Confrérie des Disciples de Saint Padre Pio (CODISAPIO), elle a progressivement donné naissance à plusieurs œuvres concrètes telles que la Saint Pio Blood Relief Suffering Foundation pour le don de sang, SIMEAS pour l’aide médicale dans les zones reculées, La Voix de Padre Pio Cameroun pour une communication enracinée dans la foi, et Green World for Man pour la promotion d’une écologie humaine centrée sur la dignité de l’homme.",
+    "presentation-read-more": "En savoir plus ",
+    "Prolegomena": "Prolégomènes",
+    "Prolegomena-title": "L’œuvre de Saint Padre Pio au Cameroun",
+    "Prolegomena-des": "trouve son origine dans un élan de foi, de prière et de service, nourri par la vie et l’exemple de Saint Padre Pio. Ce site web n’est pas simplement un espace d’information, mais un lieu de rencontre spirituelle, de témoignage et de mobilisation autour d’une mission : faire rayonner la charité, la compassion et l’unité dans notre société. Dans un monde traversé par la souffrance, les divisions et la perte de repères, l’Œuvre veut être une réponse concrète à l’appel de Dieu, en s’appuyant sur des actions visibles dans les domaines de la spiritualité, de la santé, de la communication et de l’environnement. À travers ce portail, chacun est invité à découvrir, comprendre, prier et s’engager, avec l’espérance que Saint Padre Pio continue d’intercéder pour notre pays et d’inspirer des chemins de foi vivante et active.",
+    "founder&responsable": "Fondateurs & Responsables",
+    "founder-card-text": {
+      "one": {
+        "name": "Noel SIMO",
+        "role": "Fondateur",
+        "des": " L’Œuvre de Saint Padre Pio au Cameroun est née d’un profond désir de faire vivre, ici et maintenant, l’héritage spirituel et humain de ce grand saint. Elle est le fruit de la prière, de l’écoute et de l’obéissance à une intuition intérieure, celle de rassembler toutes les bonnes volontés autour d’un idéal : servir Dieu en servant l’homme. Que cette plateforme soit un espace d’unité, de lumière et de ferveur pour tous ceux qui souhaitent marcher humblement sur les traces de Padre Pio, avec foi, charité et engagement sincère."
+      },
+      "two": {
+        "name": "Noel SIMO",
+        "role": "Coordonateur general",
+        "des": "Porter l’Œuvre de Saint Padre Pio est à la fois une grâce et une responsabilité. Dans un monde en quête de repères, elle incarne un chemin d’espérance fondé sur la prière, l’action concrète et la fraternité. Notre mission est de garder vivant le message du saint, d’agir avec foi dans les domaines qui touchent le cœur de l’homme : la santé, la spiritualité, l’environnement et la communication. Ensemble, unis dans l’amour du Christ, nous poursuivons cette aventure divine, avec courage et fidélité. Que chacun y trouve sa place et s’y sente appelé."
+      }
+    },
+    "main-field-apostolate": {
+      "title": "Champs d'Apostolat",
+      "spirituality": {
+        "title": "Spiritualité",
+        "text": "Suivez l'exemple  du Padre Pio : mediation, sacrements et paix de l'âme"
+      },
+      "health": {
+        "title": "Santé",
+        "text": "Le corps est un temple",
+        "hover": "Soignez vous par des approches douces en union avec prière"
+      },
+      "communication": {
+        "title": "Communication",
+        "text": "Parlez avec charité",
+        "hover": "Développez une parole vraie et bienveillante"
+      },
+      "environement": {
+        "title": "Environnement",
+        "text": "La création est un don de Dieu",
+        "hover": "Apprenez à la protéger avec respect"
+      }
+    },
+    "main-global-news": {
+      "title": "Actualités globales"
+    },
+    "key-dates": {
+      "title": "Les Grandes dates"
+    },
+    "perspectives": {
+      "title": "Perspectives",
+      "des": "Fidèle à sa mission d’évangélisation intégrale et de service de l’homme dans toutes ses dimensions, l’Œuvre de Saint Padre Pio au Cameroun se projette résolument vers l’avenir avec des ambitions claires et structurantes. À court terme, elle envisage la construction de sanctuaires dédiés à Saint Padre Pio dans les principales provinces ecclésiastiques du pays. Ces lieux saints seront non seulement des espaces de recueillement et de prière, mais aussi des centres de pèlerinage, de formation spirituelle et de rassemblement fraternel pour les fidèles, dans un esprit de communion et de renouveau missionnaire.Sur le long terme, plusieurs projets de grande portée sont en gestation. D’abord, la mise en place d’un Centre d’information spirituelle sur la vie des saints, avec un accent particulier sur celle de Saint Padre Pio, offrira aux jeunes, aux chercheurs et aux fidèles un espace d’instruction, de recherche et de ressourcement autour des figures marquantes de la sainteté. Ce centre vise à raviver la foi et à susciter des vocations par le témoignage de vies offertes à Dieu. Ensuite, l’Œuvre ambitionne de construire un centre hospitalier de référence, baptisé « Hôpital Saint Padre Pio de Pietrelcina », qui incarnera l’amour du prochain dans sa forme la plus concrète. Cet établissement combinera excellence médicale, accueil humain et accompagnement spirituel, dans la droite ligne de l’idéal de compassion et de service que portait Saint Padre Pio.Ces projets, portés par la foi, la prière et la générosité des partenaires, permettront à l’Œuvre de s’enraciner durablement dans le paysage ecclésial et social du Cameroun, en y apportant lumière, espérance et transformation profonde"
+    }
+  },
+
+  "general-presentation": {
+    "title": "Présentation de l’oeuvre",
+    "sub-title": "Accueil > Présentation de l’œuvre",
+    "para1": {
+      "text": {
+        "gras": "L’œuvre de Saint Padre Pio au Cameroun",
+        "des": "est une Institution théocratique pour rassembler et assurer la coordination parfaite de toutes les entités et/ou organisations de l’écosystème créées et engagées sous une seule tente pour « que tout ensemble ne fasse qu’un »  non seulement en vue d’une meilleure promotion et de la défense de la Cause du Saint éponyme dans notre pays mais aussi et surtout pour plus de perspicacité doublée des résultats d’effets et d’impacts"
+      }
+    },
+    "para2": "Elle porte ainsi quatre Champs d’Apostolat fondamentaux axés notamment sur l’angle de la Spiritualité, la Santé, la Communication et bien sûr  de l’Environnement.",
+    "para3": {
+      "firt": "Ses prémices ont été officiellement jetées en semence courant 2005 par la",
+      "second": "Confrérie des Disciples de Saint Padre Pio de Pietrelcina(CODISAPIO)",
+      "third": "la racine principale matrice, mamelle nourricière qui inhibe tout le tronc qui aujourd’hui est devenu un grand arbre à oiseaux."
+    },
+    "para4": {
+      "html": "A côté de la dimension surnaturelle proprement dite, il se dégage le volet sanitaire soutenu par <b>Saint Pio Blood Relief Suffering</b> Foundation  une des variables lourdes et pilier de soutènement issu des initiatives ou actions très fécondes de la CODISAPIO sur le terrain pour apporter une efficacité, une pertinence et une dimension éthique accrue à l’activité promotionnelle globale de la Transfusion Sanguine et du Don de Sang en particulier au Cameroun en apportant un visage humain aux malades dès l’an de grâce 2008."
+    },
+
+    "para5": {
+      "html": "<span>Au surplus</span>, sur le versant de la Santé,<b> Saint Pio International Medical Aid Services (SIMEAS)</b> se positionne comme étant l’un des puissants leviers  de l’Oeuvre dans sa globalité pour réduire la fracture entre les zones urbaines d’une part et celles reculées, enclavées et pauvres d’autre part à l’accès à la Santé au bien-être."
+    },
+
+    "para6": "<span >Sur le plan</span> de la Communication , <b>« La Voie de Padre Pio Cameroun »</b>, quant à elle répond dans ce processus à un réel besoin, celui d’abord d’autonomisation et du relai libre et fidèle de l’Information, celui  de mieux communiquer sans fioritures sur les rendus ou remontées de terrains inhérentes à nos propres initiatives et de déploiement maitrisé. Raison pour laquelle au-delà de tout, son leitmotiv est : «faire et faire connaître ce que nous sommes et faisons. »",
+    "para7": "<span >Face aux effets</span> néfastes d’une mondialisation mal orientée, <b>la Voie de Padre Pio</b> est un outil stratégique de l’œuvre dans un contexte de laïcité, de consumérisme, de relativisme religieux et de cléricalisme ombrageux  mais surtout de crise de l’identité chrétienne pour re-essayer  avec nos limites et insuffisances d’apprendre à croire et à appeler à l’engagement en faveur de la foi vive et active suivant la vision et la doctrine spirituelle de Saint Padre Pio de Pietrelcina",
+    "para8": "<span>Ce grand </span>projet éditorial est une dynamique qui dynamite toute forme d’inertie dans un monde qui veut vivre et construire sans l’Architecte, sans le moindre sens de la Transcendance",
+    "para9": "Il sort des fonts baptismaux en Septembre 2011 avec sa première version écrite.",
+    "para10": "<span>Sur le plan Environnemental</span>,<b>Un Monde Vert pour l’Homme (Green World for Man (GWM)</b> tout comme Saint Pio Blood Relief Suffering Foundation collaborent à assurer une écologie humaine, en contribuant fortement à la promotion de notre espace de vie en commençant d’emblée par  « la protection de  l’Homme » ’objet et sujet formel de la Création."
+  },
+
+  "prolegomena": {
+    "title": "Prolégomènes",
+    "sub-title": "Accueil > Prolégomènes",
+    "para1": "<span>Toute œuvre</span> authentiquement chrétienne naît dans le silence, s’enracine dans la prière, s’éprouve dans la souffrance, et s’épanouit dans l’amour. L’œuvre de Saint Padre Pio au Cameroun ne fait pas exception. Elle est, dès l’origine, une réponse fidèle à l’appel à la sainteté dans le monde contemporain, un cri silencieux du cœur vers Dieu, un engagement incarné au service de l’homme, image vivante de son Créateur.  ",
+    "para2": "<span>À travers</span> ce site web, nous n’ambitionnons pas seulement d’exposer des actions, de présenter des structures ou de communiquer des informations. Nous cherchons, dans l’humilité et la lumière, à offrir un lieu de convergence spirituelle et de communion fraternelle, une plateforme de ressourcement, de témoignage et d’engagement.",
+    "para3": "<span>Dans une société</span> de plus en plus fragmentée,désorientée par des repères mouvants, ce portail veut redire avec force que la foi n’est pas une abstraction, mais une vie vécue, incarnée dans des initiatives concrètes, inspirées par l’Évangile et la figure lumineuse de Saint Padre Pio de Pietrelcina — humble capucin, mystique stigmatisé, homme de douleur et de charité.",
+    "para4": "<span>Pourquoi Padre Pio</span> ? Parce qu’il est un modèle radical de fidélité à Dieu dans l’épreuve, un passeur de grâce dans l’intercession, un serviteur de l’humanité souffrante, et un prophète silencieux pour notre temps. Le Cameroun, comme tant d'autres nations, traverse des saisons de turbulences : crises de valeurs, crises sanitaires, déséquilibres sociaux, désert spirituel parfois... Dans ce contexte, l’Œuvre de Saint Padre Pio se veut boussole et refuge, levier d'espérance et ferment d’unité.",
+    "para5": "<span> L’œuvre s’articule</span> autour de quatre axes majeurs : Spiritualité, Santé, Communication, et Environnement — chacun répondant à une soif réelle de notre époque. Elle ne cherche pas à séduire mais à servir, non à dominer mais à rassembler, non à imposer mais à inspirer.",
+    "para6": "<span>Les structures</span> comme CODISAPIO, SIMEAS, Saint Pio Blood Relief Suffering Foundation, La Voix de Padre Pio Cameroun ou Green World for Man, loin d’être des coquilles vides, sont les membres vivants d’un même corps animé par une seule et même vision : faire de l’amour de Dieu une réalité palpable dans les âmes, les corps, les relations et les terres.",
+    "para7": "<span>Que ces prolégomènes</span> soient donc une porte d’entrée intérieure pour tous ceux qui visiteront ce site : pèlerins de passage, chercheurs de sens, malades en quête de consolation, jeunes en quête de repères, bénévoles désireux de s’engager, croyants avides de témoignages vivants.",
+    "para8": "<span>À vous tous</span>, nous disons bienvenue, non comme à de simples visiteurs mais comme à des frères en chemin. Ce site est un lieu de foi vivante, un appel à la prière, à l’action, à la compassion. Puisse Saint Padre Pio vous accompagner et vous bénir à chaque page, à chaque rencontre, à chaque pas.",
+    "para9": "Il sort des fonts baptismaux en Septembre 2011 avec sa première version écrite.",
+    "para10": "« Prie, espère et ne t’inquiète pas. » — Saint Padre Pio"
+  },
+  "actualities": {
+    "title": "Actualités",
+    "sub-title": "Accueil > Actualités"
+  },
+
+  "field-apostolate": {
+    "menus": [
+      {
+        "label": "Spiritualité",
+        "path": "/spiritualite",
+        "color": "yellow",
+        "subItems": [
+          {
+            "label": "À propos de nous",
+            "link": "/champs d'apostolat/spiritualite/apropos"
+          },
+          {
+            "label": "Activités",
+            "link": "/champs d'apostolat/spiritualite/activite"
+          },
+          {
+            "label": "Connaissance de l'Église",
+            "link": "/champs d'apostolat/spiritualite/connaissance de l'eglise"
+          },
+          {
+            "label": "Galerie photos",
+            "link": "/champs d'apostolat/spiritualite/galerie"
+          }
+        ]
+      },
+      {
+        "label": "Santé",
+        "path": "/sante",
+        "color": "red",
+        "subItems": [
+          {
+            "label": "St Pio BRSF",
+            "link": "/champs d'apostolat/sante/apropos"
+          },
+          { "label": "SIME AS", "link": "/champs d'apostolat/sante/sime-as" },
+          {
+            "label": "Galerie photos",
+            "link": "/champs d'apostolat/sante/galerie"
+          }
+        ]
+      },
+      {
+        "label": "Communication",
+        "path": "/communication",
+        "color": "blue",
+        "subItems": [
+          {
+            "label": "À propos de nous",
+            "link": "/champs d'apostolat/communication/apropos"
+          },
+          {
+            "label": "Activités",
+            "link": "/champs d'apostolat/communication/activite"
+          },
+          {
+            "label": "Galerie photos",
+            "link": "/champs d'apostolat/communication/galerie"
+          }
+        ]
+      },
+      {
+        "label": "Environnement",
+        "path": "/environnement",
+        "color": "green",
+        "subItems": [
+          {
+            "label": "À propos de nous",
+            "link": "/champs d'apostolat/environnement/apropos"
+          },
+          {
+            "label": "Activités",
+            "link": "/champs d'apostolat/environnement/activite"
+          },
+          {
+            "label": "Galerie photos",
+            "link": "/champs d'apostolat/environnement/galerie"
+          }
+        ]
+      }
+    ],
+    "spirituality": {
+      "header-text": "Accueil > Champs d’Apostolat > Spiritualité > A propos de nous",
+      "presentation": {
+        "title": "Présentation",
+        "des": "<span class=\"w-full flex justify-center items-center\"><b class=\"text-[20px] font-(family-name:--chakrabold)\">Prière - Pénitence - Charité</b><br /></span><b>La CODISAPIO (Confrérie des Disciples de Saint Padre Pio dePietrelcina) </b>est le noyau fondateur de l’Œuvre de Saint Padre Pio au Cameroun. Née en 2005, elle rassemble des fidèles animés par la spiritualité de Saint Pio, engagés dans la prière, le service, l’évangélisation et la charité. Elle porte l’élan initial qui a donné naissance à un vaste écosystème apostolique, enraciné dans la foi, l’amour du prochain et la mission chrétienne"
+      },
+      "history": "Historicité",
+      "history-text": "<p class=\"text-justify font-(family-name:--chakraregular)\">La Confrérie des Disciples de Saint PADRE PIO de Pietrelcina est une Association privée de l’Eglise qui tire sa source d’un ensemble de fidèles chrétiens catholiques (laïcs, prêtres, religieux…) d’horizons divers et fervents admirateurs et dévots qui ont dédié leur existence au service de JESUS –CHRIST, de l’Eglise et des Hommes, sur les traces de Saint PADRE PIO.<br />Elle existe conformément aux Textes Conciliaires de Vatican II sur la nouvelle évangélisation. Elle est la suite logique de l’appel sans cesse renouvelé du Père PIO.<br />La première assise officielle a eu lieu le 25 Août 2005 à la suite d’une table ronde à la Paroisse Siège CHRIST-ROI de Tsinga, Yaoundé-Cameroun en présence du curé de la place, Vicaire Episcopal d’alors du Pôle, ancien Vicaire Général de l’Archidiocèse de Yaoundé, Mgr l’Abbé MBALA –KYE Achille.<br />Elle est initiée et animée par les Laïcs, avec l’encadrement spirituel des Prêtres locaux. C’est une Œuvre de l’Eglise pour l’Eglise et avec l’Eglise, dans l’esprit de la Révélation.<br />Dans la visibilité réelle, la Confrérie des Disciples de Saint PADRE PIO de Pietrelcina, est une véritable chaîne de solidarité chrétienne. Elle est la résultante spécifique d’une histoire d’amour avec le Père PIO. C’est aussi le fruit de l’aboutissement d’une grande soif, d’une large réflexion, d’une œuvre mûre restituée et nourrie en réaction aux messages issus des trois lettres du Vénérable aujourd’hui Saint Jean Paul II à savoir :<br /><ul><li><b>Lettre apostolique « Rosarium Virginis Marie»</b>, sur le Rosaire de la Vierge Marie ou l’année du Rosaire, Octobre 2002.</li><li><b>Lettre Encyclique « Ecclesia de Eucharistia»</b>, l’Eglise vit de l’Eucharistie, sur l’Eucharistie dans son rapport avec l’Eglise, Avril 2003.</li><li><b>Lettre apostolique « Mane Nobiscum Domine »</b>, Reste avec nous Seigneur pour l’Année de l’Eucharistie, Octobre 2004</li></ul></p>",
+      "mission": "Missions",
+      "mission-text": "            Elle a pour mission essentielle l’activité spirituelle et caritative en vue d’une démarche de sanctification personnelle et collective. Au-delà de sa participation à la vie spirituelle, matérielle et financière vis-à-vis de l’Eglise par une vie de présence, illustrée dans Mt 25,31-41, elle apporte aussi son assistance aux marginalisés et/ou pauvres (orphelinats, prisons, centre d’accueil, Hôpitaux…).",
+      "objectives": {
+        "title": "Objectifs",
+        "sub-title": "La confrerie des disciples de Saint Padre Pio de Pietrelcina <b>( CODISAPIO )</b> a pour objectifs:",
+        "one": "Faire découvrir le visage spirituel  de Saint PADRE PIO à nos Communautés Chrétiennes et  Humaines, par le biais de la Prière, la Pénitence et la Charité dans une attitude réparatrice et contemplative en vue de sa connaissance priée.",
+        "two": "Amener les Fidèles Catholiques en particulier et les âmes de bonne volonté à incarner dans leurs habitudes et attitudes la Vision de la doctrine spirituelle du Père Pio portée vers les vertus théologales à savoir ( Foi,Espérance,Charité) .",
+        "three": "Stimuler dans les Communautés Humaines et Chrétiennes des actions de présence, des énergies favorables, viables, enviables et fréquentes en faveur des marginaux, des couches vulnérables que la société actuelle en proie aux défis et enjeux multiples issus de la mondialisation rejette",
+        "four": "Respecter et promouvoir la vie des Sacrements par une charité basée sur l’Evangile et nos Frères, les humains par un soutien multiforme : spirituel, moral, matériel/financier dans la mesure du possible ."
+      },
+      "action-front": {
+        "title": "Front d'action",
+        "sub-title": "Les fronts d’action de la confrerie des disciples de Saint Padre Pio de Pietrelcina <b>( CODISAPIO )</b> sont les suivants :",
+        "spirituelItems": [
+          "Organisation of panel conferences on faith",
+          "Organisation of Eucharistic celebrations;",
+          "Organisation of daily prayer sessions;",
+          "Constant discussions and communication on the life and work of Saint Padre Pio of Pietrelcina."
+        ],
+
+        "humanItems": [
+          "Support for voluntary blood donation campaigns;",
+          "Various aids for the needy in reception centres"
+        ],
+
+        "sports": [
+          "Organisation of fairs and various games;",
+          "Organisation of sports encounters between young people and Christians from diverse backgrounds"
+        ],
+
+        "cultural": [
+          "Screenings of documentary films on the saints, the life and work of Saint Padre Pio;",
+          "Quizzes on the Word of GOD, the saints, the life and work of Saint Padre Pio."
+        ],
+        "spiritual": "Spirituel",
+        "humanity": "Humanitaire et caritatif",
+        "sportif": "Sportif",
+        "culture": "Culturel"
+      },
+      "the-dioceses": {
+        "title": "The dioceses",
+        "yaounde": "Archidiocèse de Yaoundé",
+        "douala": "Archidiocèse de Douala",
+        "garoua": "Archidiocèse de Garoua",
+        "maroua": "Diocese de Maroua-Mokolo",
+        "obala": "Diocese d’Obala"
+      },
+      "master-plan": {
+        "title": "Schéma directeur"
+      },
+      "realization": {
+        "title": "Réalisations & Résultats",
+        "text": "            Depuis sa création en 2005, la Confrérie des Disciples de Saint Padre Pio (CODISAPIO) a marqué l'Église du Cameroun par une action spirituelle, sociale et humanitaire intense. Elle a organisé des conférences de presse, publié un journal, réalisé des pèlerinages au Cameroun, en Italie et en France, et soutenu les plus vulnérables à travers des visites caritatives et la promotion du don de sang (plus de 15 000 poches collectées). Son action a également renforcé la pratique liturgique autour de Padre Pio, aboutissant à l’inscription de sa mémoire liturgique dans plusieurs diocèses. CODISAPIO a favorisé la création de Groupes de Prière, le développement des CEV à son nom, et sensibilisé personnel médical, fidèles catholiques et non-catholiques à l’éthique, à la dignité humaine et au lien entre foi et science. Sa contribution dépasse le domaine religieux, influençant la société camerounaise sur les plans moral, psychologique, institutionnel et scientifique. Grâce à son bras séculier, la Saint Pio Blood Relief Suffering Foundation, la Confrérie continue d’inspirer des actions concrètes dans un esprit de prière, pénitence et charité, selon l’exemple de son saint patron."
+      },
+      "prospects": {
+        "title": "Nos perspectives",
+        "text": "<p class=\"text-justify lg:w-[80%] px-2 font-(family-name:--chakraregular)\"><b>Sur le court terme</b> : La mise en œuvre de micro-projets pastoraux et agricoles est une initiative précieuse pour soutenir l’Église locale et les personnes vulnérables. Cela permet d’avoir un impact immédiat et concret sur la communauté.</p><p class=\"text-left lg:w-[80%] px-2 font-(family-name:--chakraregular)\"><b>Moyen terme</b> : La création du Grand Chœur Saint Padre Pio et le lancement du Saint Pio Catering Service and Logistic montrent une volonté d’unifier et de structurer les activités communautaires. Le projet Saint Pio Scholarship Academy for Vulnerabilities est également une belle initiative pour accompagner les plus fragiles dans leur formation et leur développement.</p><p class=\"text-left lg:w-[80%] px-2 font-(family-name:--chakraregular)\"><b>Long terme</b> : Les congrès prévus, tant au niveau national qu’international, sont des événements majeurs qui permettront de renforcer les liens entre les fidèles et de promouvoir la spiritualité de Saint Padre Pio à une échelle plus large.</p>"
+      },
+      "global-new": {
+        "news": {
+          "title": "Annonces",
+          "sub-title": "Accueil > Champs d'Apostolat > Spiritualité > Activités",
+          "text": "Voici les dernières annonces de CODISAPIO"
+        },
+        "calendar": {
+          "title": "Calendrier & Grandes dates",
+          "text": "Les grandes dates à venir:"
+        },
+
+        "rapport": {
+          "title": "Rapport d'activite",
+          "text": "Rapports du seminaire du",
+          "download": "Telecharger"
+        },
+
+        "event": {
+          "title": "Evènements",
+          "text": "Liste des évènements à venir"
+        }
+      },
+      "gallery": {
+        "title": "Galerie Photos",
+        "sub-title": "Accueil > Champs d'Apostolat > Spiritualité > Galerie"
+      }
+    },
+
+    "health": {
+      "sub-title": "Accueil > Champs d’Apostolat > Santé > St Pio BRSF",
+      "title": "Généralités",
+      "page": "<p class=\"text-left md:text-center px-2\"><b>Compassion - Réaction- Action</b><br /><span>Des personnes de bonne volonté,</span><span>Vu la loi N°90/053 du 19 Décembre 1990 portant sur la liberté d’Association réaffirmée par le préambule de la Constitution Camerounaise du 18 Janvier 1996 ;</span><span>Sensibles à la souffrance des patients en détresse pour le manque de sang dans nos établissements hospitaliers ;</span><span>Convaincues que la mise sur pied d’une chaîne de solidarité et d’entraide peut contribuer au soulagement de ces malades.</span><span>Ont décidé de servir d’interface par une Association.</span></p><img class=\"h-[202px] ml-[20px]\" src=\"./images/logo-sante.png\" alt=\"Logo sante\"/>",
+
+      "missions": {
+        "title": "Missions",
+        "text": "Nous avons pour missions",
+        "data": [
+          "Appuyer la politique nationale du don de sang",
+          "Regrouper, recruter et encadrer les donneurs bénévoles",
+          "Défendre les intérêts des donneurs et former les acteurs",
+          "Intervenir sur les questions transfusionnelles au Cameroun et à l’international",
+          "Fournir des services de santé non lucratifs et limiter les coûts",
+          "Agir comme assemblée, facilitateur et soutien des politiques transfusionnelles",
+          "Créer un espace d’échange, d’entraide et de gestion des urgences sanguines",
+          "Promouvoir le bénévolat et l’engagement à travers diverses activités",
+          "Renforcer les capacités d’approvisionnement en sang",
+          "Mobiliser, organiser et coordonner les collectes de sang pour améliorer la santé des patients"
+        ]
+      },
+
+      "level-action": {
+        "title": "Our Levers of Action",
+        "actions": [
+          "Information, Sensibilisation, Formation & Education",
+          "Mobilisation sociale et des ressources",
+          "Recrutement de Donneurs Bénévoles",
+          "Organisation des Campagnes de collectes de sang",
+          "Fidélisation de Donneurs Bénévoles Volontaires  de Sang Réguliers Non Rémunérés (DBVRSR)",
+          "Valorisation et Partenariats",
+          "Plaidoyer & Lobbying",
+          "Equipements",
+          "Organisation des Evènements",
+          "Soutien et encouragement à l’Etude et la Recherche globale"
+        ]
+      },
+      "key-dates": {
+        "title": "Les Grandes dates"
+      },
+      "our-values": {
+        "title": "Nos Valeurs",
+        "values": [
+          "Volontariat",
+          "Bénévolat.",
+          "Non-Profit",
+          "Engagement Citoyen & Chrétien.",
+          "Esprit de Sacrifice"
+        ]
+      },
+      "prospects": {
+        "title": "Nos perspectives",
+        "text": "Perspectives à court terme",
+        "data": [
+          "Créer un numéro rouge pour répondre rapidement aux sollicitations.",
+          "Faciliter l’accès aux produits sanguins, voire tendre vers la gratuité.",
+          "Établir des accords de coopération avec les hôpitaux.",
+          "Mettre en place un partenariat avec le Ministère de la Santé publique.",
+          "Coopérer avec la Fédération internationale des donneurs bénévoles de sang et autres institutions.",
+          "Organiser des activités de plaidoyer, comme le congrès sous-régional d’Afrique centrale et des Grands Lacs sur les associations de donneurs"
+        ]
+      },
+      "intervention": {
+        "title": "Areas of Intervention",
+        "center": "REGION DU CENTRE",
+        "littoral": "REGION DU LITTORAL",
+        "east": "REGION DE L’EST",
+        "adamaoua": "REGION DE L’ADAMAOUA",
+        "north": "REGION DE L’EXTRÊME NORD"
+      },
+      "prospect-page": {
+        "title": "Perspectives",
+        "sub-title": "Accueil > Champs d’apostolats > Santé> St Pio BSRF > Perspectives",
+        "data": [
+          "Créer un numéro rouge pour répondre rapidement aux sollicitations.",
+          "Faciliter l’accès aux produits sanguins, voire tendre vers la gratuité.",
+          "Établir des accords de coopération avec les hôpitaux.",
+          "Mettre en place un partenariat avec le Ministère de la Santé publique.",
+          "Coopérer avec la Fédération internationale des donneurs bénévoles de sang et autres institutions.",
+          "Organiser des activités de plaidoyer, comme le congrès sous-régional d’Afrique centrale et des Grands Lacs sur les associations de donneurs."
+        ],
+        "short-term": "Perspectives à court terme",
+
+        "page": "<p class=\"mt-6\">Perspectives à moyen terme</p><ul class=\"list-disc list-outside ms-8 mb-6\"><li>Lancer des projets de développement pour le bien‑être des donneurs et des structures associées :</li><ul class=\"ml-10 list-disc list-outside ms-8\"><li>École de formation professionnelle,</li><li>Fermes,</li><li>Formation du personnel au Cameroun et à l’étranger.</li></ul><li>Construire le siège de la Fondation.</li><li>Créer une structure logistique et de restauration pour les donneurs : « Saint Pio Logistics and Catering services (LoCas) ».</li><li>Mettre en place un groupe média comprenant :</li><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Un journal,</li><li>Une radio,</li><li>Une chaîne TV.</li><li>Améliorer l’organisation et la gestion interne.</li></ul></ul><p>Perspectives à long terme</p><li class=\"mb-10\">Étendre les zones d’intervention à travers le Cameroun et à l’international.</li>"
+      },
+      "origin": {
+        "page": "<div class=\"w-full h-[50px] font-(family-name:--chakraregular) content-center\">Accueil &gt; Champs d’apostolats &gt; Santé&gt; St Pio BSRF &gt; Généralités</div><div class=\"relative w-full mb-10\"><div class=\"bg-[#F8D7DA] py-4 flex justify-center items-center\"><h1 class=\"text-[#A71D2A] font-(family-name:--arimabold) text-4xl font-bold\">Généralités</h1></div></div><div class=\"w-full flex flex-col font-(family-name:--chakraregular) items-center justify-center\"><div class=\"w-[90%]\"><p>Des personnes de bonne volonté</p><p class=\"mt-4\">Vu la loi N°90/053 du 19 Décembre 1990 portant sur la liberté d’Association réaffirmée par le préambule de la Constitution Camerounaise du 18 Janvier 1996 ;</p><p class=\"mt-4\">Sensibles à la souffrance des patients en détresse pour le manque de sang dans nos établissements hospitaliers ;</p><p class=\"mt-4\">Convaincues que la mise sur pied d’une chaîne de solidarité et d’entraide peut contribuer au soulagement de ces malades.</p><p class=\"mt-4\">Ont décidé de servir d’interface par une Association.</p><p class=\"mt-4\">Le 23 Septembre 2008, quelques mandataires se sont réunis, et ce furent les premiers pas de la future Association Sang pour la Vie (ASV). Après plusieurs assises préparatoires et consultatives, l’ASV désormais appelée la Saint Pio Blood Relief Suffering Foundation (BRSF), naît officiellement le Samedi 17 janvier 2009 lors d’une Assemblée Générale Constitutive en présence de quelques responsables des Banques de Sang des Formations Sanitaires de la ville de Yaoundé et des Responsables du Ministère de la Santé Publique.</p><p class=\"mt-4\">La Saint Pio/BRSF est l’initiative de la Confrérie des Disciples de Saint Padre Pio de Piétrelcina ,ce « grain de moutarde »  qui, quelques mois auparavant s’était rendue compte du manque criard de produits sanguins dans les principales formations sanitaires de Yaoundé pendant la campagne de don bénévole de sang :</p><p class=\"mt-4\">« Avec Saint Padre Pio, Donnons une Goutte de notre Sang pour Sauver une Vie… », projetée et concrétisée réellement en prélude et en marge de la Célébration du « Quarantenaire de la Naissance au Ciel du Serviteur de Dieu Saint Padre Pio ». Evénement qui avait eu lieu au Cameroun du Vendredi 02 Mai 2008 au Mardi 23 Septembre 2008, soit 5 mois environ d’intenses activités. De ce fait, en tant que Fille et pur produit de la Confrérie des Disciples de Saint Padre Pio de Piétrelcina, l’Association Sang pour la Vie / ASV,a voulu exprimer sa gratitude, son devoir de mémoire, de reconnaissance pour une Cause ; rendre l’hommage mérité à son Saint Patron afin de puiser dans son esprit, l’élan, la patience, le courage, la force et les lumières qui lui sont nécessaires pour mener à bien la tâche, la mission qui lui incombe à sa suite. C’est pourquoi dans cette résonance, pour une meilleure lisibilité, en vue d’une meilleure visibilité,  l’ASV est désormais baptisée :</p><p class=\"mb-20 mt-4\">« SAINT PIO BLOOD RELIEF SUFFERING FOUNDATION »: LA  SAINT PIO BLOOD RELIEF SUFFERING FOUNDATION substance affinée de l’ASV, est une « Organisation » apolitique, laïque à but non lucratif. C’est l’Esprit qui, orientant, à chaque fois dit « Duc in Altum » « Avançons au large » Lc5,1</p><p>Sa devise est ; Compassion - Réaction – Action</p><p class=\"mb-10 mt-20\"> Le terme compassion est compris dans le sens de la communion avec autrui dans sa souffrance, la réaction étant la réponse positive, obéissante et immédiate de tous les membres sollicités pour un cas quelconque à soulager par le « geste sauveur » qui est l’action pratique : le Don de Sang Volontaire Non Rémunéré.</p></div></div>"
+      },
+      "history": {
+        "page": "<div class=\"w-full h-[50px] font-(family-name:--chakraregular) content-center\">Accueil &gt; Champs d'Apostolat &gt; Santé &gt; Historicité</div><div class=\"relative w-full mb-10\"><div class=\"bg-[#F8D7DA] py-4 flex justify-center items-center\"><h1 class=\"text-[#A71D2A] font-(family-name:--arimabold) text-4xl font-bold\">Historicité</h1></div></div><div class=\"w-full flex flex-col font-(family-name:--chakraregular) items-center justify-center\"><div class=\"w-[90%]\"><p>L’organisation est née d’une analyse situationnelle : de nombreuses populations et Formations Sanitaires (FOSA) situées dans des zones d’accès difficiles au Cameroun manquent cruellement de produits de soins primaires, de médicaments essentiels, de matériels médico-sanitaires adéquats et de qualité.</p><p class=\"my-2\">Ce constat a été établi suite à de multiples missions de terrain menées depuis 2008, culminant avec une tournée nationale dans les dix régions du pays entre novembre 2022 et Janvier 2023 par Saint Pio Blood Relief Suffering Foundation et la Fédération Camerounaise pour le Don Bénévole de Sang (FECADOBES)</p><p class=\"my-2\">Ces missions ont permis non seulement de relever un certain nombre de déterminants mais, surtout, d’observer de près, la pratique transfusionnelle dans les Hôpitaux, y compris jusque dans les périphéries les plus profondes ou coins les plus reculés du pays, en cette période post-Covid 19</p><p class=\"mt-6\">Les objectifs de ces missions comprenaient :</p><p class=\"my-2\">-Faire le point de l’impact de la Covid-19 sur l’activité des Associations de Donneurs Bénévoles de Sang, la dynamique du Don de Sang et de Transfusion Sanguine dans les Régions ;</p><p class=\"my-2\">-Définir l’état général des dynamiques régionales et locales de réponses aux contraintes liées aux Don de Sang et à la Transfusion Sanguine ;</p><p class=\"my-2\">-Ouvrir des perspectives réflexives en faveur de l’amélioration du climat du Don de Sang Bénévole, Volontaire, Régulier et Non Rémunéré au Cameroun ;</p><p class=\"my-2\">- Sensibiliser sur les lacunes dans la structuration des dynamiques de connexion à la Communauté de la Transfusion Sanguine et du Don de Sang dans les Formations Sanitaires (FOSA) ;</p><p class=\"my-2\">-Formuler des recommandations globales idoines en vue de l’amélioration de la qualité du SANG et de l’approvisionnement en Sang au bénéfice des Malades dans les Hôpitaux.</p><p class=\"my-2\">Création et Missions de SIMEAS</p><p class=\"my-2\">Face à ces constats et aux appels récurrents à l’aide, fort de ces expériences après un regard neuf porté à la suite d’une espèce de halte de recul, prenant ainsi l’avantage des activités célébratives du Jubilé de l’AN 20 de Présence &amp; d’Actions de la CODISAPIO,[1] prémices de l’Œuvre de Saint Padre Pio au Cameroun SIMEAS a été créée chemin faisant, pour servir d’interface afin d’apporter une réponse structurée, durable et efficace aux problèmes de santé dans les zones reculées, enclavées et pauvres.</p><p class=\"my-2\">Placée sous l’autorité tutélaire du Ministère de la Santé Publique, l’organisation se veut un réservoir élargi et ouvert à toutes les âmes de bonne volonté.</p><p class=\"my-2\">Elle regroupe en son sein, des spécialistes de haut niveau ,Médecins,Pharmaciens,Journalistes,Communicateurs,Ingénieurs,Logisticiens et autres professionnels de la Santé ainsi que des Volontaires et des Bénévoles de toutes les lignes de nage confondues en général férus de l’action humanitaire, touchés par l’esprit de compassion mais surtout, fervents admirateurs et défenseurs acharnés de la Cause de Saint Padre Pio de Pietrelcina (1887-1968).</p><p class=\"my-2\">Bref, SIMEAS est une plage ouverte pour capitaliser toutes les potentialités et opportunités qui s’offrent à nous dans l’exercice de nos réalisations et contributions plurielles précédentes issues des efforts conjugués et mutualisés que nous avons engagé cet autre Rêve, initiative prophétique porteuse de confiance et d’espérance pour faire toute chose neuve</p><p class=\"my-2\">Dans la relation de la réciprocité, la SIMEAS est une nouvelle offre missionnaire et citoyenne pour permettre à ses élus membres d’horizons divers qui partagent cette vision de combiner leurs charismes, leurs compétences, leurs talents, leurs expériences et leurs efforts particuliers pour matérialiser leur proximité agissante en faveur des populations cibles ; à la vérité pour « construire et réparer » l’Homme créé à l’image et à la ressemblance de Dieu dans une démarche d’ensemble dans un environnement dopé par l’indifférence et l’individualisme à l’ère de la superficialité.</p><p class=\"my-2\">« Saint Pio International Medical Aid Services (SIMEAS),</p><p class=\"my-2\">C’est une artère importante de toute l’Œuvre, dont la mission essentielle principale est l’action de plaidoyer et le lobbying tous azimuts. C’est une structure de veille sanitaire qui sort des fonts baptismaux hic et nunc c’est-à-dire ici et maintenant, au bénéfice de l’Action dans la mouvance de la Célébration de la Journée Mondiale des Malades.</p><p class=\"mt-10 mb-4\">[1] Confrérie des Disciples de Saint Padre Pio</p></div></div>"
+      },
+      "sime-as": {
+        "sub-title": " Accueil > Champs d’Apostolat > Santé > SIME AS",
+        "title": "Généralités",
+        "origin": {
+          "title": "<b>Togetherness - Universality - Health</b><br />La Saint Pio International Medical Aid Services (SIMEAS) est une organisation humanitaire nouvellement créée dont la devise est Fraternité- Universalité-Santé. Cette initiative  vise à répondre aux défis d’accessibilité des couches les plus défavorisées aux soins de santé primaires, aux médicaments essentiels et aux équipements médico-sanitaires dans les zones reculées, enclavées et pauvres au cœur des Peuples,langues,tribus et Nations du Cosmos"
+        },
+
+        "history": {
+          "title": "Historicité",
+          "text1": "L’organisation est née d’une analyse situationnelle : de nombreuses populations et Formations Sanitaires (FOSA) situées dans des zones d’accès difficiles au Cameroun manquent cruellement de produits de soins primaires, de médicaments essentiels, de matériels médico-sanitaires adéquats et de qualité.",
+          "text2": "Ce constat a été établi suite à de multiples missions de terrain menées depuis 2008, culminant avec une tournée nationale dans les dix régions du pays entre novembre 2022 et Janvier 2023 par Saint Pio Blood Relief Suffering Foundation et la Fédération Camerounaise pour le Don Bénévole de Sang (FECADOBES)."
+        },
+        "objectives": {
+          "title": "Objectifs",
+          "text": "Notre objectif général est de :",
+          "text2": "Plus spécifiquement :",
+          "one": "réduire la fracture entre les grandes villes d’une part et les zones reculées, enclavées et pauvres d’autre part, dans l’accès à la Santé et au bien-être.",
+          "two": "Renforcer les capacités logistiques  en termes d’équipements médico-sanitaires et autres, des Formations Sanitaires(FOSA) des zones reculées, enclavées et/ou pauvres ; ",
+          "three": "Améliorer l’accès des Groupes et Communautés vulnérables aux soins de Santé  ",
+          "four": "Accompagner les dynamiques de mobilisations des ressources au sein des FOSA  des zones reculées, enclavées et pauvres ",
+          "five": "Renforcer la résilience des Groupes et Communautés vulnérables aux chocs, catastrophes, urgences à caractères humanitaires"
+        },
+        "missions": {
+          "title": "Missions",
+          "text": "Nous avons pour missions:",
+          "one": "Assurer l’accès à la santé dans les zones reculées, enclavées et pauvres.",
+          "two": "Mobiliser et coordonner des spécialistes et bénévoles pour des actions humanitaires",
+          "three": "Promouvoir le plaidoyer et le lobbying pour l’amélioration des politiques de santé publique."
+        },
+        "director": {
+          "title": "Schéma Directeur"
+        },
+        "prospects": {
+          "title": "Nos perspectives",
+          "page": "<div class=\"text-left font-(family-name:--chakraregular) w-[80%]\"><p><b>Cliniques mobiles :</b> <br />Organisation de cliniques mobiles équipées de matériel médical de base pour atteindre les villages isolés et offrir des consultations spécialisées gratuites & Distributions de kits de soins, et de médicaments essentiels,</p><p><b>Formation du personnel local :</b> <br />Mise en place de programmes de formation pour le personnel de santé local afin d’améliorer leurs compétences et leurs capacités à gérer les problèmes de santé courants.</p><p><b>Approvisionnement en médicaments :</b> renforcement du Système mise en place dans le cadre d’un réseau d’approvisionnement en médicaments essentiels pour les Formations Sanitaires des zones reculées, enclavées et/ou pauvres en collaboration avec le Ministère de la Santé Publique à travers les Fonds Régionaux de Promotion de la Santé (FRPS), les laboratoires pharmaceutiques et des ONGs Internationales et autres Parties Prenantes en respectant le circuit SYNAME.</p><p><b>Télémédecine :</b> <br />Mise en place de systèmes de télémédecine permettant aux professionnels de Santé des zones reculées, enclavées et/ou pauvres de consulter des spécialistes à distances pour des cas complexes</p><p><b>Campagnes de sensibilisation :</b> <br />Organisation d’ateliers éducatifs et de campagnes de sensibilisation sur l’hygiène, la nutrition, la gestion des déchets et la prévention des maladies courantes dans les Communautés isolées en coaction avec les Fonds Régionaux de Promotion de la Santé (FRPS) et autres Parties Prenantes.</p></div>"
+        },
+        "intervention": {
+          "title": "Les Zones d’intervention",
+          "center": "REGION DU CENTRE",
+          "littoral": "REGION DU LITTORAL",
+          "east": "REGION DE L’EST",
+          "adamaoua": "REGION DE L’ADAMAOUA",
+          "north": "REGION DE L’EXTRÊME NORD"
+        }
+      }
+    },
+
+    "communication": {
+      "global-new": {
+        "news": {
+          "title": "Annonces",
+          "sub-title": "Accueil > Champs d'Apostolat > Communication > Activités",
+          "text": "Voici les dernières annonces de CODISAPIO"
+        },
+        "calendar": {
+          "title": "Calendrier & Grandes dates",
+          "text": "Les grandes dates à venir:"
+        },
+
+        "rapport": {
+          "title": "Rapport d'activite",
+          "text": "Rapports du seminaire du",
+          "download": "Telecharger"
+        },
+
+        "event": {
+          "title": "Evènements",
+          "text": "Liste des évènements à venir"
+        }
+      },
+      "gallery": {
+        "title": "Galerie Photos",
+        "sub-title": "Accueil > Champs d'Apostolat > Communication > Galerie"
+      },
+
+      "generality": {
+        "page": "<div class=\"ml-4 w-full h-[50px] font-(family-name:--chakraregular) content-center\">Accueil &gt; Champs d'Apostolat &gt; Communication &gt; Généralités</div><div class=\"relative w-full mb-10\"><div class=\"bg-blue-50 py-4 flex justify-center items-center\"><h1 class=\"text-blue-700 font-(family-name:--arimabold) text-4xl font-bold\">Généralités</h1></div></div><div class=\"w-full flex flex-col font-(family-name:--chakraregular) items-center justify-center\"><div class=\"w-[90%]\"><p>La « Voie de Padre Pio » est une réalité vivante. C’est un Groupe de Presse et de Communication en gestation, une Artère importante de l’œuvre de Saint Padre Pio au Cameroun. L’objectif premier et essentiel de ce projet éditorial à caractère universel est de faire rayonner la splendeur de la Vérité du CHRIST Sauveur de tous les Hommes à travers la Cause de Padre Pio au Cameroun et dans le monde, par des actions concrètes et multiformes dont la matrice fondamentale plonge ses racines dans :</p><p class=\"my-2\">- La Spiritualité</p><p class=\"my-2\">- La Santé</p><p class=\"my-2\">- L'Environnement</p><p class=\"my-2\">Elle se veut, trimestriel bilingue d’informations. « La Voie de Padre Pio est avant tout, une Œuvre de l’Eglise au service de l’Humanité. Initiée et envisagée par le Frère Noël SIMO, Directeur de Publication et par ailleurs Responsable de toute l’œuvre de Saint Padre Pio au Cameroun ; elle met en relief la mission transformatrice du chrétien « sel de la terre et lumière du monde » Mt 5,14 par le reflet resplendissant de la Foi vive.</p><p class=\"my-2\">Dans l’approche thématique globale, comme précédemment signalé, « La Voie de Padre Pio » aussi voudrait-elle contribuer au développement participatif par la collaboration renforcée en apportant une offre positive sur l’éducation,l’édification,et l’éthique de la culture du Don de Sang Bénévole, Volontaire ,Régulier et Non Rémunéré. Qui en est une variable lourde ; la Santé environnementale par le témoignage sûr, réel et constant de la Mystique chrétienne à plein régime sous l’angle communicationnel.</p><p class=\"mt-6\">Allumés par le feu du Saint-Esprit, tous les acteurs qui interviennent dans le circuit qui va de la Rédaction à la Distribution du produit dont l’exemplaire de grâce est offert à 500 FCFA aspirent à la perfection professionnelle sanctifiante.</p><p class=\"my-2\">La conception, la Réalisation et l’Impression sont le fruit du talent des âmes mordues par la Cause de Dieu et l’Idéal juste de son Royaume</p><p class=\"mt-2 mb-6\">Ce Journal sorti des fonts baptismaux en 2011, est tiré en 1000 exemplaires distribués par les Paroisses de l’Eglise Catholique et Protestante au Cameroun.</p></div></div>"
+      },
+      "about": {
+        "title": "Généralités",
+        "text": "<b class=\"text-[20px] font-(family-name:--chakrabold)\">« La prière est la meilleure arme. C’est la clé qui ouvre le cœur de Dieu.Ne vous lassez jamais de prier » Padre Pio</b><br />« La prière est la meilleure arme. C’est la clé qui ouvre le cœur de Dieu.Ne vous lassez jamais de prier » Padre Pio La « Voie de Padre Pio » est une réalité vivante. C’est un Groupe de Presse et de Communication en gestation, une Artère importante de l’œuvre de Saint Padre Pio au Cameroun. L’objectif premier et essentiel de ce projet éditorial à caractère universel est de faire rayonner lasplendeur de la Vérité du CHRIST Sauveur de tous les Hommes à travers la Cause de Padre Pio au Cameroun et dans le monde, par des actions concrètes et multiformes dont la matrice fondamentale plonge ses racines dans :  La Spiritualité , La Santé, L’Environnement.",
+        "text2": "Moyens de communication",
+        "one": "Sur le court terme CYbernétique Presse écrite",
+        "two": "Sur le moyen terme Radio Televison",
+        "three": "Sur le long terme Imprimerie",
+        "intervention": {
+          "title": "Les Zones d’intervention",
+          "center": "REGION DU CENTRE",
+          "adamaoua": "REGION DE L’ADAMAOUA",
+          "east": "REGION DE L’EST",
+          "littoral": "REGION DU LITTORAL",
+          "north": "REGION DE L’EXTRÊME NORD"
+        }
+      }
+    },
+
+    "environement": {
+      "global-new": {
+        "news": {
+          "title": "Annonces",
+          "sub-title": "Accueil > Champs d'Apostolat > Environnement > Activités",
+          "text": "Voici les dernières annonces de CODISAPIO"
+        },
+        "calendar": {
+          "title": "Calendrier & Grandes dates",
+          "text": "Les grandes dates à venir:"
+        },
+
+        "rapport": {
+          "title": "Rapport d'activite",
+          "text": "Rapports du seminaire du",
+          "download": "Telecharger"
+        },
+
+        "event": {
+          "title": "Evènements",
+          "text": "Liste des évènements à venir"
+        }
+      },
+      "gallery": {
+        "title": "Galerie Photos",
+        "sub-title": "Accueil > Champs d'Apostolat > Environnement > Galerie"
+      },
+
+      "about": {
+        "title": "Généralités",
+        "text": "<b class=\"text-[20px] font-(family-name:--chakrabold)\">« La prière est la meilleure arme. C’est la clé qui ouvre le cœur de Dieu.Ne vous lassez jamais de prier » Padre Pio</b><br />« La prière est la meilleure arme. C’est la clé qui ouvre le cœur de Dieu.Ne vous lassez jamais de prier » Padre Pio La « Voie de Padre Pio » est une réalité vivante. C’est un Groupe de Presse et de Communication en gestation, une Artère importante de l’œuvre de Saint Padre Pio au Cameroun. L’objectif premier et essentiel de ce projet éditorial à caractère universel est de faire rayonner lasplendeur de la Vérité du CHRIST Sauveur de tous les Hommes à travers la Cause de Padre Pio au Cameroun et dans le monde, par des actions concrètes et multiformes dont la matrice fondamentale plonge ses racines dans :  La Spiritualité , La Santé, L’Environnement.",
+        "text2": "Moyens de communication",
+        "one": "Sur le court terme CYbernétique Presse écrite",
+        "two": "Sur le moyen terme Radio Televison",
+        "three": "Sur le long terme Imprimerie",
+        "intervention": {
+          "title": "Les Zones d’intervention",
+          "center": "REGION DU CENTRE",
+          "adamaoua": "REGION DE L’ADAMAOUA",
+          "east": "REGION DE L’EST",
+          "littoral": "REGION DU LITTORAL",
+          "north": "REGION DE L’EXTRÊME NORD",
+          "west": "REGION DE L'OUEST"
+        },
+
+        "perspectives": {
+          "title": "Nos perspectives",
+          "short-term": "A court & Moyen termes:",
+          "short-term-text1": "Accompagner le plaidoyer conjoint  de Saint Pio Blood Relief Suffering Foundation et de la FECADOBES dans le cadre de sa démarche projetée d’érections des ‘’ Monuments symboliques »dédiés aux  « DONNEURS DE SANG » aux Centres de villes de certaines Communes d’Arrondissement dans les Régions du Cameroun en vue d’inciter d’avantages les Populations à la Culture du de Don de Sang Bénévole, Volontaire, Régulier et Non Rémunéré ;",
+          "short-term-text2": "Œuvrer auprès des plus Hautes Autorités du pays afin qu’elles Instruisent à chaque Département  Ministériel  et autres Institutions publiques ou privées de considérer  <br /> et de consigner dans leurs agendas respectifs la date du14 Juin  qui est celle de la Célébration de la Journée Mondiale du Donneur de Sang (JMDS) ."
+        },
+        "objectives": {
+          "title": "Objectifs",
+          "text": "Nous avons pour Objectifs :",
+          "one": "Valoriser la place de l’Homme comme acteur central de la préservation de la biodiversité",
+          "two": "Vulgariser les politiques, les stratégies et les acteurs qui promeuvent les liens entre Santé et Environnement ;",
+          "three": "Initier des actions favorables au renforcement durable du lien entre Santé et Environnement ",
+          "four": "Susciter l’engagement des acteurs étatiques et non étatiques en faveur de la promotion d’une écologie intégrale."
+        },
+        "history": {
+          "title": "Historicité",
+          "para1": "Ces campagnes menées entre 2012 et 2014, notamment lors des déploiements relatifs aux activités commémoratives de la Journée Mondiale du Donneur de Sang (JMDS) et de la «  Foire Promote 2014 » par moment autour du 23 Septembre spécialement, ont révélé un profond  manque d’engagement sur les questions environnentales en général et  au Don de Sang en particulier au cœur d’une Société totalement déstructurée en proie à la « dictature du bruit ».",
+          "para2": "Dans un contexte très problématique, durant cette période, plus de 300 Entreprises et autres Organisations de la Société Civile ont été sensibilisées aux enjeux  du Don de Sang  et de la Transfusion Sanguine  au Cameroun",
+          "para3": "De fait, la sécurité transfusionnelle est un enjeu majeur de santé publique qui vise à protéger les patients et  à garantir la qualité des soins."
+        },
+        "origin": {
+          "title": "Génèse",
+          "sub-title": " Accueil > Champs d'Apostolat > environnement > A propos de nous",
+          "para":"Au commencement, l’idée du Concept  d’une Organisation a germé d’un constat très amer ; de nombreuses réticences, déceptions et difficultés rencontrées  lors des campagnes  de sensibilisation à la biodiversité  avec pour principal angle de discussion préalable la promotion d’une écologie humaine auprès des grandes institutions de la république, des entreprises, des ONGs et  des groupes médiatiques"
+        }
+      }
+    },
+
+    "realization": {
+      "page": "<div class=\"w-full h-[50px] bg-yellow-50 content-center font-(family-name:--chakraregular)\"><p class=\"ml-1 md:ml-[70px]\">Accueil &gt; Champs d’apostolat &gt; Spiritualité &gt; A propos de nous &gt; Réalisations phares</p></div><div class=\"relative w-full mb-10\"><div class=\"bg-yellow-50 py-4 flex justify-center items-center\"><h1 class=\"text-yellow-700 text-4xl font-bold\">Réalisations phares</h1></div></div><div class=\"mt-10 px-4 md:px-20\"><h3 class=\"text-[#FFC107] mb-4 text-2xl font-(family-name:--chakrabold)\">Résultats directs</h3><div class=\"grid gap-y-8\"><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">1- Sur le plan communicationnel</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Deux Conférences de Presse organisées et directement centrées sur PADRE PIO (03 Mai et 23 Septembre 2010)</li><li>La mise sur pied du Journal ‘’ La Voix de PADRE PIO’’</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">2- Sur le plan caritatif,</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">04 visites charitables ont été effectuées dans les sites suivants : l’Orphelinat de Nkoabang, la Léproserie de Ngalan (Mbalmayo),la Prison Principale de Mfou,Centre Béthanie Viacam (Nkolmesseng-Yaoundé)</li><li>La mise sur pied du Journal ‘’ La Voix de PADRE PIO’’</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">3- Sur le plan spirituel</span><p>Quelques destinations des pèlerinages organisés</p><b>Au Cameroun:</b><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Sanctuary Marial  Notre Dame Oasis de la Paix de Nsenglong à Mbalmayo (2005, 2006, 2007,2008),</li><li>Notre Dame du Cénacle Mvolyé (aujourd’hui, Maison Nazareth)</li><li>Notre Dame Marie Reine de la Paix Mvolyé</li><li>Notre Dame Marie Reine de la Paix Mont Febé</li><li>Notre Dame de Doumelong (Bafoussam) (2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012)</li><li>ND de la Paix Nsimalen</li><li>Notre Dame de la Paix, Cathédrale Saints Pierre et Paul (Douala)</li><li>Monastère Notre Dame de l’Assomption  de Nkolngon (Obala) (2008,2009, 2010, 2011,2012-2022)</li><li>Notre Dame du Très Saint Rosaire,(Mbalmayo)</li><li>Sanctuaire du Sacré Cœur de Jésus Mvolyé et Mokolo</li><li>Sœurs Franciscaines du Sacré Cœur d’Elat -Minkom (après Nkoabang)</li></ul><b>A l’étranger:</b><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Italie</li><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Rome, Place Saint Pierre (2016)</li><li>Florence (2016)</li><li>San Giovanni Rotondo,( 2016)</li><li>Rome, Place Saint Pierre (2017)</li><li>San Giovanni Rotondo (2017)</li><li>Florence (2017)</li></ul><li>France</li><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Basilique du Sacré-Cœur du Montmartre (2016)</li><li>Chapelle Notre -Dame de la Médaille Miraculeuse (Rue du Bac-Paris)  (2016)</li><li>Cathédrale ND de Paris (2016)</li></ul></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">4- Sur plan Spirituel et Evènementiel</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">La «  Quinzaine Spirituelle Saint PADRE PIO ,2006 l’Archidiocèse de Yaoundé (Paroisse Christ-Roi de Tsinga)</li><li>Le « Quarantenaire de la Naissance au Ciel du Serviteur de Dieu Saint PADRE PIO de Pietrelcina »  les Diocèses du Cameroun principalement (Archidiocèses et Diocèses de Yaoundé, Douala, Bertoua, Garoua, Bamenda, Bafoussam, Mbalmayo,Yagoua,Maroua-Mokolo</li><li>Ebolowa,Yagoua ,Ngaoundéré,Maroua . 2008</li><li>Le Jubilé du «  Centenaire d’Ordination Sacerdotale du Père PIO au Cameroun » 2010 à Yaoundé</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">5- Sur le plan médical,</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Plus de 500 Campagnes d’information, de sensibilisation et de collectes de Sang accompagnées (Yaoundé, Douala, Kumbo, Bafoussam…)</li><li>Plus de 15.000 poches de Sang collectées dans la Collaboration avec Saint Pio Blood Relief Suffering Foundation,FECADOBES et autres Partenaires ;</li><li>Plus de 2000 Personnel de Santé (Médecins, infirmiers…) sensibilisés sur la notion de la dignité humaine quant à la pratique médicale et transfusionnelle</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">6- Sur le plan social, et humanitaire,</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li class=\"text-justify\">Plusieurs vies humaines ont été sauvées et soulagées</li><li>Des millions populations informées et sensibilisés sur le Don de Sang et son importance,</li><li>Des milliers de Fidèles des autres bords religieux (Musulmans, Protestants et Animistes) ont découvert et connaissent désormais Saint PADRE PIO ;</li><li>Des milliers de Fidèles catholiques connaissent et recherchent dorénavant, l’intercession du Père PIO,</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">7- Sur le plan liturgique,</span><p>La date du 23 Septembre jour de la Commémoration universelle  de la Mémoire Liturgique suivant le Sanctoral est désormais inscrite dans la plupart des Calendriers Liturgiques des Diocèses du Cameroun grâce à un grand effort de plaidoyer et de lobbying menés par la Confrérie des Disciples de Saint PADRE PIO en commençant par l’Archidiocèse de Yaoundé (ADY) dès 2006 et partant d’autres Diocèses du Cameroun l’Année suivante.</p><p>La multiplication et distribution en Centaines de Copies de la Messe Propre de Saint Padre Pio dans Plusieurs Paroisses de l’Eglise qui est au Cameroun entre 2005-2011.</p></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">8- Sur le plan pastoral,</span><p>Aujourd’hui, de nombreuses Communautés Ecclésiales Vivantes (CEV) sont créées et ont pour nom de baptême ,le Saint éponyme fruits bénéfiques engagées pleinement sur le terrain en vue de sa connaissance priée et des fruits de sainteté abondants depuis l’An de grâce 2005 ; le cas de l’Archidiocèse de Douala en est une parfaite illustration ( CEV Saint PADRE PIO de Makepe,Paroisse Saint Sacrement de Ndongbong,Paroisse Saint Dominique Savio,Bonapriso,Paroisse de KOTTO…</p><p>Les Chrétiens vivent les Sacrements</p><ul class=\"ml-10 list-disc list-outside ms-8\"><li>2006, Incitation à la mise sur pied des Groupes de Prière à la Spiritualité de PADRE PIO dans la Région du Nord-Ouest ( Shisong ,Kumbo et  Bamenda…) Et la relance d’un « Ancien Groupe » dénommé Saint Juliani existant à Sop dans le Bui « depuis » 2002</li><li>2008 : Création du Groupe de Prière de la Paroisse Notre Dame des Sept Douleurs New-Bell à Douala</li></ul></div></div><h3 class=\"text-[#FFC107] my-4 text-2xl font-(family-name:--chakrabold)\">Résultats indirects</h3><div class=\"grid gap-y-8 mb-20\"><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">9- Sur le plan de la CARITAS</span><p>La redynamisation globale des actions caritatives dans les Paroisses de l’Eglise particulière du Cameroun et de Codas Caritas dans les Diocèses est la conséquence directe de l’heureuse initiative baptisée ‘’CAREME PIEDS NUS ‘’ dans l’optique de contribuer à la revitalisation du volet CARITAS au sein de l’Eglise à l’occasion du Jubilé du Centenaire d’Ordination de Saint PADRE PIO au Cameroun en 2010 au regard d’un certains nombres d’actions engagées au niveau de la Conférence Episcopale Nationale du Cameroun (CENC) , des Diocèses et des Paroisses.</p></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">10- Sur le plan Scientifique</span><ul class=\"ml-10 list-disc list-outside ms-8\"><li>Des centaines de Médecins et Personnel de Santé camerounais et d’ailleurs ont découvert PADRE PIO et ont intégré le lien entre la Science et la Foi ;</li><li>Des Certaines de Sociétés savantes et revues scientifiques éprouvent désormais un intérêt particulier aux actions menées et cherchent davantage à comprendre le Don de Sang et le ‘’Phénomène’’ PADRE PIO ;</li></ul></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">11- Sur le plan spirituel</span><p>Grand Saint de l’ère contemporaine aux faveurs spéciales et extraordinaires œuvre dans l’invisible à l’accompagnement sûr et durable du Système de Transfusion au Cameroun ;</p><p>Sur le plan moral, les Disciples, Amis et /ou dévots de PADRE PIO sont animés par une confiance absolue en DIEU.</p><p>Sur le plan psychologique, les Fidèles ont véritablement intégré que la Souffrance ou les difficultés ne doivent pas être un frein à leur vie de Foi</p><p>Sur le plan institutionnel, grâce à l’accompagnement spirituel de la Confrérie et des actions concrètes à travers son bras séculier que représente Saint PIO Blood Relief Suffering Foundation,le climat du Don de Sang en particulier et de la Transfusion Sanguine au Cameroun s’améliore peu à peu en dépit de quelques lacunes latentes constatées.</p></div><div><span class=\"text-yellow-700 text-base font-(family-name:--chakrabold)\">12- Sur le plan de l’Ethique</span><p>La communication permanente avec les Personnels de Santé et les Autorités globales suivant l’esprit des prescriptions de Saint Padre Pio a mis un peu de tendresse quant à l’accueil des malades et surtout la pratique médicale dans de nombreuses Formations Sanitaires du Cameroun. « Vous aussi medecins, vous avez une Mission à accomplir, tout comme moi. Je vous parle de devoirs à une époque où tout le monde parle de droits. (…) Votre Mission c’est de soigner les malades ; mais si vous n’apportez pas l’amour au chevet des Malades, je crains fort que les médicaments ne servent pas à grande chose… » Padre Pio</p></div></div></div>"
+    }
+  },
+
+  "see-more": "Voir plus",
+  "read-more": "En savoir plus",
+  "ours-partners": "Nos entités/organisations formalisantes",
+  "director": "Schéma Directeur"
+}
