@@ -1,4 +1,10 @@
-import { NgFor, NgClass, NgIf, AsyncPipe } from '@angular/common';
+import {
+  NgFor,
+  NgClass,
+  NgIf,
+  AsyncPipe,
+  isPlatformBrowser,
+} from '@angular/common';
 import {
   Component,
   ViewChild,
@@ -6,6 +12,8 @@ import {
   AfterViewInit,
   signal,
   OnInit,
+  Inject,
+  PLATFORM_ID,
 } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import {
@@ -81,10 +89,14 @@ export class NavbarComponent implements AfterViewInit {
   email = signal<string | undefined>(undefined);
   links$!: Observable<NavLink[]>;
 
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService,
+    @Inject(PLATFORM_ID)
+    private platformId: Object
+  ) {
     this.links$ = this.translate.stream('links');
     this.currentLang =
-    this.translate.currentLang || this.translate.getDefaultLang();
+      this.translate.currentLang || this.translate.getDefaultLang();
   }
 
   ngOnInit() {
@@ -97,7 +109,7 @@ export class NavbarComponent implements AfterViewInit {
       });
   }
 
-    trackByPath(_: number, link:NavLink ) {
+  trackByPath(_: number, link: NavLink) {
     return link.path;
   }
 
@@ -158,7 +170,10 @@ export class NavbarComponent implements AfterViewInit {
   switchLanguage(lang: 'fr' | 'en') {
     this.translate.use(lang);
     this.currentLang = lang;
-    localStorage.setItem('lang', lang);
+
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('lang', lang);
+    }
   }
 }
 
