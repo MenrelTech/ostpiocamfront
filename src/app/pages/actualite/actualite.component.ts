@@ -5,11 +5,13 @@ import cardActualityComponent from '../../cardActuality/cardActuality.component'
 import { VerticalcardtextComponent } from '../../verticalcardtext/verticalcardtext.component';
 import { TranslateModule } from '@ngx-translate/core';
 interface Actualite {
+  originaldate: string | number | Date;
   id: number;
   title: string;
   description: string;
   image: string;
   date: string;
+  originalDate: string;
   name: string;
   altMessage: string;
   color: string;
@@ -71,12 +73,13 @@ export class ActualiteComponent {
           description: item.content,
           image: item.publicationAttachments[0] ? "https://ostpiocamback.enotelco.com"+item.publicationAttachments[0].attachmentUrl : "" ,
           date: "Le "+item.createdAt.slice(0,10)+" à "+item.createdAt.slice(11,16),
+          originalDate: item.createdAt,
           name: item.area,
           altMessage : "actu_"+item.title,
           color: couleur,
         };
       });
-      a.sort((a: Actualite, b: Actualite) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      a.sort((a: Actualite, b: Actualite) => new Date(b.originaldate).getTime() - new Date(a.originaldate).getTime());
       this.actualites.set(a);
     }).catch((error) => {
       console.error('Error fetching actualities:', error);
